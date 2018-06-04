@@ -1,0 +1,45 @@
+html {
+  background: #182237;
+}
+
+/* fix background on mobile devices */
+@media only screenand (min-device-width : 768px) and (max-device-width : 1024px)  {
+   html { background-attachment: scroll !important; }
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: 'work sans', 'roboto', '-apple-system', BlinkMacSystemFont, helvetica, ubuntu,noto,'segoe ui', arial,sans-serif;
+}
+a {
+color: #fff;
+}
+a:hover {
+opacity: 0.8;
+}
+
+/* Zel colours */
+
+.zelcolour{background-color:rgba(24,60,135)}
+.zelcolour-90{background-color:rgba(24,60,135,.9)}
+.zelcolour-80{background-color:rgba(24,60,135,.8)}
+.zelcolour-70{background-color:rgba(24,60,135,.7)}
+.zelcolour-60{background-color:rgba(24,60,135,.6)}
+.zelcolour-50{background-color:rgba(24,60,135,.5)}
+.zelcolour-40{background-color:rgba(24,60,135,.4)}
+.zelcolour-30{background-color:rgba(24,60,135,.3)}
+.zelcolour-20{background-color:rgba(24,60,135,.2)}
+.zelcolour-10{background-color:rgba(24,60,135,.1)}
+.zelcolour-dark{background-color:rgba(20,42,89)}
+.zelcolour-dark-90{background-color:rgba(20,42,89,.9)}
+.zelcolour-dark-80{background-color:rgba(20,42,89,.8)}
+.zelcolour-dark-70{background-color:rgba(20,42,89,.7)}
+.zelcolour-dark-60{background-color:rgba(20,42,89,.6)}
+.zelcolour-dark-50{background-color:rgba(20,42,89,.5)}
+.zelcolour-dark-40{background-color:rgba(20,42,89,.4)}
+.zelcolour-dark-30{background-color:rgba(20,42,89,.3)}
+.zelcolour-dark-20{background-color:rgba(20,42,89,.2)}
+.zelcolour-dark-10{background-color:rgba(20,42,89,.1)}
+
+/* End Zel colours */
