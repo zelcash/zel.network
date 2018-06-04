@@ -50,33 +50,7 @@ const persons = [
       linkedin: "#",
       github: "#"
     }
-  },
-    {
-    name: "Alexandra Manley",
-    photo: "https://static1.squarespace.com/static/5a63831b8c56a8aad3aff672/t/5aeb6d116d2a73e29e93acd3/1525378362466/Profile-Nadezhda.png?format=750w",
-    title: "Legal Advisor",
-    bio:
-      "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet architecto ea blanditiis quo labore esse magnam illum ut quibusdam. Corrupti ratione iure aliquam adipisci! Harum vitae laboriosam temporibus illo suscipit?</p><p>Saepe repudiandae rerum quam ut perferendis, ullam similique nemo quod, assumenda mollitia consectetur. Eveniet optio maxime perferendis odit possimus? Facilis architecto nesciunt doloribus consectetur culpa veritatis accusamus expedita quos voluptate!</p><p>Nisi provident minus possimus optio voluptate rem, perspiciatis, placeat, culpa aperiam quod temporibus.</p>",
-    social: {
-      facebook: "#",
-      twitter: "#",
-      linkedin: "#",
-      github: "#"
-    }
-  },
-    {
-    name: "Alexandra Manley",
-    photo: "https://static1.squarespace.com/static/5a63831b8c56a8aad3aff672/t/5aeb6d116d2a73e29e93acd3/1525378362466/Profile-Nadezhda.png?format=750w",
-    title: "Legal Advisor",
-    bio:
-      "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet architecto ea blanditiis quo labore esse magnam illum ut quibusdam. Corrupti ratione iure aliquam adipisci! Harum vitae laboriosam temporibus illo suscipit?</p><p>Saepe repudiandae rerum quam ut perferendis, ullam similique nemo quod, assumenda mollitia consectetur. Eveniet optio maxime perferendis odit possimus? Facilis architecto nesciunt doloribus consectetur culpa veritatis accusamus expedita quos voluptate!</p><p>Nisi provident minus possimus optio voluptate rem, perspiciatis, placeat, culpa aperiam quod temporibus.</p>",
-    social: {
-      facebook: "#",
-      twitter: "#",
-      linkedin: "#",
-      github: "#"
-    }
-  },
+  }
 ];
 
 const app = new Vue({
