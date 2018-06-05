@@ -54,11 +54,11 @@
 	<!-- ABOUT -->
 
 <div class="w-100 white helvetica ph5">
-	<section id="about" class="wow slideInLeft flex-ns vh-100 items-center v-mid">
+	<section id="about" class="wow slideInLeft flex-ns items-center v-mid">
 	<div class="mw6 ph5 w-30">
 		<img src="img/Side1.png"> 
 	</div>
-	<div class="tc tl-ns pr5 w-70">
+	<div class="tc tl-ns pr5 pv5 w-70">
 		<h1 class="f3 f1-l fw1 mb3 mt4 mt0-ns">What is Zelcash?</h1>
 		<p class="f4 f4-l fw3 mb4 mb5-l lh-title">'Zelcash' is the coin and system of transacting value inside of the Zeldev Platform, running on our Equihash blockchain. Zelcash is minable making distribution fair. A Proof of Stake element will be added in the form of Zelnodes to bring around the capabilities and network stability needed for the ZelDev Decentralized Development Platform to be released. Zelcash is and will always be a staple in all projects undertaken by the Zel Foundation. 
 Zelcash is the enabler in the Zel Foundations project to bring a truly decentralized, open source and free development platform into reality, Zeldev. Zelcash will not only allow value to be transacted but will also be an incentive for users to host Zelnodes (masternodes) that secure the network and allow for the main Ethereum like blockchain to operate completely on POS. This Ethereum like blockchain is the backbone to the ZelDev Platform. This will allow for the free creation of decentralized applications (DAPPS) and for the creation of Smart contracts that are free and open to all. The Zelnodes network will also allow the running of other blockchains (side chains (but not actually side chains)) such as the Zel ID chain.
@@ -66,8 +66,8 @@ Zelcash is the enabler in the Zel Foundations project to bring a truly decentral
 	</div>
 	</section>
 
-	<section class="wow slideInRight flex-ns vh-100 items-center v-mid">
-		<div class="tc tl-ns ph5 w-70">
+	<section class="wow slideInRight flex-ns items-center v-mid">
+		<div class="tc tl-ns ph5 pv5 w-70">
 			<h1 class="f3 f1-l fw2 mb3 mt4 mt0-ns">Specification</h1>
 			<p class="f4 f4-l fw3 mb4 mb5-l lh-title">Test</p>
 		</div>
@@ -81,7 +81,7 @@ Zelcash is the enabler in the Zel Foundations project to bring a truly decentral
 	
 	<!-- TEAM -->
 	
-<div :class="['wow slideInLeft main-team-container', isSelected ? 'container-selected':'', isReady ? 'container-ready':'']" id="team">
+<div :class="['wow slideInLeft main-team-container pv5', isSelected ? 'container-selected':'', isReady ? 'container-ready':'']" id="team">
 	<div class="team-container">
 		<div class="team-header">
 			<h1 class="f2 f1-l fw2 white-90 mb0 lh-title">Our Team</h1>
@@ -98,7 +98,7 @@ Zelcash is the enabler in the Zel Foundations project to bring a truly decentral
 		</div>
 		<div class="team-detail z-5">
 			<div class="team-detail-inner" v-if="isOk">
-				<div class="team-detail-left" :style=`background-image:url(${selectedPersonData.photo})`>
+				<div class="team-detail-left zelcolour-dark" :style=`background-image:url(${selectedPersonData.photo})`>
 					<div class="team-detail-photo"><img :src="selectedPersonData.photo" alt=""></div>
 				</div>
 				<div class="team-detail-right zelcolour-dark">
@@ -170,7 +170,7 @@ Zelcash is the enabler in the Zel Foundations project to bring a truly decentral
 		{
 			boxClass:     'wow',      // animated element css class (default is wow)
 			animateClass: 'animated', // animation css class (default is animated)
-			offset:       200,          // distance to the element when triggering the animation (default is 0)
+			offset:       400,          // distance to the element when triggering the animation (default is 0)
 			mobile:       true,       // trigger animations on mobile devices (default is true)
 			live:         true,       // act on asynchronously loaded content (default is true)
 			callback:     function(box) {
