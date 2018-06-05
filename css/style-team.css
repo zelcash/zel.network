@@ -248,6 +248,7 @@
   .team-detail-right {
     padding-right: 0;
     width: calc(100% - 440px);
+    overflow-x: auto;
   }
 
   .person .person-title {
@@ -270,6 +271,7 @@
   .team-detail-right {
     padding: 0 50px;
     width: 100%;
+    overflow-x: auto;
   }
 
   .team-detail-header {
