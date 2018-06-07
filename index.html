@@ -12,7 +12,6 @@
 	<link rel="stylesheet" href="css/style-team.css">
 	<link rel="stylesheet" href="css/libs/animate.css">
 	<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css'>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.miin.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 	<title>Zelcash — part of Zel Technologies LLC</title>
 </head>
@@ -54,24 +53,24 @@
 	<!-- ABOUT -->
 
 <div class="w-100 white helvetica ph5">
-	<section id="about" class="flex-ns items-center v-mid">
-	<div class="wow slideInLeft mw6 ph5 w-30" data-wow-duration="1.5s">
+	<section id="about" class="flex flex-column flex-row-ns items-center v-mid pv5">
+	<div class="wow slideInLeft pr3-ns mb4 mb0-ns w-100 w-40-ns" data-wow-duration="1.5s">
 		<img src="img/Side1.png"> 
 	</div>
-	<div class="wow slideInLeft tc tl-ns pr5 pv5 w-70">
-		<h1 class="f3 f1-l fw1 mb3 mt4 mt0-ns">What is Zelcash?</h1>
-		<p class="f4 f4-l fw3 mb4 mb5-l lh-title">'Zelcash' is the coin and system of transacting value inside of the Zeldev Platform, running on our Equihash blockchain. Zelcash is minable making distribution fair. A Proof of Stake element will be added in the form of Zelnodes to bring around the capabilities and network stability needed for the ZelDev Decentralized Development Platform to be released. Zelcash is and will always be a staple in all projects undertaken by the Zel Foundation. 
+	<div class="wow slideInLeft w-100 w-60-ns pl3-ns">
+		<h1 class="f2 f1-l fw2 mt0 lh-title">What is Zelcash?</h1>
+		<p class="f6 f5-l lh-copy">'Zelcash' is the coin and system of transacting value inside of the Zeldev Platform, running on our Equihash blockchain. Zelcash is minable making distribution fair. A Proof of Stake element will be added in the form of Zelnodes to bring around the capabilities and network stability needed for the ZelDev Decentralized Development Platform to be released. Zelcash is and will always be a staple in all projects undertaken by the Zel Foundation. 
 Zelcash is the enabler in the Zel Foundations project to bring a truly decentralized, open source and free development platform into reality, Zeldev. Zelcash will not only allow value to be transacted but will also be an incentive for users to host Zelnodes (masternodes) that secure the network and allow for the main Ethereum like blockchain to operate completely on POS. This Ethereum like blockchain is the backbone to the ZelDev Platform. This will allow for the free creation of decentralized applications (DAPPS) and for the creation of Smart contracts that are free and open to all. The Zelnodes network will also allow the running of other blockchains (side chains (but not actually side chains)) such as the Zel ID chain.
 		</p>
 	</div>
 	</section>
 
-	<section class="flex-ns items-center v-mid">
-		<div class="wow slideInRight tc tl-ns ph5 pv5 w-70">
-			<h1 class="f3 f1-l fw2 mb3 mt4 mt0-ns">Specification</h1>
-			<p class="f4 f4-l fw3 mb4 mb5-l lh-title">Test</p>
+	<section class="flex flex-column flex-row-ns items-center v-mid pv5">
+		<div class="wow slideInRight w-100 w-60-ns pl3-ns">
+			<h1 class="f2 f1-l fw2 mt0 lh-title">Specification</h1>
+			<p class="f6 f5-l lh-copy">Test</p>
 		</div>
-		<div class="wow slideInRight mw6 pr5 w-30" data-wow-duration="1.5s">
+		<div class="wow slideInRight pr3-ns mb4 mb0-ns w-100 w-40-ns" data-wow-duration="1.5s">
 			<img src="img/Side2.png"> 
 		</div>
 	</section>
@@ -107,10 +106,14 @@ Zelcash is the enabler in the Zel Foundations project to bring a truly decentral
 							<h2 class="person-title">{{selectedPersonData.name}}</h2>
 							<p class="person-desc">{{selectedPersonData.title}}</p>
 							<div class="social">
-								<a :href="selectedPersonData.social.facebook" target="_blank" class="ion-social-facebook"></a>
-								<a :href="selectedPersonData.social.twitter" target="_blank" class="ion-social-twitter"></a>
-								<a :href="selectedPersonData.social.linkedin" target="_blank" class="ion-social-linkedin"></a>
-								<a :href="selectedPersonData.social.github" target="_blank" class="ion-social-github"></a>
+								<a :href="selectedPersonData.social.facebook" v-if="selectedPersonData.social.facebook !== null" target="_blank" class="ion-social-facebook"></a>
+								<p class="dn" v-else></p>
+								<a :href="selectedPersonData.social.twitter" v-if="selectedPersonData.social.twitter !== null" target="_blank" class="ion-social-twitter"></a>
+								<p class="dn" v-else></p>
+								<a :href="selectedPersonData.social.linkedin" v-if="selectedPersonData.social.linkedin !== null" target="_blank" class="ion-social-linkedin"></a>
+								<p class="dn" v-else></p>
+								<a :href="selectedPersonData.social.github" v-if="selectedPersonData.social.github !== null" target="_blank" class="ion-social-github"></a>
+								<p class="dn" v-else></p>
 							</div>
 						</div>
 					<div class="team-detail-bio-content" v-html="selectedPersonData.bio"></div>
