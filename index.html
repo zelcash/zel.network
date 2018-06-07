@@ -21,20 +21,22 @@
 <header class="vh-100 helvetica">
 	<div class="vh-100 cover bg-left bg-center-l" style="background-image: url(https://images.pexels.com/photos/951076/pexels-photo-951076.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)">
 		<div class="vh-100 zelcolour-dark-80 pb5 pb6-m pb7-l">
-			<nav class="bg-black-80 fixed z-5 db dt-l w-100 border-box pa3 ph5-l">
-				<a href="index.html" class="db dtc-l v-mid mid-gray link dim w-100 w-25-l tc tl-l mb2 mb0-l">
+			<nav class="bg-black-80 fixed z-5 db dt-l w-100 border-box pa3 ph5-l" role="custom-dropdown">
+				<a href="index.html" class="db dtc-l v-mid mid-gray link dim w-100 w-25-l tc tl-l mb0-l">
 				<img src="logo-zelcash-light.svg" alt="Zelcash logo" class="dib w4 h2"/>
 				</a>
-			<div class="db dtc-l v-mid w-100 w-75-l tc tr-l">
-				<a class="f6 fw2 hover-white no-underline white-70 dn dib-l pv2 ph3" href="index.html">Home</a>
-				<a class="f6 fw2 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="#about">About</a>
-				<a class="f6 fw2 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="#team">Team</a>
-				<a class="f6 fw2 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="#downloads">Downloads</a>
-				<a class="f6 fw2 hover-white no-underline white-70 dn dib-l pv2 ph3" href="#roadmap">Roadmap</a>
-				<a class="f6 fw2 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="#exchange">Exchange</a>
-				<a class="f6 fw2 hover-white no-underline white-70 dn dib-l pv2 ph3" href="#pools">Pools</a>
-				<a class="f6 fw2 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="#tools">Tools & Resources</a>
-			</div>
+			<input type="checkbox" id="menu">
+			<label for="menu" onclick></label>
+			<ul class="db dtc-l v-mid w-100 w-75-l tc tr-l">
+				<li class="f6 fw2 dib pv2 ph3"><a href="index.html" class="no-underline">Home</a></li>
+				<li class="f6 fw2 dib pv2 ph3"><a href="#about" class="no-underline">About</a></li>
+				<li class="f6 fw2 dib pv2 ph3"><a href="#team" class="no-underline">Team</a></li>
+				<li class="f6 fw2 dib pv2 ph3"><a href="#downloads" class="no-underline">Downloads</a></li>
+				<li class="f6 fw2 dib pv2 ph3"><a href="#roadmap" class="no-underline">Roadmap</a></li>
+				<li class="f6 fw2 dib pv2 ph3"><a href="#exchange" class="no-underline">Exchange</a></li>
+				<li class="f6 fw2 dib pv2 ph3"><a href="#pools" class="no-underline">Pools</a></li>
+				<li class="f6 fw2 dib pv2 ph3"><a href="#tools" class="no-underline">Tools & Resources</a></li>
+			</ul>
 			</nav>
 			<section class="vh-100 dt w-100">
 				<div class="dtc v-mid tc white ph3 ph4-l">
@@ -52,11 +54,11 @@
 	<!-- ABOUT -->
 
 <div class="w-100 white helvetica ph5">
-	<section id="about" class="wow slideInLeft flex-ns items-center v-mid">
-	<div class="mw6 ph5 w-30">
+	<section id="about" class="flex-ns items-center v-mid">
+	<div class="wow slideInLeft mw6 ph5 w-30" data-wow-duration="1.5s">
 		<img src="img/Side1.png"> 
 	</div>
-	<div class="tc tl-ns pr5 pv5 w-70">
+	<div class="wow slideInLeft tc tl-ns pr5 pv5 w-70">
 		<h1 class="f3 f1-l fw1 mb3 mt4 mt0-ns">What is Zelcash?</h1>
 		<p class="f4 f4-l fw3 mb4 mb5-l lh-title">'Zelcash' is the coin and system of transacting value inside of the Zeldev Platform, running on our Equihash blockchain. Zelcash is minable making distribution fair. A Proof of Stake element will be added in the form of Zelnodes to bring around the capabilities and network stability needed for the ZelDev Decentralized Development Platform to be released. Zelcash is and will always be a staple in all projects undertaken by the Zel Foundation. 
 Zelcash is the enabler in the Zel Foundations project to bring a truly decentralized, open source and free development platform into reality, Zeldev. Zelcash will not only allow value to be transacted but will also be an incentive for users to host Zelnodes (masternodes) that secure the network and allow for the main Ethereum like blockchain to operate completely on POS. This Ethereum like blockchain is the backbone to the ZelDev Platform. This will allow for the free creation of decentralized applications (DAPPS) and for the creation of Smart contracts that are free and open to all. The Zelnodes network will also allow the running of other blockchains (side chains (but not actually side chains)) such as the Zel ID chain.
@@ -64,12 +66,12 @@ Zelcash is the enabler in the Zel Foundations project to bring a truly decentral
 	</div>
 	</section>
 
-	<section class="wow slideInRight flex-ns items-center v-mid">
-		<div class="tc tl-ns ph5 pv5 w-70">
+	<section class="flex-ns items-center v-mid">
+		<div class="wow slideInRight tc tl-ns ph5 pv5 w-70">
 			<h1 class="f3 f1-l fw2 mb3 mt4 mt0-ns">Specification</h1>
 			<p class="f4 f4-l fw3 mb4 mb5-l lh-title">Test</p>
 		</div>
-		<div class="mw6 pr5 w-30">
+		<div class="wow slideInRight mw6 pr5 w-30" data-wow-duration="1.5s">
 			<img src="img/Side2.png"> 
 		</div>
 	</section>
@@ -79,13 +81,13 @@ Zelcash is the enabler in the Zel Foundations project to bring a truly decentral
 	
 	<!-- TEAM -->
 	
-<div :class="['wow slideInLeft main-team-container pv5', isSelected ? 'container-selected':'', isReady ? 'container-ready':'']" id="team">
+<div :class="['main-team-container pv5', isSelected ? 'container-selected':'', isReady ? 'container-ready':'']" id="team">
 	<div class="team-container">
 		<div class="team-header">
-			<h1 class="f2 f1-l fw2 white-90 mb0 lh-title">Our Team</h1>
+			<h1 class="wow slideInLeft f2 f1-l fw2 white-90 mb0 lh-title">Our Team</h1>
 		</div>
 		<div class="person-list">
-			<div class="person" v-for="(person,index) in persons" @click="selectPerson(index,$event)">
+			<div class="wow slideInLeft person" data-wow-duration="1.5s" v-for="(person,index) in persons" @click="selectPerson(index,$event)">
 				<img class="person-img" :src="person.photo">
 				<div class="person-details">
 					<h2 class="person-title">{{person.name}}</h2>

@@ -19,9 +19,113 @@ a:hover {
 opacity: 0.8;
 }
 
+/* Nav menu */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  -webkit-animation: bugfix infinite 1s;
+}
+
+@-webkit-keyframes bugfix {
+  from {
+    padding: 0;
+  }
+  to {
+    padding: 0;
+  }
+}
+input[type=checkbox] {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+label {
+  display: none;
+  cursor: pointer;
+  user-select: none;
+}
+
+nav[role="custom-dropdown"] a {
+  transition: color .3s ease-in-out;
+}
+nav[role="custom-dropdown"] label {
+  color: #fff;
+  font: 1.4em sans-serif;
+  transition: color .3s ease-in-out;
+}
+nav[role="custom-dropdown"] ul {
+  list-style: none;
+}
+nav[role="custom-dropdown"] ul > li {
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out;
+  transition-property: box-shadow, color;
+  cursor: pointer;
+}
+nav[role="custom-dropdown"] ul > li:hover {
+  background-color: rgba(0, 0, 0, 0.85);
+  color: #fff;
+}
+nav[role="custom-dropdown"] ul > li:hover > a {
+  color: #fff;
+}
+
+/* small screens */
+@media screen and (max-width: 1085px) {
+  html,
+  body {
+    margin: 0;
+  }
+
+  nav[role="custom-dropdown"] ul {
+  	padding: 0;
+  	margin: 0 auto;
+  	width: 100%;
+    display: none;
+    height: 100%;
+  }
+  
+  nav[role="custom-dropdown"] label {
+    display: block;
+    width: 100%;
+  }
+  nav[role="custom-dropdown"] label:after {
+    position: absolute;
+    right: .25em;
+    top: 0;
+    content: "\2261";
+    font-size: 1.8em;
+    margin: 8px;
+  }
+  nav[role="custom-dropdown"] input[type=checkbox]:checked ~ label:after {
+    opacity: .5;
+  }
+  nav[role="custom-dropdown"] input[type=checkbox]:checked ~ ul {
+    display: block;
+  }
+  nav[role="custom-dropdown"] input[type=checkbox]:checked ~ ul > li {
+    width: 100%;
+    opacity: .8;
+    text-align: left;
+  }
+  nav[role="custom-dropdown"] input[type=checkbox]:checked ~ ul > li:after {
+    position: absolute;
+    right: .25em;
+    content: "\203A";
+    font: bold 1.4em sans-serif;
+  }
+}
+
+/* End Nav menu */
+
+
 /* Zel colours */
 
-.zelcolour{background-color:rgba(24,60,135)}
+.zelcolour{background-color:rgba(24,60,135,1)}
 .zelcolour-90{background-color:rgba(24,60,135,.9)}
 .zelcolour-80{background-color:rgba(24,60,135,.8)}
 .zelcolour-70{background-color:rgba(24,60,135,.7)}
@@ -31,7 +135,7 @@ opacity: 0.8;
 .zelcolour-30{background-color:rgba(24,60,135,.3)}
 .zelcolour-20{background-color:rgba(24,60,135,.2)}
 .zelcolour-10{background-color:rgba(24,60,135,.1)}
-.zelcolour-dark{background-color:rgba(24,34,55)}
+.zelcolour-dark{background-color:rgba(24,34,55,1)}
 .zelcolour-dark-90{background-color:rgba(24,34,55,.9)}
 .zelcolour-dark-80{background-color:rgba(24,34,55,.8)}
 .zelcolour-dark-70{background-color:rgba(24,34,55,.7)}
