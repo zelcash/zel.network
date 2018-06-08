@@ -20,9 +20,9 @@
 <header class="vh-100 helvetica">
 	<div class="vh-100 cover bg-left bg-center-l" style="background-image: url(https://images.pexels.com/photos/951076/pexels-photo-951076.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)">
 		<div class="vh-100 zelcolour-dark-80 pb5 pb6-m pb7-l">
-			<nav class="bg-black-80 fixed z-5 db dt-l w-100 border-box pa3 ph5-l" role="custom-dropdown">
-				<a href="index.html" class="db dtc-l v-mid mid-gray link dim w-100 w-25-l tc tl-l mb0-l">
-				<img src="logo-zelcash-light.svg" alt="Zelcash logo" class="dib w4 h2"/>
+			<nav class="bg-black-80 z-5 db dt-l w-100 border-box pa3 ph5-l default" id="header" role="custom-dropdown">
+				<a href="index.html" class="dim">
+				<img src="logo-zelcash-light.svg" alt="Zelcash logo" class="dib h2"/>
 				</a>
 			<input type="checkbox" id="menu">
 			<label for="menu" onclick></label>
@@ -173,7 +173,7 @@ Zelcash is the enabler in the Zel Foundations project to bring a truly decentral
 		{
 			boxClass:     'wow',      // animated element css class (default is wow)
 			animateClass: 'animated', // animation css class (default is animated)
-			offset:       400,          // distance to the element when triggering the animation (default is 0)
+			offset:       200,          // distance to the element when triggering the animation (default is 0)
 			mobile:       true,       // trigger animations on mobile devices (default is true)
 			live:         true,       // act on asynchronously loaded content (default is true)
 			callback:     function(box) {
@@ -211,6 +211,26 @@ wow.init();
 		} // End if
 	});
 });
+</script>
+<script>
+(function($) {
+
+  var ost = 0;
+
+  $(window).scroll(function() {
+    var cOst = $(this).scrollTop();
+
+    if(cOst > 200 && cOst > ost) {
+       $('#header').addClass('fixed').removeClass('default');
+    }
+    else {
+       $('#header').addClass('default').removeClass('fixed');
+    }
+
+    ost = cOst;
+  });
+
+})(jQuery);
 </script>
 
 </body>
