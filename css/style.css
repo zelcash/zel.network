@@ -13,10 +13,28 @@ body {
   font-family: 'work sans', 'roboto', '-apple-system', BlinkMacSystemFont, helvetica, ubuntu,noto,'segoe ui', arial,sans-serif;
 }
 a {
-color: #fff;
+  color: #fff;
 }
 a:hover {
-opacity: 0.8;
+  opacity: 0.8;
+}
+
+#header {
+    position: fixed;
+    transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+}
+.default {
+    top: 0;
+}
+.fixed {
+    top: -80px;
+}
+@media screen and (max-width: 1085px) {
+  .fixed {
+	top: -500px;
+  }
 }
 
 /* Nav menu */
