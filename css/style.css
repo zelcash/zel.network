@@ -165,3 +165,7 @@ nav[role="custom-dropdown"] ul > li:hover > a {
 .zelcolour-dark-10{background-color:rgba(24,34,55,.1)}
 
 /* End Zel colours */
+
+#about div img, #specs div img {
+	max-height: 425px;
+}
