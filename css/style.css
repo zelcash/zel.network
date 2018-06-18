@@ -347,6 +347,9 @@ ol {
 	top: 0;
 }
 
+.laptop {
+	top: -45px;
+}
 .hero-section .laptop-image {
 	width: 685px;
 	max-width: none;
@@ -357,7 +360,7 @@ ol {
 	position: absolute;
 	width: 74%;
 	left: 55px;
-	top: 100px;
+	top: 93px;
 	max-width: none;
 }
 
@@ -458,14 +461,14 @@ ol {
 }
 
 /*---------------------
-	Process Section
+	Downloads Section
 -----------------------*/
 
-.process:last-child .process-step:after {
+.downloads:last-child .process-step:after {
 	display: none;
 }
 
-.process-step {
+.downloads-step {
 	position: relative;
 	text-align: center;
 	padding: 35px;
@@ -473,22 +476,31 @@ ol {
 	-webkit-box-shadow: 0 14px 43px rgba(33, 54, 61, 0.15);
 	        box-shadow: 0 14px 43px rgba(33, 54, 61, 0.15);
 }
-
-.process-step .process-icon {
+.downloads-icon img {
+	max-height: 100%;
+}
+.downloads-step .downloads-icon {
 	height: 55px;
 	margin-bottom: 30px;
 	padding-top: 5px;
 }
 
-.process-step h4 {
+.downloads-step img {
+	margin-left: 10px;
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+}
+
+.downloads-step h4 {
 	margin-bottom: 15px;
 }
 
-.process-step p {
+.downloads-step p {
 	margin-bottom: 0;
 }
 
-.process-step:after {
+.downloads-step:after {
 	position: absolute;
 	content: '';
 	width: 275px;
