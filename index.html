@@ -264,55 +264,18 @@
 				</div>
 
 				<div class="cd-timeline-block">
-					<div data-aos="zoom-in" data-aos-duration="500" class="cd-timeline-img cd-picture">
+					<div data-aos="zoom-in" data-aos-duration="500" class="cd-timeline-img cd-location">
 						<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-picture.svg" alt="Picture">
 					</div>
 
 					<div data-aos="fade-right" data-aos-duration="2000" class="cd-timeline-content">
-						<h2>Title of section 3</h2>
+						<h2>ZelNodes</h2>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, obcaecati, quisquam id molestias eaque asperiores voluptatibus cupiditate error assumenda delectus odit similique earum voluptatem doloremque dolorem ipsam quae rerum quis. Odit, itaque, deserunt corporis vero ipsum nisi eius odio natus ullam provident pariatur temporibus quia eos repellat consequuntur perferendis enim amet quae quasi repudiandae sed quod veniam dolore possimus rem voluptatum eveniet eligendi quis fugiat aliquam sunt similique aut adipisci.</p>
 						<a href="#0" class="cd-read-more">Read more</a>
-						<span class="cd-date">Jan 24</span>
+						<span class="cd-date">OCTOBER</span>
 					</div>
 				</div>
 
-				<div class="cd-timeline-block">
-					<div data-aos="zoom-in" data-aos-duration="500" class="cd-timeline-img cd-location">
-						<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-location.svg" alt="Location">
-					</div>
-
-					<div data-aos="fade-left" data-aos-duration="2000" class="cd-timeline-content">
-						<h2>Title of section 4</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
-						<a href="#0" class="cd-read-more">Read more</a>
-						<span class="cd-date">Feb 14</span>
-					</div>
-				</div>
-
-				<div class="cd-timeline-block">
-					<div data-aos="zoom-in" data-aos-duration="500" class="cd-timeline-img cd-location">
-						<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-location.svg" alt="Location">
-					</div>
-
-					<div data-aos="fade-right" data-aos-duration="2000" class="cd-timeline-content">
-						<h2>Title of section 5</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum.</p>
-						<a href="#0" class="cd-read-more">Read more</a>
-						<span class="cd-date">Feb 18</span>
-					</div>
-				</div>
-
-				<div class="cd-timeline-block">
-					<div data-aos="zoom-in" data-aos-duration="500" class="cd-timeline-img cd-movie">
-						<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-movie.svg" alt="Movie">
-					</div>
-
-					<div data-aos="fade-left" data-aos-duration="2000" class="cd-timeline-content">
-						<h2>Final Section</h2>
-						<p>This is the content of the last section</p>
-						<span class="cd-date">Feb 26</span>
-					</div>
-				</div>
 			</div>
 		</div>
 	</section>
@@ -438,9 +401,11 @@ Saepe repudiandae rerum quam ut perferendis, ullam similique nemo quod, assumend
 			<div class="footer-bottom">
 				<div class="row">
 					<div class="col-lg-7 store-links text-center text-lg-left pb-3 pb-lg-0">
-						<span class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						<span class="copyright">
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 	&copy; Copyright 2018 Zel Technologies LLC. All rights reserved <span class="credit">| This template is made with <i class="fas fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></span>
-	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></span>
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						</span>
 					</div>
 					<div class="col-lg-5 text-center text-lg-right">
 						<ul class="footer-nav">
@@ -456,7 +421,7 @@ Saepe repudiandae rerum quam ut perferendis, ullam similique nemo quod, assumend
 	</footer>
 
 
-	<!--====== Javascripts & Jquery ======-->
+	<!-- Javascripts & Jquery -->
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/main.js"></script>
@@ -472,21 +437,17 @@ Saepe repudiandae rerum quam ut perferendis, ullam similique nemo quod, assumend
 	$(document).ready(function(){
 		// Add smooth scrolling to all links
 			$("a").on('click', function(event) {
-		// Make sure this.hash has a value before overriding default behavior
 			if (this.hash !== "") {
-		// Prevent default anchor click behavior
 			event.preventDefault();
-		// Store hash
 			var hash = this.hash;
 		// Using jQuery's animate() method to add smooth page scroll
 		// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
 			$('html, body').animate({
 				scrollTop: $(hash).offset().top
 			}, 800, function(){
-		// Add hash (#) to URL when done scrolling (default click behavior)
 			window.location.hash = hash;
 			});
-			} // End if
+			}
 		});
 	});
 	</script>
