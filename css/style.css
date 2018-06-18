@@ -341,14 +341,13 @@ ol {
 .hero-section svg {
 	position: absolute;
 	width: auto;
-	right: 0;
 	height: 100%;
 	margin: 0;
 	top: 0;
 }
 
 .laptop {
-	top: -45px;
+	top: 0px;
 }
 .hero-section .laptop-image {
 	width: 685px;
@@ -358,9 +357,9 @@ ol {
 }
 .hero-section .laptop-background {
 	position: absolute;
-	width: 74%;
-	left: 55px;
-	top: 93px;
+	width: 85%;
+	left: 190px;
+	top: 40px;
 	max-width: none;
 }
 
@@ -1498,6 +1497,13 @@ ol {
 	.hero-section .laptop-image {
 		left: 0;
 	}
+	.hero-section svg {
+		right: 0;
+	}
+	.hero-section .laptop-background {
+		position: absolute;
+		left: 100px;
+	}
 }
 
 @media (max-width: 1425px) {
@@ -1512,6 +1518,11 @@ ol {
 		width: auto;
 		max-width: 100%;
 		top: 70px;
+	}
+	.hero-section .laptop-background {
+		width: 74%;
+		left: 55px;
+		top: 93px;
 	}
 	.about-img {
 		left: -50px;
