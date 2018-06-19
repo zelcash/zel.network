@@ -339,21 +339,12 @@ ol {
 	height: 900px;
 	padding-top: 260px;
 	display: block;
-	background-image: url("https://picsum.photos/1920/1080/?random");
+	background: linear-gradient(45deg, #f3f7f9 50%, transparent 50%), url("https://picsum.photos/1920/1080/?random");
 	background-size: cover;
-	background-color: #f3f7f9;
 	background-position: right top;
 	background-repeat: no-repeat;
 	position: relative;
 	overflow: hidden;
-}
-
-.hero-section svg {
-	position: absolute;
-	width: auto;
-	height: 100%;
-	margin: 0;
-	top: 0;
 }
 
 .laptop {
@@ -1566,9 +1557,6 @@ ol {
 	.hero-section .laptop-image {
 		left: 0;
 	}
-	.hero-section svg {
-		right: 0;
-	}
 	.hero-section .laptop-background {
 		position: absolute;
 		left: 100px;
@@ -1760,6 +1748,9 @@ ol {
 	.header-section {
 		padding: 30px 0;
 		background: #fff;
+	}
+	.hero-section {
+		background: linear-gradient(135deg, #f3f7f9 50%, transparent 50%), url("https://picsum.photos/1920/1080/?random");
 	}
 	.header-section .responsive-bar {
 		float: right;
