@@ -1752,6 +1752,9 @@ ol {
 	.hero-section {
 		background: linear-gradient(135deg, #f3f7f9 50%, transparent 50%), url("https://picsum.photos/1920/1080/?random");
 	}
+	.hero-section .laptop-background {
+		top: 90px;
+	}
 	.header-section .responsive-bar {
 		float: right;
 		font-size: 25px;
