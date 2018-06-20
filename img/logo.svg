@@ -1,1 +1,47 @@
-<?xml version="1.0" standalone="yes"?><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 2000" style="zoom: 1;"><metadata><?xpacket xpacket xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?><x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01"><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><rdf:Description rdf:about=""></rdf:Description></rdf:RDF></x:xmpmeta><?xpacket xpacket xpacket end="w"?></metadata><defs><style>.cls-1 { fill: #142a59; } .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6 { fill-rule: evenodd; } .cls-2 { fill: #0c2e76; } .cls-3 { fill: #183c87; } .cls-4 { fill: #466bb8; } .cls-5 { fill: #182237; } .cls-6 { fill: #fff; }</style></defs><g transform="" id="block1"><path d="M529,632 l471,275 l1,551 l-128,-75 V983 L527,784  Z " id="Main-L" class="cls-1"></path><path d="M1474,631L1000,907v551l130-75V983l346-198Z" id="Main-R" class="cls-2"></path><path d="M1000,908l475-276L1001,357,527,632Z" id="Main-T" class="cls-3"></path></g><g transform="" id="block2"><path d="M1922,1008 l-373,218 v432 l374,-217  Z " id="Right-R" class="cls-4"></path><path d="M1550,1658l-375-217,2-432,373,216v433Z" id="Right-L" class="cls-1"></path><path d="M1177,1010l373,218,372-219L1549,793Z" id="Right-T" class="cls-3"></path></g><g transform="" id="block3"><path d="M827,1008 L454,1226 v432 l374,-217  Z " id="Left-R" class="cls-2"></path><path d="M455,1658L80,1441l2-432,373,216v433Z" id="Left-L" class="cls-5"></path><path d="M82,1010l373,218,372-219L454,793Z" id="Left-T" class="cls-1"></path></g><path id="Stroke" class="cls-6" d="M1001,355s441.44,256.664,475.51,275.634c0,51.78.49,156.366,0.49,156.366L1132,984l-0.86,400.37L1001,1459.54l-129.14-75.17L872,984,525.485,784.989V631.636Zm-1,24.055c-33.759,20.277-469.2,271.778-454.492,263.606v130.3C675.82,843.233,858.635,952.754,869.857,958.387c27.323,13.329,22.029,9.991,22.024,52.123,0-49.915-.008,315.93,0,361.83,42.264,25,92.853,54.69,108.117,63.14,57.692-31.61,97.482-54.64,111.122-63.14v-391.9c0.3-13.347,3.72-11.023,28.03-25.058,188.06-108.053,274.2-157.176,317.34-181.417,0-43.763-.14-108.7,0-131.3C1434.4,629.909,1023.46,392.622,1000,379.055ZM456,790l376,218-1,434L454.408,1660,79,1443.5l-1-435Zm1093.59,0,375.42,217.97c0,0.23-.01,434.53-0.01,434.53L1551,1661l-378-219V1008ZM454.408,814.055c-17.046,10.181-306.28,176.888-355.385,205.475v411.94c42.268,23.88,263.337,150.37,355.385,204.47,51.586-29.99,321.473-184.51,356.386-204.47V1019.53C776.626,999.265,654.091,928.455,454.408,814.055Zm1094.182,0L1194.21,1019.53v410.94l356.38,204.47,354.39-203.47V1019.53Z" visibility="visible"></path></svg>
+<svg id="Box_Left" data-name="Box Left" xmlns="http://www.w3.org/2000/svg" width="492.951" height="362.297" viewBox="0 0 1479 1087">
+<defs>
+    <style>
+      .cls-1 {
+        fill: #0c2e76;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #182237;
+      }
+
+      .cls-3 {
+        fill: #142a59;
+      }
+
+      .cls-4 {
+        fill: none;
+        stroke: #fff;
+        stroke-width: 25px;
+      }
+
+      .cls-5 {
+        fill: #466bb8;
+      }
+
+      .cls-6 {
+        fill: #183c87;
+      }
+    </style>
+  </defs>
+  <path id="Box_Left-2" data-name="Box Left" class="cls-1" d="M7,548L304,376,600,548V892L304,1064,7,892V548Z"/>
+  <path id="Box_Left_left" data-name="Box Left left" class="cls-2" d="M7,892l297,172V721L7,548V892Z"/>
+  <path id="Box_Left_top" data-name="Box Left top" class="cls-3" d="M304,376L7,548,304,721,600,548Z"/>
+  <path id="Stroke" class="cls-4" d="M14,552L304,385,592,552V886L304,1054,14,886V552Z"/>
+  <path id="Box_Left-3" data-name="Box Left" class="cls-5" d="M879,548l297-172,296,172V892l-296,172L879,892V548Z"/>
+  <path id="Box_Right_left" data-name="Box Right left" class="cls-3" d="M879,892l297,172V721L879,548V892Z"/>
+  <path id="Box_Right_top" data-name="Box Right top" class="cls-6" d="M1176,376L879,548l297,173,296-173Z"/>
+  <path id="Stroke-2" data-name="Stroke" class="cls-4" d="M886,552l290-167,288,167V886l-288,168L886,886V552Z"/>
+  <path id="Box_Main-2" data-name="Box Main" class="cls-1" d="M364,247L739,28l376,219V370L846,526V841L739,903,633,841V526L364,370V247Z"/>
+  <path id="Box_Main_left" data-name="Box Main left" class="cls-3" d="M364,247V370L633,526V841l106,62V465Z"/>
+  <path id="Box_Main_top" data-name="Box Main top" class="cls-6" d="M739,26L364,247,739,465l376-218Z"/>
+  <path id="Box_Main_stroke" data-name="Box Main stroke" class="cls-4" d="M372,252L739,38.38,1105,252V365L838,520V836l-99,57-99-57V520L372,365V252Z"/>
+</svg>

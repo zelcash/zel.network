@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1000" viewBox="0 0 2000 2000">
+<svg id="Box_Left" data-name="Box Left" xmlns="http://www.w3.org/2000/svg" width="666.933" height="667.267" viewBox="0 0 2001 2002">
 <defs>
     <style>
       .cls-1 {
@@ -8,13 +8,13 @@
       }
 
       .cls-2 {
-        fill: #fff;
+        fill: #f7f7f7;
         fill-rule: evenodd;
       }
     </style>
   </defs>
-  <circle class="cls-1" cx="999.997" cy="999.997" r="975.622"/>
-  <path id="Box_1" data-name="Box 1" class="cls-2" d="M263,991L565,816,865,990v347L564,1511,263,1337V991Z"/>
-  <path id="Box_3" data-name="Box 3" class="cls-2" d="M1138,991l302-175,300,174v347l-301,174-301-174V991Z"/>
-  <path id="Box_2" data-name="Box 2" class="cls-2" d="M622,689l379-220,379,221V812L1104,971v320l-103,60-103-60V970L622,811V689Z"/>
+  <circle class="cls-1" cx="1000.997" cy="1001.997" r="975.622"/>
+  <path id="Box_Left-2" data-name="Box Left" class="cls-2" d="M269,994L566,822,862,994v344L566,1510,269,1338V994Z"/>
+  <path id="Box_Left-3" data-name="Box Left" class="cls-2" d="M1141,994l297-172,296,172v344l-296,172-297-172V994Z"/>
+  <path id="Box_Main-2" data-name="Box Main" class="cls-2" d="M626,693l375-219,376,219V816L1108,972v315l-107,62-106-62V972L626,816V693Z"/>
 </svg>
