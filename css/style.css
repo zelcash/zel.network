@@ -1038,6 +1038,14 @@ ol {
 	background: #6e5494;
 }
 
+.social .bitcointalk {
+	background: #f7931a;
+}
+
+.social .reddit {
+	background: #ff4500;
+}
+
 .footer-bottom {
 	border-top: 1px solid #ebebeb;
 	padding: 30px 0;
@@ -1073,15 +1081,30 @@ ol {
 
 .page-info-section {
 	height: 300px;
-	background-image: url("../img/page-info-bg.png");
+	padding-top: 100px;
+	display: block;
+	background: url("https://picsum.photos/1024/300/?random");
 	background-size: cover;
-	background-color: #f3f7f9;
 	background-position: right top;
 	background-repeat: no-repeat;
 	position: relative;
 	overflow: hidden;
-	display: block;
-	padding-top: 100px;
+	z-index: -2;
+}
+
+.page-info-section-line {
+	height: 300px;
+	width: 100%;
+	background: linear-gradient(45deg, #f3f7f9 50%, transparent 50%);
+	position:  absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	z-index: -1;
+}
+
+.page-info-section div {
+	z-index: 1;
 }
 
 .page-info-section h2 {
@@ -1817,6 +1840,10 @@ ol {
 		background-position: right 50% top;
 	}
 	.page-info-section {
+		background-position: right 56% top;
+		margin-top: 97px;
+	}
+	.page-info-section-line {
 		background-position: right 56% top;
 		margin-top: 97px;
 	}
