@@ -32,20 +32,29 @@
 	<!-- Header section -->
 	<header class="header-section clearfix">
 		<div class="container-fluid">
-			<a href="index.html" class="site-logo">
+			<a href="/" class="site-logo">
 				<img src="../img/logo-zelcash-text.svg" alt="">
 			</a>
 			<div class="responsive-bar"><i class="fas fa-bars"></i></div>
 			<nav class="main-menu">
 				<ul class="menu-list">
-					<li><a href="../index.html">Home</a></li>
-					<li><a href="../#about">About</a></li>
-					<li><a href="../#downloads">Downloads</a></li>
-					<li><a href="../#roadmap">Roadmap</a></li>
-					<li><a href="../#team">Team</a></li>
-					<li><a href="../#exchanges">Exchanges</a></li>
-					<li><a href="../#pools">Pools</a></li>
-					<li><a href="../#tools">Tools & Resources</a></li>
+					<li><a href="/" id="lhome">Home</a></li>
+					<li><a href="../#about" id="labout">About</a></li>
+					<li><a href="../#roadmap" id="lroadmap">Roadmap</a></li>
+					<li><a href="../#team" id="lteam">Team</a></li>
+					<li><a href="../#exchanges" id="lexchanges">Exchanges</a></li>
+					<li><a href="../#downloads" id="ldownloads">Downloads</a></li>
+					<li><a href="../#pools" id="lpools">Pools</a></li>
+					<li><a href="../#tools" id="ltoolsandresources">Tools & Resources</a></li>
+
+					<div class="dropdown">
+						<a href="#"><button class="dropbtn sb-gradients" id="llanguages">Languages</button></a>
+						<div class="dropdown-content">
+							<a href="#" onclick="$.MultiLanguage('language.json', 'en')"><span class="flag-icon flag-icon-gb"></span> English</a>
+							<a href="#" onclick="$.MultiLanguage('language.json', 'sv')"><span class="flag-icon flag-icon-se"></span> Swedish</a>
+						</div>
+					</div>
+
 				</ul>
 			</nav>
 		</div>
@@ -132,26 +141,6 @@
 	<!-- Contact section end -->
 
 
-	<!-- Newsletter section -->
-	<section class="newsletter-section gradient-bg">
-		<div class="container text-white">
-			<div class="row">
-				<div data-aos="fade-down" data-aos-duration="2000" class="col-lg-7 newsletter-text">
-					<h2>Subscribe to our Newsletter</h2>
-					<p>Sign up for our weekly industry updates, insider perspectives and in-depth market analysis.</p>
-				</div>
-				<div data-aos="zoom-in" data-aos-duration="500" class="col-lg-5 col-md-8 offset-lg-0 offset-md-2">
-					<form class="newsletter-form">
-						<input type="text" placeholder="Enter your email">
-						<button>Get Started</button>
-					</form>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- Newsletter section end -->
-
-
 	<!-- Footer section -->
 	<footer class="footer-section">
 		<div class="container">
@@ -163,11 +152,11 @@
 					<p>CH-6302 Zug</p>
 				</div>
 				<div class="col-md-6 col-lg-2 offset-lg-1 footer-widget">
-					<h5 class="widget-title">Resources</h5>
+					<h5 class="widget-title">Sitemap</h5>
 					<ul>
-						<li><a href="/wallets">Wallets</a></li>
-						<li><a href="/explorers">Explorers</a></li>
-						<li><a href="/apps">Apps</a></li>
+						<li><a href="/">Home</a></li>
+						<li><a href="../about">About us</a></li>
+						<li><a href="../contact">Contact us</a></li>
 					</ul>
 				</div>
 				<div class="col-md-6 col-lg-2 footer-widget">
