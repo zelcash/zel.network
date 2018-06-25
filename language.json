@@ -4,10 +4,26 @@
   },
   "language": {
     "en": {
-      "#home": "Home"
+      "#L-home": "Home",
+      "#L-about": "About",
+      "#L-roadmap": "Roadmap",
+      "#L-team": "Team",
+      "#L-exchanges": "Exchanges",
+      "#L-downloads": "Downloads",
+      "#L-pools": "Pools",
+      "#L-tools": "Tools & Resources",
+      "#L-languages": "Languages",
     },
     "sv": {
-      "#home": "Hem"
+      "#L-home": "Hem",
+      "#L-about": "Om",
+      "#L-roadmap": "Roadmap",
+      "#L-team": "Team",
+      "#L-exchanges": "Börser",
+      "#L-downloads": "Nerladdning",
+      "#L-pools": "Pools",
+      "#L-tools": "Verktyg & Resurser",
+      "#L-languages": "Språk",
     }
   }
 }
