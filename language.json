@@ -12,7 +12,12 @@
       "#ldownloads": "Downloads",
       "#lpools": "Pools",
       "#ltools": "Tools & Resources",
-      "#llanguages": "Languages"
+      "#llanguages": "Languages",
+      "#readmore": "Read more",
+      "#whatiszelcash": "What is Zelcash?",
+      "#ourfeatures": "Our Features",
+      "#meetourteam": "Meet Our Team",
+      "#wholeteam": "Whole team"
     },
     "sv": {
       "#lhome": "Hem",
@@ -23,7 +28,12 @@
       "#ldownloads": "Nerladdning",
       "#lpools": "Pools",
       "#ltools": "Verktyg & Resurser",
-      "#llanguages": "Språk"
+      "#llanguages": "Språk",
+      "#readmore": "Läs mer",
+      "#whatiszelcash": "Vad är Zelcash?",
+      "#ourfeatures": "Våra funktioner",
+      "#meetourteam": "Möt Teamet",
+      "#wholeteam": "Hela teamet"
     }
   }
 }
