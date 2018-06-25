@@ -12,7 +12,7 @@
       "#ldownloads": "Downloads",
       "#lpools": "Pools",
       "#ltools": "Tools & Resources",
-      "#llanguages": "Languages",
+      "#llanguages": "Languages"
     },
     "sv": {
       "#lhome": "Hem",
@@ -23,7 +23,7 @@
       "#ldownloads": "Nerladdning",
       "#lpools": "Pools",
       "#ltools": "Verktyg & Resurser",
-      "#llanguages": "Språk",
+      "#llanguages": "Språk"
     }
   }
 }
