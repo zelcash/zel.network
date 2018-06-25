@@ -781,6 +781,103 @@ ol {
 }
 
 /*---------------------
+	Pools Section
+-----------------------*/
+
+.pools:last-child .process-step:after {
+	display: none;
+}
+
+.pools div {
+	background-color: #f3f7f9;
+}
+
+.pools div:hover {
+	opacity: .8;
+}
+
+.pools-step {
+	position: relative;
+	text-align: center;
+	padding: 35px;
+	margin-top: 30px;
+	-webkit-box-shadow: 0 14px 43px rgba(33, 54, 61, 0.25);
+	        box-shadow: 0 14px 43px rgba(33, 54, 61, 0.25);
+}
+
+.pools-icon img {
+	max-height: 100%;
+}
+
+.pools-step .pools-icon {
+	height: 100px;
+	margin-bottom: 30px;
+	padding-top: 5px;
+}
+
+.pools-step h4 {
+	color: #142a59;
+	margin-bottom: 15px;
+}
+
+.pools-step p {
+	color: #142a59;
+	margin-bottom: 0;
+}
+
+.pools-step:after {
+	position: absolute;
+	content: '';
+	width: 275px;
+	height: 56px;
+	top: -40px;
+	right: -40%;
+	background: url("../img/process-line.png") no-repeat scroll 0 0/cover;
+}
+
+/*---------------------
+	Tools Section
+-----------------------*/
+
+.tools:last-child .process-step:after {
+	display: none;
+}
+
+.tools-step {
+	position: relative;
+	text-align: center;
+	padding: 35px;
+	margin-top: 30px;
+	-webkit-box-shadow: 0 14px 43px rgba(33, 54, 61, 0.15);
+	        box-shadow: 0 14px 43px rgba(33, 54, 61, 0.15);
+}
+
+.tools-step .tools-icon {
+	height: 55px;
+	margin-bottom: 30px;
+	padding-top: 5px;
+	color: #142a59;
+}
+
+.tools-step h4 {
+	margin-bottom: 15px;
+}
+
+.tools-step p {
+	margin-bottom: 0;
+}
+
+.tools-step:after {
+	position: absolute;
+	content: '';
+	width: 275px;
+	height: 56px;
+	top: -40px;
+	right: -40%;
+	background: url("../img/process-line.png") no-repeat scroll 0 0/cover;
+}
+
+/*---------------------
   Review Section
 -----------------------*/
 
@@ -1004,6 +1101,17 @@ ol {
 	Footer Section
 -----------------------*/
 
+.footer-section {
+	/* FF3.6-15 */
+	/* Chrome10-25,Safari5.1-6 */
+	background: -webkit-gradient(linear, left top, right top, from(#232220), color-stop(100%, #142a59), color-stop(100%, #142a59), to(#142a59));
+	background: -o-linear-gradient(left, #232220 0%, #142a59 100%, #142a59 100%, #142a59 100%);
+	background: linear-gradient(to right, #232220 0%, #142a59 100%, #142a59 100%, #142a59 100%);
+	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#232220', endColorstr='#142a59', GradientType=1);
+	/* IE6-9 */
+}
+
 .footer-widget span {
 	color: #acb9cc;
 }
@@ -1017,6 +1125,7 @@ ol {
 }
 
 .footer-widget .widget-title {
+	color: #fff;
 	margin-bottom: 30px;
 	font-size: 20px;
 }
@@ -2123,10 +2232,10 @@ ol {
 .cd-timeline-content {
   position: relative;
   margin-left: 60px;
-  background: #ffffff;
+  background: #fff;
   border-radius: 0.25em;
   padding: 1em;
-  box-shadow: 0 3px 0 #d7e4ed;
+	box-shadow: 0 14px 43px rgba(33, 54, 61, 0.15)
 }
 .cd-timeline-block div {
 	margin-bottom: 20px;
