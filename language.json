@@ -1,0 +1,13 @@
+{
+  "config": {
+    "default": "en"
+  },
+  "language": {
+    "en": {
+      "#home": "Home"
+    },
+    "sv": {
+      "#home": "Hem"
+    }
+  }
+}

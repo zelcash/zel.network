@@ -20,12 +20,50 @@
 	<link rel="stylesheet" href="css/owl.carousel.css"/>
 	<link rel="stylesheet" href="css/style.css"/>
 	<link rel="stylesheet" href="css/aos.css">
+	<link rel="stylesheet" href="css/flag-icon.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
 	<!--[if lt IE 9]>
 	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
+
+	<style>
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+</style>
 
 </head>
 <body>
@@ -38,14 +76,23 @@
 			<div class="responsive-bar"><i class="fas fa-bars"></i></div>
 			<nav class="main-menu">
 				<ul class="menu-list">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="#about">About</a></li>
-					<li><a href="#downloads">Downloads</a></li>
-					<li><a href="#roadmap">Roadmap</a></li>
-					<li><a href="#team">Team</a></li>
-					<li><a href="#exchanges">Exchanges</a></li>
-					<li><a href="#pools">Pools</a></li>
-					<li><a href="#tools">Tools & Resources</a></li>
+					<li><a href="index.html" id="home">Home</a></li>
+					<li><a href="#about" class="lang" key="about">About</a></li>
+					<li><a href="#roadmap" class="lang" key="roadmap">Roadmap</a></li>
+					<li><a href="#team" class="lang" key="team">Team</a></li>
+					<li><a href="#exchanges" class="lang" key="exchanges">Exchanges</a></li>
+					<li><a href="#downloads" class="lang" key="downloads">Downloads</a></li>
+					<li><a href="#pools" class="lang" key="pools">Pools</a></li>
+					<li><a href="#tools" class="lang" key="toolsandresources">Tools & Resources</a></li>
+
+					<div class="dropdown">
+						<button class="dropbtn">Languages</button>
+						<div class="dropdown-content">
+							<a href="#" onclick="$.MultiLanguage('language.json', 'en')"><span class="flag-icon flag-icon-gb"></span> English</a>
+							<a href="#" onclick="$.MultiLanguage('language.json', 'sv')"><span class="flag-icon flag-icon-se"></span> Swedish</a>
+						</div>
+					</div>
+
 				</ul>
 			</nav>
 		</div>
@@ -484,12 +531,18 @@ Saepe repudiandae rerum quam ut perferendis, ullam similique nemo quod, assumend
 	<script src="js/main.js"></script>
 	<script src="js/jquery.paroller.min.js"></script>
 	<script src="js/aos.js"></script>
+	<script src="js/multilanguage.min.js"></script>
 	<script>
 		$("[data-paroller-factor]").paroller();
 	</script>
 	<script>
     AOS.init();
   </script>
+	<script>
+	$(document).ready(function(){
+		$.MultiLanguage('language.json');
+	})
+	</script>
 	<script>
 	$(document).ready(function(){
 		// Add smooth scrolling to all links
