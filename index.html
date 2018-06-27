@@ -38,20 +38,20 @@
 			<div class="responsive-bar"><i class="fas fa-bars"></i></div>
 			<nav class="main-menu">
 				<ul class="menu-list">
-					<li><a href="/" id="lhome">Home</a></li>
+					<li><a href="/" class="lhome">Home</a></li>
 					<li><a href="#about" id="labout">About</a></li>
 					<li><a href="#roadmap" id="lroadmap">Roadmap</a></li>
 					<li><a href="#team" id="lteam">Team</a></li>
 					<li><a href="#exchanges" id="lexchanges">Exchanges</a></li>
 					<li><a href="#downloads" id="ldownloads">Downloads</a></li>
 					<li><a href="#pools" id="lpools">Pools</a></li>
-					<li><a href="#tools" id="ltoolsandresources">Tools & Resources</a></li>
+					<li><a href="#tools" id="ltools">Tools & Resources</a></li>
 
 					<div class="dropdown">
-						<a href="#"><button class="dropbtn sb-gradients" id="llanguages">Languages</button></a>
+						<a><button class="dropbtn sb-gradients" id="llanguages">Languages</button></a>
 						<div class="dropdown-content">
 							<a href="#" onclick="$.MultiLanguage('language.json', 'en')"><span class="flag-icon flag-icon-gb"></span> English</a>
-							<a href="#" onclick="$.MultiLanguage('language.json', 'sv')"><span class="flag-icon flag-icon-se"></span> Swedish</a>
+							<a href="#" onclick="$.MultiLanguage('language.json', 'sv')"><span class="flag-icon flag-icon-se"></span> Svenska</a>
 						</div>
 					</div>
 
@@ -67,13 +67,13 @@
 		<div class="container">
 			<div class="row">
 				<div data-aos="fade-right" data-aos-duration="3000" class="col-md-6 hero-text">
-					<h3>We are happy to present</h3>
+					<h3 id="wearehappy">We are happy to present</h3>
 						<div class="zeltrezlogo">
 							<img src="img/logo-zeltrez-text.svg" alt="">
 						</div>
-					<h4>Easy to use, both Light and Fullnode wallet</h4>
+					<h4 id="easytouse">Easy to use, both Light and Fullnode wallet</h4>
 					<div class="hero-subscribe-from">
-						<a href="https://zeltrez.io" target="_blank"><button class="site-btn sb-gradients">Try it out</button></a>
+						<a href="https://zeltrez.io" target="_blank"><button class="site-btn sb-gradients" id="tryitout">Try it out</button></a>
 					</div>
 				</div>
 				<div data-aos="fade-left" data-aos-duration="3000" class="laptop col-md-6">
@@ -564,9 +564,9 @@ Saepe repudiandae rerum quam ut perferendis, ullam similique nemo quod, assumend
 				<div class="col-md-6 col-lg-2 offset-lg-1 footer-widget">
 					<h5 class="widget-title">Sitemap</h5>
 					<ul>
-						<li><a href="/">Home</a></li>
-						<li><a href="/about">About us</a></li>
-						<li><a href="/contact">Contact us</a></li>
+						<li><a href="/" class="lhome">Home</a></li>
+						<li><a href="/about" id="aboutus">About us</a></li>
+						<li><a href="/contact" id="contactus">Contact us</a></li>
 					</ul>
 				</div>
 				<div class="col-md-6 col-lg-2 footer-widget">
