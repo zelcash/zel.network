@@ -39,16 +39,16 @@
 			<nav class="main-menu">
 				<ul class="menu-list">
 					<li><a href="/" class="lhome">Home</a></li>
-					<li><a href="#about" id="labout">About</a></li>
-					<li><a href="#roadmap" id="lroadmap">Roadmap</a></li>
-					<li><a href="#team" id="lteam">Team</a></li>
-					<li><a href="#exchanges" id="lexchanges">Exchanges</a></li>
-					<li><a href="#downloads" id="ldownloads">Downloads</a></li>
-					<li><a href="#pools" id="lpools">Pools</a></li>
-					<li><a href="#tools" id="ltools">Tools & Resources</a></li>
+					<li><a href="#about" class="labout">About</a></li>
+					<li><a href="#roadmap" class="lroadmap">Roadmap</a></li>
+					<li><a href="#team" class="lteam">Team</a></li>
+					<li><a href="#exchanges" class="lexchanges">Exchanges</a></li>
+					<li><a href="#downloads" class="ldownloads">Downloads</a></li>
+					<li><a href="#pools" class="lpools">Pools</a></li>
+					<li><a href="#tools" class="ltools">Tools & Resources</a></li>
 
 					<div class="dropdown">
-						<a><button class="dropbtn sb-gradients" id="llanguages">Languages</button></a>
+						<a><button class="dropbtn sb-gradients" class="llanguages">Languages</button></a>
 						<div class="dropdown-content">
 							<a href="#" onclick="$.MultiLanguage('language.json', 'en')"><span class="flag-icon flag-icon-gb"></span> English</a>
 							<a href="#" onclick="$.MultiLanguage('language.json', 'sv')"><span class="flag-icon flag-icon-se"></span> Svenska</a>
@@ -182,7 +182,7 @@
 	<section id="roadmap" class="roadmap-section spad">
 		<div class="container">
 			<div data-aos="fade-down" data-aos-duration="2000" class="section-title text-center">
-				<h2>Roadmap</h2>
+				<h2 class="lroadmap">Roadmap</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 			</div>
 			<div id="cd-timeline" class="cd-container">
@@ -324,7 +324,7 @@ Saepe repudiandae rerum quam ut perferendis, ullam similique nemo quod, assumend
 	<section id="exchanges" class="exchanges-section spad gradient-bg">
 		<div class="container text-white">
 			<div data-aos="fade-down" data-aos-duration="2000" class="section-title text-center">
-				<h2 id="lexchanges">Exchanges</h2>
+				<h2 class="lexchanges">Exchanges</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 			</div>
 			<div class="row">
@@ -382,7 +382,7 @@ Saepe repudiandae rerum quam ut perferendis, ullam similique nemo quod, assumend
 	<section id="downloads" class="downloads-section spad">
 		<div class="container">
 			<div data-aos="fade-down" data-aos-duration="2000" class="section-title text-center">
-				<h2 id="ldownloads">Downloads</h2>
+				<h2 class="ldownloads">Downloads</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 			</div>
 			<div class="row">
@@ -429,7 +429,7 @@ Saepe repudiandae rerum quam ut perferendis, ullam similique nemo quod, assumend
 	<section id="pools" class="pools-section spad gradient-bg">
 		<div class="container text-white">
 			<div data-aos="fade-down" data-aos-duration="2000" class="section-title text-center">
-				<h2>Pools</h2>
+				<h2 class="lpool">Pools</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 			</div>
 			<div class="row">
@@ -507,7 +507,7 @@ Saepe repudiandae rerum quam ut perferendis, ullam similique nemo quod, assumend
 	<section id="tools" class="tools-section spad">
 		<div class="container">
 			<div data-aos="fade-down" data-aos-duration="2000" class="section-title text-center">
-				<h2 id="ltoolsandresources">Tools & Resources</h2>
+				<h2 class="ltools">Tools & Resources</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 			</div>
 			<div class="row">
@@ -570,7 +570,7 @@ Saepe repudiandae rerum quam ut perferendis, ullam similique nemo quod, assumend
 					</ul>
 				</div>
 				<div class="col-md-6 col-lg-2 footer-widget">
-					<h5 class="widget-title">Quick Links</h5>
+					<h5 class="widget-title" id="quicklinks">Quick Links</h5>
 					<ul>
 						<li><a href="https://zeltrez.io" target="_blank">ZelTreZ</a></li>
 						<li><a href="https://github.com/zelcash/zelcash-copay-wallet" target="_blank">Zelcash Copay Wallet</a></li>
@@ -578,7 +578,7 @@ Saepe repudiandae rerum quam ut perferendis, ullam similique nemo quod, assumend
 					</ul>
 				</div>
 				<div class="col-md-6 col-lg-4 footer-widget pl-lg-5 pl-3">
-					<h5 class="widget-title">Follow Us</h5>
+					<h5 class="widget-title" id="followus">Follow Us</h5>
 					<div class="social">
 						<a href="https://twitter.com/zelcash" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a>
 						<a href="https://discord.gg/tTpj2Wm" target="_blank" class="discord"><i class="fab fa-discord"></i></a>
@@ -599,8 +599,8 @@ Saepe repudiandae rerum quam ut perferendis, ullam similique nemo quod, assumend
 					<div class="col-lg-5 text-center text-lg-right">
 						<ul class="footer-nav">
 							<li><a href="/faq">F.A.Q.</a></li>
-							<li><a href="/terms">Terms of Use</a></li>
-							<li><a href="/privacy">Privacy Policy</a></li>
+							<li><a href="/terms" id="terms">Terms of Use</a></li>
+							<li><a href="/privacy" id="privacy">Privacy Policy</a></li>
 							<li><a href="mailto:info@zel.cash">info@zel.cash</a></li>
 						</ul>
 					</div>
