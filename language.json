@@ -4,7 +4,7 @@
   },
   "language": {
     "en": {
-      "#lhome": "Home",
+      ".lhome": "Home",
       "#labout": "About",
       "#lroadmap": "Roadmap",
       "#lteam": "Team",
@@ -13,14 +13,19 @@
       "#lpools": "Pools",
       "#ltools": "Tools & Resources",
       "#llanguages": "Languages",
+      "#wearehappy": "We are happy to present",
+      "#easytouse": "Easy to use, both Light and Fullnode wallet",
+      "#tryitout": "Try it out",
       ".readmore": "Read more",
       "#whatiszelcash": "What is Zelcash?",
       "#ourfeatures": "Our Features",
       "#meetourteam": "Meet Our Team",
-      "#wholeteam": "Whole team"
+      "#wholeteam": "Whole team",
+      "#aboutus": "About us",
+      "#contactus": "Contact us"
     },
     "sv": {
-      "#lhome": "Hem",
+      ".lhome": "Hem",
       "#labout": "Om",
       "#lroadmap": "Roadmap",
       "#lteam": "Team",
@@ -29,11 +34,16 @@
       "#lpools": "Pools",
       "#ltools": "Verktyg & Resurser",
       "#llanguages": "Språk",
+      "#wearehappy": "Vi är stolta att presentera",
+      "#easytouse": "Enkel att använda, både Light och Fullnode plånbok",
+      "#tryitout": "Testa den",
       ".readmore": "Läs mer",
       "#whatiszelcash": "Vad är Zelcash?",
       "#ourfeatures": "Våra funktioner",
       "#meetourteam": "Möt Teamet",
-      "#wholeteam": "Hela teamet"
+      "#wholeteam": "Hela teamet",
+      "#aboutus": "Om oss",
+      "#contactus": "Kontakta oss"
     }
   }
 }
