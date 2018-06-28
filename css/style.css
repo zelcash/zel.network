@@ -482,7 +482,9 @@ ol {
 
 .about-img {
 	top: 0;
+	left:-80px;
 	position: absolute;
+	width:50%;
 }
 
 .about-section .world-img {
@@ -490,7 +492,7 @@ ol {
 	top: 70px;
 }
 
-.about-img .question-img {
+.about-section .question-img {
 	position: relative;
 	width: 50%;
 	left: 25%;
@@ -538,7 +540,7 @@ ol {
 .downloads-step {
 	position: relative;
 	text-align: center;
-	padding: 35px;
+	padding: 23px;
 	margin-top: 30px;
 	-webkit-box-shadow: 0 14px 43px rgba(33, 54, 61, 0.15);
 	        box-shadow: 0 14px 43px rgba(33, 54, 61, 0.15);
@@ -556,7 +558,6 @@ ol {
 
 .downloads-step img {
 	margin-left: 10px;
-	width: 50px;
 	height: 50px;
 	display: inline-block;
 }
@@ -874,6 +875,10 @@ ol {
 
 .tools-step p {
 	margin-bottom: 0;
+}
+
+.tools-step a {
+	color: #75849a;
 }
 
 .tools-step:after {
@@ -1777,9 +1782,11 @@ ol {
 		left: 55px;
 		top: 93px;
 	}
-	.about-img {
-		left: -50px;
-		width: 600px;
+	.about-section .world-img {
+		top: 140px;
+	}
+	.about-section .question-img {
+		top: 60px;
 	}
 }
 
@@ -1809,10 +1816,6 @@ ol {
 	.hero-section,
 	.page-info-section {
 		background-position: right 23% top;
-	}
-	.about-img {
-		left: 0px;
-		width: 480px;
 	}
 	.member {
 		width: calc(33.333333% - 25px);
@@ -2188,7 +2191,9 @@ ol {
     margin-bottom: 0;
   }
 }
-
+.cd-timeline-block i {
+	color:#fff;
+}
 .cd-timeline-img {
   position: absolute;
   top: 0;
