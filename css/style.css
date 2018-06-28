@@ -481,10 +481,19 @@ ol {
 }
 
 .about-img {
-	position: absolute;
 	top: 0;
-	left: -120px;
-	width: 662px;
+	position: absolute;
+}
+
+.about-section .world-img {
+	position: absolute;
+	top: 70px;
+}
+
+.about-img .question-img {
+	position: relative;
+	width: 50%;
+	left: 25%;
 }
 
 /*---------------------
@@ -1240,7 +1249,6 @@ ol {
 	background-repeat: no-repeat;
 	position: relative;
 	overflow: hidden;
-	z-index: -2;
 }
 
 .page-info-section-line {
@@ -1251,11 +1259,11 @@ ol {
 	top: 0;
 	left: 0;
 	overflow: hidden;
-	z-index: -1;
 }
 
 .page-info-section div {
 	z-index: 1;
+	position: relative;
 }
 
 .page-info-section h2 {

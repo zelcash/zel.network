@@ -2,25 +2,27 @@
 <html lang="en">
 <head>
 	<title>Zelcash - part of Zel Technologies LLC</title>
+	<base href="http://174.138.62.205">
 	<meta charset="UTF-8">
 	<meta name="description" content="Zelcash - part of Zel Technologies LLC">
 	<meta name="keywords" content="zelcash, zel, bitcoin, zeltrez, crypto">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<!-- Favicon -->
-	<link href="../img/favicon.ico" rel="shortcut icon"/>
+	<link href="/img/favicon.ico" rel="shortcut icon"/>
 
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 
 	<!-- Stylesheets -->
-	<link rel="stylesheet" href="../css/bootstrap.min.css"/>
-	<link rel="stylesheet" href="../css/font-awesome.min.css"/>
-	<link rel="stylesheet" href="../css/themify-icons.css"/>
-	<link rel="stylesheet" href="../css/animate.css"/>
-	<link rel="stylesheet" href="../css/owl.carousel.css"/>
-	<link rel="stylesheet" href="../css/style.css"/>
-	<link rel="stylesheet" href="../css/aos.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<link rel="stylesheet" href="/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="/css/themify-icons.css"/>
+	<link rel="stylesheet" href="/css/animate.css"/>
+	<link rel="stylesheet" href="/css/owl.carousel.css"/>
+	<link rel="stylesheet" href="/css/style.css"/>
+	<link rel="stylesheet" href="/css/aos.css">
+	<link rel="stylesheet" href="/css/flag-icon.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
 	<!--[if lt IE 9]>
 	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -33,25 +35,25 @@
 	<header class="header-section clearfix">
 		<div class="container-fluid">
 			<a href="/" class="site-logo">
-				<img src="../img/logo-zelcash-text.svg" alt="">
+				<img src="/img/logo-zelcash-text.svg" alt="">
 			</a>
 			<div class="responsive-bar"><i class="fas fa-bars"></i></div>
 			<nav class="main-menu">
 				<ul class="menu-list">
-					<li><a href="/" id="lhome">Home</a></li>
-					<li><a href="../#about" id="labout">About</a></li>
-					<li><a href="../#roadmap" id="lroadmap">Roadmap</a></li>
-					<li><a href="../#team" id="lteam">Team</a></li>
-					<li><a href="../#exchanges" id="lexchanges">Exchanges</a></li>
-					<li><a href="../#downloads" id="ldownloads">Downloads</a></li>
-					<li><a href="../#pools" id="lpools">Pools</a></li>
-					<li><a href="../#tools" id="ltoolsandresources">Tools & Resources</a></li>
+					<li><a href="/" class="lhome">Home</a></li>
+					<li><a href="/#about" class="labout">About</a></li>
+					<li><a href="/#roadmap" class="lroadmap">Roadmap</a></li>
+					<li><a href="/#team" class="lteam">Team</a></li>
+					<li><a href="/#exchanges" class="lexchanges">Exchanges</a></li>
+					<li><a href="/#downloads" class="ldownloads">Downloads</a></li>
+					<li><a href="/#pools" class="lpools">Pools</a></li>
+					<li><a href="/#tools" class="ltools">Tools & Resources</a></li>
 
 					<div class="dropdown">
-						<a href="#"><button class="dropbtn sb-gradients" id="llanguages">Languages</button></a>
+						<a><button class="dropbtn sb-gradients llanguages">Languages</button></a>
 						<div class="dropdown-content">
-							<a href="#" onclick="$.MultiLanguage('language.json', 'en')"><span class="flag-icon flag-icon-gb"></span> English</a>
-							<a href="#" onclick="$.MultiLanguage('language.json', 'sv')"><span class="flag-icon flag-icon-se"></span> Swedish</a>
+							<a href="" onclick="$.MultiLanguage('/lang/contact.json', 'en')"><span class="flag-icon flag-icon-gb"></span> English</a>
+							<a href="" onclick="$.MultiLanguage('/lang/contact.json', 'sv')"><span class="flag-icon flag-icon-se"></span> Svenska</a>
 						</div>
 					</div>
 
@@ -65,10 +67,10 @@
 	<!-- Page info section -->
 	<section class="page-info-section" data-paroller-factor="0.5">
 		<div class="container">
-			<h2 data-aos="fade-down" data-aos-duration="2000">Contact Us</h2>
+			<h2 data-aos="fade-down" data-aos-duration="2000" class="lcontactus">Contact Us</h2>
 			<div data-aos="zoom-in" data-aos-duration="500" class="site-beradcamb">
-				<a href="">Home</a>
-				<span><i class="fa fa-angle-right"></i> Contact us</span>
+				<a href="" class="lhome">Home </a>
+				<i class="fa fa-angle-right"></i><span class="lcontactus">Contact us</span>
 			</div>
 		</div>
 	</section>
@@ -146,7 +148,7 @@
 		<div class="container">
 			<div class="row spad">
 				<div class="col-md-6 col-lg-3 footer-widget">
-					<img src="../img/logo.svg" class="mb-4" alt="">
+					<img src="/img/logo.svg" class="mb-4" alt="">
 					<p>Zel Technologies LLC</p>
 					<p>Baarerstrasse 10</p>
 					<p>CH-6302 Zug</p>
@@ -154,13 +156,13 @@
 				<div class="col-md-6 col-lg-2 offset-lg-1 footer-widget">
 					<h5 class="widget-title">Sitemap</h5>
 					<ul>
-						<li><a href="/">Home</a></li>
-						<li><a href="../about">About us</a></li>
-						<li><a href="../contact">Contact us</a></li>
+						<li><a href="/" class="lhome">Home</a></li>
+						<li><a href="/about" class="laboutus">About us</a></li>
+						<li><a href="/contact" class="lcontactus">Contact us</a></li>
 					</ul>
 				</div>
 				<div class="col-md-6 col-lg-2 footer-widget">
-					<h5 class="widget-title">Quick Links</h5>
+					<h5 class="widget-title lquicklinks">Quick Links</h5>
 					<ul>
 						<li><a href="https://zeltrez.io" target="_blank">ZelTreZ</a></li>
 						<li><a href="https://github.com/zelcash/zelcash-copay-wallet" target="_blank">Zelcash Copay Wallet</a></li>
@@ -168,7 +170,7 @@
 					</ul>
 				</div>
 				<div class="col-md-6 col-lg-4 footer-widget pl-lg-5 pl-3">
-					<h5 class="widget-title">Follow Us</h5>
+					<h5 class="widget-title lfollowus">Follow Us</h5>
 					<div class="social">
 						<a href="https://twitter.com/zelcash" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a>
 						<a href="https://discord.gg/tTpj2Wm" target="_blank" class="discord"><i class="fab fa-discord"></i></a>
@@ -182,15 +184,15 @@
 					<div class="col-lg-7 store-links text-center text-lg-left pb-3 pb-lg-0">
 						<span class="copyright">
 	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-	&copy; Copyright 2018 Zel Technologies LLC. All rights reserved <span class="credit">| This template is made with <i class="fas fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></span>
+	<span class="lcopyright">&copy; Copyright 2018 Zel Technologies LLC. All rights reserved</span> <span class="credit">| This template is made with <i class="fas fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></span>
 	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 						</span>
 					</div>
 					<div class="col-lg-5 text-center text-lg-right">
 						<ul class="footer-nav">
 							<li><a href="/faq">F.A.Q.</a></li>
-							<li><a href="/terms">Terms of Use</a></li>
-							<li><a href="/privacy">Privacy Policy</a></li>
+							<li><a href="/terms" class="lterms">Terms of Use</a></li>
+							<li><a href="/privacy" class="lprivacy">Privacy Policy</a></li>
 							<li><a href="mailto:info@zel.cash">info@zel.cash</a></li>
 						</ul>
 					</div>
@@ -201,17 +203,23 @@
 
 
 	<!-- Javascripts & Jquery -->
-	<script src="../js/jquery-3.2.1.min.js"></script>
-	<script src="../js/owl.carousel.min.js"></script>
-	<script src="../js/main.js"></script>
-	<script src="../js/jquery.paroller.min.js"></script>
-	<script src="../js/aos.js"></script>
+	<script src="/js/jquery-3.2.1.min.js"></script>
+	<script src="/js/owl.carousel.min.js"></script>
+	<script src="/js/main.js"></script>
+	<script src="/js/jquery.paroller.min.js"></script>
+	<script src="/js/aos.js"></script>
+	<script src="/js/multilanguage.min.js"></script>
 	<script>
 		$("[data-paroller-factor]").paroller();
 	</script>
 	<script>
     AOS.init();
-  </script>
+	</script>
+	<script>
+		$(document).ready(function(){
+			$.MultiLanguage('/lang/contact.json');
+		})
+	</script>
 	<script>
 	$(document).ready(function(){
 		// Add smooth scrolling to all links
@@ -230,5 +238,8 @@
 		});
 	});
 	</script>
+	<!-- load for map -->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB57Q6M7gpTD_Khv5efbIXCqS6Sj2-nAsY"></script>
+	<script src="/js/map.js"></script>
 </body>
 </html>
