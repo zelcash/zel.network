@@ -1,0 +1,59 @@
+{
+  "config": {
+    "default": "en"
+  },
+  "language": {
+    "en": {
+      ".lhome": "Home",
+      ".labout": "About",
+      ".lroadmap": "Roadmap",
+      ".lteam": "Team",
+      ".lexchanges": "Exchanges",
+      ".ldownloads": "Downloads",
+      ".lpools": "Pools",
+      ".ltools": "Tools & Resources",
+      ".llanguages": "Languages",
+      ".lwearehappy": "We are happy to present",
+      ".leasytouse": "Easy to use, both Light and Fullnode wallet",
+      ".ltryitout": "Try it out",
+      ".readmore": "Read more",
+      ".lwhatiszelcash": "What is Zelcash?",
+      ".lourfeatures": "Our Features",
+      ".lmeetourteam": "Meet Our Team",
+      ".lwholeteam": "Whole team",
+      ".lcopyright": "&copy; Copyright 2018 Zel Technologies LLC. All rights reserved",
+      ".laboutus": "About us",
+      ".lcontactus": "Contact us",
+      ".lquicklinks": "Quick Links",
+      ".lfollowus": "Follow us",
+      ".lterms": "Terms of Use",
+      ".lprivacy": "Privacy Policy"
+    },
+    "sv": {
+      ".lhome": "Hem",
+      ".labout": "Om",
+      ".lroadmap": "Roadmap",
+      ".lteam": "Team",
+      ".lexchanges": "Börser",
+      ".ldownloads": "Nerladdning",
+      ".lpools": "Pools",
+      ".ltools": "Verktyg & Resurser",
+      ".llanguages": "Språk",
+      ".lwearehappy": "Vi är stolta att presentera",
+      ".leasytouse": "Enkel att använda, både Light och Fullnode plånbok",
+      ".ltryitout": "Testa den",
+      ".readmore": "Läs mer",
+      ".lwhatiszelcash": "Vad är Zelcash?",
+      ".lourfeatures": "Våra funktioner",
+      ".lmeetourteam": "Möt Teamet",
+      ".lwholeteam": "Hela teamet",
+      ".lcopyright": "&copy; Copyright 2018 Zel Technologies LLC. Alla rättigheter förbehållna",
+      ".laboutus": "Om oss",
+      ".lcontactus": "Kontakta oss",
+      ".lquicklinks": "Snabblänkar",
+      ".lfollowus": "Följ oss",
+      ".lterms": "Vilkor",
+      ".lprivacy": "Integritetspolicy"
+    }
+  }
+}

@@ -3,6 +3,14 @@
 (function($) {
 
 	/*------------------
+		Background set
+	--------------------*/
+	$('.set-bg').each(function() {
+		var bg = $(this).data('setbg');
+		$(this).css('background-image', 'url(' + bg + ')');
+	});
+
+	/*------------------
 		Navigation
 	--------------------*/
 	$('.responsive-bar').on('click', function(event) {
