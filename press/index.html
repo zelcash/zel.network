@@ -51,8 +51,8 @@
 					<div class="dropdown">
 						<a><button class="dropbtn sb-gradients llanguages">Languages</button></a>
 						<div class="dropdown-content">
-							<a href="" onclick="$.MultiLanguage('/lang/contact.json', 'en')"><span class="flag-icon flag-icon-gb"></span> English</a>
-							<a href="" onclick="$.MultiLanguage('/lang/contact.json', 'sv')"><span class="flag-icon flag-icon-se"></span> Svenska</a>
+							<a href="" onclick="$.MultiLanguage('/lang/press.json', 'en')"><span class="flag-icon flag-icon-gb"></span> English</a>
+							<a href="" onclick="$.MultiLanguage('/lang/press.json', 'sv')"><span class="flag-icon flag-icon-se"></span> Svenska</a>
 						</div>
 					</div>
 
@@ -66,10 +66,10 @@
 	<!-- Page info section -->
 	<section class="page-info-section" data-paroller-factor="0.5">
 		<div class="container">
-			<h2 data-aos="fade-down" data-aos-duration="2000" class="lcontactus">Contact Us</h2>
+			<h2 data-aos="fade-down" data-aos-duration="2000" class="lterms">Press</h2>
 			<div data-aos="zoom-in" data-aos-duration="500" class="site-beradcamb">
-				<a href="" class="lhome">Home </a>
-				<i class="fa fa-angle-right"></i><span class="lcontactus">Contact us</span>
+				<a href="/" class="lhome">Home </a>
+				<i class="fa fa-angle-right"></i><span class="lterms">Press</span>
 			</div>
 		</div>
 	</section>
@@ -77,69 +77,27 @@
 	<!-- Page info end -->
 
 
-	<!-- Contact section -->
-	<section class="contact-page spad">
+	<!-- About section -->
+	<section id="about" class="about-section spad">
 		<div class="container">
-			<div class="row">
-				<div class="col-lg-7">
-					<form class="contact-form">
-						<div class="row">
-							<div class="col-md-6">
-								<div class="form-group">
-									<input class="check-form" type="text" placeholder="First Name*:">
-									<span><i class="ti-check"></i></span>
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="form-group">
-									<input class="check-form" type="text" placeholder="Last Name*:">
-									<span><i class="ti-check"></i></span>
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="form-group">
-									<input class="check-form" type="text" placeholder="Email Adress*:">
-									<span><i class="ti-check"></i></span>
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="form-group">
-									<input class="check-form" type="text" placeholder="Phone Number*:">
-									<span><i class="ti-check"></i></span>
-								</div>
-							</div>
-							<div class="col-md-12">
-								<div class="form-group">
-									<textarea placeholder="Tell us about your question!"></textarea>
-								</div>
-								<h5 class="mb-3">Way to Contacts<span>*</span>:</h5>
-								<div class="contact-type">
-									<label class="ct-label">Phone
-										<input type="radio" name="radio">
-										 <span class="checkmark"></span>
-									</label>
-									<label class="ct-label">Email
-										<input type="radio" name="radio">
-										 <span class="checkmark"></span>
-									</label>
-									<label class="ct-label">Other
-										<input type="radio" name="radio">
-										 <span class="checkmark"></span>
-									</label>
-								</div>
-
-								<button class="site-btn sb-gradients mt-4">Submit form</button>
-							</div>
-						</div>
-					</form>
+			<div data-aos="fade-right" data-aos-duration="3000" class="row">
+				<div class="col-lg-6 offset-lg-6 about-text">
+					<h2 class="lwhatiszelcash">Title</h2>
+					<h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet architecto ea blanditiis quo labore esse magnam illum ut quibusdam. Corrupti ratione iure aliquam adipisci! Harum vitae laboriosam temporibus illo suscipit?</h5>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet architecto ea blanditiis quo labore esse magnam illum ut quibusdam. Corrupti ratione iure aliquam adipisci! Harum vitae laboriosam temporibus illo suscipit?</p>
 				</div>
-				<div class="col-lg-5 mt-5 mt-lg-0">
-					<div class="map" id="map-canvas"></div>
+			</div>
+			<div data-aos="fade-left" data-aos-duration="3000" class="about-img">
+				<div data-paroller-factor="0.2" data-paroller-type="foreground" data-paroller-direction="vertical">
+					<img src="/img/worldmap.svg" class="world-img">
+				</div>
+				<div data-paroller-factor="0.1" data-paroller-type="foreground" data-paroller-direction="vertical">
+					<img src="/img/question.svg" class="question-img">
 				</div>
 			</div>
 		</div>
 	</section>
-	<!-- Contact section end -->
+	<!-- About section end -->
 
 
 	<!-- Footer section -->
@@ -217,49 +175,46 @@
 	</script>
 	<script>
 		$(document).ready(function(){
-			$.MultiLanguage('/lang/contact.json');
+			$.MultiLanguage('/lang/press.json');
 		})
 	</script>
 	<script>
-		// Select all links with hashes
-		$('a[href*="#"]')
-		// Remove links that don't actually link to anything
-		.not('[href="#"]')
-		.not('[href="#0"]')
-		.click(function(event) {
-			// On-page links
-			if (
-			location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-			&& 
-			location.hostname == this.hostname
-			) {
-			// Figure out element to scroll to
-			var target = $(this.hash);
-			target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-			// Does a scroll target exist?
-			if (target.length) {
-				// Only prevent default if animation is actually gonna happen
-				event.preventDefault();
-				$('html, body').animate({
-				scrollTop: target.offset().top
-				}, 1000, function() {
-				// Callback after animation
-				// Must change focus!
-				var $target = $(target);
-				$target.focus();
-				if ($target.is(":focus")) { // Checking if the target was focused
-					return false;
-				} else {
-					$target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-					$target.focus(); // Set focus again
-				};
-				});
-			}
-			}
-		});
-		</script>
-	<!-- load for map -->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB57Q6M7gpTD_Khv5efbIXCqS6Sj2-nAsY"></script>
-	<script src="/js/map.js"></script>
+	// Select all links with hashes
+	$('a[href*="#"]')
+	// Remove links that don't actually link to anything
+	.not('[href="#"]')
+	.not('[href="#0"]')
+	.click(function(event) {
+		// On-page links
+		if (
+		location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+		&& 
+		location.hostname == this.hostname
+		) {
+		// Figure out element to scroll to
+		var target = $(this.hash);
+		target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+		// Does a scroll target exist?
+		if (target.length) {
+			// Only prevent default if animation is actually gonna happen
+			event.preventDefault();
+			$('html, body').animate({
+			scrollTop: target.offset().top
+			}, 1000, function() {
+			// Callback after animation
+			// Must change focus!
+			var $target = $(target);
+			$target.focus();
+			if ($target.is(":focus")) { // Checking if the target was focused
+				return false;
+			} else {
+				$target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+				$target.focus(); // Set focus again
+			};
+			});
+		}
+		}
+	});
+	</script>
 </body>
 </html>
