@@ -2136,6 +2136,19 @@ ol {
 		padding-left: 0;
 	}
 }
+
+.pressinfo ul {
+	list-style-type: none;
+}
+
+.pressinfo li {
+	padding-bottom: 5px;
+}
+
+.pressinfo h3 {
+	padding-bottom: 10px;
+}
+
 /* Timeline */
 
 #cd-timeline {
@@ -2167,7 +2180,7 @@ ol {
 
 .cd-timeline-block {
   position: relative;
-  margin: 2em 0;
+  margin: 3em 0;
 }
 .cd-timeline-block::after {
   clear: both;
@@ -2210,8 +2223,9 @@ ol {
   position: relative;
   left: 50%;
   top: 50%;
-  margin-left: -14px;
+  margin-left: -13px;
   margin-top: -16px;
+  transform: scale(0.8);
 }
 .cd-timeline-img.cd-green {
   background: #75ce66;
@@ -2288,9 +2302,12 @@ ol {
   background-color: #bac4cb;
 }
 .cd-timeline-content .cd-date {
-	color: #142a59;
+  color: #142a59;
   float: left;
   padding: .8em 0;
+  position: absolute;
+  top: -40px;
+  left: 0;
 }
 .cd-timeline-content::before {
   content: '';
@@ -2338,6 +2355,10 @@ ol {
     top: 6px;
     font-size: 16px;
     font-size: 1rem;
+  }
+  .cd-timeline-img i {
+	margin-left: -14px;
+	transform: scale(1);
   }
   .cd-timeline-block:nth-child(even) .cd-timeline-content {
     float: right;
