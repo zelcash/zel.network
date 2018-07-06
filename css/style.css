@@ -381,7 +381,7 @@ ol {
 	height: 900px;
 	padding-top: 260px;
 	display: block;
-	background: url("https://picsum.photos/1920/1080/?random");
+	background: url("https://source.unsplash.com/1920x1080/?nature,landscape");
 	background-size: cover;
 	background-position: right top;
 	background-repeat: no-repeat;
@@ -1248,7 +1248,7 @@ ol {
 	height: 300px;
 	padding-top: 100px;
 	display: block;
-	background: url("https://picsum.photos/1024/300/?random");
+	background: url("https://source.unsplash.com/1024x300/?nature,landscape");
 	background-size: cover;
 	background-position: right top;
 	background-repeat: no-repeat;
