@@ -577,7 +577,6 @@ ol {
 	height: 56px;
 	top: -40px;
 	right: -40%;
-	background: url("../img/process-line.png") no-repeat scroll 0 0/cover;
 }
 
 /*---------------------
@@ -787,7 +786,6 @@ ol {
 	height: 56px;
 	top: -40px;
 	right: -40%;
-	background: url("../img/process-line.png") no-repeat scroll 0 0/cover;
 }
 
 /*---------------------
@@ -842,7 +840,6 @@ ol {
 	height: 56px;
 	top: -40px;
 	right: -40%;
-	background: url("../img/process-line.png") no-repeat scroll 0 0/cover;
 }
 
 /*---------------------
@@ -888,7 +885,6 @@ ol {
 	height: 56px;
 	top: -40px;
 	right: -40%;
-	background: url("../img/process-line.png") no-repeat scroll 0 0/cover;
 }
 
 /*---------------------
@@ -1248,7 +1244,7 @@ ol {
 	height: 300px;
 	padding-top: 100px;
 	display: block;
-	background: url("https://source.unsplash.com/1024x300/?nature,landscape");
+	background: url("https://source.unsplash.com/1920x1080/?nature,landscape");
 	background-size: cover;
 	background-position: right top;
 	background-repeat: no-repeat;
