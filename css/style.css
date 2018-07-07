@@ -1195,6 +1195,14 @@ ol {
 	background: #7289DA;
 }
 
+.social .telegram {
+	background: #0088cc;
+}
+
+.social .slack {
+	background: #2d333a;
+}
+
 .social .github {
 	background: #6e5494;
 }
