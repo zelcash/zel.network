@@ -4,28 +4,23 @@ THIS FILE USES PHPMAILER INSTEAD OF THE PHP MAIL() FUNCTION
 AND ALSO SMTP TO SEND THE EMAILS
 */
 
-require 'PHPMailer-master/PHPMailerAutoload.php';
+require 'PHPMailer/PHPMailerAutoload.php';
 
 /*
 *  CONFIGURE EVERYTHING HERE
 */
 
 // an email address that will be in the From field of the email.
-$fromEmail = 'lumi.ibishi@zel.cash';
-$fromName = 'Lumi';
+
+$fromEmail = $_REQUEST['email'];
+$fromName = $_REQUEST['name'];
 
 // an email address that will receive the email with the output of the form
-$sendToEmail = 'lumi.ibishi@zel.cash';
-$sendToName = 'Lumi';
+$sendToEmail = 'info@zel.cash';
+$sendToName = 'Zelinfo';
 
 // subject of the email
-$subject = 'New message from contact form';
-
-// smtp credentials and server
-
-$smtpHost = 'smtp.gmail.com';
-$smtpUsername = 'lumi.ibishi@zel.cash';
-$smtpPassword = '';
+$subject = 'New message from zel.cash website';
 
 // form field names and their translations.
 // array variable name => Text to appear in the email
@@ -49,7 +44,7 @@ try
     
     if(count($_POST) == 0) throw new \Exception('Form is empty');
     
-    $emailTextHtml = "<h1>You have a new message from your contact form</h1><hr>";
+    $emailTextHtml = "<h1>You have a new message from zel.cash website</h1><hr>";
     $emailTextHtml .= "<table>";
     
     foreach ($_POST as $key => $value) {
@@ -63,9 +58,9 @@ try
     
     $mail = new PHPMailer;
     
-    $mail->setFrom($fromEmail, $fromName);
+    $mail->setFrom($fromEmail);
     $mail->addAddress($sendToEmail, $sendToName); // you can add more addresses by simply adding another line with $mail->addAddress();
-    $mail->addReplyTo($from);
+    $mail->addReplyTo($fromEmail);
     
     $mail->isHTML(true);
     
@@ -87,26 +82,26 @@ try
     // use
     // $mail->Host = gethostbyname('smtp.gmail.com');
     // if your network does not support SMTP over IPv6
-    $mail->Host = gethostbyname($smtpHost);
+    $mail->Host = 'ssl://smtp.gmail.com';
     
     //Set the SMTP port number - 587 for authenticated TLS, a.k.a. RFC4409 SMTP submission
-    $mail->Port = 587;
+    $mail->Port = 465;
     
     //Set the encryption system to use - ssl (deprecated) or tls
-    $mail->SMTPSecure = 'tls';
+    $mail->SMTPSecure = 'ssl';
     
     //Whether to use SMTP authentication
     $mail->SMTPAuth = true;
     
     //Username to use for SMTP authentication - use full email address for gmail
-    $mail->Username = $smtpHost;
+    $mail->Username = 'info@zel.cash';
     
     //Password to use for SMTP authentication
-    $mail->Password = $smtpPassword;
+    $mail->Password = '';
     
     
     if(!$mail->send()) {
-        throw new \Exception('I could not send the email.' . $mail->ErrorInfo);
+        throw new \Exception('Could not send the email. ' . $mail->ErrorInfo);
     }
     
     $responseArray = array('type' => 'success', 'message' => $okMessage);

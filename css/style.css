@@ -480,6 +480,14 @@ ol {
 	font-size: 18px;
 }
 
+.about-text ul {
+	list-style-position: inside;
+}
+
+.about-text ul li {
+	color: #75849a;
+}
+
 .about-img {
 	top: 0;
 	left:-80px;
@@ -496,6 +504,10 @@ ol {
 	position: relative;
 	width: 50%;
 	left: 25%;
+}
+
+.centerbuttons {
+	text-align: left;
 }
 
 /*---------------------
@@ -628,7 +640,7 @@ ol {
 
 .team-members {
 	margin: 0 -10px;
-  text-align: center;
+    text-align: center;
 }
 
 .member {
@@ -685,7 +697,6 @@ ol {
 
 .member-social {
 	padding-top: 25px;
-	background: #fff;
 	position: relative;
 	z-index: 2;
 }
@@ -2023,6 +2034,9 @@ ol {
 		width: auto;
 		margin-top: 50px;
 	}
+	.centerbuttons {
+		text-align: center;
+	}
 	.team-members {
 		margin: 0;
 		padding: 0 15px;
@@ -2391,4 +2405,9 @@ ol {
     -moz-animation: cd-bounce-2 0.6s;
     animation: cd-bounce-2 0.6s;
   }
+}
+
+/* Fix AOS Left/Right effects spacing */
+#roadmap, #exchanges, #downloads, #pools, #tools {
+	overflow-x: hidden
 }
