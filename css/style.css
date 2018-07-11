@@ -500,6 +500,11 @@ ol {
 	top: 70px;
 }
 
+.about-section .world-img2 {
+	position: absolute;
+	top: 70px;
+}
+
 .about-section .question-img {
 	position: relative;
 	width: 50%;
@@ -1825,6 +1830,26 @@ ol {
 	.about-section .question-img {
 		top: 60px;
 	}
+	.about-section .world-img2 {
+		top: 30px;
+	}
+	.about-section .charity-img {
+		position: relative;
+		width: 30%;
+		left: 35%;
+		top: 50px;
+	}
+	.about-section .gosh-img {
+		position: absolute;
+		top: 70px;
+		left: 88px;
+	}
+	.about-section .goshlogo-img {
+		position: relative;
+		width: 50%;
+		left: 25%;
+		top: 150px;
+	}
 }
 
 @media (min-width: 1199px) and (max-width: 1390px) {
@@ -2048,6 +2073,10 @@ ol {
 	}
 	.page-info-section h2 {
 		font-size: 40px;
+	}
+	.mobspad {
+		padding-top: 100px;
+		padding-bottom: 90px;
 	}
 	.about-img {
 		position: relative;
