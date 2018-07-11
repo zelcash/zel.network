@@ -506,6 +506,28 @@ ol {
 	left: 25%;
 }
 
+.about-section .charity-img {
+	position: relative;
+	width: 30%;
+	left: 35%;
+	top: 90px;
+}
+
+.about-section .gosh-img {
+	position: absolute;
+	top: 70px;
+	left: 88px;
+}
+
+.about-section .goshlogo-img {
+	position: relative;
+	width: 50%;
+	left: 25%;
+	top: 150px;
+}
+
+
+
 .centerbuttons {
 	text-align: left;
 }
@@ -2410,4 +2432,21 @@ ol {
 /* Fix AOS Left/Right effects spacing */
 #roadmap, #exchanges, #downloads, #pools, #tools {
 	overflow-x: hidden
+}
+
+/* Mix */
+
+.donate {
+  background-color: #fff;
+  padding: 15px;
+  max-width: 200px;
+  margin: 30px auto;
+}
+
+.donateicon {
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  margin: 0;
+  vertical-align: middle;
 }
