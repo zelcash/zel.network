@@ -495,6 +495,12 @@ ol {
 	width:50%;
 }
 
+.algo-img {
+	top: 0;
+	position: absolute;
+	width:30%;
+}
+
 .about-section .world-img {
 	position: absolute;
 	top: 70px;
@@ -1932,6 +1938,13 @@ ol {
 		background-size: contain;
 	}
 	.about-img {
+		position: relative;
+		display: block;
+		left: 0;
+		width: auto;
+		margin-top: 50px;
+	}
+	.algo-img {
 		position: relative;
 		display: block;
 		left: 0;
