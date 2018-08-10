@@ -524,13 +524,13 @@ ol {
 	top: 90px;
 }
 
-.about-section .gosh-img {
+.about-section .charity-back {
 	position: absolute;
 	top: 70px;
 	left: 88px;
 }
 
-.about-section .goshlogo-img {
+.about-section .charity-logo {
 	position: relative;
 	width: 50%;
 	left: 25%;
@@ -1845,12 +1845,12 @@ ol {
 		left: 35%;
 		top: 50px;
 	}
-	.about-section .gosh-img {
+	.about-section .charity-back {
 		position: absolute;
 		top: 70px;
 		left: 88px;
 	}
-	.about-section .goshlogo-img {
+	.about-section .charity-logo {
 		position: relative;
 		width: 50%;
 		left: 25%;
