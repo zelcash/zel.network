@@ -1,9 +1,9 @@
 # zel.cash
-Website for Zelcash
+Website for ZelCash
 
 [Official website](https://zel.cash)
 
 [Github page](https://zelcash.github.io/zel.cash/)
 
 
-![Zelcash Logo](https://github.com/zelcash/zel.cash/blob/master/img/logo-zelcash-text.svg)
+![ZelCash Logo](https://github.com/zelcash/zel.cash/blob/master/img/logo-zelcash-text.svg)
