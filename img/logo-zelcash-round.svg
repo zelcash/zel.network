@@ -1,8 +1,8 @@
 <svg id="Cube" xmlns="http://www.w3.org/2000/svg" width="511.856" height="512.112" viewBox="0 0 2001 2002">
 <defs>
     <style>
-      .cls-1, .cls-6 {
-        fill: #466bb8;
+      .cls-1, .cls-7 {
+        fill: #183c87;
       }
 
       .cls-1, .cls-5 {
@@ -34,8 +34,8 @@
         stroke-width: 25px;
       }
 
-      .cls-7 {
-        fill: #183c87;
+      .cls-6 {
+        fill: #466bb8;
       }
     </style>
   </defs>
