@@ -11,7 +11,7 @@
 				<div class="col-md-6 col-lg-2 offset-lg-1 footer-widget">
 					<h5 class="widget-title">Sitemap</h5>
 					<ul>
-						<li><a href="<?php echo $base_url;?>" class="lhome">Home</a></li>
+						<li><a href="<?php echo $base_url;?>/" class="lhome">Home</a></li>
 						<li><a href="<?php echo $base_url;?>/about" class="laboutus">About us</a></li>
 						<li><a href="<?php echo $base_url;?>/docs">Docs</a></li>
 						<li><a href="<?php echo $base_url;?>/charity" class="lcharity">Charity</a></li>

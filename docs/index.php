@@ -12,7 +12,7 @@
 		<div class="container">
 			<h2 data-aos="fade-down" data-aos-duration="2000" class="">Whitepaper & <br>Documents</h2>
 			<div data-aos="zoom-in" data-aos-duration="500" class="site-beradcamb">
-				<a href="<?php echo $base_url;?>" class="lhome">Home </a>
+				<a href="<?php echo $base_url;?>/" class="lhome">Home </a>
 				<i class="fa fa-angle-right"></i><span class="">Whitepaper</span>
 			</div>
 		</div>
