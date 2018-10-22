@@ -295,7 +295,6 @@ ol {
 	position: fixed;
 	background-color: rgba(255, 255, 255, 0.88);
 	width: 100%;
-	top: 0;
 	padding: 20px 50px 20px 50px;
 	z-index: 99;
 }
