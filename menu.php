@@ -1,6 +1,8 @@
+<?php include 'unified.php';?>
+
 <header class="header-section clearfix">
     <div class="container-fluid">
-        <a href="<?php echo $base_url;?>" class="site-logo">
+        <a href="<?php echo $base_url;?>/" class="site-logo">
             <img src="<?php echo $base_url;?>/img/logo-zelcash-text.svg" alt="">
         </a>
         <div class="responsive-bar"><i class="fas fa-bars"></i></div>
