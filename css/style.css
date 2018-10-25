@@ -2077,7 +2077,8 @@ ol {
 	}
 	.page-info-section {
 		background-position: right 56% top;
-		margin-top: 97px;
+		padding-top: 200px;
+		padding-bottom: 197px;
 	}
 	.page-info-section-line {
 		background-position: right 56% top;
