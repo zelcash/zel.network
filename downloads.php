@@ -37,9 +37,9 @@
                         <img src="./img/logo-zelcash-round.svg" alt="#">
                     </figure>
                     <h4>ZelCash Swing Wallet</h4>
-                        <a href="https://github.com/zelcash/zelcash-swing-wallet/releases/tag/v4.0.2"><img src="./img/windows.svg" alt="ZelCash Swing for Windows"></a>
-                        <a href="https://github.com/zelcash/zelcash-swing-wallet/releases/tag/v4.0.3"><img src="./img/macos.svg" alt="ZelCash Swing for macOS"></a>
-                        <a href="https://github.com/zelcash/zelcash-swing-wallet/releases/tag/v4.0.1"><img src="./img/linux.svg" alt="ZelCash Swing for Linux"></a>
+                        <a href="https://github.com/zelcash/zelcash-swing-wallet/releases"><img src="./img/windows.svg" alt="ZelCash Swing for Windows"></a>
+                        <a href="https://github.com/zelcash/zelcash-swing-wallet/releases"><img src="./img/macos.svg" alt="ZelCash Swing for macOS"></a>
+                        <a href="https://github.com/zelcash/zelcash-swing-wallet/releases"><img src="./img/linux.svg" alt="ZelCash Swing for Linux"></a>
                 </div>
             </div>
         </div>
