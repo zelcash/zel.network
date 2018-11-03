@@ -5,7 +5,7 @@
 
   <!-- Overlay content -->
   <div class="overlay-content">
-    <a href="https://zeltechnologies.com"><img src="../img/logo-zeltech-text.svg"></a>
+    <a href="#"><img src="../img/logo-zeltech-text.svg"></a>
     <a href="https://zel.cash"><img src="../img/logo-zelcash-text-light.svg"></a>
     <a href="https://zelcore.io"><img src="../img/logo-zelcore-text-light.svg"></a>
     <a href="https://zelid.io"><img src="../img/logo-zelid-text.svg"></a>
