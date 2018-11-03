@@ -1,4 +1,6 @@
 .unified {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 12px;
     overflow: hidden;
     background-color: #232220;
     width: 100%;
@@ -13,6 +15,7 @@
 .unified a {
     color: #fff;
     font-size: 17px;
+    border: none;
 }
 
 .overlay {
@@ -38,12 +41,17 @@
     flex-direction: column;
 }
 
+.overlay-content a:hover {
+    opacity: 0.7;
+}
+
 .overlay a {
     padding: 20px;
     color: #fff;
     display: block;
     transition: 0.3s;
     margin: auto;
+    border: none;
 }
 
 .overlay a img {
@@ -83,6 +91,7 @@
     text-align: center;
     color: #232220;
     transition: color .2s;
+    font-size: 16px;
 }
 
 .header-section {
