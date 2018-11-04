@@ -1,6 +1,6 @@
 <section class="features-section spad gradient-bg">
     <div class="container text-white">
-        <div data-aos="fade-down" data-aos-duration="2000" class="section-title text-center">
+        <div data-aos="fade-down" data-aos-duration="1000" class="section-title text-center">
             <h2 class="lourfeatures">Our Features</h2>
             <p>ZelCash offers a unique feature set focused on ease-of-use, power, and dependability</p>
         </div>

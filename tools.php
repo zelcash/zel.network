@@ -1,6 +1,6 @@
 <section id="tools" class="tools-section spad">
     <div class="container">
-        <div data-aos="fade-down" data-aos-duration="2000" class="section-title text-center">
+        <div data-aos="fade-down" data-aos-duration="1000" class="section-title text-center">
             <h2 class="ltools">Tools & Resources</h2>
             <p>Links that power the infrastructure of ZelCash</p>
         </div>

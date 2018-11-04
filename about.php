@@ -1,6 +1,6 @@
 <section id="about" class="about-section spad">
     <div class="container">
-        <div data-aos="fade-right" data-aos-duration="3000" class="row">
+        <div data-aos="fade-right" data-aos-duration="1000" class="row">
             <div class="col-lg-6 offset-lg-6 about-text">
                 <h2 class="lwhatiszelcash">What is ZelCash?</h2>
                 <h5 class="lwhatis1">ZelCash is a cryptocurrency that holds a central role in the Zel Ecosystem. It gives the incentive for ZelNode ownership to enable the creation of ZelEx and the ZelDev Platform, enabling us to create a truly decentralized development platform.</h5>
@@ -12,7 +12,7 @@
                 </div>
             </div>
         </div>
-        <div data-aos="fade-left" data-aos-duration="3000" class="about-img">
+        <div data-aos="fade-left" data-aos-duration="1000" class="about-img">
             <div data-paroller-factor="0.2" data-paroller-type="foreground" data-paroller-direction="vertical">
                 <img src="./img/worldmap.svg" class="world-img">
             </div>
