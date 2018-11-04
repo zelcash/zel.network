@@ -1,6 +1,6 @@
 <section id="exchanges" class="exchanges-section spad gradient-bg">
     <div class="container text-white">
-        <div data-aos="fade-down" data-aos-duration="2000" class="section-title text-center">
+        <div data-aos="fade-down" data-aos-duration="1000" class="section-title text-center">
             <h2 class="lexchanges">Exchanges</h2>
             <p>Current listing of exchanges for ZelCash</p>
         </div>

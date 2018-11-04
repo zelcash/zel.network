@@ -1,6 +1,6 @@
 <section id="pools" class="pools-section spad gradient-bg">
     <div class="container text-white">
-        <div data-aos="fade-down" data-aos-duration="2000" class="section-title text-center">
+        <div data-aos="fade-down" data-aos-duration="1000" class="section-title text-center">
             <h2 class="lpool">Pools</h2>
             <p>A list of mining pools that support ZelCash</p>
         </div>
