@@ -49,6 +49,17 @@
                     </div>
                 </a>
             </div>
+            <div data-aos="zoom-in" data-aos-duration="500" class="col-md-4 exchanges">
+                <a href="https://safe.trade/trading/zelbtc" target="_blank">
+                    <div class="exchanges-step">
+                        <figure class="exchanges-icon">
+                            <img src="./img/safetrade.svg" alt="#">
+                        </figure>
+                        <h4>SafeTrade</h4>
+                        <p></p>
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
 </section>
