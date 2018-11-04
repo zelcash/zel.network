@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <?php include 'head.php';?>
-    <link rel="stylesheet" href="<?php echo $base_url;?>/css/unified.css"/>
 </head>
 <body>
 
