@@ -2,7 +2,7 @@
     <div class="container">
         <div data-aos="fade-down" data-aos-duration="2000" class="section-title text-center">
             <h2 class="lmeetourteam">Meet Our Team</h2>
-            <p>Our global team, brings youth and expertise together</p>
+            <p>Our global team brings youth and expertise together</p>
         </div>
     </div>
     <div class="team-members clearfix">
@@ -25,7 +25,7 @@
                     <h2>Miles Manley</h2>
                     <span>Founder & Developer</span>
                 </div>
-                <p>At age 15, Miles founded ZelCash with the ambition to create a scalable, decentralized blockchain development platform to enable fellow developers to create blockchain-based applications and dAPPs with ease.
+                <p>At age 15, Miles founded ZelCash with the ambition to create a scalable, decentralized blockchain development platform to enable fellow developers to create blockchain-based applications and dApps with ease.
                     Miles, now 16, works full time on ZelCash and looks forward to the future that lies ahead.</p>
             </div>
         </div>
@@ -47,7 +47,7 @@
                     <h2>Lumi Ibishi</h2>
                     <span>Developer & Designer</span>
                 </div>
-                <p>With over 15 years experience working on graphic design, Lumi leads the design team at Zel Technologies. He also brings vast amount of knowledge and expertise in UI and UX development.
+                <p>With over 15 years of experience working on graphic design, Lumi leads the design team at Zel Technologies. He also brings vast amount of knowledge and expertise in UI and UX development.
                     In May 2018, Lumi, Miles, Patrick and Tadeáš formed Zel Technologies GmbH. our business arm that brings everything Zel Together.</p>
             </div>
         </div>
@@ -70,7 +70,7 @@
                     <h2>Tadeáš Kmenta</h2>
                     <span>Developer</span>
                 </div>
-                <p>Tadeáš hailing from the Czech Republic, Tadeáš is our lead developer and heads our development team. Tadeáš is an experienced Javascript developer and looks forward to the enablement of people through blockchain.</p>
+                <p>Tadeáš hails from the Czech Republic and heads our development team. He is an experienced Javascript developer and looks forward to the enablement of people through blockchain.</p>
             </div>
         </div>
     </div>

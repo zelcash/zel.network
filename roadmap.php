@@ -23,7 +23,7 @@
 
                 <div data-aos="fade-left" data-aos-duration="2000" class="cd-timeline-content">
                     <h2>Marketing Campaign</h2>
-                    <p>The ZelCash marketing plan describes the short/medium-term items planned to increase Zel's position in the crypto world. From building an effective marketing team to increasing the usability and usage of ZelTreZ to security auditing. Read this document to understand how we are striving to make Zel a household name.</p>
+                    <p>The ZelCash marketing plan describes the short/medium-term items planned to increase Zel's position in the crypto world. Read this document to understand how we are striving to make Zel a household name.</p>
                     <a href="./pdf/Marketing_overview_rev1_English.pdf" target="_blank"><button class="site-btn sb-gradients ldownloadpdf">Download PDF</button></a>
                     <span class="cd-date">JUNE</span>
                 </div>
@@ -51,7 +51,7 @@
 
                 <div data-aos="fade-left" data-aos-duration="2000" class="cd-timeline-content">
                     <h2>ZelNodes</h2>
-                    <p>ZelNodes are key to creating most of what we envision. They will allow us to build a scalable computing network of decentralized nodes, allowing ZelChains, Smart Contracts, dAPPs, tokenization of assets and much more. All through our ZelDev platform making development seemless, allowing developers to utilize Javascript and our SDK and BDK.</p>
+                    <p>ZelNodes are key to creating most of what we envision. They will allow us to build a scalable computing network of decentralized nodes, running ZelChains, Smart Contracts, dApps, tokenization of assets and much more. Developers will be able to utilize Javascript-framework SDK and BDK through the ZelDev platform for a seamless experience. </p>
                     <span class="cd-date">Q4 2018</span>
                 </div>
             </div>
