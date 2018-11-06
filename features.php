@@ -26,7 +26,7 @@
                 <i class="ti-wallet"></i>
                 <div class="feature-content">
                     <h4>Encrypted Multi-asset Wallet</h4>
-                    <p>Enjoy quick, easy access to all your favorite coins and tokens with ZelCore. ZelCore creates a “One Stop Shop” for Crypto assets and provides the gateway to DEX and dAPP development.</p>
+                    <p>Enjoy quick, easy access to all your favorite coins and tokens with ZelCore. ZelCore creates a “One Stop Shop” for Crypto assets and provides the gateway to DEX and dApp development.</p>
                 </div>
             </div>
             <!-- feature -->
