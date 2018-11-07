@@ -1,6 +1,6 @@
 <section id="exchanges" class="exchanges-section spad gradient-bg">
     <div class="container text-white">
-        <div data-aos="fade-down" data-aos-duration="2000" class="section-title text-center">
+        <div data-aos="fade-down" data-aos-duration="1000" class="section-title text-center">
             <h2 class="lexchanges">Exchanges</h2>
             <p>Current listing of exchanges for ZelCash</p>
         </div>
@@ -45,6 +45,17 @@
                             <img src="./img/tradeogre.svg" alt="#">
                         </figure>
                         <h4>TradeOgre</h4>
+                        <p></p>
+                    </div>
+                </a>
+            </div>
+            <div data-aos="zoom-in" data-aos-duration="500" class="col-md-4 exchanges">
+                <a href="https://safe.trade/trading/zelbtc" target="_blank">
+                    <div class="exchanges-step">
+                        <figure class="exchanges-icon">
+                            <img src="./img/safetrade.svg" alt="#">
+                        </figure>
+                        <h4>SafeTrade</h4>
                         <p></p>
                     </div>
                 </a>

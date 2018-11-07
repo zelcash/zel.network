@@ -372,6 +372,48 @@ ol {
 
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
 
+/* 404 SECTION */
+
+.error-section div {
+	z-index: 1;
+	margin: auto;
+}
+
+.errorrow {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	height: 100vh;
+	width: 400px;
+	text-align: center;
+}
+
+.error-section {
+	height: 100vh;
+	display: block;
+	background: url("https://source.unsplash.com/1920x1080/?nature,landscape");
+	background-size: cover;
+	background-position: right top;
+	background-repeat: no-repeat;
+	position: relative;
+	overflow: hidden;
+}
+
+.error-section-line {
+	height: 100vh;
+	width: 100%;
+	background: linear-gradient(45deg, #f3f7f9 70%, transparent 70%);
+	position:  absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+}
+
+.error-container {
+	z-index: 4;
+}
+
 /*---------------------
 	Hero Section
 -----------------------*/
@@ -2017,7 +2059,7 @@ ol {
 
 /* Large Mobile :480px. */
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1280px) {
 	.header-section {
 		padding: 30px 0;
 		background: #fff;
@@ -2070,14 +2112,15 @@ ol {
 		font-size: 40px;
 	}
 	.hero-section {
-		height: auto;
+		/* height: auto; */
 		padding-bottom: 100px;
 		padding-top: 160px;
 		background-position: right 50% top;
 	}
 	.page-info-section {
 		background-position: right 56% top;
-		margin-top: 97px;
+		padding-top: 200px;
+		padding-bottom: 197px;
 	}
 	.page-info-section-line {
 		background-position: right 56% top;
