@@ -7,6 +7,7 @@
 	<script src="<?php echo $base_url;?>/js/jquery.paroller.min.js"></script>
 	<script src="<?php echo $base_url;?>/js/aos.js"></script>
 	<script src="<?php echo $base_url;?>/js/multilanguage.min.js"></script>
+	<script src="<?php echo $base_url;?>/js/unified.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.10/clipboard.min.js"></script>
 	<script>
 	$("[data-paroller-factor]").paroller();

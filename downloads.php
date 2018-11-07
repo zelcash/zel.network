@@ -1,6 +1,6 @@
 <section id="downloads" class="downloads-section spad text-center">
     <div class="container">
-        <div data-aos="fade-down" data-aos-duration="2000" class="section-title text-center">
+        <div data-aos="fade-down" data-aos-duration="1000" class="section-title text-center">
             <h2 class="ldownloads">Downloads</h2>
             <p>Zel offers multiple wallets for many of today's platforms</p>
         </div>
