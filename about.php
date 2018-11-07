@@ -4,7 +4,7 @@
             <div class="col-lg-6 offset-lg-6 about-text">
                 <h2 class="lwhatiszelcash">What is ZelCash?</h2>
                 <h5 class="lwhatis1">ZelCash is a cryptocurrency that holds a central role for all transactions in the Zel Ecosystem. It provides incentive for ZelNode ownership, which enables the creation of ZelEx and the ZelDev Platform, enabling us to create a truly decentralized development platform.</h5>
-                <p class="lwhatis2"> ZelCash is minable, making distribution fair to all who secure the network. ZelNodes are soon to be added and will allow holders of ZelCash to receive a portion of the block reward for supplying computing power through operating a ZelNode.</p>
+                <p class="lwhatis2">ZelCash is minable, making distribution fair to all who secure the network. ZelNodes are soon to be added and will allow holders of ZelCash to receive a portion of the block reward for supplying computing power through operating a ZelNode.</p>
                 <div class="centerbuttons">
                     <a href="./pdf/zelcash_whitepaper_v2_English.pdf" class="site-btn sb-gradients mt-5" target="_blank">Whitepaper 2.0</a>
                     <a href="https://explorer.zel.cash/address/t1W3DXSzNbXPWF7ghEU3xcqjLfBAKJGcmN4" class="site-btn sb-gradients sbg-line mt-5" target="_blank">Foundation Fund</a>
