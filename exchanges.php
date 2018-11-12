@@ -60,6 +60,17 @@
                     </div>
                 </a>
             </div>
+            <div data-aos="zoom-in" data-aos-duration="500" class="col-md-4 exchanges">
+                <a href="https://www.tokok.com/market?symbol=ZEL_BTC" target="_blank">
+                    <div class="exchanges-step">
+                        <figure class="exchanges-icon">
+                            <img src="./img/tokok.svg" alt="#">
+                        </figure>
+                        <h4>TOKOK</h4>
+                        <p></p>
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
 </section>
