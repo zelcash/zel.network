@@ -24,13 +24,13 @@
 	<section class="about-section spad">
 		<div class="container">
 			<div class="row">
-				<div data-aos="fade-right" data-aos-duration="3000"  class="col-lg-6 offset-lg-0 about-text">
+				<div data-aos="fade-right" data-aos-duration="1000"  class="col-lg-6 offset-lg-0 about-text">
 					<h2>Modified Equihash 144,5</h2>
 					<h5>ZelCash will swap the POW hashing algorithm from ZCash (200,9) Equihash to ZHash (144,5) Equihash to continue our stance of ASIC-resistance.</h5>
 					<p>Equihash 144,5 is a "stop-gap" for ZelCash. This algo swap will give us time to continue development for ASIC-resistance by exploring more long-term options, such as ProgPOW.</p>
 					<h4>ZelCash Personalization String: "ZelProof"</h4>
 				</div>
-				<div data-aos="fade-left" data-aos-duration="3000"  class="col-lg-6 offset-lg-0 about-text">
+				<div data-aos="fade-left" data-aos-duration="1000"  class="col-lg-6 offset-lg-0 about-text">
 					<h2 >Zawy LWMA Difficulty Algorithm</h2>
 					<h5>The difficulty algorithm will swap from DigiShield v3 to LWMA with the Equihash algo swap. The algorithm was developed for micro/small-cap coins to better adjust difficulty for large hash swings.</h5>
 					<ul>
@@ -48,7 +48,7 @@
 	<!-- About2 section -->
 	<section class="about-section spad">
 		<div class="container">
-			<div data-aos="fade-left" data-aos-duration="3000" class="row">
+			<div data-aos="fade-left" data-aos-duration="1000" class="row">
 				<div class="col-lg-6 offset-lg-7 about-text">
 					<h3>Estimated Swap Date</h3>
 					<h5>July 22nd, ~18:00 UTC</h5>
@@ -60,7 +60,7 @@
 					<h5>Block: 125,110</h5>
 				</div>
 			</div>
-			<div data-aos="fade-right" data-aos-duration="3000" class="algo-img">
+			<div data-aos="fade-right" data-aos-duration="1000" class="algo-img">
 				<div data-paroller-factor="0.1" data-paroller-type="foreground" data-paroller-direction="vertical">
 					<img src="<?php echo $base_url;?>/img/logo.svg" class="logo-img">
 				</div>
@@ -73,7 +73,7 @@
 	<section class="about-section spad">
 		<div class="container">
 			<div class="row">
-				<div data-aos="fade-right" data-aos-duration="3000"  class="col-lg-6 offset-lg-0 about-text">
+				<div data-aos="fade-right" data-aos-duration="1000"  class="col-lg-6 offset-lg-0 about-text">
 					<h2 >Mining Information</h2>
 					<h5>Modified Equihash is similar to the original algorithm in terms of GPU settings. Miners must update mining software and mining scripts. You will see a significantly lower sol rate, this is normal.</h5>
 					<h3 class="mt-4">NVidia</h3>
@@ -85,7 +85,7 @@
 					<h6>Download lolMiner and follow the guide "lolMiner_quickstart.pdf" instructions</h6>
 					<a href="https://bitcointalk.org/index.php?topic=4724735" target="_blank" class="site-btn sb-gradients sbg-line mt-3">lolMiner ANN</a>
 				</div>
-				<div data-aos="fade-left" data-aos-duration="3000"  class="col-lg-6 offset-lg-0 about-text">
+				<div data-aos="fade-left" data-aos-duration="1000"  class="col-lg-6 offset-lg-0 about-text">
 					<h2>Expected Hashrates</h2>
 					<h3>Nvidia:EWBF</h3>
 					<ul>

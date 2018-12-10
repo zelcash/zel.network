@@ -17,8 +17,8 @@
             </div>
 
             <div class="cd-timeline-block">
-                <div data-aos="zoom-in" data-aos-duration="500" class="cd-timeline-img cd-yellow">
-                    <i class="far fa-calendar-alt fa-2x"></i>
+                <div data-aos="zoom-in" data-aos-duration="500" class="cd-timeline-img cd-green">
+                    <i class="far fa-calendar-check fa-2x"></i>
                 </div>
 
                 <div data-aos="fade-left" data-aos-duration="1000" class="cd-timeline-content">
@@ -30,8 +30,8 @@
             </div>
 
             <div class="cd-timeline-block">
-                <div data-aos="zoom-in" data-aos-duration="500" class="cd-timeline-img cd-red">
-                    <i class="far fa-calendar-alt fa-2x"></i>
+                <div data-aos="zoom-in" data-aos-duration="500" class="cd-timeline-img cd-green">
+                    <i class="far fa-calendar-check fa-2x"></i>
                 </div>
 
                 <div data-aos="fade-right" data-aos-duration="1000" class="cd-timeline-content">
@@ -45,14 +45,26 @@
             </div>
 
             <div class="cd-timeline-block">
+                <div data-aos="zoom-in" data-aos-duration="500" class="cd-timeline-img cd-yellow">
+                    <i class="far fa-calendar-alt fa-2x"></i>
+                </div>
+
+                <div data-aos="fade-left" data-aos-duration="1000" class="cd-timeline-content">
+                    <h2>Acadia Upgrade</h2>
+                    <p>Acadia includes all the changes and improvements from Zcash 2.0.2 and brings ZelCash up to date with the latest developments. A big thank you to the Zcash Team.</p>
+                    <span class="cd-date">Q1 2019</span>
+                </div>
+            </div>
+
+            <div class="cd-timeline-block">
                 <div data-aos="zoom-in" data-aos-duration="500" class="cd-timeline-img cd-red">
                     <i class="far fa-calendar-alt fa-2x"></i>
                 </div>
 
                 <div data-aos="fade-left" data-aos-duration="1000" class="cd-timeline-content">
                     <h2>ZelNodes</h2>
-                    <p>ZelNodes are key to creating most of what we envision. They will allow us to build a scalable computing network of decentralized nodes, running ZelChains, Smart Contracts, dApps, tokenization of assets and much more. Developers will be able to utilize Javascript-framework SDK and BDK through the ZelDev platform for a seamless experience. </p>
-                    <span class="cd-date">Q4 2018</span>
+                    <p>ZelNodes are key to creating most of what we envision. They will allow us to build a scalable computing network of decentralized nodes, running ZelChains, Smart Contracts, dApps, tokenization of assets and much more. Developers will be able to utilize Javascript-framework SDK and BDK through the ZelDev platform for a seamless experience.</p>
+                    <span class="cd-date">Q1 2019</span>
                 </div>
             </div>
 
