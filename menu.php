@@ -16,7 +16,6 @@
                 <li><a href="<?php echo $base_url;?>/#downloads" class="ldownloads">Downloads</a></li>
                 <li><a href="<?php echo $base_url;?>/#pools" class="lpools">Pools</a></li>
                 <li><a href="<?php echo $base_url;?>/#tools" class="ltools">Tools & Resources</a></li>
-                <li><a href="<?php echo $base_url;?>/algoswap/" class="lalgoswap">Algoswap</a></li>
 
                 <div class="dropdown">
                     <a><button class="dropbtn sb-gradients llanguages">Languages</button></a>
