@@ -17,8 +17,8 @@
 	}
 	.days,
 	.hours,
-	.mins,
-	.sec {
+	.minutes,
+	.seconds {
 		margin: 10px 0;
 		width: 24%;
 		float: left;
@@ -28,7 +28,7 @@
 	}
 	.days,
 	.hours,
-	.mins {
+	.minutes {
 		border-right: 2px solid #232220;
 	}
 	.days:after {
@@ -43,13 +43,13 @@
 		position: relative;
 		left: 3px;
 	}
-	.mins:after {
+	.minutes:after {
 		content: "min";
 		font-size: 12px;
 		position: relative;
 		left: 3px;
 	}
-	.sec:after {
+	.seconds:after {
 		content: "sec";
 		font-size: 12px;
 		position: relative;
@@ -84,13 +84,14 @@
 			<div data-aos="fade-down" data-aos-duration="1000" class="row">
 				<div class="countdown">
 					<h2>Countdown to Acadia upgrade</h2>
-					<div class="timer">
-						<div class="days">00</div>
-						<div class="hours">00</div>
-						<div class="mins">00</div>
-						<div class="sec">00</div>
+					<div class="blockheight">Current Blockheight:</div>
+					<div id="clockdiv" class="timer">
+						<div class="days"></div>
+						<div class="hours"></div>
+						<div class="minutes"></div>
+						<div class="seconds"></div>
 					</div>
-					<h5>Acadia Binaries release: 14th December 2018</h5>
+					<h5><a href="https://github.com/zelcash/zelcash/releases" target="_blank">Acadia Binaries release: 14th December 2018</a></h5>
 					<h5>Acadia network activation height: 250,000</h5>
 					<h5>Estimated Acadia Activation Date: 12th January 2019</h5>
 				</div>
@@ -160,7 +161,8 @@
     $(document).ready(function(){
         $.MultiLanguage('<?php echo $base_url;?>/lang/charity.json');
 	});
-	
+	</script>
+	<script>
 	$(document).ready(function() {
 	"use strict";
   
@@ -171,13 +173,20 @@
 		conDate = new Date(),
 		$days = $('.days'),
 		$hours = $('.hours'),
-		$mins = $('.mins'),
-		$sec = $('.sec');
+		$mins = $('.minutes'),
+		$sec = $('.seconds');
 
-		conDate.setMonth(1);
-		conDate.setDate(12);
-		conDate.setYear(2019);
-		conDate.setHours(8, 0, 0);
+	$.getJSON('https://zel.coinblockers.com/api/stats', function(data) {
+		let forkHeight=250000;
+		let blockTime=120;
+		let currentHeight = `${data.pools.zelcash.poolStats.networkBlocks}`
+		let blocksLeft = forkHeight - currentHeight;
+		let timeLeft = blocksLeft * blockTime;
+
+		conDate.setSeconds(conDate.getSeconds() + timeLeft);
+
+		$( "div.blockheight" ).html("Current Blockheight: "+currentHeight);
+	});
   
 	function SplitDiff(time) {
 		var nums = '',
