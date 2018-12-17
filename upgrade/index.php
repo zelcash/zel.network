@@ -58,6 +58,10 @@
 	.page-info-section {
 		background: url("https://source.unsplash.com/1920x460/?acadia");
 	}
+	.countdown img {
+		width: 200px;
+		padding-bottom: 50px;
+	}
 	</style>
 </head>
 <body>
@@ -83,6 +87,7 @@
 		<div class="container center">
 			<div data-aos="fade-down" data-aos-duration="1000" class="row">
 				<div class="countdown">
+					<img src="../img/Acadia Logo.png">
 					<h2>Countdown to Acadia upgrade</h2>
 					<div class="blockheight">Current Blockheight:</div>
 					<div id="clockdiv" class="timer">
