@@ -16,6 +16,7 @@
 						<li><a href="<?php echo $base_url;?>/docs">Docs</a></li>
 						<li><a href="<?php echo $base_url;?>/charity" class="lcharity">Charity</a></li>
 						<li><a href="<?php echo $base_url;?>/press">Press</a></li>
+						<li><a href="<?php echo $base_url;?>/upgrade">Acadia Upgrade</a></li>
 						<li><a href="<?php echo $base_url;?>/algoswap">Algo Swap</a></li>
 						<li><a href="<?php echo $base_url;?>/contact" class="lcontactus">Contact us</a></li>
 					</ul>
