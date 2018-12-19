@@ -52,7 +52,7 @@
                 <div data-aos="fade-left" data-aos-duration="1000" class="cd-timeline-content">
                     <h2>Acadia Upgrade</h2>
                     <p>Acadia includes all the changes and improvements from Zcash 2.0.2 and brings ZelCash up to date with the latest developments. A big thank you to the Zcash Team.</p>
-                    <a href="./upgrade/"><button class="site-btn sb-gradients mt-3 lreadmore">Read more</button></a>
+                    <a href="./upgrade/"><button class="site-btn sb-gradients mt-3 readmore">Read more</button></a>
                     <span class="cd-date">Q1 2019</span>
                 </div>
             </div>
