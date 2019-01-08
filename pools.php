@@ -6,6 +6,14 @@
         </div>
         <div class="row">
             <div data-aos="zoom-in" data-aos-duration="500" class="col-md-3 pools">
+                <a href="http://pool.zel.cash/" target="_blank">
+                    <div class="pools-step">
+                        <h4>ZelCash Pool</h4>
+                        <p>0% Fee</p>
+                    </div>
+                </a>
+            </div>
+            <div data-aos="zoom-in" data-aos-duration="500" class="col-md-3 pools">
                 <a href="https://fomominers.com/" target="_blank">
                     <div class="pools-step">
                         <h4>FOMO Miners</h4>
