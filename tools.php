@@ -39,6 +39,21 @@
                         <p><a href="https://my.zel.cash" target="_blank"><i class="fas fa-wallet" style="color:forestgreen"></i> Webwallet</a></p>
                     </div>
             </div>
+            <div data-aos="zoom-in" data-aos-duration="500" class="col-md-4 tools">
+                <div class="tools-step">
+                    <h4>Coin Specs</h4>
+                        <ul>
+                            <li>Privacy Protocol: zkSNARKs</li>
+                            <li>Block Reward: 150 Zel</li>
+                            <li>Block Time: 120 seconds (2min)</li>
+                            <li>Max Supply: 210,000,000</li>
+                            <li>Halving: every 2.5 years</li>
+                            <li>P2P Port: 16125</li>
+                            <li>RPC Port: 16124</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
