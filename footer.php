@@ -33,7 +33,7 @@
 					<h5 class="widget-title lfollowus">Follow Us</h5>
 					<div class="social">
 						<a href="https://twitter.com/zelcash" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a>
-						<a href="https://discord.gg/tTpj2Wm" target="_blank" class="discord"><i class="fab fa-discord"></i></a>
+						<a href="https://discord.io/zelcash" target="_blank" class="discord"><i class="fab fa-discord"></i></a>
 						<a href="https://t.me/zelcash" target="_blank" class="telegram"><i class="fab fa-telegram"></i></a>
 						<a href="https://join.slack.com/t/zelcash/shared_invite/enQtMzkyMjY0MDU3NjA3LWM4NWNkMzQwMDJmNWM4NDJhZTY3YmQ3MDA0MzVhZDE3ZWQxNWU0ODUxMGE4ODk3MTQyOWYyYmZiZTFmY2FiMTM" target="_blank" class="slack"><i class="fab fa-slack"></i></a>
 						<a href="https://www.reddit.com/r/ZelCash/" target="_blank" class="reddit"><i class="fab fa-reddit"></i></a>
