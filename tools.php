@@ -42,15 +42,13 @@
             <div data-aos="zoom-in" data-aos-duration="500" class="col-md-4 tools">
                 <div class="tools-step">
                     <h4>Coin Specs</h4>
-                        <ul>
-                            <li>Privacy Protocol: zkSNARKs</li>
-                            <li>Block Reward: 150 Zel</li>
-                            <li>Block Time: 120 seconds (2min)</li>
-                            <li>Max Supply: 210,000,000</li>
-                            <li>Halving: every 2.5 years</li>
-                            <li>P2P Port: 16125</li>
-                            <li>RPC Port: 16124</li>
-                        </ul>
+                        <p>Privacy Protocol: zkSNARKs</p>
+                        <p>Block Reward: 150 Zel</p>
+                        <p>Block Time: 120 seconds (2min)</p>
+                        <p>Max Supply: 210,000,000</p>
+                        <p>Halving: every 2.5 years</p>
+                        <p>P2P Port: 16125</p>
+                        <p>RPC Port: 16124</p>
                     </div>
                 </div>
             </div>
