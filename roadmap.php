@@ -11,7 +11,7 @@
                 </div>
 
                 <div data-aos="fade-right" data-aos-duration="1000" class="cd-timeline-content">
-                    <h2>ZelTreZ release</h2>
+                    <h2>ZelCore (formerly known as ZelTreZ) release</h2>
                     <span class="cd-date">MAY</span>
                 </div>
             </div>
@@ -41,6 +41,19 @@
                 <div data-aos="fade-right" data-aos-duration="1000" class="cd-timeline-content">
                     <h2>Whitepaper 2.0</h2>
                     <a href="./pdf/zelcash_whitepaper_v2_English.pdf" target="_blank"><button class="site-btn sb-gradients mt-3 ldownloadpdf">Download PDF</button></a>
+                </div>
+            </div>
+
+            <div class="cd-timeline-block">
+                <div data-aos="zoom-in" data-aos-duration="500" class="cd-timeline-img cd-green">
+                    <i class="far fa-calendar-check fa-2x"></i>
+                </div>
+
+                <div data-aos="fade-left" data-aos-duration="1000" class="cd-timeline-content">
+                    <h2>ZelCash Community Pool</h2>
+                    <p>Help secure the ZelCash blockchain by distributing network mining hash and take advantage of zero fees currently.</p>
+                    <a href="https://pool.zel.cash" target="_blank"><button class="site-btn sb-gradients mt-3">Visit</button></a>
+                    <span class="cd-date">Q1 2019</span>
                 </div>
             </div>
 
