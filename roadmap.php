@@ -58,7 +58,7 @@
             </div>
 
             <div class="cd-timeline-block">
-                <div data-aos="zoom-in" data-aos-duration="500" class="cd-timeline-img cd-red">
+                <div data-aos="zoom-in" data-aos-duration="500" class="cd-timeline-img cd-yellow">
                     <i class="far fa-calendar-alt fa-2x"></i>
                 </div>
 
