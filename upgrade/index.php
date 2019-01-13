@@ -123,7 +123,7 @@
 						<li>Replay Protection <a rel="tooltip" title="Getting us ready for future network upgrades."><i class="fas fa-info-circle"></i></a></li>
 						<li>Decoupled spend authority <a rel="tooltip" title="Allows the hardware that constructs the zero-knowledge proof to be independent from the hardware that signs for the transaction."><i class="fas fa-info-circle"></i></a></li>
 						<li>Improved keys <a rel="tooltip" title="Full viewing keys allow owners of shielded addresses the ability to view incoming and outgoing transaction details without exposing their private spending key."><i class="fas fa-info-circle"></i></a></li>
-						<li>Improved Difficulty Algorithm <a rel="tooltip" title="Bringing us up to the latest from zawy12, LWMA-4."><i class="fas fa-info-circle"></i></a></li>
+						<li>Improved Difficulty Algorithm <a rel="tooltip" title="Bringing us up to the latest from zawy12, LWMA-3."><i class="fas fa-info-circle"></i></a></li>
 						<li>New address <a rel="tooltip" title="Address: za (Acadia)"><i class="fas fa-info-circle"></i></a></li>
 					</ul>
 				</div>
