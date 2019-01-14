@@ -125,53 +125,60 @@
 	</section>
 	<!-- About section end -->
 
-	<!-- ZelNodes section -->
-	<section class="about-section spad">
-		<div class="container">
+	<!-- ZelNodes -->
+	<section class="features-section spad gradient-bg">
+		<div class="container text-white">
+			<div data-aos="fade-down" data-aos-duration="1000" class="section-title text-center">
+				<h2>ZelNodes</h2>
+				<p>3-tiers</p>
+			</div>
 			<div class="row">
-				<div data-aos="fade-right" data-aos-duration="1000"  class="col-lg-6 offset-lg-0 about-text">
-					<h2>ZelNode Basic</h2>
-					<h5>10,000 ZEL</h5>
-					<ul>
-						<li>2 vCore</li>
-						<li>4GB RAM</li>
-						<li>50GB SSD</li>
-						<li>2.5TB Bandwidth</li>
-					</ul>
+				<!-- feature -->
+				<div data-aos="zoom-in" data-aos-duration="500" class="col-md-6 col-lg-4 feature">
+					<i class="ti-layout-grid2-alt"></i>
+					<div class="feature-content">
+						<h4>ZelNode Basic</h4>
+						<p>10,000 ZEL</p>
+						<ul>
+							<li>2 vCore</li>
+							<li>4GB RAM</li>
+							<li>50GB SSD</li>
+							<li>2.5TB Bandwidth</li>
+						</ul>
+					</div>
 				</div>
-				<div data-aos="fade-left" data-aos-duration="1000"  class="col-lg-6 offset-lg-0 about-text">
-					<h2>ZelNodes Super</h2>
-					<h5>25,000 ZEL</h5>
-					<ul>
-						<li>4 vCore</li>
-						<li>8GB RAM</li>
-						<li>150GB SSD</li>
-						<li>4TB Bandwidth</li>
-					</ul>
+				<!-- feature -->
+				<div data-aos="zoom-in" data-aos-duration="500" class="col-md-6 col-lg-4 feature">
+					<i class="ti-layout-grid3-alt"></i>
+					<div class="feature-content">
+						<h4>ZelNode Super</h4>
+						<p>25,000 ZEL</p>
+						<ul>
+							<li>4 vCore</li>
+							<li>8GB RAM</li>
+							<li>150GB SSD</li>
+							<li>4TB Bandwidth</li>
+						</ul>
+					</div>
+				</div>
+				<!-- feature -->
+				<div data-aos="zoom-in" data-aos-duration="500" class="col-md-6 col-lg-4 feature">
+					<i class="ti-layout-grid4-alt"></i>
+					<div class="feature-content">
+						<h4>ZelNode BAMF</h4>
+						<p>100,000 ZEL</p>
+						<ul>
+							<li>8 vCore</li>
+							<li>32GB RAM</li>
+							<li>600GB SSD</li>
+							<li>6TB Bandwidth</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<!-- ZelNodes section end -->
-
-	<!-- ZelNodes section 2 -->
-	<section class="about-section spad">
-		<div class="container">
-			<div class="row">
-				<div data-aos="fade-right" data-aos-duration="1000"  class="col-lg-6 offset-lg-0 about-text">
-					<h2>ZelNode BAMF</h2>
-					<h5>100,000 ZEL</h5>
-					<ul>
-						<li>8 vCore</li>
-						<li>32GB RAM</li>
-						<li>600GB SSD</li>
-						<li>6TB Bandwidth</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- ZelNodes section 2 end -->
+	<!-- ZelNodes end -->
 
     <?php include '../footer.php';?>
 
