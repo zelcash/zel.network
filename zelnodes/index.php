@@ -133,7 +133,6 @@
 				<p>3-tiers</p>
 			</div>
 			<div class="row">
-				<!-- feature -->
 				<div data-aos="zoom-in" data-aos-duration="500" class="col-md-6 col-lg-4 feature">
 					<i class="ti-layout-grid2-alt"></i>
 					<div class="feature-content">
@@ -147,7 +146,6 @@
 						</ul>
 					</div>
 				</div>
-				<!-- feature -->
 				<div data-aos="zoom-in" data-aos-duration="500" class="col-md-6 col-lg-4 feature">
 					<i class="ti-layout-grid3-alt"></i>
 					<div class="feature-content">
@@ -161,7 +159,6 @@
 						</ul>
 					</div>
 				</div>
-				<!-- feature -->
 				<div data-aos="zoom-in" data-aos-duration="500" class="col-md-6 col-lg-4 feature">
 					<i class="ti-layout-grid4-alt"></i>
 					<div class="feature-content">
@@ -179,6 +176,43 @@
 		</div>
 	</section>
 	<!-- ZelNodes end -->
+
+	<!-- Reward Structure -->
+	<section id="about" class="about-section spad">
+		<div class="container">
+			<div data-aos="fade-right" data-aos-duration="1000" class="row">
+				<div class="col-lg-6 offset-lg-6 about-text">
+					<h2>Reward Structure</h2>
+					<h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore voluptatibus velit nobis mollitia repellendus accusamus, rerum nihil repellat totam, dolorum autem animi maiores. Doloremque obcaecati hic nihil totam, recusandae excepturi.</h5>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus tenetur nam, magnam error enim nisi beatae ea aliquam soluta excepturi voluptas fugiat perferendis voluptate adipisci eum eligendi consequuntur amet harum.</p>
+				</div>
+			</div>
+			<div data-aos="fade-left" data-aos-duration="1000" class="about-img">
+				<div class="offset-lg-3 about-text">
+					<div class="pieID pie"></div>
+					<ul class="pieID legend">
+						<li>
+						<em>Basic</em>
+						<span>3.75</span>
+						</li>
+						<li>
+						<em>Super</em>
+						<span>6.25</span>
+						</li>
+						<li>
+						<em>BAMF</em>
+						<span>15</span>
+						</li>
+						<li>
+						<em>POW</em>
+						<span>75</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Reward Structure end -->
 
     <?php include '../footer.php';?>
 
@@ -251,6 +285,62 @@
 	loop();
 	});
     </script>
+	<script>
+	function sliceSize(dataNum, dataTotal) {
+		return (dataNum / dataTotal) * 360;
+	}
+	function addSlice(sliceSize, pieElement, offset, sliceID, color) {
+		$(pieElement).append("<div class='slice "+sliceID+"'><span></span></div>");
+		var offset = offset - 1;
+		var sizeRotation = -179 + sliceSize;
+		$("."+sliceID).css({
+			"transform": "rotate("+offset+"deg) translate3d(0,0,0)"
+		});
+		$("."+sliceID+" span").css({
+			"transform"       : "rotate("+sizeRotation+"deg) translate3d(0,0,0)",
+			"background-color": color
+		});
+	}
+	function iterateSlices(sliceSize, pieElement, offset, dataCount, sliceCount, color) {
+		var sliceID = "s"+dataCount+"-"+sliceCount;
+		var maxSize = 179;
+		if(sliceSize<=maxSize) {
+			addSlice(sliceSize, pieElement, offset, sliceID, color);
+		} else {
+			addSlice(maxSize, pieElement, offset, sliceID, color);
+			iterateSlices(sliceSize-maxSize, pieElement, offset+maxSize, dataCount, sliceCount+1, color);
+		}
+	}
+	function createPie(dataElement, pieElement) {
+		var listData = [];
+		$(dataElement+" span").each(function() {
+			listData.push(Number($(this).html()));
+		});
+		var listTotal = 0;
+		for(var i=0; i<listData.length; i++) {
+			listTotal += listData[i];
+		}
+		var offset = 0;
+		var color = [
+			"cornflowerblue", 
+			"olivedrab", 
+			"orange", 
+			"tomato", 
+			"crimson", 
+			"purple", 
+			"turquoise", 
+			"forestgreen", 
+			"navy", 
+		];
+		for(var i=0; i<listData.length; i++) {
+			var size = sliceSize(listData[i], listTotal);
+			iterateSlices(size, pieElement, offset, i, 0, color[i]);
+			$(dataElement+" li:nth-child("+(i+1)+")").css("border-color", color[i]);
+			offset += size;
+		}
+	}
+	createPie(".pieID.legend", ".pieID.pie");
+	</script>
 
 </body>
 </html>
