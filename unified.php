@@ -14,7 +14,7 @@
 </div>
 
 <div class="unified" onclick="openNav()">
-    <a href="#" onclick="openNav()">Zel Ecosystem</a>
+    <a href="#" onclick="openNav()"><i class="fas fa-bars"></i> Zel Ecosystem</a>
 </div>
 
 <div class="triangle-down">
