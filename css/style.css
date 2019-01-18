@@ -2546,6 +2546,7 @@ ol {
 .pieID {
   display: inline-block;
   vertical-align: top;
+  margin: auto 0;
 }
 
 .pie {
