@@ -96,15 +96,21 @@
 						<div class="minutes"></div>
 						<div class="seconds"></div>
 					</div>
-					<h5>ZelNodes release on height: 278,600</h5>
+					<h5>ZelNodes estimated activation on height: 278,000</h5>
 					<h5>Estimated release date of  ZelNodes Source: 31st January 2019</h5>
 					<h5>Estimated launch of ZelNodes/Rewards: 21st February 2019</h5>
 					<br>
 					<br>
 					<div>
-						<a href="/img/ZelNode_Infographic_v2.png" class="site-btn sb-gradients mt-5" target="_blank">Infographic</a>
-						<a href="https://medium.com/@ZelOfficial/zelnodes-the-decentralized-scalable-high-availability-computing-network-57c1b4245fbd" class="site-btn sb-gradients mt-5" target="_blank">ZelNodes Details</a>
+						<a href="https://medium.com/@ZelOfficial/zelnodes-dates-specs-network-upgrade-payout-cycles-et-al-8c5b84fbbf70" class="site-btn sb-gradients mt-5" target="_blank">ZelNode Release/Activation Info</a>
+					</div>
+					<div>
+						<a href="/img/ZelNode_Infographic_v2.png" class="site-btn sb-gradients mt-5" target="_blank">ANN Infographic</a>
+						<a href="https://medium.com/@ZelOfficial/zelnodes-the-decentralized-scalable-high-availability-computing-network-57c1b4245fbd" class="site-btn sb-gradients mt-5" target="_blank">ZelNode Theory & Req's</a>
 						<a href="https://medium.com/@ZelOfficial/zelnodes-zel-partners-with-service-providers-for-rollout-c4b0aa8895e2" class="site-btn sb-gradients mt-5" target="_blank">VPS Partnerships</a>
+					</div>
+					<div>
+						<a href="" class="site-btn sb-gradients mt-5" target="_blank">Installation Resources (Under Construction)</a>
 					</div>
 				</div>
 			</div>
@@ -139,9 +145,10 @@
 						<li>VPS discounts through our partners</li><br>
 						<li>Support via Discord for Node operators</li><br>
 						<li>3 levels of ZelNode ownership</li><br>
-						<li>Nodes will power future dapps & smart contracts</li><br>
+						<li>Nodes will power future dapps, smart contracts, sidechains & asset layers</li><br>
 						<li>Source code available January 31, 2019</li><br>
 						<li>Network upgrade & Nodes launch February 21, 2019 <a href="#launch">Details</a></li><br>
+						<li>Benchmarking must meet minimum specs, uptime requirement: > 97% <a rel="tooltip" title="Benchmarking will be performed per tier and based on results from the equivalently-spec'd DigitalOcean Droplet for the specs below. Uptime requirement allows for ~ 40 minutes downtime per day for maintenance, unforseen issues, etc."><i class="fas fa-info-circle"></i></a></li><br>
 					</ul>
 				</div>
 			</div>
@@ -280,7 +287,7 @@
 		$sec = $('.seconds');
 
 	$.getJSON('https://zel.coinblockers.com/api/stats', function(data) {
-		let forkHeight=278600;
+		let forkHeight=278000;
 		let blockTime=120;
 		let currentHeight = `${data.pools.zelcash.poolStats.networkBlocks}`
 		let blocksLeft = forkHeight - currentHeight;
