@@ -217,9 +217,12 @@
 				<div class="col-lg-6 offset-lg-6 about-text">
 					<h2>Reward Structure</h2>
 					<h5>The block reward is split 75% POW / 25% ZelNode operators, for each and every block. The rewards for ZelNode ownership is designed to be stable and long-term. This will not be a "10,000% ROI masternode" project that dies 1 week after launch. We promote ZelCash accumulation, not dumping.</h5>
-					<p>Of the 25% ZelNode block share, 15% goes to Basics, 25% to Supers, and 60% to BAMFs. Each chunk of rewards is split among the operators at that tier, e.g. if there are 100 BAMF ZelNodes in operation, each operator would receive:</p>
-					<p><b>150 * [(0.25 * 0.60) / 100] = 0.225 ZelCash every ~2 minutes</b></p>
-					<p>(150 Zel per block, 2 minute target find time).</p>
+					<p>Of the 25% ZelNode block share, 15% goes to Basics, 25% to Supers, and 60% to BAMFs. Each chunk of rewards is split among the operators at that tier in a "Round Robin" mechanism. Nodes with the longest time since receiving rewards are on the top of the list to be paid out for the next block find. The more Nodes per tier, the longer the time between payouts for each operator.</p>
+					<p><b>BAMF: 1 Node receives 22.5 Zel per blockfind<br>
+					Super: 1 Node receives 9.375 Zel per blockfind<br>
+					Basic: 1 Node receives 5.625 Zel per blockfind<br>
+					(150 Zel per block, 2 minute target find time)</b></p><br>
+					<p>After a Node receives rewards, it cycles to the bottom of the list.</p>
 				</div>
 			</div>
 			<div data-aos="fade-left" data-aos-duration="1000" class="about-img">
@@ -257,7 +260,7 @@
 					<h2>Launch Details</h2>
 					<br><br><h5>ZelNodes rollout requires both a ZelCash network upgrade and the ZelNodes daemon set up and running on your VPS/dedicated server. To minimize launch issues, these large items cannot be performed on the same day, and time to correct any errors and support node operators needs to be set aside.</h5><br>
 					<h5>There will be a 3-week buffer between code release and ZelNode rewards turning on to allow time for the network upgrade and operators to stand up their nodes, implement server security, and network testing.</h5><br>
-					<h3>During this time, we will also implement features to set up your control wallet using ZelCore light addresses and have written and video instructions with install scripts available. This will be hugely beneficial to operators ease-of-use as typically masternode projects require a full node payments wallet with fully synced chain data.</h3>
+					<h3>During this time, we will also implement features to setup your control wallet using ZelCore light addresses. We will provide written and video instructions with install scripts available. Ensure you only use install scripts from the official ZelCash Github (do not trust other scripts blindly). This will be hugely beneficial to operators ease-of-use as typically masternode projects require a full payment node payment wallet with fully syned chain data.</h3>
 				</div>
 			</div>
 		</div>
