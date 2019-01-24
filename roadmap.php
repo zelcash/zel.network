@@ -78,6 +78,7 @@
                 <div data-aos="fade-left" data-aos-duration="1000" class="cd-timeline-content">
                     <h2>ZelNodes</h2>
                     <p>ZelNodes are key to creating most of what we envision. They will allow us to build a scalable computing network of decentralized nodes, running ZelChains, Smart Contracts, dApps, tokenization of assets and much more. Developers will be able to utilize Javascript-framework SDK and BDK through the ZelDev platform for a seamless experience.</p>
+                    <a href="./zelnodes/"><button class="site-btn sb-gradients mt-3 ZelNodes Info">ZelNodes Info</button></a>
                     <span class="cd-date">Q1 2019</span>
                 </div>
             </div>
