@@ -2630,3 +2630,7 @@ ol {
 .legend span::after {
   content: '%';
 }
+
+@media (min-width:992px){
+	.offset-top-lg-3{margin-top:25%}
+}

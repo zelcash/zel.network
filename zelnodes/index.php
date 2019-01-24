@@ -157,7 +157,6 @@
 	<!-- About section end -->
 
 	<!-- ZelNodes -->
-	<a name="specs"></a>
 	<section class="features-section spad gradient-bg">
 		<div class="container text-white">
 			<div data-aos="fade-down" data-aos-duration="1000" class="section-title text-center">
@@ -210,7 +209,6 @@
 	<!-- ZelNodes end -->
 
 	<!-- Reward Structure -->
-	<a name="rewards"></a>
 	<section id="about" class="about-section spad">
 		<div class="container">
 			<div data-aos="fade-right" data-aos-duration="1000" class="row">
@@ -226,7 +224,7 @@
 				</div>
 			</div>
 			<div data-aos="fade-left" data-aos-duration="1000" class="about-img">
-				<div class="offset-lg-3 about-text">
+				<div class="offset-lg-3 offset-top-lg-3 about-text">
 					<div class="pieID pie"></div>
 					<ul class="pieID legend">
 						<li>
@@ -251,21 +249,22 @@
 		</div>
 	</section>
 	<!-- Reward Structure end -->
+
 	<!-- Launch process start -->
-	<section id="launch" class="about-section spad gradient-bg">
+	<section class="spad gradient-bg">
 		<div class="container text-white">
-			<div data-aos="fade-left" data-aos-duration="1000" class="row">
-				<div class="about-text">
-					<a name="launch"></a>
-					<h2>Launch Details</h2>
-					<br><br><h5>ZelNodes rollout requires both a ZelCash network upgrade and the ZelNodes daemon set up and running on your VPS/dedicated server. To minimize launch issues, these large items cannot be performed on the same day, and time to correct any errors and support node operators needs to be set aside.</h5><br>
-					<h5>There will be a 3-week buffer between code release and ZelNode rewards turning on to allow time for the network upgrade and operators to stand up their nodes, implement server security, and network testing.</h5><br>
-					<h3>During this time, we will also implement features to setup your control wallet using ZelCore light addresses. We will provide written and video instructions with install scripts available. Ensure you only use install scripts from the official ZelCash Github (do not trust other scripts blindly). This will be hugely beneficial to operators ease-of-use as typically masternode projects require a full payment node payment wallet with fully syned chain data.</h3>
-				</div>
+			<div data-aos="fade-down" data-aos-duration="1000" class="section-title text-center">
+				<h2>Launch Details</h2>
+			</div>
+			<div data-aos="fade-left" data-aos-duration="1000" class="about-text">
+				<h5>ZelNodes rollout requires both a ZelCash network upgrade and the ZelNodes daemon set up and running on your VPS/dedicated server. To minimize launch issues, these large items cannot be performed on the same day, and time to correct any errors and support node operators needs to be set aside.</h5><br>
+				<h5>There will be a 3-week buffer between code release and ZelNode rewards turning on to allow time for the network upgrade and operators to stand up their nodes, implement server security, and network testing.</h5><br>
+				<h3>During this time, we will also implement features to setup your control wallet using ZelCore light addresses. We will provide written and video instructions with install scripts available. Ensure you only use install scripts from the official ZelCash Github (do not trust other scripts blindly). This will be hugely beneficial to operators ease-of-use as typically masternode projects require a full payment node payment wallet with fully syned chain data.</h3>
 			</div>
 		</div>
 	</section>
 	<!-- Reward Structure end -->
+
     <?php include '../footer.php';?>
 
     <?php include '../scripts.php';?>
