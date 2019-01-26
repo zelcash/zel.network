@@ -732,7 +732,7 @@ ol {
 
 .member.smaller {
 	width: calc(17% - 25px);
-	padding: 40px 10px;
+	padding: 40px 10px 20px 10px;
 }
 
 .member h2 {
@@ -775,8 +775,8 @@ ol {
 }
 
 .member.smaller .member-img {
-	width: 200px;
-	height: 200px;
+	width: 150px;
+	height: 150px;
 }
 
 .member-social {
@@ -800,6 +800,10 @@ ol {
 	padding-left: 85px;
 }
 
+.smaller .member-meta {
+	padding-left: 70px;
+}
+
 .member-info {
 	padding: 50px 60px 10px;
 	position: absolute;
@@ -813,6 +817,11 @@ ol {
 	transition: all 0.4s;
 	height: 380px;
 	overflow-y: auto;
+}
+
+.smaller .member-info {
+	padding: 40px 20px 10px;
+	height: 280px;
 }
 
 .member-info p {
@@ -1918,10 +1927,10 @@ ol {
 }
 
 @media (min-width: 1199px) and (max-width: 1390px) {
-	.member {
+	.member, .member.smaller {
 		padding: 35px 10px;
 	}
-	.member-img {
+	.member-img, .smaller.member-img {
 		width: 160px;
 		height: 160px;
 	}
@@ -1944,7 +1953,7 @@ ol {
 	.page-info-section {
 		background-position: right 23% top;
 	}
-	.member {
+	.member, .member.smaller {
 		width: calc(33.333333% - 25px);
 		margin-bottom: 30px;
 	}
@@ -2010,7 +2019,7 @@ ol {
 		width: auto;
 		margin-top: 50px;
 	}
-	.member {
+	.member, .member.smaller {
 		width: calc(33.333333% - 25px);
 		margin-bottom: 30px;
 		padding: 35px 10px;
@@ -2165,7 +2174,7 @@ ol {
 		margin: 0;
 		padding: 0 15px;
 	}
-	.member {
+	.member, .member.smaller {
 		width: 100%;
 		margin-bottom: 30px;
 		margin-left: 0;
