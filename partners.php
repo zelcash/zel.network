@@ -2,7 +2,7 @@
     <div class="container">
         <div data-aos="fade-down" data-aos-duration="1000" class="section-title text-center">
             <h2 class="lmeetourpartners">Meet Our Partners</h2>
-            <h4>Zel has partnered with industry leaders providing powerful resources to ZelCash & ZelCore</h4>
+            <h4>ZelCash has partnered with industry leaders providing powerful resources to ZelCash & ZelCore</h4>
         </div>
     </div>
     <div class="team-members clearfix">
