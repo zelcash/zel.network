@@ -24,9 +24,20 @@
                         <img src="./img/logo-zelcash-round.svg" alt="#">
                     </figure>
                     <h4>ZelCash Swing Wallet</h4>
-                        <a href="https://github.com/zelcash/zelcash-swing-wallet/releases"><img src="./img/windows.svg" alt="ZelCash Swing for Windows"></a>
-                        <a href="https://github.com/zelcash/zelcash-swing-wallet/releases"><img src="./img/macos.svg" alt="ZelCash Swing for macOS"></a>
-                        <a href="https://github.com/zelcash/zelcash-swing-wallet/releases"><img src="./img/linux.svg" alt="ZelCash Swing for Linux"></a>
+                        <a href="https://github.com/zelcash/zelcash-swing-wallet/releases/download/v6.1.0/ZelCashSwingWallet-6.1.0.exe"><img src="./img/windows.svg" alt="ZelCash Swing for Windows"></a>
+                        <a href="https://github.com/zelcash/zelcash-swing-wallet/releases/download/v6.1.0/ZelCashSwingWallet-6.1.0.dmg"><img src="./img/macos.svg" alt="ZelCash Swing for macOS"></a>
+                        <a href="https://github.com/zelcash/zelcash-swing-wallet/releases/download/v6.1.0/ZelCashSwingWallet-6.1.0.deb"><img src="./img/linux.svg" alt="ZelCash Swing for Linux (.deb)"></a>
+                </div>
+            </div>
+            <div data-aos="zoom-in" data-aos-duration="500" class="col-md-4 downloads">
+                <div class="downloads-step">
+                    <figure class="downloads-icon">
+                        <img src="./img/logo-zelcash-round.svg" alt="#">
+                    </figure>
+                    <h4>ZelCash Daemon</h4>
+                        <a href="https://github.com/zelcash/zelcash/releases/download/v2.0.0/Windows.zip"><img src="./img/windows.svg" alt="ZelCash Daemon for Windows"></a>
+                        <a href="https://github.com/zelcash/zelcash/releases/download/v2.0.0/macOS.zip"><img src="./img/macos.svg" alt="ZelCash Daemon for macOS"></a>
+                        <a href="https://github.com/zelcash/zelcash/releases/download/v2.0.0/Linux.zip"><img src="./img/linux.svg" alt="ZelCash Daemon for Linux"></a>
                 </div>
             </div>
         </div>

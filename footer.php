@@ -25,7 +25,7 @@
 					<h5 class="widget-title lquicklinks">Quick Links</h5>
 					<ul>
 						<li><a href="https://zelcore.io" target="_blank">ZelCore</a></li>
-						<li><a href="https://github.com/zelcash/zelcash-copay-wallet" target="_blank">ZelCash Copay Wallet</a></li>
+						<li><a href="https://github.com/zelcash/zelcash-swing-wallet/releases" target="_blank">ZelCash Swing Wallet</a></li>
 						<li><a href="<?php echo $base_url;?>/pdf/zelcash_whitepaper_v2_English.pdf">Whitepaper</a></li>
 					</ul>
 				</div>

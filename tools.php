@@ -14,6 +14,7 @@
                         <p><a href="https://explorer.zel.cash" target="_blank"><i class="fas fa-globe-africa" style="color:dodgerblue"></i> Main</a></p>
                         <p><a href="https://explorer2.zel.cash" target="_blank"><i class="fas fa-globe-americas" style="color:dodgerblue"></i> Backup</a></p>
                         <p><a href="https://explorer.zelcash.online" target="_blank"><i class="fas fa-globe-asia" style="color:dodgerblue"></i> Backup 2</a></p>
+                        <p><a href="https://explorer.zel.zelcore.io/" target="_blank"><i class="fas fa-globe-asia" style="color:dodgerblue"></i> ZelCore</a></p>
                 </div>
             </div>
             <div data-aos="zoom-in" data-aos-duration="500" class="col-md-4 tools">
@@ -24,7 +25,6 @@
                     <h4>Github</h4>
                         <p><a href="https://github.com/zelcash/zelcash" target="_blank"><i class="fas fa-link" style="color:gray"></i> zelcash</a></p>
                         <p><a href="https://github.com/zelcash/zelcash-mac" target="_blank"><i class="fas fa-link" style="color:gray"></i> zelcash-mac</a></p>
-                        <p><a href="https://github.com/zelcash/zelcash-copay-wallet" target="_blank"><i class="fas fa-link" style="color:gray"></i> ZelCash Copay Wallet</a></p>
                         <p><a href="https://github.com/zelcash/zel-style-guide" target="_blank"><i class="fas fa-link" style="color:gray"></i> Style Guide</a></p>
                         <p><a href="https://github.com/zelcash/zelgen" target="_blank"><i class="fas fa-link" style="color:gray"></i> zelgen</a></p>
                     </div>
