@@ -1,4 +1,4 @@
-<section id="team" class="team-section spad text-center">
+<section id="partners" class="team-section spad text-center">
     <div class="container">
         <div data-aos="fade-down" data-aos-duration="1000" class="section-title text-center">
             <h2 class="lmeetourpartners">Meet Our Partners</h2>
