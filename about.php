@@ -10,6 +10,9 @@
                     <a href="https://explorer.zel.cash/address/t1W3DXSzNbXPWF7ghEU3xcqjLfBAKJGcmN4" class="site-btn sb-gradients sbg-line mt-5" target="_blank">Foundation Fund</a>
                     <a href="./about" class="site-btn sb-gradients sbg-line mt-5 readmore">Read more</a>
                 </div>
+                <div class="centerbuttons">
+                    <a href="https://zel.cash/zelnodes" class="site-btn sb-gradients mt-5" target="_blank">ZelNodes Info Page</a>
+                </div>
             </div>
         </div>
         <div data-aos="fade-left" data-aos-duration="1000" class="about-img">
