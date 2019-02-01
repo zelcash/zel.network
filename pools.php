@@ -105,7 +105,7 @@
                 <a href="https://zel.solopool.org/#/" target="_blank">
                     <div class="pools-step">
                         <h4>SoloPool</h4>
-                        <p>Pooled + Solo</p>
+                        <p>&nbsp;</p>
                     </div>
                 </a>
             </div>
