@@ -38,6 +38,14 @@
                 </a>
             </div>
             <div data-aos="zoom-in" data-aos-duration="500" class="col-md-3 pools">
+                <a href="https://zel.coinblockers.com/" target="_blank">
+                    <div class="pools-step">
+                        <h4>Coinblockers</h4>
+                        <p>&nbsp;</p>
+                    </div>
+                </a>
+            </div>
+            <div data-aos="zoom-in" data-aos-duration="500" class="col-md-3 pools">
                 <a href="https://equigems.online" target="_blank">
                     <div class="pools-step">
                         <h4>Equigems</h4>
@@ -122,14 +130,6 @@
                     <div class="pools-step">
                         <h4>Zergpool</h4>
                         <p>Auto-exchanging</p>
-                    </div>
-                </a>
-            </div>
-            <div data-aos="zoom-in" data-aos-duration="500" class="col-md-3 pools">
-                <a href="https://zel.coinblockers.com/" target="_blank">
-                    <div class="pools-step">
-                        <h4>Coinblockers</h4>
-                        <p>&nbsp;</p>
                     </div>
                 </a>
             </div>
