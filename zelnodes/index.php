@@ -110,7 +110,7 @@
 						<a href="https://medium.com/@ZelOfficial/zelnodes-zel-partners-with-service-providers-for-rollout-c4b0aa8895e2" class="site-btn sb-gradients mt-5" target="_blank">VPS Partnerships</a>
 					</div>
 					<div>
-						<a href="" class="site-btn sb-gradients mt-5" target="_blank">Installation Resources (Under Construction)</a>
+						<a href="https://github.com/zelcash/zelcash/wiki" class="site-btn sb-gradients mt-5" target="_blank">Installation Resources Wiki</a>
 					</div>
 				</div>
 			</div>
