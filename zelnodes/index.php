@@ -147,7 +147,7 @@
 						<li>Support via Discord for Node operators</li><br>
 						<li>3 levels of ZelNode ownership</li><br>
 						<li>Nodes will power future dapps, smart contracts, sidechains & asset layers</li><br>
-						<li>Source code available January 31, 2019</li><br>
+						<li>Source code available January 31, 2019 <a href="https://github.com/zelcash/zelcash/tree/beta_nodes" target="_blank">Source Branch</a></li><br>
 						<li>Network upgrade & Nodes launch February 21, 2019 <a href="#launch">Details</a></li><br>
 						<li>Benchmarking must meet minimum specs, uptime requirement: > 97% <a rel="tooltip" title="Benchmarking will be performed per tier and based on results from the equivalently-spec'd DigitalOcean Droplet for the specs below. Uptime requirement allows for ~ 40 minutes downtime per day for maintenance, unforseen issues, etc."><i class="fas fa-info-circle"></i></a></li><br>
 					</ul>
