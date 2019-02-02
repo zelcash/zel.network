@@ -17,7 +17,7 @@
                     <a href="https://2miners.com/zel-mining-pool" target="_blank">
                         <div class="pools-step">
                             <h4>2miners</h4>
-                            <p>&nbsp;</p>
+                            <p>Pooled + Solo</p>
                     </div>
                 </a>
             </div>
