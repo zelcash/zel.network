@@ -96,9 +96,8 @@
 						<div class="minutes"></div>
 						<div class="seconds"></div>
 					</div>
-					<h5>ZelNodes estimated activation on height: 278,000</h5>
-					<h5>Estimated release date of  ZelNodes Source: 31st January 2019</h5>
-					<h5>Estimated launch of ZelNodes/Rewards: 21st February 2019</h5>
+					<h5>ZelNodes estimated activation on height: 279850</h5>
+					<h5>Estimated Rewards Activation: 23 February 2019 @ 20:00 UTC</h5>
 					<br>
 					<br>
 					<div>
@@ -290,7 +289,7 @@
 		$sec = $('.seconds');
 
 	$.getJSON('https://zel.coinblockers.com/api/stats', function(data) {
-		let forkHeight=278000;
+		let forkHeight=279850;
 		let blockTime=120;
 		let currentHeight = `${data.pools.zelcash.poolStats.networkBlocks}`
 		let blocksLeft = forkHeight - currentHeight;
