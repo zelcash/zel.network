@@ -6,12 +6,12 @@
         </div>
         <div class="row">
             <div data-aos="zoom-in" data-aos-duration="500" class="col-md-4 exchanges">
-                <a href="https://app.stocks.exchange/en/basic-trade/pair/BTC/ZEL/1D" target="_blank">
+                <a href="https://app.stex.com/en/trade/pair/BTC/ZEL/1D" target="_blank">
                     <div class="exchanges-step">
                         <figure class="exchanges-icon">
-                            <img src="./img/stocks.exchange.svg" alt="#">
+                            <img src="./img/STEX.svg" alt="#">
                         </figure>
-                        <h4>Stocks.Exchange</h4>
+                        <h4>STEX</h4>
                             <p></p>
                     </div>
                 </a>

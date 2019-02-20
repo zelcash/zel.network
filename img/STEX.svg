@@ -1,0 +1,13 @@
+<svg id="EXCHANGES" xmlns="http://www.w3.org/2000/svg" width="1000" height="1000" viewBox="0 0 1000 1000">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #183c87;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <g id="STEX">
+    <path id="STEX_kopiera" data-name="STEX kopiera" class="cls-1" d="M387.616,578H339.125V458.121H270.843V422H453.722v36.121H387.616V578Zm302.891-36.32V578H519.9V422H690.507v36.121H568.389v26.2h114.6V515.88h-114.6v25.8H690.507ZM820.615,578H755.3l75.406-77.008L758.068,422h63.137l42.948,48.228L906.905,422h63.73l-73.429,78.991L974,578H908.883L864.746,531.16ZM208,422H47L26,443v72H151v29H26v34H185l21-21V483H84V458H208V422Z"/>
+  </g>
+</svg>
