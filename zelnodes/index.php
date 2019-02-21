@@ -110,7 +110,7 @@
 					</div>
 					<div>
 						<a href="https://github.com/zelcash/zelcash/wiki" class="site-btn sb-gradients mt-5" target="_blank">Installation Resources Wiki</a>
-						<a href="https://github.com/zelcash/zelcash/tree/beta_nodes" class="site-btn sb-gradients mt-5" target="_blank">Source Code Branch</a>
+						<a href="https://github.com/zelcash/zelcash" class="site-btn sb-gradients mt-5" target="_blank">Source Code</a>
 					</div>
 				</div>
 			</div>
@@ -147,7 +147,7 @@
 						<li>3 levels of ZelNode ownership</li><br>
 						<li>Nodes will power future dapps, smart contracts, sidechains & asset layers</li><br>
 						<li>Source code available January 31, 2019 <a href="https://github.com/zelcash/zelcash/tree/beta_nodes" target="_blank">Source Branch</a></li><br>
-						<li>Network upgrade & Nodes launch February 21, 2019 <a href="#launch">Details</a></li><br>
+						<li>Network upgrade & Nodes launch February 23, 2019 <a href="#launch">Details</a></li><br>
 						<li>Benchmarking must meet minimum specs, uptime requirement: > 97% <a rel="tooltip" title="Benchmarking will be performed per tier and based on results from the equivalently-spec'd DigitalOcean Droplet for the specs below. Uptime requirement allows for ~ 40 minutes downtime per day for maintenance, unforseen issues, etc."><i class="fas fa-info-circle"></i></a></li><br>
 					</ul>
 				</div>
@@ -259,7 +259,7 @@
 			<div data-aos="fade-left" data-aos-duration="1000" class="about-text">
 				<h5>ZelNodes rollout requires both a ZelCash network upgrade and the ZelNodes daemon set up and running on your VPS/dedicated server. To minimize launch issues, these large items cannot be performed on the same day, and time to correct any errors and support node operators needs to be set aside.</h5><br>
 				<h5>There will be a 3-week buffer between code release and ZelNode rewards turning on to allow time for the network upgrade and operators to stand up their nodes, implement server security, and network testing.</h5><br>
-				<h3>During this time, we will also implement features to setup your control wallet using ZelCore light addresses. We will provide written and video instructions with install scripts available. Ensure you only use install scripts from the official ZelCash Github (do not trust other scripts blindly). This will be hugely beneficial to operators ease-of-use as typically masternode projects require a full payment node payment wallet with fully syned chain data.</h3>
+				<h3>During this time, we will develop 3 full node wallet options for operators (ZelCore, Swing, and CLI). We will provide written and video instructions with install scripts available. Ensure you only use install scripts from the official ZelCash Github (do not trust other scripts blindly). This will be hugely beneficial to operators ease-of-use as typically masternode projects require a full payment node payment wallet with fully syned chain data.</h3>
 			</div>
 		</div>
 	</section>
