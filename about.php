@@ -11,7 +11,7 @@
                     <a href="./about" class="site-btn sb-gradients sbg-line mt-5 readmore">Read more</a>
                 </div>
                 <div class="centerbuttons">
-                    <a href="https://zel.cash/zelnodes" class="site-btn sb-gradients mt-5" target="_blank">ZelNodes Info Page</a>
+                    <a href="./zelnodes" class="site-btn sb-gradients mt-5">ZelNodes Info Page</a>
                 </div>
             </div>
         </div>
