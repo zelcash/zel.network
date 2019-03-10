@@ -92,7 +92,6 @@
 					<a href="https://bitcointalk.org/index.php?topic=4724735" target="_blank" class="site-btn sb-gradients sbg-line mt-3">lolMiner BCT</a>
 					<h3 class="mt-4"><b>MiniZ</b></h3>
 					<h5>Nvidia</h5>
-					<h6>Example script:<b> "miner --algo 144_5 --pers ZelProof --server pool.zel.cash --port 2001 --user ZELCASHADDRESS.rigName --pass x"</b></h6>
 					<div>
 						<a href="https://bitcointalk.org/index.php?topic=4767892.0" target="_blank" class="site-btn sb-gradients sbg-line mt-3">MiniZ BCT</a>
 						<a href="https://miniz.ch/" target="_blank" class="site-btn sb-gradients sbg-line mt-3">MiniZ Website</a>
