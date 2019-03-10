@@ -74,6 +74,8 @@
 				<div data-paroller-factor="0.1" data-paroller-type="foreground" data-paroller-direction="vertical">
 					<script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script>
 					<div class="coinmarketcap-currency-widget" data-currencyid="3029" data-base="USD"  data-secondary="BTC"></div>
+					<script src="https://widgets.coingecko.com/coingecko-coin-ticker-widget.js"></script>
+					<coingecko-coin-ticker-widget currency="usd" coin-id="zelcash" locale="en"></coingecko-coin-ticker-widget>
 				</div>
 			</div>
 		</div>
