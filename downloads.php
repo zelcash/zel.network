@@ -24,9 +24,9 @@
                         <img src="./img/logo-zelcash-round.svg" alt="#">
                     </figure>
                     <h4>ZelCash ZELmate Swing Wallet</h4>
-                        <a href="https://github.com/zelcash/zelcash-swing-wallet/releases/download/v7.1.0/ZELmate-7.1.0.exe"><img src="./img/windows.svg" alt="ZelCash Swing for Windows"></a>
-                        <a href="https://github.com/zelcash/zelcash-swing-wallet/releases/download/v7.1.0/ZELmate-7.1.0.dmg"><img src="./img/macos.svg" alt="ZelCash Swing for macOS"></a>
-                        <a href="https://github.com/zelcash/zelcash-swing-wallet/releases/download/v7.1.0/ZELmate-7.1.0.deb"><img src="./img/linux.svg" alt="ZelCash Swing for Linux (.deb)"></a>
+                        <a href="https://github.com/zelcash/zelcash-swing-wallet/releases/download/v7.1.1/ZELmate-7.1.1.exe"><img src="./img/windows.svg" alt="ZelCash Swing for Windows"></a>
+                        <a href="https://github.com/zelcash/zelcash-swing-wallet/releases/download/v7.1.1/ZELmate-7.1.1.dmg"><img src="./img/macos.svg" alt="ZelCash Swing for macOS"></a>
+                        <a href="https://github.com/zelcash/zelcash-swing-wallet/releases/download/v7.1.1/ZELmate-7.1.1.deb"><img src="./img/linux.svg" alt="ZelCash Swing for Linux (.deb)"></a>
                 </div>
             </div>
             <div data-aos="zoom-in" data-aos-duration="500" class="col-md-4 downloads">
