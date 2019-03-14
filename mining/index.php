@@ -30,7 +30,7 @@
 					<p>The Zel project is currently developing the next POW algorithm to remain ASIC-resistant and deter NiceHash usage.</p>
 					<h4>Nvidia & AMD miners available - See Below</h4>
 				</div>
-				<div data-aos="fade-left" data-aos-duration="1000"  class="col-lg-6 offset-lg-0 about-text">
+				<div data-aos="fade-left" data-aos-duration="1000" class="col-lg-6 offset-lg-0 about-text">
 					<h2 >POW Mining Info</h2>
 					<h5>POW Algorithm: Equihash 144,5 (ZHash)</h5>
 					<ul>
@@ -47,35 +47,23 @@
 	<!-- About section end -->
 
 	<!-- About2 section -->
-	<section class="about-section spad">
+	<section class="about-section spad gradient-bg">
 		<div class="container">
-			<div data-aos="fade-left" data-aos-duration="1000" class="row">
-				<div class="col-lg-6 offset-lg-7 about-text">
-					<div>
-						<h5>Coin Trackers:</h5>
-						<a href="https://coinmarketcap.com/currencies/zelcash/" target="_blank" class="site-btn sb-gradients mt-3">CoinMarketCap</a>
-						<a href="https://www.coingecko.com/en/coins/zelcash" target="_blank" class="site-btn sb-gradients mt-3">CoinGecko</a>
-					</div>
-					<div>
-						<br>
-						<h5>ZelCash Resources:</h5>
-						<a href="https://zel.cash/#pools" target="_blank" class="site-btn sb-gradients sbg-line mt-3">Mining Pools</a>
-						<a href="https://zel.cash/#downloads" target="_blank" class="site-btn sb-gradients sbg-line mt-3">Wallets</a>
-					</div>
-					<div>
-						<br>
-						<h5>Mining Calculators:</h5>
-						<a href="https://whattomine.com/coins/287-zel-zhash" target="_blank" class="site-btn sb-gradients mt-3">WhatToMine</a>
-						<a href="https://www.crypto-coinz.net/coin-info/?58-ZelCash-ZEL-ZHash-calculator/" target="_blank" class="site-btn sb-gradients mt-3">Crypto-Coinz</a>
-					</div>
-				</div>
-			</div>
-			<div data-aos="fade-right" data-aos-duration="1000" class="algo-img">
-				<div data-paroller-factor="0.1" data-paroller-type="foreground" data-paroller-direction="vertical">
-					<script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script>
-					<div class="coinmarketcap-currency-widget" data-currencyid="3029" data-base="USD"  data-secondary="BTC"></div>
-					<script src="https://widgets.coingecko.com/coingecko-coin-ticker-widget.js"></script>
+			<div class="row">
+				<div data-aos="fade-right" data-aos-duration="1000" class="col-lg-6 offset-lg-0 about-text">
+					<div class="coinmarketcap-currency-widget mb-3 bg-white" data-currencyid="3029" data-base="USD" data-secondary="BTC"></div>
 					<coingecko-coin-ticker-widget currency="usd" coin-id="zelcash" locale="en"></coingecko-coin-ticker-widget>
+				</div>
+				<div data-aos="fade-left" data-aos-duration="1000" class="col-lg-6 offset-lg-0 about-text text-white">
+					<h5 class="mt-3">Coin Trackers:</h5>
+					<a href="https://coinmarketcap.com/currencies/zelcash/" target="_blank" class="site-btn sb-gradients sbg-line mb-3">CoinMarketCap</a>
+					<a href="https://www.coingecko.com/en/coins/zelcash" target="_blank" class="site-btn sb-gradients sbg-line mb-3">CoinGecko</a>
+					<h5 class="mt-3">ZelCash Resources:</h5>
+					<a href="https://zel.cash/#pools" target="_blank" class="site-btn sb-gradients sbg-line mb-3">Mining Pools</a>
+					<a href="https://zel.cash/#downloads" target="_blank" class="site-btn sb-gradients sbg-line mb-3">Wallets</a>
+					<h5 class="mt-3">Mining Calculators:</h5>
+					<a href="https://whattomine.com/coins/287-zel-zhash" target="_blank" class="site-btn sb-gradients sbg-line mb-3">WhatToMine</a>
+					<a href="https://www.crypto-coinz.net/coin-info/?58-ZelCash-ZEL-ZHash-calculator/" target="_blank" class="site-btn sb-gradients sbg-line mb-3">Crypto-Coinz</a>
 				</div>
 			</div>
 		</div>
