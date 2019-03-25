@@ -83,6 +83,90 @@
                 </div>
             </div>
 
+            <div class="cd-timeline-block">
+                <div data-aos="zoom-in" data-aos-duration="500" class="cd-timeline-img cd-yellow">
+                    <i class="far fa-calendar-alt fa-2x"></i>
+                </div>
+
+                <div data-aos="fade-left" data-aos-duration="1000" class="cd-timeline-content">
+                    <h2>Project Paradigm</h2>
+                    <p>ZelCore Premium Launch</p>
+                    <span class="cd-date">Q2 2019</span>
+                </div>
+            </div>
+
+            <div class="cd-timeline-block">
+                <div data-aos="zoom-in" data-aos-duration="500" class="cd-timeline-img cd-yellow">
+                    <i class="far fa-calendar-alt fa-2x"></i>
+                </div>
+
+                <div data-aos="fade-left" data-aos-duration="1000" class="cd-timeline-content">
+                    <h2>Project Swan</h2>
+                    <p></p>
+                    <span class="cd-date">Q2 2019</span>
+                </div>
+            </div>
+
+            <div class="cd-timeline-block">
+                <div data-aos="zoom-in" data-aos-duration="500" class="cd-timeline-img cd-red">
+                    <i class="far fa-calendar-alt fa-2x"></i>
+                </div>
+
+                <div data-aos="fade-left" data-aos-duration="1000" class="cd-timeline-content">
+                    <h2>Project Paradigm</h2>
+                    <p>ZelCore Premium (Phase Two)</p>
+                    <span class="cd-date">Q3 2019</span>
+                </div>
+            </div>
+
+            <div class="cd-timeline-block">
+                <div data-aos="zoom-in" data-aos-duration="500" class="cd-timeline-img cd-red">
+                    <i class="far fa-calendar-alt fa-2x"></i>
+                </div>
+
+                <div data-aos="fade-left" data-aos-duration="1000" class="cd-timeline-content">
+                    <h2>Project Jetpack</h2>
+                    <p>ZelNodes Project</p>
+                    <span class="cd-date">Q3 2019</span>
+                </div>
+            </div>
+
+            <div class="cd-timeline-block">
+                <div data-aos="zoom-in" data-aos-duration="500" class="cd-timeline-img cd-red">
+                    <i class="far fa-calendar-alt fa-2x"></i>
+                </div>
+
+                <div data-aos="fade-left" data-aos-duration="1000" class="cd-timeline-content">
+                    <h2>ZelNode</h2>
+                    <p>Phase Two</p>
+                    <span class="cd-date">Q4 2019</span>
+                </div>
+            </div>
+
+            <div class="cd-timeline-block">
+                <div data-aos="zoom-in" data-aos-duration="500" class="cd-timeline-img cd-red">
+                    <i class="far fa-calendar-alt fa-2x"></i>
+                </div>
+
+                <div data-aos="fade-left" data-aos-duration="1000" class="cd-timeline-content">
+                    <h2>ZelEx Development</h2>
+                    <p></p>
+                    <span class="cd-date">Q4</span>
+                </div>
+            </div>
+
+            <div class="cd-timeline-block">
+                <div data-aos="zoom-in" data-aos-duration="500" class="cd-timeline-img cd-red">
+                    <i class="far fa-calendar-alt fa-2x"></i>
+                </div>
+
+                <div data-aos="fade-left" data-aos-duration="1000" class="cd-timeline-content">
+                    <h2>ZelEx Launch</h2>
+                    <p></p>
+                    <span class="cd-date">TBD</span>
+                </div>
+            </div>
+
         </div>
     </div>
 </section>
