@@ -124,6 +124,19 @@ nav.uk-navbar-container {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
+/* Phone portrait and smaller */
+@media (max-width: 639px) {
+    .uk-card-media-left img {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0;
+    }
+    .uk-card-media-right img {
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 0;
+    }
+}
 .uk-card-default {
     background: rgba(255,255,255,0.8);
     -webkit-backdrop-filter: saturate(250%) blur(10px);
