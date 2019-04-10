@@ -164,3 +164,9 @@ nav.uk-navbar-container {
 .social .github { background: #6e5494; }
 .social .bitcointalk { background: #f7931a; }
 .social .reddit { background: #ff4500; }
+
+.uk-border-circle {
+    width: 80px;
+    height: 80px !important;
+    background-color: #232220;
+}
