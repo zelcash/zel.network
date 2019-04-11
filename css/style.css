@@ -3,16 +3,18 @@
     font-family: 'Helvetica Neue','Heebo', sans-serif;
     font-weight: 400;
 }
-
 h1 {
     font-weight: 200;
 }
-
 .zel {
     font-weight: 500;
 }
 .thin {
     font-weight: 200;
+}
+.divider {
+    margin: 25px 10px;
+    border-left: 1px #bbbbbb solid;
 }
 
 .pl-1 { padding-left: 10px; }
@@ -122,14 +124,8 @@ nav.uk-navbar-container {
 }
 .uk-navbar-nav img {
     height: 30px;
+    min-width: 100%;
 }
-
-/* .uk-sticky .uk-navbar-item.uk-light, .uk-sticky.uk-sticky-below .uk-navbar-item.uk-dark {
-    display: none;
-}
-.uk-sticky .uk-navbar-item.uk-dark, .uk-sticky.uk-sticky-below .uk-navbar-item.uk-light {
-    display: flex;
-} */
 
 /* CARD */
 .uk-card {
@@ -165,6 +161,9 @@ nav.uk-navbar-container {
 }
 
 /* FOOTER */
+footer {
+    font-size: 12px;
+}
 .social a {
     color: white;
     padding: 2px 0;
