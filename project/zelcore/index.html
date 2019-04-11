@@ -22,6 +22,7 @@
 </head>
 
 <body>
+    <!-- NAV -->
     <nav class="uk-position-relative uk-navbar-container">
         <div class="uk-container">
             <div uk-navbar class="uk-visible@s">
@@ -35,7 +36,7 @@
                     <li><a href="">Partners</span></a></li>
                 </ul>
             </div>
-            <div uk-navbar="dropbar: true" class="uk-hidden@s">
+            <div uk-navbar="boundary-align: true; align: left; dropbar: true;" class="uk-hidden@s">
                 <div class="uk-navbar-left">
                     <a class="uk-navbar-item uk-light" href="../../index.html"><img src="../../img/Zel-Txt-White.svg"
                             width="100"></a>
@@ -59,14 +60,15 @@
             </div>
         </div>
     </nav>
-    <div>
-        <div class="uk-position-relative uk-visible-toggle" tabindex="-1" uk-slideshow="ratio: 2:1; animation: push">
 
+    <!-- HERO -->
+    <div class="uk-position-relative">
+        <div class="uk-visible-toggle" tabindex="-1" uk-slideshow="ratio: 1:1; animation: push">
             <ul class="uk-slideshow-items">
-                <li>
+                <li class="lightButtons">
                     <img class="changezelcorebackground" src="../../img/bb1.jpg" alt="" uk-cover>
                     <img class="changezelcorebackground" src="../../img/bb2.jpg" alt="" hidden uk-cover>
-                    <button class="uk-position-absolute uk-transform-center" type="button" style="left: 30%; top: 30%"
+                    <button class="uk-position-absolute uk-transform-center" type="button" style="left: 18%; top: 34%"
                         href="#" uk-marker></button>
                     <div uk-drop="mode: click">
                         <div class="uk-card uk-card-body uk-card-hover uk-card-default">
@@ -75,7 +77,7 @@
                             <p>API Call for Exchanges</p>
                         </div>
                     </div>
-                    <button class="uk-position-absolute uk-transform-center" type="button" style="right: 41%; top: 24%"
+                    <button class="uk-position-absolute uk-transform-center" type="button" style="right: 38%; top: 31%"
                         href="#" uk-marker></button>
                     <div uk-drop="mode: click">
                         <div class="uk-card uk-card-body uk-card-hover uk-card-default">
@@ -83,7 +85,7 @@
                             <p>Quick overview of all your assets.</p>
                         </div>
                     </div>
-                    <button class="uk-position-absolute uk-transform-center" type="button" style="right: 29%; top: 21%"
+                    <button class="uk-position-absolute uk-transform-center" type="button" style="right: 16%; top: 26%"
                         href="#" uk-marker></button>
                     <div uk-drop="mode: click">
                         <div class="uk-card uk-card-body uk-card-hover uk-card-default">
@@ -93,7 +95,7 @@
                                 uk-toggle="target: .changezelcorebackground;">Change background</button>
                         </div>
                     </div>
-                    <button class="uk-position-absolute uk-transform-center" type="button" style="left: 29%; top: 11%"
+                    <button class="uk-position-absolute uk-transform-center" type="button" style="left: 28%; top: 19%"
                         href="#" uk-marker></button>
                     <div uk-drop="mode: click">
                         <div class="uk-card uk-card-body uk-card-hover uk-card-default">
@@ -102,7 +104,7 @@
                             <p>macOS, Windows, Linux, iOS and Android</p>
                         </div>
                     </div>
-                    <button class="uk-position-absolute uk-transform-center" type="button" style="right: 29%; top: 45%"
+                    <button class="uk-position-absolute uk-transform-center" type="button" style="right: 17%; top: 45%"
                         href="#" uk-marker></button>
                     <div uk-drop="mode: click">
                         <div class="uk-card uk-card-body uk-card-hover uk-card-default">
@@ -120,10 +122,12 @@
                     uk-slidenav-next uk-slideshow-item="next"></a>
             </div>
         </div>
-        <div class="uk-position-top" style="margin-top: 80px">
+
+        <!-- SUBNAV -->
+        <div class="uk-position-top">
             <div class="subnav" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; top: 80px;">
                 <nav class="uk-navbar-container">
-                    <div class="uk-container uk-padding-remove" uk-navbar="dropbar: true">
+                    <div class="uk-container uk-padding-remove" uk-navbar="boundary-align: true; align: left; dropbar: true">
                         <div class="uk-navbar-left pl-15">
                             <ul class="uk-navbar-nav">
                                 <li><a href="#"><img src="../../img/ZelCore-Txt.svg" width="120"></a></li>
@@ -160,6 +164,7 @@
         </div>
     </div>
 
+    <!-- FOOTER -->
     <footer class="uk-background-muted uk-padding">
         <div class="uk-container">
             <div class="uk-grid-divider uk-child-width-expand@s" uk-grid>

@@ -22,6 +22,7 @@
 </head>
 
 <body>
+    <!-- NAV -->
     <div class="uk-position-top">
         <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
             <nav class="uk-navbar-container">
@@ -37,7 +38,7 @@
                             <li><a href="">Partners</span></a></li>
                         </ul>
                     </div>
-                    <div uk-navbar="dropbar: true" class="uk-hidden@m">
+                    <div uk-navbar="boundary-align: true; align: left; dropbar: true" class="uk-hidden@m">
                         <div class="uk-navbar-left">
                             <a class="uk-navbar-item uk-light" href="./index.html"><img src="img/Zel-Txt-White.svg"
                                     width="100"></a>
@@ -63,7 +64,9 @@
             </nav>
         </div>
     </div>
-    <div class="uk-position-relative uk-visible-toggle" tabindex="-1" uk-slideshow="min-height: 300; max-height: 500; animation: push; autoplay: true;">
+
+    <!-- HERO -->
+    <div class="uk-position-relative uk-visible-toggle" tabindex="-1" uk-slideshow="min-height: 700; animation: push; autoplay: true;">
         <ul class="uk-slideshow-items">
             <li>
                 <img src="https://getuikit.com/docs/images/photo.jpg" alt="" uk-cover>
@@ -74,7 +77,7 @@
                 </div>
             </li>
             <li>
-                <img src="https://getuikit.com/docs/images/dark.jpg" alt="" uk-cover>
+                <img src="img/bb1.jpg" alt="" uk-cover>
                 <div class="uk-position-bottom uk-position-medium uk-text-center uk-light">
                     <h3 class="uk-margin-remove">ZelCore</h3>
                     <p class="uk-margin-remove">Multi-Asset Encrypted Wallet</p>
@@ -82,6 +85,12 @@
                 </div>
             </li>
         </ul>
+        <div class="uk-position-bottom-center uk-position-small uk-light">
+            <ul class="uk-dotnav">
+                <li uk-slideshow-item="0"><a href="#">Item 1</a></li>
+                <li uk-slideshow-item="1"><a href="#">Item 2</a></li>
+            </ul>
+        </div>
         <div class="uk-light">
             <a class="uk-position-center-left uk-position-small uk-hidden-hover uk-margin-medium-top" href="#"
                 uk-slidenav-previous uk-slideshow-item="previous"></a>
@@ -90,6 +99,7 @@
         </div>
     </div>
 
+    <!-- FOOTER -->
     <footer class="uk-background-muted uk-padding">
         <div class="uk-container">
             <div class="uk-grid-divider uk-child-width-expand@s" uk-grid>

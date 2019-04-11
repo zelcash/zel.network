@@ -35,6 +35,14 @@ h1 {
     line-height: 28px;
     font-size: 0.675rem;
 }
+.lightButtons button:not(.uk-card *) {
+    background: #fff;
+    color: #222;
+}
+.lightButtons button:hover {
+    color: #222;
+    opacity: .7;
+}
 
 /* UIKIT OVERRIDE */
 /* NAVBAR */
@@ -107,7 +115,6 @@ nav.uk-navbar-container {
 /* .uk-sticky .uk-navbar-item.uk-light, .uk-sticky.uk-sticky-below .uk-navbar-item.uk-dark {
     display: none;
 }
-
 .uk-sticky .uk-navbar-item.uk-dark, .uk-sticky.uk-sticky-below .uk-navbar-item.uk-light {
     display: flex;
 } */

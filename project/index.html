@@ -22,6 +22,7 @@
 </head>
 
 <body>
+    <!-- NAV -->
     <nav class="uk-position-relative uk-navbar-container">
         <div class="uk-container">
             <div uk-navbar class="uk-visible@m">
@@ -35,7 +36,7 @@
                     <li><a href="">Partners</span></a></li>
                 </ul>
             </div>
-            <div uk-navbar="dropbar: true" class="uk-hidden@m">
+            <div uk-navbar="boundary-align: true; align: left; dropbar: true" class="uk-hidden@m">
                 <div class="uk-navbar-left">
                     <a class="uk-navbar-item uk-light" href="../index.html"><img src="../img/Zel-Txt-White.svg"
                             width="100"></a>
@@ -59,6 +60,8 @@
             </div>
         </div>
     </nav>
+
+    <!-- SUBNAV -->
     <div class="subnav" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; top: 80px;">
         <nav class="uk-navbar-container">
             <div class="uk-container">
@@ -75,6 +78,7 @@
         </nav>
     </div>
 
+    <!-- PROJECTS -->
     <section class="uk-container uk-margin">
         <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin uk-card-hover" uk-grid>
             <a href="../project/zelcore/index.html" class="uk-card-media-left uk-cover-container">
@@ -119,6 +123,7 @@
         </div>
     </section>
 
+    <!-- OTHER PROJECTS -->
     <section class="uk-container uk-margin">
         <div class="uk-child-width-1-2@m uk-grid-small uk-grid-match" uk-grid>
             <div>
@@ -136,6 +141,7 @@
         </div>
     </section>
 
+    <!-- FOOTER -->
     <footer class="uk-background-muted uk-padding">
         <div class="uk-container">
             <div class="uk-grid-divider uk-child-width-expand@s" uk-grid>
