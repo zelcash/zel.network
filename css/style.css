@@ -26,6 +26,15 @@ h1 {
 .pl-4 { padding-left: 40px; }
 .pr-4 { padding-right: 40px; }
 
+.zelblue {
+    background-color: #183c87;
+}
+.zelidcolor {
+    background: -webkit-linear-gradient(left, #d83f87, #44318d);
+    background: -o-linear-gradient(left, #d83f87, #44318d);
+    background: linear-gradient(left, #d83f87, #44318d);
+}
+
 /* BUTTONS */
 .rounded {
     border-radius: 50px;
@@ -110,6 +119,9 @@ nav.uk-navbar-container {
 }
 .uk-navbar-dropdown {
     width: 100%
+}
+.uk-navbar-nav img {
+    height: 30px;
 }
 
 /* .uk-sticky .uk-navbar-item.uk-light, .uk-sticky.uk-sticky-below .uk-navbar-item.uk-dark {
