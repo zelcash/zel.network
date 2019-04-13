@@ -89,11 +89,22 @@ nav.uk-navbar-container {
 .uk-navbar img:hover {
     opacity: .5;
 }
+/* Phone portrait and smaller */
+@media (max-width: 639px) {
+    .subnav .uk-navbar {
+        display: block;
+        overflow: auto;
+    }
+    .subnav .uk-navbar-nav {
+        width: 750px;
+    }
+}
 .subnav .uk-navbar-nav {
     overflow: auto;
 }
 .subnav .uk-navbar-nav li {
     margin: auto;
+    float: left;
 }
 .subnav .uk-navbar-nav li a {
     margin: 5px 0;
