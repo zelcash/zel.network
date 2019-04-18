@@ -8,8 +8,8 @@
             <div data-aos="zoom-in" data-aos-duration="500" class="col-md-3 pools">
                 <a href="https://pool.zel.cash/" target="_blank">
                     <div class="pools-step">
-                        <h4>ZelCash Community Pool</h4>
-                        <p>0% Fee</p>
+                        <h4>Zel Community Pool</h4>
+                        <p>1% Total Fee | 0.5% to Zel Development Fund </p>
                     </div>
                 </a>
             </div>
