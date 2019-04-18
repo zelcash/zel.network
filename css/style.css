@@ -58,6 +58,18 @@ a:hover .zelnodescolor {
     background-color: #fff;
 }
 
+/* BACKGROUNDS */
+.zelBackground {
+    background-image: url('https://images.pexels.com/photos/872958/pexels-photo-872958.jpeg?cs=srgb&dl=device-electronics-keyboard-872958.jpg&fm=jpg');
+}
+.zelnodesBackground {
+    background-image: url('https://images.pexels.com/photos/434337/pexels-photo-434337.jpeg?cs=srgb&dl=cup-desk-drink-434337.jpg&fm=jpg');
+}
+.colorVideo {
+    filter: saturate(2);
+    filter: hue-rotate(-125deg);
+}
+
 /* BUTTONS */
 .rounded {
     border-radius: 50px;
