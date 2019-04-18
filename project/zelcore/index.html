@@ -18,7 +18,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/css/uikit.min.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="../../css/style.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- ScrollMagic -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
 </head>
 
@@ -33,7 +34,7 @@
                     <li><a href="../../zel/index.html">Currency</a></li>
                     <li><a href="./index.html">Zel<span>Core</span></a></li>
                     <li><a href="../../project/index.html">Our&nbsp;<span>Projects</span></a></li>
-                    <li><a href="">Our&nbsp;<span>Team</span></a></li>
+                    <li><a href="../../team/index.html">Our&nbsp;<span>Team</span></a></li>
                     <li><a href="">Partners</span></a></li>
                 </ul>
             </div>
@@ -51,7 +52,7 @@
                                     <li><a href="../../zel/index.html">Currency</a></li>
                                     <li><a href="./index.html">Zel<span>Core</span></a></li>
                                     <li><a href="../../project/index.html">Our&nbsp;<span>Projects</span></a></li>
-                                    <li><a href="">Our&nbsp;<span>Team</span></a></li>
+                                    <li><a href="../../team/index.html">Our&nbsp;<span>Team</span></a></li>
                                     <li><a href="">Partners</span></a></li>
                                 </ul>
                             </div>
@@ -80,7 +81,7 @@
                                 <li><a href="#roadmap" uk-scroll>Roadmap</a></li>
                                 <li><a href="#">Support</a></li>
                                 <li><a href="#">Get Listed</a></li>
-                                <li><a href="#"><button class="uk-button uk-button-small zelcoreblack rounded">Download</button></a></li>
+                                <li><a href="download.html"><button class="uk-button uk-button-small zelcoreblack rounded">Download</button></a></li>
                             </ul>
                         </div>
                         <div class="uk-navbar-right pr-15 uk-hidden@s">
@@ -97,7 +98,7 @@
                                         </ul>
                                     </div>
                                 </li>
-                                <li><a href="#"><button class="uk-button tiny zelcoreblack rounded">Download</button></a></li>
+                                <li><a href="download.html"><button class="uk-button tiny zelcoreblack rounded">Download</button></a></li>
                             </ul>
                         </div>
                     </div>
@@ -126,10 +127,10 @@
     
     <div class="uk-position-relative">
         <div class="uk-position-absolute uk-position-center zelcorePosition uk-visible@s">
-            <img src="../../img/ZelCore-Desktop.png">
+            <img src="../../img/zelcore/Login.png">
         </div>
         <div class="uk-position-absolute uk-position-center zelcorePosition uk-hidden@s">
-            <img src="../../img/ZelCore-iPhoneX.png">
+            <img src="../../img/zelcore/Login-Mobile.png">
         </div>
     </div>
     
@@ -154,13 +155,13 @@
                 <h1 class="uk-heading-primary uk-text-left">Features</h1>
                 <div class="zelcoreFeatures uk-visible@s" uk-sticky="offset: 250; bottom: #featurestop">
                     <div class="uk-position-absolute">
-                        <img id="featureImage1" src="../../img/ZelCore-Desktop.png">
+                        <img id="featureImage1" src="../../img/zelcore/Login.png">
                     </div>
                     <div class="uk-position-absolute">
-                        <img id="featureImage2" class="hidden" src="../../img/ZelCore-Desktop-2.png">
+                        <img id="featureImage2" class="hidden" src="../../img/zelcore/Portfolio.png">
                     </div>
                     <div class="uk-position-absolute">
-                        <img id="featureImage3" class="hidden" src="../../img/ZelCore-Desktop.png">
+                        <img id="featureImage3" class="hidden" src="../../img/zelcore/Exchanges.png">
                     </div>
                 </div>
             </div>
@@ -172,9 +173,8 @@
             <div class="uk-container">
                 <div class="uk-grid-margin uk-grid uk-grid-stack" uk-grid>
                     <div class="uk-width-1-1@m uk-first-column zelcoreFeatures">
-                        <img class="uk-hidden@s" src="../../img/ZelCore-iPhoneX.png">
+                        <img class="uk-hidden@s" src="../../img/zelcore/Login-Mobile.png">
                         <h1 class="uk-heading-primary uk-margin uk-width-large">Support for multiple accounts</h1>
-                        <h1 class="uk-h1 uk-margin-remove-top">Let your mind explore</h1>
                         <h1 class="uk-h3 uk-margin-medium uk-width-large">Our login system allows you to have multiple encrypted wallets and accounts on the same computer and to login on multiple devices while still maintaining privacy as we don't store any user information. Privacy is something we at Zel strongly believe in.</h1>
                     </div>
                 </div>
@@ -182,26 +182,28 @@
         </div>
     </section>
 
-    <section class="zelcoreblack uk-section uk-flex uk-flex-middle" uk-height-viewport="offset-top: true;">
-        <div id="feature2" class="uk-width-1-1 uk-light">
+    <section id="feature2" class="zelcoreblack uk-section uk-flex uk-flex-middle" uk-height-viewport="offset-top: true;">
+        <div class="uk-width-1-1 uk-light">
             <div class="uk-container">
                 <div class="uk-grid-margin uk-grid uk-grid-stack" uk-grid>
-                    <div class="uk-width-1-1@m uk-first-column">
-                        <h1 class="uk-heading-primary uk-margin uk-width-large">The Choice is yours</h1>
-                        <h1 class="uk-h3 uk-width-large">ZelCore gives you the power to choose if you want speed or advanced features. All wallets are available as light nodes, with the option to download the Full Node should you required the advanced features like shielded addresses, recovering existing wallets, and much more.</h1>
+                    <div class="uk-width-1-1@m uk-first-column zelcoreFeatures">
+                        <img class="uk-hidden@s" src="../../img/zelcore/Login-Mobile.png">
+                        <h1 class="uk-heading-primary uk-margin uk-width-large">Multi-Asset Encrypted Wallet</h1>
+                        <h1 class="uk-h3 uk-width-large">ZelCore keeps your assets safe. With support for 100+ assets including Zel (ZEL), Bitcoin (BTC), Litecoin (LTC), Ethereum (ETH), Monero (XMR), Zcash (ZEC), Tether (USDT) and many more.</h1>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="zelcoreblack uk-section uk-flex uk-flex-middle" uk-height-viewport="offset-top: true;">
-        <div id="feature3" class="uk-width-1-1 uk-light">
+    <section id="feature3" class="zelcoreblack uk-section uk-flex uk-flex-middle" uk-height-viewport="offset-top: true;">
+        <div class="uk-width-1-1 uk-light">
             <div class="uk-container">
                 <div class="uk-grid-margin uk-grid uk-grid-stack" uk-grid>
-                    <div class="uk-width-1-1@m uk-first-column">
-                        <h1 id="featurestop" class="uk-heading-primary uk-margin uk-width-large">The Choice is yours</h1>
-                        <h1 class="uk-h3 uk-width-large">ZelCore gives you the power to choose if you want speed or advanced features. All wallets are available as light nodes, with the option to download the Full Node should you required the advanced features like shielded addresses, recovering existing wallets, and much more.</h1>
+                    <div class="uk-width-1-1@m uk-first-column zelcoreFeatures">
+                        <img class="uk-hidden@s" src="../../img/zelcore/Login-Mobile.png">
+                        <h1 id="featurestop" class="uk-heading-primary uk-margin uk-width-large">Built-in Exchanges</h1>
+                        <h1 class="uk-h3 uk-width-large">ZelCore users can utilise built-in ShapeShift, Changelly and Kyber exchanges. Swap cryptocurrencies directly inside the ZelCore platform on both Desktop and Mobile.</h1>
                     </div>
                 </div>
             </div>
@@ -282,20 +284,24 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit-icons.min.js"></script>
     <script>
             // init controller
-            var controller = new ScrollMagic.Controller({globalSceneOptions: {duration: "100%"}});
+            var controller = new ScrollMagic.Controller();
         
             // build scenes
             new ScrollMagic.Scene({triggerElement: "#feature2"})
                             .setClassToggle("#featureImage1", "hidden")
+                            .duration("100%")
                             .addTo(controller);
             new ScrollMagic.Scene({triggerElement: "#feature3"})
                             .setClassToggle("#featureImage1", "hidden")
+                            .duration("100%")
                             .addTo(controller);
             new ScrollMagic.Scene({triggerElement: "#feature2"})
                             .setClassToggle("#featureImage2", "show")
+                            .duration("100%")
                             .addTo(controller);
             new ScrollMagic.Scene({triggerElement: "#feature3"})
                             .setClassToggle("#featureImage3", "show")
+                            .duration("200%")
                             .addTo(controller);
         </script>
 

@@ -35,11 +35,24 @@ h1 {
     color: #fff;
     background-color: #232220;
 }
+a:hover .zelcoreblack {
+    opacity: .7;
+}
 .zelidcolor {
     color: #fff;
     background: -webkit-linear-gradient(left, #d83f87, #44318d);
     background: -o-linear-gradient(left, #d83f87, #44318d);
     background: linear-gradient(left, #d83f87, #44318d);
+}
+a:hover .zelidcolor {
+    opacity: .7;
+}
+.zelnodescolor {
+    color: #fff;
+    background-color: #36c9a5;
+}
+a:hover .zelnodescolor {
+    opacity: .7;
 }
 .whiteBackground {
     background-color: #fff;
@@ -107,7 +120,7 @@ nav.uk-navbar-container {
         overflow: auto;
     }
     .subnav.projectmenu .uk-navbar-nav {
-        width: 750px;
+        width: 600px;
     }
 }
 .subnav.projectmenu .uk-navbar-nav {
@@ -187,6 +200,7 @@ nav.uk-navbar-container {
     text-align: center;
 }
 .zelcorePosition img {
+    z-index: 1;
     width: 1200px;
 }
 .zelcoreFeatures img {
