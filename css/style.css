@@ -189,17 +189,24 @@ nav.uk-navbar-container {
 .zelcorePosition img {
     width: 1200px;
 }
-@media (max-width: 639px) {
-    .zelcorePosition img {
-        width: 60%;
-    }
-}
 .zelcoreFeatures img {
-    width: 700px;
+    max-width: 700px;
+    max-height: 500px;
     margin-left: 100%;
 }
 .fixedZelCoreTxt {
     padding-bottom: 170px;
+}
+@media (max-width: 639px) {
+    .zelcorePosition img {
+        width: 50%;
+    }
+    .zelcoreFeatures {
+        text-align: center;
+    }
+    .zelcoreFeatures img {
+        margin-left: unset;
+    }
 }
 /* FOOTER */
 footer {
