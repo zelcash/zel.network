@@ -6,6 +6,9 @@
 h1 {
     font-weight: 200;
 }
+a:hover {
+    text-decoration: none;
+}
 .zel {
     font-weight: 500;
 }
@@ -88,6 +91,9 @@ a:hover .zelnodescolor {
 }
 
 /* UIKIT OVERRIDE */
+a {
+    color: #183c87;
+}
 .uk-button-primary {
     background-color: #183c87;
 }
@@ -226,6 +232,12 @@ nav.uk-navbar-container {
 .fixedZelCoreTxt {
     padding-bottom: 170px;
 }
+.zelcoreSupport {
+    top: 200px
+}
+.zelcoreMobile img {
+    height: 60px;
+}
 @media (max-width: 639px) {
     .zelcorePosition img {
         width: 50%;
@@ -256,7 +268,7 @@ footer {
 .social .discord { background: #7289DA; }
 .social .telegram { background: #0088cc; }
 .social .slack { background: #2d333a; }
-.social .github { background: #6e5494; }
+.social .github { background: #151013; }
 .social .bitcointalk { background: #f7931a; }
 .social .reddit { background: #ff4500; }
 

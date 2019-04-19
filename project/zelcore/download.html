@@ -125,8 +125,10 @@
                                 <h1 class="uk-heading-primary uk-text-center">Linux</h1>
                                 <a href="#"><button class="uk-button uk-button-primary uk-button-large rounded">Download</button></a>
                             </div>
-                            <a href="#"><button class="uk-button uk-button-primary uk-button-large uk-margin-medium-top rounded uk-hidden@s">iTunes</button></a>
-                            <a href="#"><button class="uk-button uk-button-primary uk-button-large uk-margin-medium-top rounded uk-hidden@s">Playstore</button></a>
+                            <div class="uk-text-center uk-margin-medium zelcoreMobile uk-hidden@s">
+                                <a href="" id="iOS"><img src="../../img/zelcore/badge-appstore.svg"></a>
+                                <a href="" id="Android"><img src="../../img/zelcore/badge-googleplay.svg"></a>
+                            </div>
                             <h1 class="uk-h5"><a href="#downloads" uk-scroll>Other Platforms</a></h1>
                         </div>
                     </div>
@@ -170,18 +172,10 @@
                                     <p>Version: 1.4.4</p>
                                 </div>
                             </div>
-                            <div>
-                                <div class="uk-card uk-card-secondary uk-card-body">
-                                    <h3 class="uk-card-title">iOS</h3>
-                                    <p>Version: 1.4.4</p>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="uk-card uk-card-secondary uk-card-body">
-                                    <h3 class="uk-card-title">Android</h3>
-                                    <p>Version: 1.4.4</p>
-                                </div>
-                            </div>
+                        </div>
+                        <div class="uk-text-center uk-margin-medium zelcoreMobile">
+                            <a href=""><img src="../../img/zelcore/badge-appstore.svg"></a>
+                            <a href=""><img src="../../img/zelcore/badge-googleplay.svg"></a>
                         </div>
                     </div>
                 </div>
@@ -248,7 +242,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit-icons.min.js"></script>
     <!-- ScrollMagic -->
     <script>
-        var controller = new ScrollMagic.Controller({globalSceneOptions: {duration: "100%"}});
+        var controller = new ScrollMagic.Controller({globalSceneOptions: {duration: "2000%"}});
         new ScrollMagic.Scene({triggerElement: "#downloads"}).setClassToggle("#hideMe", "hidden").addTo(controller);
     </script>
     <!-- Check platform -->
@@ -256,6 +250,8 @@
         var macClass = document.getElementById('macOS');
         var windowsClass = document.getElementById('Windows');
         var linuxClass = document.getElementById('Linux');
+        var iosClass = document.getElementById('iOS');
+        var androidClass = document.getElementById('Android');
 
         if ((navigator.userAgent.match(/Macintosh/))) {
             windowsClass.setAttribute('class','hidden');
@@ -268,6 +264,12 @@
         if ((navigator.userAgent.match(/Linux/))) {
             macClass.setAttribute('class','hidden');
             windowsClass.setAttribute('class','hidden');
+        }
+        if ((navigator.userAgent.match(/(iPhone|iPod|iPad)/))) {
+            androidClass.setAttribute('class','hidden');
+        }
+        if ((navigator.userAgent.match(/Android/))) {
+            iosClass.setAttribute('class','hidden');
         }
     </script>
 
