@@ -22,28 +22,53 @@
 </head>
 
 <body>
+    <!-- NAV -->
     <div class="uk-position-top">
         <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
             <nav class="uk-navbar-container">
                 <div class="uk-container">
-                    <div uk-navbar>
+                    <div uk-navbar class="uk-visible@m">
                         <a class="uk-navbar-item uk-light" href="./index.html"><img src="img/Zel-Txt-White.svg"
                                 width="100"></a>
                         <ul class="uk-navbar-nav">
                             <li><a href="zel/index.html">Currency</a></li>
-                            <li><a href="product/index.html">Our&nbsp;<span>Products</span></a></li>
+                            <li><a href="project/zelcore/index.html">Zel<span>Core</span></a></li>
+                            <li><a href="project/index.html">Our&nbsp;<span>Projects</span></a></li>
+                            <li><a href="team/index.html">Our&nbsp;<span>Team</span></a></li>
+                            <li><a href="">Partners</span></a></li>
                         </ul>
+                    </div>
+                    <div uk-navbar="boundary-align: true; align: left; dropbar: true" class="uk-hidden@m">
+                        <div class="uk-navbar-left">
+                            <a class="uk-navbar-item uk-light" href="./index.html"><img src="img/Zel-Txt-White.svg"
+                                    width="100"></a>
+                        </div>
+                        <div class="uk-navbar-right">
+                            <ul class="uk-navbar-nav">
+                                <li>
+                                    <a class="uk-navbar-toggle" uk-navbar-toggle-icon href="#"></a>
+                                    <div class="uk-navbar-dropdown">
+                                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                                            <li><a href="zel/index.html">Currency</a></li>
+                                            <li><a href="project/zelcore/index.html">Zel<span>Core</span></a></li>
+                                            <li><a href="project/index.html">Our&nbsp;<span>Projects</span></a></li>
+                                            <li><a href="team/index.html">Our&nbsp;<span>Team</span></a></li>
+                                            <li><a href="">Partners</span></a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </nav>
         </div>
     </div>
 
-    <div class="uk-position-relative uk-visible-toggle" tabindex="-1" uk-slideshow="min-height: 300; max-height: 500"
-        uk-slideshow="animation: push">
+    <div class="uk-position-relative uk-visible-toggle" tabindex="-1" uk-slideshow>
         <ul class="uk-slideshow-items">
             <li>
-                <img src="https://getuikit.com/docs/images/photo.jpg" alt="" uk-cover>
+                <video src="https://player.vimeo.com/external/280255420.hd.mp4?s=cdf10502c3022dd6a840ff083a25626015f5b8c7&amp;profile_id=174&amp;oauth2_token_id=57447761" autoplay loop muted playsinline uk-cover></video>
                 <div class="uk-position-center uk-position-small uk-text-center uk-margin-large-top uk-light">
                     <h1 class="uk-margin-remove"><span class="zel">404</span> Page not found</h1>
                     <h4 class="uk-margin-remove">The page you are looking for might have been removed had its name changed or is temporarily unavailable.</h4>
@@ -59,16 +84,18 @@
         </div>
     </div>
 
+
+    <!-- FOOTER -->
     <footer class="uk-background-muted uk-padding">
         <div class="uk-container">
             <div class="uk-grid-divider uk-child-width-expand@s" uk-grid>
                 <div>
                     <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
-                        <li class="uk-nav-header">Read more</li>
+                        <li class="uk-nav-header">Projects</li>
                         <li><a href="#">Zel</a></li>
                         <li><a href="#">ZelCore</a></li>
-                        <li><a href="#">ZelMate</a></li>
                         <li><a href="#">ZelID</a></li>
+                        <li><a href="#">ZelNodes</a></li>
                     </ul>
                 </div>
                 <div>
@@ -81,7 +108,7 @@
                         <li><a href="#">Work here</a></li>
                         <li><a href="#">Investment</a></li>
                         <li class="uk-nav-divider"></li>
-                        <li><a href="#">Contact Zel</a></li>
+                        <li><a href="#">Contact Us</a></li>
                     </ul>
                 </div>
                 <div class="social">

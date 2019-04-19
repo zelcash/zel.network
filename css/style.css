@@ -66,7 +66,7 @@ a:hover .zelnodescolor {
     background-image: url('https://images.pexels.com/photos/434337/pexels-photo-434337.jpeg?cs=srgb&dl=cup-desk-drink-434337.jpg&fm=jpg');
 }
 .colorVideo {
-    filter: hue-rotate(-125deg) saturate(2) contrast(0.8);
+    filter: hue-rotate(-125deg) saturate(2) contrast(0.9);
 }
 
 /* BUTTONS */
@@ -177,22 +177,26 @@ nav.uk-navbar-container {
 .uk-card {
     border-radius: 10px;
 }
-.uk-card-media-left img {
+.uk-card-media-top img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.uk-card-media-left, .uk-card-media-left img {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
-.uk-card-media-right img {
+.uk-card-media-right, .uk-card-media-right img {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
 /* Phone portrait and smaller */
 @media (max-width: 639px) {
-    .uk-card-media-left img {
+    .uk-card-media-left, .uk-card-media-left img {
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
         border-bottom-left-radius: 0;
     }
-    .uk-card-media-right img {
+    .uk-card-media-right, .uk-card-media-right img {
         border-top-right-radius: 10px;
         border-top-left-radius: 10px;
         border-bottom-right-radius: 0;
