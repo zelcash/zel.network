@@ -225,9 +225,9 @@ nav.uk-navbar-container {
     width: 1200px;
 }
 .zelcoreFeatures img {
-    max-width: 700px;
-    max-height: 500px;
-    margin-left: 100%;
+    max-width: 1200px;
+    max-height: 600px;
+    margin-left: 80%;
 }
 .fixedZelCoreTxt {
     padding-bottom: 170px;
