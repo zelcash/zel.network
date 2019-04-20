@@ -1,19 +1,36 @@
 /* GENERAL */
+@font-face {
+    font-family: "ZelFont";
+    src: url("../fonts/HelveticaNeue.ttf");
+    src: url("../fonts/HelveticaNeueRegular.woff") format("woff"),
+}
+@font-face {
+    font-family: "ZelFontThin";
+    src: url("../fonts/HelveticaNeueThin.ttf");
+    src: url("../fonts/HelveticaNeueThin.woff") format("woff"),
+}
+@font-face {
+    font-family: "ZelFontBold";
+    src: url("../fonts/HelveticaNeueMed.ttf");
+    src: url("../fonts/HelveticaNeueMedium.woff") format("woff"),
+}
 * {
-    font-family: 'Helvetica Neue','Heebo', sans-serif;
-    font-weight: 400;
+    font-family: 'ZelFont';
+}
+div, p {
+    font-family: 'ZelFontBold';
 }
 h1 {
-    font-weight: 200;
+    font-family: 'ZelFontThin';
 }
 a:hover {
     text-decoration: none;
 }
 .zel {
-    font-weight: 500;
+    font-family: 'ZelFontBold';
 }
 .thin {
-    font-weight: 200;
+    font-family: 'ZelFontThin';
 }
 .divider {
     margin: 25px 10px;
@@ -92,10 +109,17 @@ a:hover .zelnodescolor {
 
 /* UIKIT OVERRIDE */
 a {
+    font-family: 'ZelFontBold';
     color: #183c87;
 }
 .uk-button-primary {
     background-color: #183c87;
+}
+.uk-light .uk-button-primary:hover {
+    opacity: .7;
+}
+.uk-light a:hover {
+    opacity: .7;
 }
 /* NAVBAR */
 nav.uk-navbar-container {
@@ -112,12 +136,12 @@ nav.uk-navbar-container {
     -webkit-backdrop-filter: saturate(250%) blur(10px);
 }
 .uk-navbar-nav li a span {
-    font-weight: 200;
+    font-family: 'ZelFontThin';
 }
 .uk-navbar-nav li a {
     color: #fff;
     text-transform: none;
-    font-weight: 500;
+    font-family: 'ZelFontBold';
 }
 .uk-navbar-nav>li.uk-active>a {
     color: #fff;
@@ -151,7 +175,7 @@ nav.uk-navbar-container {
     margin: 5px 0;
     color: #000;
     text-transform: none;
-    font-weight: 500;
+    font-family: 'ZelFontBold';
     justify-items: center;
 }
 .subnav .uk-navbar-nav>li.uk-active>a {
@@ -221,8 +245,11 @@ nav.uk-navbar-container {
     text-align: center;
 }
 .zelcorePosition img {
-    z-index: 1;
+    z-index: 999;
     width: 1200px;
+}
+.onTop {
+    z-index: 999;
 }
 .zelcoreFeatures img {
     max-width: 1200px;
