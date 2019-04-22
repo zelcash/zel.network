@@ -78,6 +78,14 @@
                 </a>
             </div>
             <div data-aos="zoom-in" data-aos-duration="500" class="col-md-3 pools">
+                <a href="https://www.f2pool.com/" target="_blank">
+                    <div class="pools-step">
+                        <h4>F2Pool</h4>
+                        <p>&nbsp;</p>
+                    </div>
+                </a>
+            </div>
+            <div data-aos="zoom-in" data-aos-duration="500" class="col-md-3 pools">
                 <a href="https://fomominers.com/" target="_blank">
                     <div class="pools-step">
                         <h4>FOMO Miners</h4>
