@@ -94,6 +94,14 @@
                 </a>
             </div>
             <div data-aos="zoom-in" data-aos-duration="500" class="col-md-3 pools">
+                <a href="https://mining.luxor.tech/setup?coinId=ZEL" target="_blank">
+                    <div class="pools-step">
+                        <h4>Luxor Pool</h4>
+                        <p>&nbsp;</p>
+                    </div>
+                </a>
+            </div>
+            <div data-aos="zoom-in" data-aos-duration="500" class="col-md-3 pools">
                 <a href="https://equi.pickaxe.pro" target="_blank">
                     <div class="pools-step">
                         <h4>Pickaxe Pro</h4>
