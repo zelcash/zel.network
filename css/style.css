@@ -457,9 +457,9 @@ footer {
     position: relative;
     margin-left: 60px;
     background: #fff;
-    border-radius: 0.25em;
+    border-radius: 10px;
     padding: 1em;
-    box-shadow: 0 14px 43px rgba(33, 54, 61, 0.15)
+    box-shadow: 0 5px 15px rgba(0,0,0,.08)
 }
 .cd-timeline-block div {
     margin-bottom: 20px;
