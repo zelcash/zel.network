@@ -89,7 +89,7 @@ a:hover .zelnodescolor {
     background-image: url('https://images.pexels.com/photos/434337/pexels-photo-434337.jpeg?cs=srgb&dl=cup-desk-drink-434337.jpg&fm=jpg');
 }
 .colorVideo {
-    filter: hue-rotate(-125deg) saturate(2) contrast(0.9);
+    filter: hue-rotate(-125deg) saturate(2) contrast(1.2) brightness(0.9);
 }
 
 /* BUTTONS */
