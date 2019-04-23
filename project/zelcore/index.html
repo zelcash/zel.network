@@ -18,9 +18,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/css/uikit.min.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="../../css/style.css" />
-
-    <!-- ScrollMagic -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
 </head>
 
 <body>
@@ -272,7 +269,7 @@
                 
                                 <div class="cd-timeline-content">
                                     <h2 class="uk-margin-remove">ZelApps</h2>
-                                    <span class="cd-date">Q1 2019</span>
+                                    <span class="cd-date">Q1 2020</span>
                                 </div>
                             </div>
                         </div>
@@ -291,7 +288,7 @@
     <section id="support" class="uk-section zelcoreblack uk-section-large uk-flex uk-flex-middle" uk-height-viewport="offset-top: true;">
         <div class="uk-width-1-1 uk-light">
             <div class="uk-container">
-                <div class="uk-container uk-margin-xlarge-top uk-hidden@s"></div>
+                <div class="uk-container uk-margin-xlarge-top uk-visible@s"></div>
                 <h1 class="uk-heading-primary uk-margin uk-text-center">Support</h1>
                 <div class="uk-grid-divider uk-grid-margin uk-grid" uk-grid>
                     <div class="uk-width-expand@m uk-first-column">         
@@ -302,7 +299,7 @@
                     <div class="uk-width-expand@m">           
                         <h3 class="uk-h3 uk-text-center">Assets in ZelCore</h3>
                         <div class="uk-margin uk-text-center">    
-                            <a class="uk-button uk-button-primary rounded" href="#modal-center" uk-toggle>See the list</a>
+                            <a class="uk-button uk-button-primary rounded" href="#assetsModal" uk-toggle>See the list</a>
                         </div>
                     </div>
                 </div>
@@ -311,16 +308,15 @@
     </section>
 
     <!-- MODALS -->
-    <div id="modal-center" class="uk-flex-top uk-modal-container" uk-modal>
+    <div id="assetsModal" class="uk-flex-top uk-modal-container" uk-modal>
         <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
             <button class="uk-modal-close-default" type="button" uk-close></button>
             <h1>All assets in <span class="zel">zel</span>core</h1>
             <table class="uk-table uk-table-middle uk-table-divider">
                 <thead>
                     <tr>
-                        <th class="uk-width-small">Logo</th>
-                        <th class="uk-width-small">Asset</th>
-                        <th class="uk-visible@m">Info</th>
+                        <th class="">Logo</th>
+                        <th class="">Asset</th>
                         <th class="uk-visible@s">Links</th>
                     </tr>
                 </thead>
@@ -339,7 +335,7 @@
                     <div class="uk-width-1-1@m uk-first-column uk-text-center">
                         <h1 class="uk-heading-primary uk-margin">Are we missing one of your favourite assets?</h1>
                         <div class="uk-margin-medium uk-width-xlarge uk-margin-auto">If you have an asset you would like to see listed in the ZelCore platform, we'll be happy to hear it.</div>
-                        <a href=""><button class="uk-button zelcoreblack rounded">Let us know</button></a>
+                        <a href="mailto:info@zelcore.io"><button class="uk-button zelcoreblack rounded">Let us know</button></a>
                     </div>
                 </div>
             </div>
@@ -369,7 +365,7 @@
                         <li><a href="#">Work here</a></li>
                         <li><a href="#">Investment</a></li> -->
                         <li class="uk-nav-divider"></li>
-                        <li><a href="../../contact/index.html">Contact Us</a></li>
+                        <li><a href="mailto:info@zel.cash">Contact Us</a></li>
                     </ul>
                 </div>
                 <div class="social">
@@ -389,13 +385,13 @@
             </div>
             <div class="uk-child-width-expand@s" uk-grid>
                 <div>
-                    <p>Copyright &copy; <script>document.write(new Date().getFullYear());</script> Zel Technologies GmbH. All rights reserved.</p>
+                    <p>Copyright &copy; 2019 Zel Technologies GmbH. All rights reserved.</p>
                 </div>
             </div>
                 <div class="uk-text-right">
-                    <a href="terms/index.html">Terms and Conditions</a>
+                    <a href="../../terms/index.html">Terms and Conditions</a>
                     <span class="uk-padding-small">|</span>
-                    <a href="privacy/index.html">Privacy Policy</a>
+                    <a href="../../privacy/index.html">Privacy Policy</a>
                 </div>
             </div>
         </div>
@@ -404,6 +400,9 @@
     <!-- UIkit JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit-icons.min.js"></script>
+    <!-- JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+    <script src="./coinsSimple.js" ></script>
     <script>
         // init controller
         var controller = new ScrollMagic.Controller();
@@ -426,12 +425,11 @@
                         .duration("200%")
                         .addTo(controller);
     </script>
-    <script src="./assets.js" ></script>
     <script>
         function displayAssets() {
             var output = [];
-            for (var i in data.assets) {
-                output += "<tr><td><img src='" + data.assets[i].logo + "' class='smallImg'></td><td>" + data.assets[i].name + "</td><td class='uk-visible@m'>" + data.assets[i].info + "</td><td class='uk-visible@s'><a href='" + data.assets[i].explorer + "' class='uk-button uk-button-primary rounded' target='_blank'>Explorer</a></td></tr>";
+            for (var i in coins) {
+                output += "<tr><td><img src='" + coins[i].logolink + "' class='smallImg'></td><td>" + coins[i].name + "</td><td class='uk-visible@s'><a href='" + coins[i].explorer + "' class='uk-button uk-button-primary rounded' target='_blank'>Explorer</a></td></tr>";
             }
             document.getElementById("allAssets").innerHTML=output;
         }
