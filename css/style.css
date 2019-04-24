@@ -277,6 +277,15 @@ nav.uk-navbar-container {
 .zelcoreMobile a:hover img {
     opacity: .7;
 }
+@media (max-height: 1100px) {
+    .zelcorePosition img {
+        width: 70%;
+    }
+    .zelcoreFeatures img {
+        max-width: 700px;
+        margin-left: 80%;
+    }
+}
 @media (max-width: 1024px) {
     .zelcorePosition img {
         width: 80%;
@@ -593,8 +602,20 @@ footer {
     width: 1000px;
 }
 @media (max-width: 1600px) {
+    .isometric div {
+        margin-top: 90px;
+    }
     .isometric img {
         width: 800px;
+    }
+}
+@media (max-height: 1200px) {
+    
+    .isometric.largeTop div {
+        margin-top: 310px;
+    }
+    .isometric img {
+        width: 550px;
     }
 }
 @media (max-width: 1400px) {
