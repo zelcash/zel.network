@@ -269,7 +269,7 @@ nav.uk-navbar-container {
     padding-bottom: 170px;
 }
 .zelcoreSupport {
-    top: 200px
+    top: 90px
 }
 .zelcoreMobile img {
     height: 60px;
@@ -297,16 +297,10 @@ nav.uk-navbar-container {
         max-width: 500px;
         margin-left: 100%;
     }
-    .zelcoreSupport {
-        top: 80px
-    }
 }
 @media (max-width: 768px) {
     .zelcoreFeatures img {
         margin-left: unset;
-    }
-    .zelcoreSupport {
-        top: 120px
     }
 }
 @media (max-width: 639px) {
@@ -615,7 +609,7 @@ footer {
     .isometric.largeTop div {
         margin-top: 310px;
     }
-    .isometric img {
+    .isometric :not(.whatiszel) img {
         width: 550px;
     }
 }
