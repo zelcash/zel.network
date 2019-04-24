@@ -60,9 +60,9 @@ a:hover .zelcoreblack {
 }
 .zelidcolor {
     color: #fff;
-    background: -webkit-linear-gradient(left, #d83f87, #44318d);
-    background: -o-linear-gradient(left, #d83f87, #44318d);
-    background: linear-gradient(left, #d83f87, #44318d);
+    background: -webkit-linear-gradient(top, #d83f87, #44318d);
+    background: -o-linear-gradient(top, #d83f87, #44318d);
+    background: linear-gradient(top, #d83f87, #44318d);
 }
 a:hover .zelidcolor {
     opacity: .7;
@@ -595,6 +595,7 @@ footer {
     }
 }
 
+/* ISOMETRIC */
 .isometric div {
     margin-top: -20px;
 }
@@ -754,4 +755,25 @@ footer {
 }
 .zoomInVideo {
     animation: zoomIn 10s infinite ease-in-out;
+}
+
+/* PALETTES */
+.colorPalette {
+    margin: 10px 0;
+    padding: 20px 30px;
+    color: #fff;
+}
+.colorPalette.whitetxt {
+    border: 1px solid #000;
+    color: #000;
+}
+.colorPalette.whiteBack {
+    border: 1px solid #000;
+    color: #000;
+    background: -webkit-linear-gradient(top, #ffffff, #e5e5e5);
+    background: -o-linear-gradient(top, #ffffff, #e5e5e5);
+    background: linear-gradient(top, #ffffff, #e5e5e5);
+}
+.colorPalette.pink {
+    background-color: #bb3c88;
 }
