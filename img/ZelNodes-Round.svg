@@ -1,10 +1,6 @@
-<svg id="ZelNodes" xmlns="http://www.w3.org/2000/svg" width="262" height="262" viewBox="0 0 262 262">
+<svg id="ZelNodes" xmlns="http://www.w3.org/2000/svg" width="799.991" height="799.991" viewBox="0 0 262 262">
   <defs>
     <style>
-      .cls-1 {
-        fill: #fff;
-      }
-
       .cls-2 {
         fill: #232220;
       }
@@ -20,7 +16,7 @@
         stroke-width: 10px;
       }
     </style>
-    <linearGradient id="roundgrad" x2="0" y2="1">
+	<linearGradient id="roundgrad" x2="0" y2="1">
     	<stop offset="0%" stop-color="#fff" />
     	<stop offset="100%" stop-color="#e5e5e5" />
   	</linearGradient>
