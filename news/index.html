@@ -20,7 +20,8 @@
         integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous" />
     <link rel="stylesheet" href="../css/style.css" />
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Content Loading -->
+    <link rel="stylesheet" href="https://unpkg.com/placeholder-loading/dist/css/placeholder-loading.min.css">
 </head>
 
 <body>
@@ -125,6 +126,7 @@
     </footer>
 
     <!-- UIkit JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit-icons.min.js"></script>
     <script>
@@ -135,6 +137,18 @@
                 async: false,
                 url: "https://api.rss2json.com/v1/api.json?rss_url=" + url,
                 dataType: 'jsonp',
+                beforeSend: function() {
+                    var before = [];
+                    for (var i = 0; i < 6; i++) {
+                        before += "<div><div class='uk-card uk-card-hover uk-card-default'><div class='uk-card-media-top'>";
+                        before += "<div class='ph-picture'></div>";
+                        before += "</div><div class='uk-card-body ph-row'>";
+                        before += "<div class='ph-col-6 big'></div><div class='ph-col-4 empty big'></div>";
+                        before += "<div class='ph-col-4'></div>"
+                        before += "</div></div></div>";
+                    }
+                    document.getElementById("rssFeed").innerHTML=before;
+                },
                 success: function(data) {
                     var output = [];
                     for (var i in data.items) {

@@ -216,7 +216,7 @@ nav.uk-navbar-container {
 .uk-card {
     border-radius: 10px;
 }
-.uk-card-media-top img {
+.uk-card-media-top img, .ph-picture {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
