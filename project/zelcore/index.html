@@ -126,7 +126,7 @@
     <!-- ABOUT -->
     <div class="uk-position-relative">
         <div class="uk-position-absolute uk-position-center zelcorePosition uk-visible@s">
-            <img src="../../img/zelcore/Login.png">
+            <img class="desktopImg" src="../../img/zelcore/Login.jpg">
         </div>
         <div class="uk-position-absolute uk-position-center zelcorePosition uk-hidden@s">
             <img src="../../img/zelcore/Login-Mobile.png">
@@ -139,9 +139,19 @@
             <div class="uk-container uk-margin-xlarge-top uk-visible@s"></div>
             <div class="uk-container uk-margin-xlarge-top">
                 <div class="uk-grid-margin uk-grid uk-grid-stack" uk-grid>
-                    <div class="uk-width-1-1@m uk-first-column">
-                        <h1 class="uk-heading-primary uk-margin uk-text-center">About <span class="zel">zel</span>core</h1>
-                        <div class="uk-margin-medium uk-width-xlarge uk-margin-auto uk-text-center">ZelCore is a multi asset platform and wallet. It does this really well, but it does it even better in ZelCore+</div>
+                    <div class="uk-width-1-1@m uk-first-column uk-text-center">
+                        <h1 class="uk-heading-primary uk-margin">About <span class="zel">zel</span>core</h1>
+                        <div class="uk-margin-medium uk-width-xlarge uk-margin-auto">ZelCore is a multi asset platform and wallet. It does this really well, but it does it even better in ZelCore+</div>
+                    </div>
+                    <div class="uk-width-1-1@m uk-first-column uk-text-center">
+                        <h3>Supporting more than 100+ assets including</h3>
+                        <img src="../../img/assets/BTC.svg" class="smallImg" />
+                        <img src="../../img/assets/TUSD.svg" class="smallImg" />
+                        <img src="../../img/assets/ZEL.svg" class="smallImg" />
+                        <img src="../../img/assets/BNB.svg" class="smallImg" />
+                        <img src="../../img/assets/ETH.svg" class="smallImg" />
+                        <br>
+                        <a href="#assetsModal" uk-toggle><button class="uk-button zelcoreblack rounded uk-margin-top">And many more...</button></a>
                     </div>
                 </div>
             </div>
@@ -155,13 +165,13 @@
                 <h1 class="uk-heading-primary uk-text-left">Features</h1>
                 <div class="zelcoreFeatures uk-visible@m" uk-sticky="offset: 200; bottom: #featurestop">
                     <div class="uk-position-absolute">
-                        <img id="featureImage1" src="../../img/zelcore/Login.png">
+                        <img id="featureImage1" class="desktopImg" src="../../img/zelcore/Login.jpg">
                     </div>
                     <div class="uk-position-absolute">
-                        <img id="featureImage2" class="hidden" src="../../img/zelcore/Portfolio.png">
+                        <img id="featureImage2" class="desktopImg hidden" src="../../img/zelcore/Portfolio.jpg">
                     </div>
                     <div class="uk-position-absolute">
-                        <img id="featureImage3" class="hidden" src="../../img/zelcore/Exchanges.png">
+                        <img id="featureImage3" class="desktopImg hidden" src="../../img/zelcore/Exchanges.jpg">
                     </div>
                 </div>
             </div>
@@ -384,10 +394,9 @@
                 </div>
             </div>
             <div class="uk-child-width-expand@s" uk-grid>
-                <div>
+                <div class="uk-grid-item-match">
                     <p>Copyright &copy; 2019 Zel Technologies GmbH. All rights reserved.</p>
                 </div>
-            </div>
                 <div class="uk-text-right">
                     <a href="../../terms/index.html">Terms and Conditions</a>
                     <span class="uk-padding-small">|</span>
