@@ -1,5 +1,5 @@
 # zel.cash
-Website for ZelCash
+Website for Zel
 
 [Official website](https://zel.cash)
 

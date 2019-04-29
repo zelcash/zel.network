@@ -1,0 +1,45 @@
+<svg id="ZelNodes" xmlns="http://www.w3.org/2000/svg" width="799.991" height="799.991" viewBox="0 0 262 262">
+  <defs>
+    <style>
+      .cls-2 {
+        fill: #232220;
+      }
+
+      .cls-2, .cls-3 {
+        fill-rule: evenodd;
+      }
+
+      .cls-3 {
+        fill: #36c9a5;
+        stroke: #36c9a5;
+        stroke-linecap: round;
+        stroke-width: 10px;
+      }
+    </style>
+	<linearGradient id="roundgrad" x2="0" y2="1">
+    	<stop offset="0%" stop-color="#fff" />
+    	<stop offset="100%" stop-color="#e5e5e5" />
+  	</linearGradient>
+  </defs>
+  <circle id="Main" fill="url(#roundgrad)" cx="131" cy="131" r="131"/>
+  <g id="Second">
+    <g id="ZN">
+      <g id="Box_Top" data-name="Box Top">
+        <path id="Box_Left" data-name="Box Left" class="cls-2" d="M111.891,58.587l19.2-11.119,19.135,11.119V80.826L131.091,91.945l-19.2-11.119V58.587Z"/>
+      </g>
+      <path id="Line" class="cls-3" d="M131.377,117.75v-36.1"/>
+      <g id="Box_Main" data-name="Box Main">
+        <path id="Box_Left-2" data-name="Box Left" class="cls-2" d="M99.769,116.108l31.468-18.224L162.6,116.108v36.449l-31.363,18.224L99.769,152.557V116.108Z"/>
+      </g>
+      <path id="Line-2" data-name="Line" class="cls-3" d="M79.422,171.617L116.8,146.273"/>
+      <path id="Line-3" data-name="Line" class="cls-3" d="M186.576,165.98l-40.64-19.7"/>
+      <g id="Box_Left-3" data-name="Box Left">
+        <path id="Box_Left-4" data-name="Box Left" class="cls-2" d="M50.778,160.174l24.207-14.018L99.11,160.174v28.038L74.984,202.231,50.778,188.212V160.174Z"/>
+      </g>
+      <g id="Box_Right" data-name="Box Right">
+        <path id="Box_Left-5" data-name="Box Left" class="cls-2" d="M162.8,160.174L187,146.156l24.126,14.018v28.038L187,202.231,162.8,188.212V160.174Z"/>
+      </g>
+      <path id="Line-4" data-name="Line" class="cls-3" d="M88.573,179.5H174.52"/>
+    </g>
+  </g>
+</svg>
