@@ -601,6 +601,13 @@ footer {
 .isometric img {
     width: 1000px;
 }
+.isometricNodes {
+    height: 400px;
+    width: 200px;
+}
+.isometricNodes img {
+    height: 400px;
+}
 @media (max-width: 1600px) {
     .isometric div {
         margin-top: 90px;
@@ -754,6 +761,29 @@ footer {
 }
 .zoomInVideo {
     animation: zoomIn 10s infinite ease-in-out;
+}
+
+@keyframes flash {
+    from,
+    50%,
+    to {
+        opacity: 1;
+    }
+
+    25%,
+    75% {
+        opacity: 0;
+    }
+}
+  
+.flashbamf {
+    animation: flash .3s infinite ease-in-out;
+}
+.flashsuper {
+    animation: flash .6s infinite ease-in-out;
+}
+.flash {
+    animation: flash 1s infinite ease-in;
 }
 
 /* PALETTES */

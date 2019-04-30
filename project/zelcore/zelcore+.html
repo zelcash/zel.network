@@ -170,6 +170,69 @@
         </div>
     </section>
 
+    
+    <!-- FEATURES -->
+    <section id="features" class="uk-section uk-flex uk-flex-middle">
+        <div class="uk-width-1-1">
+            <div class="uk-container">
+                <h1 class="uk-heading-primary uk-text-left">Features</h1>
+                <div class="zelcoreFeatures uk-visible@m" uk-sticky="offset: 200; bottom: #featurestop">
+                    <div class="uk-position-absolute">
+                        <img id="featureImage1" class="desktopImg" src="../../img/zelcore/Wallets.jpg">
+                    </div>
+                    <div class="uk-position-absolute">
+                        <img id="featureImage2" class="desktopImg hidden" src="../../img/zelcore/PortfolioTracker.jpg">
+                    </div>
+                    <div class="uk-position-absolute">
+                        <img id="featureImage3" class="desktopImg hidden" src="../../img/zelcore/MoreExchanges.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="feature1" class="zelcoreblack uk-section uk-flex uk-flex-middle" uk-height-viewport="offset-top: true;">
+        <div class="uk-width-1-1 uk-light">
+            <div class="uk-container">
+                <div class="uk-grid-margin uk-grid uk-grid-stack" uk-grid>
+                    <div class="uk-width-1-1@m uk-first-column zelcoreFeatures">
+                        <img class="uk-hidden@m" src="../../img/zelcore/Login-Mobile.png">
+                        <h1 class="uk-heading-primary uk-margin uk-width-large@m">More lightwallet addresses</h1>
+                        <h1 class="uk-h3 uk-margin-medium uk-width-large@m">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="feature2" class="zelcoreblack uk-section uk-flex uk-flex-middle" uk-height-viewport="offset-top: true;">
+        <div class="uk-width-1-1 uk-light">
+            <div class="uk-container">
+                <div class="uk-grid-margin uk-grid uk-grid-stack" uk-grid>
+                    <div class="uk-width-1-1@m uk-first-column zelcoreFeatures">
+                        <img class="uk-hidden@m" src="../../img/zelcore/Portfolio-Mobile.png">
+                        <h1 class="uk-heading-primary uk-margin uk-width-large@m">Portfolio Tracker</h1>
+                        <h1 class="uk-h3 uk-margin-medium uk-width-large@m">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="feature3" class="zelcoreblack uk-section uk-flex uk-flex-middle" uk-height-viewport="offset-top: true;">
+        <div class="uk-width-1-1 uk-light">
+            <div class="uk-container">
+                <div class="uk-grid-margin uk-grid uk-grid-stack" uk-grid>
+                    <div class="uk-width-1-1@s uk-first-column zelcoreFeatures">
+                        <img class="uk-hidden@m" src="../../img/zelcore/Exchanges-Mobile.png">
+                        <h1 id="featurestop" class="uk-heading-primary uk-margin uk-width-large@m">More Exchanges</h1>
+                        <h1 class="uk-h3 uk-margin-medium uk-width-large@m">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- FOOTER -->
     <footer class="uk-background-muted uk-padding">
         <div class="uk-container">
@@ -227,6 +290,28 @@
     <!-- UIkit JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit-icons.min.js"></script>
+    <script>
+        // init controller
+        var controller = new ScrollMagic.Controller();
+    
+        // build scenes
+        new ScrollMagic.Scene({triggerElement: "#feature2"})
+                        .setClassToggle("#featureImage1", "hidden")
+                        .duration("100%")
+                        .addTo(controller);
+        new ScrollMagic.Scene({triggerElement: "#feature3"})
+                        .setClassToggle("#featureImage1", "hidden")
+                        .duration("100%")
+                        .addTo(controller);
+        new ScrollMagic.Scene({triggerElement: "#feature2"})
+                        .setClassToggle("#featureImage2", "show")
+                        .duration("100%")
+                        .addTo(controller);
+        new ScrollMagic.Scene({triggerElement: "#feature3"})
+                        .setClassToggle("#featureImage3", "show")
+                        .duration("200%")
+                        .addTo(controller);
+    </script>
 
 </body>
 
