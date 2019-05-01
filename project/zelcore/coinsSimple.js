@@ -26,7 +26,7 @@ const coins = {
     explorer: [
       "https://explorer.zel.zelcore.io",
     ],
-    logolink: "../../img/assets/ZEL.svg",
+    logolink: "./img/assets/ZEL.svg",
     node: [
       "explorer.zel.zelcore.io",
     ],
@@ -65,7 +65,7 @@ const coins = {
     explorer: [
       "https://explorer.btc.zelcore.io",
     ],
-    logolink: "../../img/assets/BTC.svg",
+    logolink: "./img/assets/BTC.svg",
     node: [
       "explorer.btc.zelcore.io",
     ],
@@ -92,7 +92,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/ETH.svg",
+    logolink: "./img/assets/ETH.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -134,7 +134,7 @@ const coins = {
     explorer: [
       "https://explorer.ltc.zelcore.io",
     ],
-    logolink: "../../img/assets/LTC.svg",
+    logolink: "./img/assets/LTC.svg",
     node: [
       "explorer.ltc.zelcore.io",
     ],
@@ -173,7 +173,7 @@ const coins = {
     explorer: [
       "https://explorer2.zec.zelcore.io",
     ],
-    logolink: "../../img/assets/ZEC.svg",
+    logolink: "./img/assets/ZEC.svg",
     node: [
       "explorer2.zec.zelcore.io",
     ],
@@ -212,7 +212,7 @@ const coins = {
     explorer: [
       "https://explorer.btcz.zelcore.io",
     ],
-    logolink: "../../img/assets/BTCZ.svg",
+    logolink: "./img/assets/BTCZ.svg",
     node: [
       "explorer.btcz.zelcore.io",
     ],
@@ -251,7 +251,7 @@ const coins = {
     explorer: [
       "https://explorer.rvn.zelcore.io",
     ],
-    logolink: "../../img/assets/RVN.svg",
+    logolink: "./img/assets/RVN.svg",
     node: [
       "explorer.rvn.zelcore.io",
     ],
@@ -290,7 +290,7 @@ const coins = {
     explorer: [
       "https://explorer.btx.zelcore.io",
     ],
-    logolink: "../../img/assets/BTX.svg",
+    logolink: "./img/assets/BTX.svg",
     node: [
       "explorer.btx.zelcore.io",
     ],
@@ -329,7 +329,7 @@ const coins = {
     explorer: [
       "https://explorer.hush.zelcore.io",
     ],
-    logolink: "../../img/assets/HUSH.svg",
+    logolink: "./img/assets/HUSH.svg",
     node: [
       "explorer.hush.zelcore.io",
     ],
@@ -355,7 +355,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/BNB.svg",
+    logolink: "./img/assets/BNB.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -383,7 +383,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/SONM.svg",
+    logolink: "./img/assets/SONM.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -411,7 +411,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/OMG.svg",
+    logolink: "./img/assets/OMG.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -439,7 +439,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/ZIL.svg",
+    logolink: "./img/assets/ZIL.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -467,7 +467,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/ZRX.svg",
+    logolink: "./img/assets/ZRX.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -495,7 +495,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/GNT.svg",
+    logolink: "./img/assets/GNT.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -523,7 +523,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/KCS.svg",
+    logolink: "./img/assets/KCS.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -551,7 +551,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/BAT.svg",
+    logolink: "./img/assets/BAT.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -579,7 +579,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/MKR.svg",
+    logolink: "./img/assets/MKR.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -607,7 +607,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/KNC.svg",
+    logolink: "./img/assets/KNC.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -635,7 +635,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/ENG.svg",
+    logolink: "./img/assets/ENG.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -663,7 +663,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/PAY.svg",
+    logolink: "./img/assets/PAY.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -691,7 +691,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/SUB.svg",
+    logolink: "./img/assets/SUB.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -719,7 +719,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/CVC.svg",
+    logolink: "./img/assets/CVC.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -747,7 +747,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/STX.svg",
+    logolink: "./img/assets/STX.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -788,7 +788,7 @@ const coins = {
     explorer: [
       "https://explorer.bitcoingold.org/insight",
     ],
-    logolink: "../../img/assets/BTG.svg",
+    logolink: "./img/assets/BTG.svg",
     node: [
       "explorer.bitcoingold.org",
     ],
@@ -827,7 +827,7 @@ const coins = {
     explorer: [
       "https://explorer.xsg.zelcore.io",
     ],
-    logolink: "../../img/assets/XSG.svg",
+    logolink: "./img/assets/XSG.svg",
     node: [
       "explorer.xsg.zelcore.io",
     ],
@@ -866,7 +866,7 @@ const coins = {
     explorer: [
       "https://explorer.btcprivate.org",
     ],
-    logolink: "../../img/assets/BTCP.svg",
+    logolink: "./img/assets/BTCP.svg",
     node: [
       "explorer.btcprivate.org",
     ],
@@ -905,7 +905,7 @@ const coins = {
     explorer: [
       "https://explorer.anon.zelcore.io",
     ],
-    logolink: "../../img/assets/ANON.svg",
+    logolink: "./img/assets/ANON.svg",
     node: [
       "explorer.anon.zelcore.io",
     ],
@@ -944,7 +944,7 @@ const coins = {
     explorer: [
       "https://explorer.zensystem.io",
     ],
-    logolink: "../../img/assets/ZEN.svg",
+    logolink: "./img/assets/ZEN.svg",
     node: [
       "explorer.zensystem.io",
     ],
@@ -983,7 +983,7 @@ const coins = {
     explorer: [
       "https://explorer.safe.zelcore.io",
     ],
-    logolink: "../../img/assets/SAFE.svg",
+    logolink: "./img/assets/SAFE.svg",
     node: [
       "explorer.safe.zelcore.io",
     ],
@@ -1022,7 +1022,7 @@ const coins = {
     explorer: [
       "https://explorer.kmd.zelcore.io",
     ],
-    logolink: "../../img/assets/KMD.svg",
+    logolink: "./img/assets/KMD.svg",
     node: [
       "explorer.kmd.zelcore.io",
     ],
@@ -1061,7 +1061,7 @@ const coins = {
     explorer: [
       "https://explorer.zcoin.zelcore.io",
     ],
-    logolink: "../../img/assets/XZC.svg",
+    logolink: "./img/assets/XZC.svg",
     node: [
       "explorer.zcoin.zelcore.io",
     ],
@@ -1099,7 +1099,7 @@ const coins = {
     explorer: [
       "https://omniexplorer.info",
     ],
-    logolink: "../../img/assets/USDT.svg",
+    logolink: "./img/assets/USDT.svg",
     node: [
       "omniexplorer.info",
     ],
@@ -1138,7 +1138,7 @@ const coins = {
     explorer: [
       "https://explorer.zer.zelcore.io",
     ],
-    logolink: "../../img/assets/ZER.svg",
+    logolink: "./img/assets/ZER.svg",
     node: [
       "explorer.zer.zelcore.io",
     ],
@@ -1177,7 +1177,7 @@ const coins = {
     explorer: [
       "https://blockdozer.com",
     ],
-    logolink: "../../img/assets/BCH.svg",
+    logolink: "./img/assets/BCH.svg",
     node: [
       "blockdozer.com",
     ],
@@ -1203,7 +1203,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/ABT.svg",
+    logolink: "./img/assets/ABT.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -1231,7 +1231,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/ADX.svg",
+    logolink: "./img/assets/ADX.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -1259,7 +1259,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/AE.svg",
+    logolink: "./img/assets/AE.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -1287,7 +1287,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/AST.svg",
+    logolink: "./img/assets/AST.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -1315,7 +1315,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/BBO.svg",
+    logolink: "./img/assets/BBO.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -1343,7 +1343,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/APPC.svg",
+    logolink: "./img/assets/APPC.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -1371,7 +1371,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/BLZ.svg",
+    logolink: "./img/assets/BLZ.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -1399,7 +1399,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/BNT.svg",
+    logolink: "./img/assets/BNT.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -1427,7 +1427,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/COFI.svg",
+    logolink: "./img/assets/COFI.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -1455,7 +1455,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/DAI.svg",
+    logolink: "./img/assets/DAI.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -1483,7 +1483,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/DGX.svg",
+    logolink: "./img/assets/DGX.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -1511,7 +1511,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/ELEC.svg",
+    logolink: "./img/assets/ELEC.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -1539,7 +1539,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/ELF.svg",
+    logolink: "./img/assets/ELF.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -1567,7 +1567,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/ENJ.svg",
+    logolink: "./img/assets/ENJ.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -1595,7 +1595,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/STORJ.svg",
+    logolink: "./img/assets/STORJ.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -1623,7 +1623,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/IOST.svg",
+    logolink: "./img/assets/IOST.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -1651,7 +1651,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/DENT.svg",
+    logolink: "./img/assets/DENT.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -1679,7 +1679,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/LEND.svg",
+    logolink: "./img/assets/LEND.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -1707,7 +1707,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/LINK.svg",
+    logolink: "./img/assets/LINK.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -1735,7 +1735,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/MANA.svg",
+    logolink: "./img/assets/MANA.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -1763,7 +1763,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/LRC.svg",
+    logolink: "./img/assets/LRC.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -1791,7 +1791,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/QASH.svg",
+    logolink: "./img/assets/QASH.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -1819,7 +1819,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/ICN.svg",
+    logolink: "./img/assets/ICN.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -1847,7 +1847,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/MCO.svg",
+    logolink: "./img/assets/MCO.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -1875,7 +1875,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/POE.svg",
+    logolink: "./img/assets/POE.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -1903,7 +1903,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/POLY.svg",
+    logolink: "./img/assets/POLY.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -1931,7 +1931,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/POWR.svg",
+    logolink: "./img/assets/POWR.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -1959,7 +1959,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/RCN.svg",
+    logolink: "./img/assets/RCN.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -1987,7 +1987,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/RDN.svg",
+    logolink: "./img/assets/RDN.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -2015,7 +2015,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/REQ.svg",
+    logolink: "./img/assets/REQ.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -2043,7 +2043,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/SNT.svg",
+    logolink: "./img/assets/SNT.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -2071,7 +2071,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/SALT.svg",
+    logolink: "./img/assets/SALT.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -2099,7 +2099,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/STORM.svg",
+    logolink: "./img/assets/STORM.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -2127,7 +2127,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/EDO.svg",
+    logolink: "./img/assets/EDO.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -2155,7 +2155,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/TUSD.svg",
+    logolink: "./img/assets/TUSD.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -2183,7 +2183,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/DCN.svg",
+    logolink: "./img/assets/DCN.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -2211,7 +2211,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/WAX.svg",
+    logolink: "./img/assets/WAX.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -2239,7 +2239,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/WINGS.svg",
+    logolink: "./img/assets/WINGS.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -2267,7 +2267,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/DTA.svg",
+    logolink: "./img/assets/DTA.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -2295,7 +2295,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/FUN.svg",
+    logolink: "./img/assets/FUN.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -2323,7 +2323,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/KIN.svg",
+    logolink: "./img/assets/KIN.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -2364,7 +2364,7 @@ const coins = {
     explorer: [
       "https://explorer.zcl.zelcore.io",
     ],
-    logolink: "../../img/assets/ZCL.svg",
+    logolink: "./img/assets/ZCL.svg",
     node: [
       "explorer.zcl.zelcore.io",
     ],
@@ -2390,7 +2390,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/SRN.svg",
+    logolink: "./img/assets/SRN.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -2418,7 +2418,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/AOA.svg",
+    logolink: "./img/assets/AOA.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -2446,7 +2446,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/THETA.svg",
+    logolink: "./img/assets/THETA.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -2487,7 +2487,7 @@ const coins = {
     explorer: [
       "https://explorer.dash.zelcore.io",
     ],
-    logolink: "../../img/assets/DASH.svg",
+    logolink: "./img/assets/DASH.svg",
     node: [
       "explorer.dash.zelcore.io",
     ],
@@ -2533,7 +2533,7 @@ const coins = {
     explorer: [
       "https://explorer.xmr.zelcore.io",
     ],
-    logolink: "../../img/assets/XMR.svg",
+    logolink: "./img/assets/XMR.svg",
     node: [
       "explorer.xmr.zelcore.io",
     ],
@@ -2559,7 +2559,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/USDC.svg",
+    logolink: "./img/assets/USDC.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -2587,7 +2587,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/GUSD.svg",
+    logolink: "./img/assets/GUSD.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -2615,7 +2615,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/PAX.svg",
+    logolink: "./img/assets/PAX.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -2644,7 +2644,7 @@ const coins = {
     explorer: [
       "https://etherhub.io",
     ],
-    logolink: "../../img/assets/ETC.svg",
+    logolink: "./img/assets/ETC.svg",
     node: [
       "https://etc.guarda.co",
     ],
@@ -2672,7 +2672,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/CONI.svg",
+    logolink: "./img/assets/CONI.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -2700,7 +2700,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/TOK.svg",
+    logolink: "./img/assets/TOK.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -2745,7 +2745,7 @@ const coins = {
     explorer: [
       "https://explorer.genx.zelcore.io",
     ],
-    logolink: "../../img/assets/GENX.svg",
+    logolink: "./img/assets/GENX.svg",
     node: [
       "explorer.genx.zelcore.io",
     ],
@@ -2771,7 +2771,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/POR.svg",
+    logolink: "./img/assets/POR.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -2812,7 +2812,7 @@ const coins = {
     explorer: [
       "https://explorer.bze.zelcore.io",
     ],
-    logolink: "../../img/assets/BZE.svg",
+    logolink: "./img/assets/BZE.svg",
     node: [
       "explorer.bze.zelcore.io",
     ],
@@ -2857,7 +2857,7 @@ const coins = {
     explorer: [
       "https://explorer.bth.zelcore.io",
     ],
-    logolink: "../../img/assets/BTH.svg",
+    logolink: "./img/assets/BTH.svg",
     node: [
       "explorer.bth.zelcore.io",
     ],
@@ -2883,7 +2883,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/ADT.svg",
+    logolink: "./img/assets/ADT.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -2911,7 +2911,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/MFT.svg",
+    logolink: "./img/assets/MFT.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -2939,7 +2939,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/ATL.svg",
+    logolink: "./img/assets/ATL.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -2967,7 +2967,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/ANT.svg",
+    logolink: "./img/assets/ANT.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -2995,7 +2995,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/ARN.svg",
+    logolink: "./img/assets/ARN.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -3023,7 +3023,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/BRD.svg",
+    logolink: "./img/assets/BRD.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -3051,7 +3051,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/REP.svg",
+    logolink: "./img/assets/REP.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -3079,7 +3079,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/QKC.svg",
+    logolink: "./img/assets/QKC.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -3107,7 +3107,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/LOOM.svg",
+    logolink: "./img/assets/LOOM.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -3135,7 +3135,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/EURS.svg",
+    logolink: "./img/assets/EURS.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -3176,7 +3176,7 @@ const coins = {
     explorer: [
       "https://explorer.cmm.zelcore.io",
     ],
-    logolink: "../../img/assets/CMM.svg",
+    logolink: "./img/assets/CMM.svg",
     node: [
       "explorer.cmm.zelcore.io",
     ],
@@ -3219,7 +3219,7 @@ const coins = {
     explorer: [
       "https://explorer.grs.zelcore.io",
     ],
-    logolink: "../../img/assets/GRS.svg",
+    logolink: "./img/assets/GRS.svg",
     node: [
       "explorer.grs.zelcore.io",
     ],
@@ -3245,7 +3245,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/GUNTHY.svg",
+    logolink: "./img/assets/GUNTHY.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -3273,7 +3273,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/MTL.svg",
+    logolink: "./img/assets/MTL.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -3301,7 +3301,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/ETHOS.svg",
+    logolink: "./img/assets/ETHOS.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -3329,7 +3329,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/AGI.svg",
+    logolink: "./img/assets/AGI.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -3357,7 +3357,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/AMB.svg",
+    logolink: "./img/assets/AMB.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -3385,7 +3385,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/BCPT.svg",
+    logolink: "./img/assets/BCPT.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -3413,7 +3413,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/CDT.svg",
+    logolink: "./img/assets/CDT.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -3441,7 +3441,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/CELR.svg",
+    logolink: "./img/assets/CELR.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -3469,7 +3469,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/CND.svg",
+    logolink: "./img/assets/CND.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -3497,7 +3497,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/DATA.svg",
+    logolink: "./img/assets/DATA.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -3525,7 +3525,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/DLT.svg",
+    logolink: "./img/assets/DLT.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -3553,7 +3553,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/DOCK.svg",
+    logolink: "./img/assets/DOCK.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -3581,7 +3581,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/EVX.svg",
+    logolink: "./img/assets/EVX.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -3609,7 +3609,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/GTO.svg",
+    logolink: "./img/assets/GTO.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -3637,7 +3637,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/GVT.svg",
+    logolink: "./img/assets/GVT.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -3665,7 +3665,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/HOT.svg",
+    logolink: "./img/assets/HOT.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -3693,7 +3693,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/INS.svg",
+    logolink: "./img/assets/INS.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -3721,7 +3721,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/IOTX.svg",
+    logolink: "./img/assets/IOTX.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -3749,7 +3749,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/KEY.svg",
+    logolink: "./img/assets/KEY.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -3777,7 +3777,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/LUN.svg",
+    logolink: "./img/assets/LUN.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -3805,7 +3805,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/MTH.svg",
+    logolink: "./img/assets/MTH.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -3833,7 +3833,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/OAX.svg",
+    logolink: "./img/assets/OAX.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -3861,7 +3861,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/OST.svg",
+    logolink: "./img/assets/OST.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -3889,7 +3889,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/PPT.svg",
+    logolink: "./img/assets/PPT.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -3917,7 +3917,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/QSP.svg",
+    logolink: "./img/assets/QSP.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -3945,7 +3945,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/REN.svg",
+    logolink: "./img/assets/REN.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -3973,7 +3973,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/RLC.svg",
+    logolink: "./img/assets/RLC.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -4001,7 +4001,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/SNGLS.svg",
+    logolink: "./img/assets/SNGLS.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -4029,7 +4029,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/TNT.svg",
+    logolink: "./img/assets/TNT.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -4057,7 +4057,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/VIB.svg",
+    logolink: "./img/assets/VIB.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -4085,7 +4085,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/VIBE.svg",
+    logolink: "./img/assets/VIBE.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -4113,7 +4113,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/WABI.svg",
+    logolink: "./img/assets/WABI.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -4141,7 +4141,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/WPR.svg",
+    logolink: "./img/assets/WPR.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -4169,7 +4169,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/DIBI.svg",
+    logolink: "./img/assets/DIBI.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -4214,7 +4214,7 @@ const coins = {
     explorer: [
       "https://explorer.bzx.zelcore.io",
     ],
-    logolink: "../../img/assets/BZX.svg",
+    logolink: "./img/assets/BZX.svg",
     node: [
       "explorer.bzx.zelcore.io",
     ],
@@ -4240,7 +4240,7 @@ const coins = {
     explorer: [
       "https://etherscan.io",
     ],
-    logolink: "../../img/assets/FUEL.svg",
+    logolink: "./img/assets/FUEL.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
@@ -4272,7 +4272,7 @@ const coins = {
     explorer: [
       "https://explorer.binance.org",
     ],
-    logolink: "../../img/assets/BNB.svg",
+    logolink: "./img/assets/BNB.svg",
     node: [
       "https://explorer.binance.org/",
     ],
@@ -4302,7 +4302,7 @@ const coins = {
     explorer: [
       "https://explorer.binance.org",
     ],
-    logolink: "../../img/assets/BTC.svg",
+    logolink: "./img/assets/BTC.svg",
     node: [
       "https://explorer.binance.org/",
     ],
