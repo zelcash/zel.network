@@ -80,6 +80,10 @@ a:hover .zelnodescolor {
 .smallImg {
     height: 50px;
 }
+.ravenorange {
+    color: #fff;
+    background-color: #f05239;
+}
 
 /* BACKGROUNDS */
 .zelBackground {
