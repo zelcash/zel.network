@@ -810,3 +810,14 @@ footer {
 .colorPalette.pink {
     background-color: #bb3c88;
 }
+
+.ravenFrame {
+    position: relative;
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.ravenFrame iframe {
+    height: 100%;
+    width: 100%;
+}
