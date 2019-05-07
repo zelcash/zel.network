@@ -128,6 +128,9 @@ a {
 .uk-light a:hover {
     opacity: .7;
 }
+.uk-description-list>dt {
+    text-transform: unset;
+}
 /* NAVBAR */
 nav.uk-navbar-container {
     z-index: 999;
@@ -812,6 +815,7 @@ footer {
 }
 
 .ravenFrame {
+    min-height: 400px;
     position: relative;
     overflow: hidden;
     border-top-left-radius: 10px;

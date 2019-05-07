@@ -154,16 +154,16 @@
                 <div class="uk-grid-margin uk-grid uk-grid-stack" uk-grid>
                     <div class="uk-width-1-1@m uk-first-column">
                         <h1 class="uk-heading-primary uk-margin-medium uk-text-center">Other <span class="zel">plat</span>forms</h1>
-                        <div class="uk-child-width-1-3@m uk-grid-small uk-grid-match" uk-grid>
+                        <div class="uk-child-width-1-3@m uk-grid-small uk-grid-match uk-text-center" uk-grid>
                             <div>
-                                <div class="uk-card uk-card-hover uk-card-secondary uk-card-body uk-text-center">
+                                <div class="uk-card uk-card-hover uk-card-secondary uk-card-body">
                                     <h3 class="uk-card-title">macOS</h3>
                                     <p>Version: 2.0.1</p>
                                     <a href="https://zelcore.io/downloads/zelcore.dmg"><button class="uk-button uk-button-primary rounded">Download</button></a>
                                 </div>
                             </div>
                             <div>
-                                <div class="uk-card uk-card-hover uk-card-secondary uk-card-body uk-text-center">
+                                <div class="uk-card uk-card-hover uk-card-secondary uk-card-body">
                                     <h3 class="uk-card-title">Windows</h3>
                                     <p>Version: 2.0.1</p>
                                     <a href="https://zelcore.io/downloads/zelcore.exe"><button class="uk-button uk-button-primary rounded">Download (Install)</button></a>
@@ -171,7 +171,7 @@
                                 </div>
                             </div>
                             <div>
-                                <div class="uk-card uk-card-hover uk-card-secondary uk-card-body uk-text-center">
+                                <div class="uk-card uk-card-hover uk-card-secondary uk-card-body">
                                     <h3 class="uk-card-title">Linux</h3>
                                     <p>Version: 2.0.1</p>
                                     <a href="#linuxbuilds" uk-toggle><button class="uk-button uk-button-primary rounded">Linux Builds</button></a>
@@ -181,6 +181,10 @@
                         <div class="uk-text-center uk-margin-medium zelcoreMobile">
                             <a href="https://itunes.apple.com/us/app/zelcore/id1436296839?mt=8" target="_blank"><img src="./img/zelcore/badge-appstore.svg" class="uk-margin"></a>
                             <a href="https://play.google.com/store/apps/details?id=com.zelcash.zelcore" target="_blank"><img src="./img/zelcore/badge-googleplay.svg" class="uk-margin"></a>
+                        </div>
+                        <h1 class="uk-heading-primary uk-margin-medium uk-text-center"><span class="zel">Security</span> corner</h1>
+                        <div class="uk-text-center">
+                            <a href="#security" uk-toggle><button class="uk-button zelcoreblack uk-margin-small-top rounded">SHA256</button></a>
                         </div>
                     </div>
                 </div>
@@ -204,6 +208,35 @@
             <h3>4x Kernel</h3>
             <a href="https://zelcore.io/downloads/zelcore4x.AppImage"><button class="uk-button uk-button-secondary rounded">4x Kernel .AppImage</button></a>
             <a href="https://zelcore.io/downloads/zelcore4x.deb"><button class="uk-button uk-button-secondary rounded">4x Kernel .deb</button></a>
+        </div>
+    </div>
+
+    <div id="security" class="uk-flex-top" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+            <button class="uk-modal-close-default" type="button" uk-close></button>
+            <h3>ZelCore v2.0.1 has following SHA256 hashes</h3>
+            <p>All ZelCore releases are signed by Zel Technologies GmbH. Furthermore we provide calculated SHA256 hashes of our releases</p>
+            <hr class="uk-divider-icon">
+            <dl class="uk-description-list uk-description-list-divider">
+                <dt>zelcore.dmg</dt>
+                <dd>xxx</dd>
+                <dt>zelcore.exe</dt>
+                <dd>xxx</dd>
+                <dt>zelcore-portable.exe</dt>
+                <dd>xxx</dd>
+                <dt>zelcore.AppImage & zelcore4x.AppImage</dt>
+                <dd>xxx</dd>
+                <dt>zelcore.deb & zelcore4x.deb</dt>
+                <dd>xxx</dd>
+                <dt>zelcore3x.AppImage</dt>
+                <dd>xxx</dd>
+                <dt>zelcore3x.deb</dt>
+                <dd>xxx</dd>
+            </dl>
+            <hr class="uk-divider-icon">
+            <p>GPG Fingerprint: 4F7F EBBF 1BDD D239 7DAB  E2CF 4B69 CA27 A986 265D</p>
+            <p>Zel Technologies GmbH (TD7JHAFH65)</p>
+            <h4>Always check hashes and certificates prior running software.</h4>
         </div>
     </div>
 
