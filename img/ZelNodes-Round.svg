@@ -1,4 +1,4 @@
-<svg id="ZelNodes" xmlns="http://www.w3.org/2000/svg" width="799.991" height="799.991" viewBox="0 0 262 262">
+<svg id="ZelNodes" xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 500 500">
   <defs>
     <style>
       .cls-2 {
@@ -13,7 +13,7 @@
         fill: #36c9a5;
         stroke: #36c9a5;
         stroke-linecap: round;
-        stroke-width: 10px;
+        stroke-width: 20px;
       }
     </style>
 	<linearGradient id="roundgrad" x2="0" y2="1">
@@ -21,25 +21,23 @@
     	<stop offset="100%" stop-color="#e5e5e5" />
   	</linearGradient>
   </defs>
-  <circle id="Main" fill="url(#roundgrad)" cx="131" cy="131" r="131"/>
-  <g id="Second">
-    <g id="ZN">
-      <g id="Box_Top" data-name="Box Top">
-        <path id="Box_Left" data-name="Box Left" class="cls-2" d="M111.891,58.587l19.2-11.119,19.135,11.119V80.826L131.091,91.945l-19.2-11.119V58.587Z"/>
-      </g>
-      <path id="Line" class="cls-3" d="M131.377,117.75v-36.1"/>
-      <g id="Box_Main" data-name="Box Main">
-        <path id="Box_Left-2" data-name="Box Left" class="cls-2" d="M99.769,116.108l31.468-18.224L162.6,116.108v36.449l-31.363,18.224L99.769,152.557V116.108Z"/>
-      </g>
-      <path id="Line-2" data-name="Line" class="cls-3" d="M79.422,171.617L116.8,146.273"/>
-      <path id="Line-3" data-name="Line" class="cls-3" d="M186.576,165.98l-40.64-19.7"/>
-      <g id="Box_Left-3" data-name="Box Left">
-        <path id="Box_Left-4" data-name="Box Left" class="cls-2" d="M50.778,160.174l24.207-14.018L99.11,160.174v28.038L74.984,202.231,50.778,188.212V160.174Z"/>
-      </g>
-      <g id="Box_Right" data-name="Box Right">
-        <path id="Box_Left-5" data-name="Box Left" class="cls-2" d="M162.8,160.174L187,146.156l24.126,14.018v28.038L187,202.231,162.8,188.212V160.174Z"/>
-      </g>
-      <path id="Line-4" data-name="Line" class="cls-3" d="M88.573,179.5H174.52"/>
+  <circle id="Main" fill="url(#roundgrad)" class="cls-1" cx="250" cy="250" r="250"/>
+  <g id="ZN">
+    <g id="Box_Top" data-name="Box Top">
+      <path id="Box_Left" data-name="Box Left" class="cls-2" d="M213.532,111.808l36.641-21.22,36.518,21.22v42.44l-36.518,21.22-36.641-21.22v-42.44Z"/>
     </g>
+    <path id="Line" class="cls-3" d="M250.22,224.713V155.828"/>
+    <g id="Box_Main" data-name="Box Main">
+      <path id="Box_Left-2" data-name="Box Left" class="cls-2" d="M189.9,221.581l60.055-34.78,59.853,34.78v69.558l-59.853,34.78L189.9,291.139V221.581Z"/>
+    </g>
+    <path id="Line-2" data-name="Line" class="cls-3" d="M151.568,327.513l71.341-48.367"/>
+    <path id="Line-3" data-name="Line" class="cls-3" d="M347.843,328.6l-70.527-49.547"/>
+    <g id="Box_Left-3" data-name="Box Left">
+      <path id="Box_Left-4" data-name="Box Left" class="cls-2" d="M97.9,305.676l46.2-26.753,46.04,26.753v53.507L144.1,385.936,97.9,359.183V305.676Z"/>
+    </g>
+    <g id="Box_Right" data-name="Box Right">
+      <path id="Box_Left-5" data-name="Box Left" class="cls-2" d="M310.182,305.676l46.2-26.753,46.041,26.753v53.507l-46.041,26.753-46.2-26.753V305.676Z"/>
+    </g>
+    <path id="Line-4" data-name="Line" class="cls-3" d="M168.032,342.552H332.053"/>
   </g>
 </svg>
