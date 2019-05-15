@@ -331,7 +331,7 @@ nav.uk-navbar-container {
 }
 /* FOOTER */
 footer {
-    font-size: 12px;
+    font-size: .7em;
 }
 .social a {
     color: white;
@@ -378,7 +378,7 @@ footer {
     left: 18px;
     height: 100%;
     width: 6px;
-    background: #d7e4ed;
+    background: #ebebeb;
 }
 @media only screen and (min-width: 1170px) {
     #cd-timeline {
@@ -458,15 +458,6 @@ footer {
         -webkit-transform: translateZ(0);
         -webkit-backface-visibility: hidden;
     }
-    .cssanimations .cd-timeline-img.is-hidden {
-        visibility: hidden;
-    }
-    .cssanimations .cd-timeline-img.bounce-in {
-        visibility: visible;
-        -webkit-animation: cd-bounce-1 0.6s;
-        -moz-animation: cd-bounce-1 0.6s;
-        animation: cd-bounce-1 0.6s;
-    }
 }
 .cd-timeline-content {
     position: relative;
@@ -488,13 +479,8 @@ footer {
     content: "";
     display: table;
 }
-.cd-timeline-content h2 {
-    color: #142a59;
-}
 .cd-timeline-content p, .cd-timeline-content .cd-read-more {
-    color: #75849a;
-    font-size: 13px;
-    font-size: 0.8125rem;
+    font-size: 0.82rem;
 }
 .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
     display: inline-block;
@@ -502,16 +488,6 @@ footer {
   .cd-timeline-content p {
     margin: 1em 0;
     line-height: 1.6;
-}
-.cd-timeline-content .cd-read-more {
-    float: right;
-    padding: .8em 1em;
-    background: #acb7c0;
-    color: #ffffff;
-    border-radius: 0.25em;
-}
-.no-touch .cd-timeline-content .cd-read-more:hover {
-    background-color: #bac4cb;
 }
 .cd-timeline-content .cd-date {
     color: #142a59;
@@ -589,15 +565,6 @@ footer {
         left: auto;
         right: 122%;
         text-align: right;
-    }
-    .cssanimations .cd-timeline-content.is-hidden {
-        visibility: hidden;
-    }
-    .cssanimations .cd-timeline-content.bounce-in {
-        visibility: visible;
-        -webkit-animation: cd-bounce-2 0.6s;
-        -moz-animation: cd-bounce-2 0.6s;
-        animation: cd-bounce-2 0.6s;
     }
 }
 
