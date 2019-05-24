@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Zel - Donate</title>
+    <meta name="description" content="Zel Technologies GmbH" />
+    <meta name="keywords"
+        content="zelcash, zel, bitcoin, zeltrez, zelcore, crypto, cryptocurrency, ethereum, multi-asset, platform" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="../">
+
+    <!-- Favicon -->
+    <link href="./img/favicon.ico" rel="shortcut icon" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/css/uikit.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+        integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+    <!-- NAV -->
+    <nav class="uk-position-relative uk-navbar-container">
+        <div class="uk-container">
+            <div uk-navbar class="uk-visible@s">
+                <a class="uk-navbar-item uk-light" href="./"><img src="./img/Zel-Txt-White.svg"
+                        width="100"></a>
+                <ul class="uk-navbar-nav">
+                    <li><a href="./zel/">Currency</a></li>
+                    <li><a href="./project/zelcore/">Zel<span>Core</span></a></li>
+                    <li><a href="./project/">Our&nbsp;<span>Projects</span></a></li>
+                    <li><a href="./team/">Our&nbsp;<span>Team</span></a></li>
+                    <li><a href="./partners/">Partners</span></a></li>
+                </ul>
+            </div>
+            <div uk-navbar="boundary-align: true; align: left; dropbar: true" class="uk-hidden@s">
+                <div class="uk-navbar-left">
+                    <a class="uk-navbar-item uk-light" href="./"><img src="./img/Zel-Txt-White.svg"
+                            width="100"></a>
+                </div>
+                <div class="uk-navbar-right">
+                    <ul class="uk-navbar-nav">
+                        <li>
+                            <a class="uk-navbar-toggle" uk-navbar-toggle-icon href="#"></a>
+                            <div class="uk-navbar-dropdown">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li><a href="./zel/">Currency</a></li>
+                                    <li><a href="./project/zelcore/">Zel<span>Core</span></a></li>
+                                    <li><a href="./project/">Our&nbsp;<span>Projects</span></a></li>
+                                    <li><a href="./team/">Our&nbsp;<span>Team</span></a></li>
+                                    <li><a href="./partners/">Partners</span></a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PRESS -->
+    <section class="uk-section uk-container uk-margin">
+        <h1 class="uk-heading-primary">Donate</h1>
+        <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin uk-card-hover" uk-grid>
+            <div>
+                <div class="uk-card-body">
+                    <h1>(TEST ONLY) Development</h1>
+                    <p>Donation address: <a href="https://explorer.btc.zelcore.io/address/1DMFaMEEFQ7xokB37VDYZ3Bx4s9ddjCR8E" id="devAddr" target="_blank">1DMFaMEEFQ7xokB37VDYZ3Bx4s9ddjCR8E</a></p> <!-- TEST ADDR ONLY -->
+                    <a><button class="uk-button zelcoreblack rounded uk-margin-top">Donate</button></a>
+                </div>
+            </div>
+            <div class="uk-flex-last@s uk-card-media-right">
+                <div class="uk-card-body">
+                    <h1 id="devAmount" class="uk-h2">0 BTC</h1>
+                    <progress id="devBar" class="uk-progress" value="0" max="1000000000"></progress>
+                    <p>Donation goal: <span class="thin">10 BTC</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin uk-card-hover" uk-grid>
+            <div>
+                <div class="uk-card-body">
+                    <h1>Marketing</h1>
+                    <a><button class="uk-button uk-button-primary rounded uk-margin-top">Donate</button></a>
+                </div>
+            </div>
+            <div class="uk-flex-last@s uk-card-media-right">
+                <div class="uk-card-body">
+                    <h1 id="marketingAmount" class="uk-h2">0 BTC</h1>
+                    <progress id="marketingBar" class="uk-progress" value="0" max="500000000"></progress>
+                    <p>Donation goal: <span class="thin">5 BTC</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="uk-background-muted uk-padding">
+        <div class="uk-container">
+            <div class="uk-grid-divider uk-child-width-expand@s" uk-grid>
+                <div>
+                    <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
+                        <li class="uk-nav-header">Projects</li>
+                        <li><a href="./zel/">Zel</a></li>
+                        <li><a href="./project/zelcore/">ZelCore</a></li>
+                        <li><a href="./project/zelid/">ZelID</a></li>
+                        <li><a href="./project/zelnodes/">ZelNodes</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
+                        <li class="uk-nav-header">About us</li>
+                        <li><a href="./team/">Team</a></li>
+                        <li><a href="./news/">News</a></li>
+                        <li><a href="./press/">Presskit</a></li>
+                        <li class="uk-nav-divider"></li>
+                        <li><a href="mailto:info@zel.cash">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="social">
+                    <a href="https://twitter.com/zelcash" target="_blank" class="uk-button rounded twitter"><i
+                            class="fab fa-twitter"></i></a>
+                    <a href="https://discord.io/zel" target="_blank" class="uk-button rounded discord"><i
+                            class="fab fa-discord"></i></a>
+                    <a href="https://t.me/zelcash" target="_blank" class="uk-button rounded telegram"><i
+                            class="fab fa-telegram"></i></a>
+                    <a href="https://join.slack.com/t/zelcash/shared_invite/enQtMzkyMjY0MDU3NjA3LWM4NWNkMzQwMDJmNWM4NDJhZTY3YmQ3MDA0MzVhZDE3ZWQxNWU0ODUxMGE4ODk3MTQyOWYyYmZiZTFmY2FiMTM"
+                        target="_blank" class="uk-button rounded slack"><i class="fab fa-slack"></i></a>
+                    <a href="https://www.reddit.com/r/ZelCash/" target="_blank" class="uk-button rounded reddit"><i
+                            class="fab fa-reddit"></i></a>
+                    <a href="https://bitcointalk.org/index.php?topic=2853688.0" target="_blank"
+                        class="uk-button rounded bitcointalk"><i class="fab fa-btc"></i></a>
+                </div>
+            </div>
+            <div class="uk-child-width-expand@s" uk-grid>
+                <div class="uk-grid-item-match">
+                    <p>Copyright &copy; 2019 Zel Technologies GmbH. All rights reserved.</p>
+                </div>
+                <div class="uk-text-right">
+                    <a href="./terms/">Terms and Conditions</a>
+                    <span class="uk-padding-small">|</span>
+                    <a href="./privacy/">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- UIkit JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit-icons.min.js"></script>
+    <script>
+        function getBalance(addr) {
+            var result = null;
+            $.ajax({
+                async: false,
+                url: "https://explorer.btc.zelcore.io/api/addr/" + addr + "/balance",
+                success: function(data){
+                    result = data;
+                }
+            });
+            return result;
+        }
+
+        UIkit.util.ready(function () {
+            //DEV
+            var devBar = document.getElementById('devBar');
+            var devAmount = document.getElementById('devAmount');
+            const devAddr = document.getElementById('devAddr').innerText;
+
+            var getDev = getBalance(devAddr);
+            
+            devAmount.innerText = getDev/1e8 + " BTC";
+            devBar.value = getDev;
+            //END DEV
+        });
+    </script>
+
+</body>
+
+</html>
