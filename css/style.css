@@ -131,6 +131,16 @@ a {
 .uk-description-list>dt {
     text-transform: unset;
 }
+.uk-progress::-webkit-progress-value {
+    background-color: #183c87;
+}
+.uk-progress::-moz-progress-bar {
+    background-color: #183c87
+}
+.uk-progress::-ms-fill {
+    background-color: #183c87;
+}
+
 /* NAVBAR */
 nav.uk-navbar-container {
     z-index: 999;
