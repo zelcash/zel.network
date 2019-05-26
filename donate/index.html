@@ -61,38 +61,8 @@
 
     <!-- PRESS -->
     <section class="uk-section uk-container uk-margin">
-        <h1 class="uk-heading-primary">Donate</h1>
-        <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin uk-card-hover" uk-grid>
-            <div>
-                <div class="uk-card-body">
-                    <h1>(TEST ONLY) Development</h1>
-                    <p>Donation address: <a href="https://explorer.btc.zelcore.io/address/1DMFaMEEFQ7xokB37VDYZ3Bx4s9ddjCR8E" id="devAddr" target="_blank">1DMFaMEEFQ7xokB37VDYZ3Bx4s9ddjCR8E</a></p> <!-- TEST ADDR ONLY -->
-                    <a><button class="uk-button zelcoreblack rounded uk-margin-top">Donate</button></a>
-                </div>
-            </div>
-            <div class="uk-flex-last@s uk-card-media-right">
-                <div class="uk-card-body">
-                    <h1 id="devAmount" class="uk-h2">0 BTC</h1>
-                    <progress id="devBar" class="uk-progress" value="0" max="1000000000"></progress>
-                    <p>Donation goal: <span class="thin">10 BTC</span></p>
-                </div>
-            </div>
-        </div>
-        <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin uk-card-hover" uk-grid>
-            <div>
-                <div class="uk-card-body">
-                    <h1>Marketing</h1>
-                    <a><button class="uk-button uk-button-primary rounded uk-margin-top">Donate</button></a>
-                </div>
-            </div>
-            <div class="uk-flex-last@s uk-card-media-right">
-                <div class="uk-card-body">
-                    <h1 id="marketingAmount" class="uk-h2">0 BTC</h1>
-                    <progress id="marketingBar" class="uk-progress" value="0" max="500000000"></progress>
-                    <p>Donation goal: <span class="thin">5 BTC</span></p>
-                </div>
-            </div>
-        </div>
+        <h1 class="uk-heading-primary">Donate (THIS IS TEST ADDRESSES)</h1>
+        <div id="donate"></div>
     </section>
 
     <!-- FOOTER -->
@@ -150,12 +120,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit-icons.min.js"></script>
+    <script src="../donate/donation.js"></script>
     <script>
-        function getBalance(addr) {
-            var result = null;
+        function getBalance(addr, asset) {
+            let result = null;
             $.ajax({
                 async: false,
-                url: "https://explorer.btc.zelcore.io/api/addr/" + addr + "/balance",
+                url: "https://explorer." + asset + ".zelcore.io/api/addr/" + addr + "/balance",
                 success: function(data){
                     result = data;
                 }
@@ -163,20 +134,33 @@
             return result;
         }
 
-        UIkit.util.ready(function () {
-            //DEV
-            var devBar = document.getElementById('devBar');
-            var devAmount = document.getElementById('devAmount');
-            const devAddr = document.getElementById('devAddr').innerText;
+        let output = [];
+        let getZEL = [];
+        let getBTC = [];
 
-            var getDev = getBalance(devAddr);
-            
-            devAmount.innerText = getDev/1e8 + " BTC";
-            devBar.value = getDev;
-            //END DEV
-        });
+        for (let i in donate) {
+            getZEL = getBalance(donate[i].zel, "zel");
+            getBTC = getBalance(donate[i].btc, "btc");
+
+            output += "<div class='uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin uk-card-hover' uk-grid><div><div class='uk-card-body'>";
+            output += "<h1>" + donate[i].name + "</h1>";
+            output += "<p>Zel address: <a href='https://explorer.zel.zelcore.io/address/" + donate[i].zel + "' id='" + donate[i].id + "AddrZEL' target='_blank'>" + donate[i].zel + "</a></p>";
+            output += "<div uk-dropdown='pos: top-center'><p>Zel Address:</p><img src='https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=" + donate[i].zel + "' /></div>";
+            output += "<p>Bitcoin address: <a href='https://explorer.btc.zelcore.io/address/" + donate[i].btc + "' id='" + donate[i].id + "AddrBTC' target='_blank'>" + donate[i].btc + "</a></p>";
+            output += "<div uk-dropdown='pos: top-center'><p>Bitcoin Address:</p><img src='https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=" + donate[i].btc + "' /></div>";
+            output += "<a href='" + donate[i].zelUri + "'><button class='uk-button uk-button-primary rounded uk-margin-top'>Donate ZEL</button></a><a href='" + donate[i].btcUri + "'><button class='uk-button uk-button-primary rounded uk-margin-top'>Donate BTC</button></a></div></div>";
+            output += "<div class='uk-flex-last@s uk-card-media-right'><div class='uk-card-body'>";
+            output += "<h1 id='" + donate[i].id + "AmountZEL' class='uk-h2'>" + getZEL/1e8 + " ZEL</h1>"
+            output += "<progress id='" + donate[i].id + "BarZEL' class='uk-progress' value='" + getZEL + "' max='" + donate[i].goalzel + "e8'></progress>"
+            output += "<p>Donation goal: <span class='thin'>" + donate[i].goalzel + " ZEL</span></p>"
+            output += "</div><div class='uk-card-body'>"
+            output += "<h1 id='" + donate[i].id + "AmountBTC' class='uk-h2'>" + getBTC/1e8 + " BTC</h1>"
+            output += "<progress id='" + donate[i].id + "BarBTC' class='uk-progress' value='" + getBTC + "' max='" + donate[i].goalbtc + "e8'></progress>"
+            output += "<p>Donation goal: <span class='thin'>" + donate[i].goalbtc + " BTC</span></p>"
+            output += "</div></div></div>";
+        }
+        document.getElementById("donate").innerHTML=output;
     </script>
-
 </body>
 
 </html>

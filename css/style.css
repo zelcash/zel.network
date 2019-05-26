@@ -265,6 +265,9 @@ nav.uk-navbar-container {
 .uk-card-body img {
     height: 50px;
 }
+.uk-dropdown img {
+    height: 150px;
+}
 
 /* ZELCORE */
 .zelcorePosition {
