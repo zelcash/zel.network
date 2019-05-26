@@ -329,6 +329,10 @@ nav.uk-navbar-container {
         z-index: 1;
     }
 }
+
+/* ZELID */
+
+
 /* FOOTER */
 footer {
     font-size: .7em;
@@ -591,7 +595,7 @@ footer {
     }
 }
 @media (max-height: 1200px) {
-    
+
     .isometric.largeTop div {
         margin-top: 310px;
     }
@@ -657,7 +661,7 @@ footer {
     20% {
         transform: translate3d(0, 1px, 0);
     }
-  
+
     50% {
         -webkit-transform: scale3d(1.02, 1.02, 1.02);
         transform: scale3d(1.02, 1.02, 1.02);
@@ -671,7 +675,7 @@ footer {
     70% {
         transform: translate3d(0, -1px, 0);
     }
-  
+
     to {
         -webkit-transform: scale3d(1, 1, 1);
         transform: scale3d(1, 1, 1);
@@ -749,7 +753,7 @@ footer {
         opacity: 0;
     }
 }
-  
+
 .flashbamf {
     animation: flash .3s infinite ease-in-out;
 }
