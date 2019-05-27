@@ -132,16 +132,21 @@
                 }
             });
             return result;
-        }
+        };
+
+        let iArray = localStorage.getItem('items') ? JSON.parse(localStorage.getItem('items')) : [];
+        function getB() {
+            for (let i in donate) {
+                iArray[i] = {
+                    zel: getBalance(donate[i].zel, "zel"),
+                    btc: getBalance(donate[i].btc, "btc")
+                };
+                localStorage.setItem('items', JSON.stringify(iArray));
+            };
+        };
 
         let output = [];
-        let getZEL = [];
-        let getBTC = [];
-
         for (let i in donate) {
-            getZEL = getBalance(donate[i].zel, "zel");
-            getBTC = getBalance(donate[i].btc, "btc");
-
             output += "<div class='uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin uk-card-hover' uk-grid><div><div class='uk-card-body'>";
             output += "<h1>" + donate[i].name + "</h1>";
             output += "<p>Zel address: <a href='https://explorer.zel.zelcore.io/address/" + donate[i].zel + "' id='" + donate[i].id + "AddrZEL' target='_blank'>" + donate[i].zel + "</a></p>";
@@ -150,16 +155,18 @@
             output += "<div uk-dropdown='pos: top-center'><p>Bitcoin Address:</p><img src='https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=" + donate[i].btc + "' /></div>";
             output += "<a href='" + donate[i].zelUri + "'><button class='uk-button uk-button-primary rounded uk-margin-top'>Donate ZEL</button></a><a href='" + donate[i].btcUri + "'><button class='uk-button uk-button-primary rounded uk-margin-top'>Donate BTC</button></a></div></div>";
             output += "<div class='uk-flex-last@s uk-card-media-right'><div class='uk-card-body'>";
-            output += "<h1 id='" + donate[i].id + "AmountZEL' class='uk-h2'>" + getZEL/1e8 + " ZEL</h1>"
-            output += "<progress id='" + donate[i].id + "BarZEL' class='uk-progress' value='" + getZEL + "' max='" + donate[i].goalzel + "e8'></progress>"
-            output += "<p>Donation goal: <span class='thin'>" + donate[i].goalzel + " ZEL</span></p>"
-            output += "</div><div class='uk-card-body'>"
-            output += "<h1 id='" + donate[i].id + "AmountBTC' class='uk-h2'>" + getBTC/1e8 + " BTC</h1>"
-            output += "<progress id='" + donate[i].id + "BarBTC' class='uk-progress' value='" + getBTC + "' max='" + donate[i].goalbtc + "e8'></progress>"
-            output += "<p>Donation goal: <span class='thin'>" + donate[i].goalbtc + " BTC</span></p>"
+            output += "<h1 id='" + donate[i].id + "AmountZEL' class='uk-h2'>" + iArray[i].zel/1e8 + " ZEL</h1>";
+            output += "<progress id='" + donate[i].id + "BarZEL' class='uk-progress' value='" + iArray[i].zel + "' max='" + donate[i].goalzel + "e8'></progress>";
+            output += "<p>Donation goal: <span class='thin'>" + donate[i].goalzel + " ZEL</span></p>";
+            output += "</div><div class='uk-card-body'>";
+            output += "<h1 id='" + donate[i].id + "AmountBTC' class='uk-h2'>" + iArray[i].btc/1e8 + " BTC</h1>";
+            output += "<progress id='" + donate[i].id + "BarBTC' class='uk-progress' value='" + iArray[i].btc + "' max='" + donate[i].goalbtc + "e8'></progress>";
+            output += "<p>Donation goal: <span class='thin'>" + donate[i].goalbtc + " BTC</span></p>";
             output += "</div></div></div>";
-        }
+        };
         document.getElementById("donate").innerHTML=output;
+
+        getB();
     </script>
 </body>
 
