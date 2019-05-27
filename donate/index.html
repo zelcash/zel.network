@@ -144,6 +144,7 @@
                 localStorage.setItem('items', JSON.stringify(iArray));
             };
         };
+        getB();
 
         let output = [];
         for (let i in donate) {
@@ -165,8 +166,6 @@
             output += "</div></div></div>";
         };
         document.getElementById("donate").innerHTML=output;
-
-        getB();
     </script>
 </body>
 
