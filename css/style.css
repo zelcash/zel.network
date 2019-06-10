@@ -84,6 +84,13 @@ a:hover .zelnodescolor {
     color: #fff;
     background-color: #f05239;
 }
+.zellabscolor {
+    color: #fff;
+    background-color: #ff7952;
+}
+a:hover .zellabscolor {
+    opacity: .7;
+}
 
 /* BACKGROUNDS */
 .zelBackground {
@@ -320,7 +327,7 @@ nav.uk-navbar-container {
     }
     .zelcoreFeatures img {
         max-width: 500px;
-        margin-left: 100%;
+        margin-left: unset;
     }
 }
 @media (max-width: 768px) {
