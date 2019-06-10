@@ -1,0 +1,16 @@
+<svg id="Kanji" xmlns="http://www.w3.org/2000/svg" width="800" height="800.4" viewBox="0 0 2001 2002">
+<defs>
+    <style>
+      .cls-1 {
+        fill: #ff7952;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <ellipse id="Round" class="cls-1" cx="1000.5" cy="1001" rx="1000.5" ry="1001"/>
+  <path id="川_svg" data-name="川 svg" class="cls-2" d="M1412.95,444.08H1313.7V1592.07h99.25V444.08Zm-717.136,3.843H595.927V950.17q0,193.47-9.605,270.34t-59.228,152.47q-49.628,75.6-162.956,147.98l71.714,86.49q135.093-89.055,197.532-204.68t62.43-293.73V447.923Zm352.806,31.391H948.732V1485.73h99.888V479.314Z"/>
+</svg>
