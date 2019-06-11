@@ -7,7 +7,7 @@ const donate = {
         zel: "t1SPorEYHQHwWgvcmpxjiHTWoB8zcojkLbM",
         btc: "19XCqu89Ry9v6HZstXvb9eQsvUoY1dise5",
         zelUri: "zel:?action=pay&coin=zelcash&amount=0&address=t1SPorEYHQHwWgvcmpxjiHTWoB8zcojkLbM&message=ZelMarketingDonation",
-        btcUri: "btc:?action=pay&coin=bitcoin&amount=0&address=19XCqu89Ry9v6HZstXvb9eQsvUoY1dise5&message=ZelMarketingDonation",
+        btcUri: "zel:?action=pay&coin=bitcoin&amount=0&address=19XCqu89Ry9v6HZstXvb9eQsvUoY1dise5&message=ZelMarketingDonation",
     },
     listing: {
         name: "Exchange Listings",
@@ -17,7 +17,7 @@ const donate = {
         zel: "t1WQccf15vWuVrsT1zfWoiHaW5CAxRCzWvo",
         btc: "1DY1cKawxC7uGEQ84EhgaUUapXysaw3GMp",
         zelUri: "zel:?action=pay&coin=zelcash&amount=0&address=t1WQccf15vWuVrsT1zfWoiHaW5CAxRCzWvo&message=ZelListingDonation",
-        btcUri: "btc:?action=pay&coin=bitcoin&amount=0&address=1DY1cKawxC7uGEQ84EhgaUUapXysaw3GMp&message=ZelListingDonation",
+        btcUri: "zel:?action=pay&coin=bitcoin&amount=0&address=1DY1cKawxC7uGEQ84EhgaUUapXysaw3GMp&message=ZelListingDonation",
     },
     development: {
         name: "Development",
@@ -27,7 +27,7 @@ const donate = {
         zel: "t1KuWRYSQ7ti2rSwnzAf8jYMC6wtSLND2sV",
         btc: "132uRD2G9ZvSFotu3jr1bjFGrHhMVQtZMP",
         zelUri: "zel:?action=pay&coin=zelcash&amount=0&address=t1KuWRYSQ7ti2rSwnzAf8jYMC6wtSLND2sV&message=ZelDevDonation",
-        btcUri: "btc:?action=pay&coin=bitcoin&amount=0&address=132uRD2G9ZvSFotu3jr1bjFGrHhMVQtZMP&message=ZelDevDonation",
+        btcUri: "zel:?action=pay&coin=bitcoin&amount=0&address=132uRD2G9ZvSFotu3jr1bjFGrHhMVQtZMP&message=ZelDevDonation",
     },
     tip: {
         name: "Coffee & Beer Fund",
@@ -37,6 +37,6 @@ const donate = {
         zel: "t1USPje8JoYdwmgkSFR9iG935iDH7WpR1cD",
         btc: "1BZnjJiAqDrMB3hYJzLb8KwATZ62op326P",
         zelUri: "zel:?action=pay&coin=zelcash&amount=0&address=t1USPje8JoYdwmgkSFR9iG935iDH7WpR1cD&message=ZelTipDonation",
-        btcUri: "btc:?action=pay&coin=bitcoin&amount=0&address=1BZnjJiAqDrMB3hYJzLb8KwATZ62op326P&message=ZelTipDonation",
+        btcUri: "zel:?action=pay&coin=bitcoin&amount=0&address=1BZnjJiAqDrMB3hYJzLb8KwATZ62op326P&message=ZelTipDonation",
     }
 };
