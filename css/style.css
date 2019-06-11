@@ -842,3 +842,49 @@ footer {
     height: 100%;
     width: 100%;
 }
+
+/* DARK MODE */
+
+.darkMode .uk-navbar-container:not(.uk-navbar-transparent), .uk-navbar-container {
+    background: #050505;
+}
+
+.darkMode * .subnav .uk-navbar-container:not(.uk-navbar-transparent), .subnav .uk-navbar-container {
+    background: rgba(0,0,0,0.8);
+}
+
+.darkMode * .subnav .uk-navbar-nav li a {
+    color: #fff;
+}
+
+.darkMode * + .uk-section {
+    background-color: #1a1a1a;
+}
+
+.darkMode * + .uk-section.uk-section-muted {
+    background-color: #050505;
+}
+
+.darkMode * + .uk-background-muted {
+    background-color: #050505;
+}
+
+.darkMode * h1 {
+    color: #fff;
+}
+
+.darkMode * div {
+    color: #fff;
+}
+
+.darkMode * .uk-nav-default .uk-nav-header {
+    color: #fff;
+}
+
+.darkMode * a {
+    color: #fff;
+}
+
+.darkMode * a:hover {
+    opacity: .5;
+}
