@@ -112,22 +112,22 @@
                     <div class="uk-grid-margin uk-grid uk-grid-stack" uk-grid>
                         <div class="uk-width-1-1@m uk-first-column uk-text-center fixedZelCoreTxt">
                             <img class="uk-width-medium" src="./img/ZelCore-Txt-White.svg">
-                            <div id="macOS" class="uk-visible@l">
+                            <div id="macOS" class="isDesktop">
                                 <h1 class="uk-heading-primary uk-text-center">macOS</h1>
                                 <a href="https://zelcore.io/downloads/zelcore.dmg"><button class="uk-button uk-button-primary rounded">Download</button></a>
                             </div>
-                            <div id="Windows" class="uk-visible@l">
+                            <div id="Windows" class="isDesktop">
                                 <h1 class="uk-heading-primary uk-text-center">Windows</h1>
                                 <a href="https://zelcore.io/downloads/zelcore.exe"><button class="uk-button uk-button-primary rounded">Download</button></a>
                             </div>
-                            <div id="Linux" class="uk-visible@l">
+                            <div id="Linux" class="isDesktop">
                                 <h1 class="uk-heading-primary uk-text-center">Linux</h1>
                                 <a href="#linuxbuilds" uk-toggle><button class="uk-button uk-button-primary rounded">Download</button></a>
                             </div>
-                            <div class="uk-text-center uk-margin-medium zelcoreMobile uk-hidden@l">
+                            <div class="uk-text-center uk-margin-medium zelcoreMobile isMobile">
                                 <a href="https://itunes.apple.com/us/app/zelcore/id1436296839?mt=8" target="_blank" id="iOS"><img src="./img/zelcore/badge-appstore.svg"></a>
-                                <a href="https://play.google.com/store/apps/details?id=com.zelcash.zelcore" target="_blank" id="Android"><img src="./img/zelcore/badge-googleplay.svg"></a>
-                                <a href="https://zelcore.io/downloads/zelcore-170.apk" target="_blank" id="Android"><img src="./img/zelcore/badge-directdownload.svg"></a>
+                                <a href="https://play.google.com/store/apps/details?id=com.zelcash.zelcore" target="_blank" class="android"><img src="./img/zelcore/badge-googleplay.svg"></a>
+                                <a href="https://zelcore.io/downloads/zelcore-170.apk" target="_blank" class="android"><img src="./img/zelcore/badge-directdownload.svg"></a>
                             </div>
                             <h1 class="uk-h5"><a href="#downloads" uk-scroll>Other Platforms</a></h1>
                         </div>
@@ -180,7 +180,7 @@
                         <div class="uk-text-center uk-margin-medium zelcoreMobile">
                             <a href="https://itunes.apple.com/us/app/zelcore/id1436296839?mt=8" target="_blank"><img src="./img/zelcore/badge-appstore.svg" class="uk-margin"></a>
                             <a href="https://play.google.com/store/apps/details?id=com.zelcash.zelcore" target="_blank"><img src="./img/zelcore/badge-googleplay.svg" class="uk-margin"></a>
-                            <a href="https://zelcore.io/download/zelcore-170.apk" target="_blank"><img src="./img/zelcore/directdownload.svg" class="uk-margin"></a>
+                            <a href="https://zelcore.io/download/zelcore-170.apk" target="_blank"><img src="./img/zelcore/badge-directdownload.svg" class="uk-margin"></a>
                         </div>
                         <h1 class="uk-heading-primary uk-margin-medium uk-text-center"><span class="zel">Security</span> corner</h1>
                         <div class="uk-text-center">
@@ -303,24 +303,39 @@
         var windowsClass = document.getElementById('Windows');
         var linuxClass = document.getElementById('Linux');
         var iosClass = document.getElementById('iOS');
-        var androidClass = document.getElementById('Android');
+        var androidClass = document.querySelectorAll('.android');
+        var mobileClass = document.querySelectorAll('.isMobile');
+        var desktopClass = document.querySelectorAll('.isDesktop');
 
-        if ((navigator.userAgent.match(/Macintosh/))) {
+        if (navigator.userAgent.match(/Macintosh/) || navigator.userAgent.match(/Windows/) || (navigator.userAgent.match(/Linux/) && !navigator.userAgent.match(/Android/i))) {
+            for (let index = 0; index < mobileClass.length; index++) {
+                mobileClass[index].classList.add('hidden');
+            };
+        }
+        if (navigator.userAgent.match(/Macintosh/)) {
             windowsClass.setAttribute('class','hidden');
             linuxClass.setAttribute('class','hidden');
         }
-        if ((navigator.userAgent.match(/Windows/))) {
+        if (navigator.userAgent.match(/Windows/)) {
             macClass.setAttribute('class','hidden');
             linuxClass.setAttribute('class','hidden');
         }
-        if ((navigator.userAgent.match(/Linux/))) {
+        if (navigator.userAgent.match(/Linux/) && !navigator.userAgent.match(/Android/i)) {
             macClass.setAttribute('class','hidden');
             windowsClass.setAttribute('class','hidden');
         }
-        if ((navigator.userAgent.match(/(iPhone|iPod|iPad)/))) {
-            androidClass.setAttribute('class','hidden');
+        //MOBILE
+        if (navigator.userAgent.match(/iPhone|iPad|iPod/i) || (navigator.userAgent.match(/Android/i) && navigator.userAgent.match(/Linux/))) {
+            for (let index = 0; index < desktopClass.length; index++) {
+                desktopClass[index].classList.add('hidden');
+            };
         }
-        if ((navigator.userAgent.match(/Android/))) {
+        if ((navigator.userAgent.match(/iPhone|iPad|iPod/i))) {
+            for (let index = 0; index < androidClass.length; index++) {
+                androidClass[index].classList.add('hidden');
+            };
+        }
+        if ((navigator.userAgent.match(/Android/i))) {
             iosClass.setAttribute('class','hidden');
         }
     </script>
