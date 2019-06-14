@@ -888,3 +888,12 @@ footer {
 .darkMode * a:hover {
     opacity: .5;
 }
+
+.profilePic {
+    background-color: #e6e6e6;
+}
+
+.profilePic img {
+    top: 70%;
+    transform: translate(-50%,-50%) scale(0.5);
+}
