@@ -357,24 +357,28 @@ nav.uk-navbar-container {
 footer {
     font-size: .7em;
 }
-.social a {
+.social a, .socialProfile div {
     color: white;
     padding: 2px 0;
     width: 40px;
     height: 40px;
 }
-.social a:hover { opacity: .7; }
-.social .facebook { background: #4b6cd0; }
-.social .google { background: #f03b3b; }
-.social .instagram { background: #bb8950; }
-.social .twitter { background: #49a7f3; }
-.social .linkedin { background: #00A0DC; }
-.social .discord { background: #7289DA; }
-.social .telegram { background: #0088cc; }
-.social .slack { background: #2d333a; }
-.social .github { background: #151013; }
-.social .bitcointalk { background: #f7931a; }
-.social .reddit { background: #ff4500; }
+.socialProfile {
+    display: grid;
+    grid-gap: 10px;
+}
+.social a:hover, .socialProfile a:hover { opacity: .7; }
+.social .facebook, .socialProfile .facebook { background: #4b6cd0; }
+.social .google, .socialProfile .google { background: #f03b3b; }
+.social .instagram, .socialProfile .instagram { background: #bb8950; }
+.social .twitter, .socialProfile .twitter { background: #49a7f3; }
+.social .linkedin, .socialProfile .linkedin { background: #00A0DC; }
+.social .discord, .socialProfile .discord { background: #7289DA; }
+.social .telegram, .socialProfile .telegram { background: #0088cc; }
+.social .slack, .socialProfile .slack { background: #2d333a; }
+.social .github, .socialProfile .github { background: #151013; }
+.social .bitcointalk, .socialProfile .bitcointalk { background: #f7931a; }
+.social .reddit, .socialProfile .reddit { background: #ff4500; }
 
 .uk-border-circle {
     width: 80px;
@@ -887,6 +891,22 @@ footer {
 
 .darkMode * a:hover {
     opacity: .5;
+}
+
+.darkMode * .profilePic {
+    background-color: #050505;
+}
+
+.darkPicture {
+    display: none;
+}
+
+.darkMode * .darkPicture {
+    display: inline;
+}
+
+.darkMode * .lightPicture {
+    display: none;
 }
 
 .profilePic {
