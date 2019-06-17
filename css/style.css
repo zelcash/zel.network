@@ -847,13 +847,22 @@ footer {
     width: 100%;
 }
 
+.profilePic {
+    background-color: #e6e6e6;
+}
+
+.profilePic img {
+    top: 70%;
+    transform: translate(-50%,-50%) scale(0.5);
+}
+
 /* DARK MODE */
 
 .darkMode .uk-navbar-container:not(.uk-navbar-transparent), .uk-navbar-container {
     background: #050505;
 }
 
-.darkMode * .subnav .uk-navbar-container:not(.uk-navbar-transparent), .subnav .uk-navbar-container {
+.darkMode * .subnav .uk-navbar-container:not(.uk-navbar-transparent), .darkMode * .subnav .uk-navbar-container {
     background: rgba(0,0,0,0.8);
 }
 
@@ -873,7 +882,7 @@ footer {
     background-color: #050505;
 }
 
-.darkMode * h1 {
+.darkMode * h1, .darkMode * h3, .darkMode * h4 {
     color: #fff;
 }
 
@@ -885,12 +894,36 @@ footer {
     color: #fff;
 }
 
+.darkMode * .uk-card {
+    background-color: #222;
+}
+
+.darkMode * .uk-card-title {
+    color: #fff;
+}
+
+.darkMode * .uk-card:hover {
+    background-color: #222;
+}
+
+.darkMode * .uk-dropdown {
+    background-color: #000;
+}
+
 .darkMode * a {
     color: #fff;
 }
 
 .darkMode * a:hover {
     opacity: .5;
+}
+
+.darkMode * .uk-button-primary {
+    background-color: #183c87;
+}
+
+.darkMode * .zelcoreblack {
+    filter: invert(1);
 }
 
 .darkMode * .profilePic {
@@ -909,11 +942,14 @@ footer {
     display: none;
 }
 
-.profilePic {
-    background-color: #e6e6e6;
+.darkMode * .cd-date {
+    color: #fff;
 }
 
-.profilePic img {
-    top: 70%;
-    transform: translate(-50%,-50%) scale(0.5);
+.darkMode * .cd-timeline-content p {
+    color: #000;
+}
+
+.darkMode * .whitetxt {
+    background-color: #fff;
 }
