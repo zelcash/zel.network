@@ -934,11 +934,23 @@ footer {
     display: none;
 }
 
-.darkMode * .darkPicture {
+.isDark {
+    color: #fff;
+}
+
+.isDark:hover {
+    opacity: .5;
+}
+
+.isLight {
+    display: none;
+}
+
+.darkMode * .darkPicture, .darkMode * .isLight{
     display: inline;
 }
 
-.darkMode * .lightPicture {
+.darkMode * .lightPicture, .darkMode * .isDark {
     display: none;
 }
 
