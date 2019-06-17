@@ -36,6 +36,12 @@
                     <li><a href="./team/">Our&nbsp;<span>Team</span></a></li>
                     <li><a href="./partners/">Partners</span></a></li>
                 </ul>
+                <div class="uk-navbar-right">
+                    <ul class="uk-navbar-nav uk-visible@s">
+                        <li class="isLight"><a onclick="changeColorScheme('light')"><i class="fas fa-sun"></i></a></li>
+                        <li class="isDark"><a onclick="changeColorScheme('dark')"><i class="fas fa-moon"></i></a></li>
+                    </ul>
+                </div>
             </div>
             <div uk-navbar="boundary-align: true; align: left; dropbar: true" class="uk-hidden@s">
                 <div class="uk-navbar-left">
@@ -1012,8 +1018,37 @@
     </footer>
 
     <!-- UIkit JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit-icons.min.js"></script>
+
+    <script>
+        $(function() {
+            checkColorScheme();
+        });
+        
+        function checkColorScheme() {
+            // Check data in browser
+            var colorScheme = localStorage.getItem('colorScheme');
+            
+            // Execute from above 
+            if (colorScheme == 'light') {
+                document.body.classList.remove('darkMode'); 
+            } else if (colorScheme == 'dark') {
+                document.body.classList.add('darkMode');
+            }
+        }
+
+        function changeColorScheme(value) {
+            if (value == 'dark') {
+                localStorage.setItem('colorScheme', 'dark');
+            }
+            else if (value == 'light') {
+                localStorage.setItem('colorScheme', 'light');
+            }
+            checkColorScheme();
+        }
+    </script>
 
 </body>
 
