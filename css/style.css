@@ -910,6 +910,10 @@ footer {
     background-color: #000;
 }
 
+.darkMode * .subnav .uk-navbar-nav .uk-navbar-dropdown-nav li a {
+    color: #000;
+}
+
 .darkMode * a {
     color: #fff;
 }
