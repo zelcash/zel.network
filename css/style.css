@@ -969,3 +969,7 @@ footer {
 .darkMode * .whitetxt {
     background-color: #fff;
 }
+
+.darkMode * .uk-modal-dialog {
+    background-color: #000;
+}
