@@ -379,6 +379,8 @@ footer {
 .social .github, .socialProfile .github { background: #151013; }
 .social .bitcointalk, .socialProfile .bitcointalk { background: #f7931a; }
 .social .reddit, .socialProfile .reddit { background: #ff4500; }
+.social .youtube, .socialProfile .youtube { background: #c4302b; }
+
 
 .uk-border-circle {
     width: 80px;
