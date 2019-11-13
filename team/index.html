@@ -20,6 +20,11 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
         integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous" />
     <link rel="stylesheet" href="./css/style.css" />
+    <style>
+        body {
+            display: none;
+        }
+    </style>
 </head>
 
 <body>
@@ -594,6 +599,15 @@
     <!-- UIkit JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit-icons.min.js"></script>
+    <script>
+        /* PREVENT CLICKJACKING */
+        if (self == top) {
+            var theBody = document.getElementsByTagName('body')[0];
+            theBody.style.display = "block";
+        } else {
+            top.location = self.location;
+        }
+    </script>
 
 </body>
 

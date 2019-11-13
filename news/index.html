@@ -20,6 +20,11 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
         integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous" />
     <link rel="stylesheet" href="./css/style.css" />
+    <style>
+        body {
+            display: none;
+        }
+    </style>
 
     <!-- Content Loading -->
     <link rel="stylesheet" href="https://unpkg.com/placeholder-loading/dist/css/placeholder-loading.min.css">
@@ -129,6 +134,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit-icons.min.js"></script>
+    <script>
+        /* PREVENT CLICKJACKING */
+        if (self == top) {
+            var theBody = document.getElementsByTagName('body')[0];
+            theBody.style.display = "block";
+        } else {
+            top.location = self.location;
+        }
+    </script>
     <script>
         $(document).ready(function() {
             var url = 'https://medium.com/feed/@ZelOfficial';
