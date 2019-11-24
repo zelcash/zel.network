@@ -162,14 +162,14 @@
                             <div>
                                 <div class="uk-card uk-card-hover uk-card-secondary uk-card-body">
                                     <h3 class="uk-card-title">macOS</h3>
-                                    <p>Version: 2.2.7</p>
+                                    <p>Version: 2.2.8</p>
                                     <a href="https://zelcore.io/downloads/zelcore.dmg"><button class="uk-button uk-button-primary rounded">Download</button></a>
                                 </div>
                             </div>
                             <div>
                                 <div class="uk-card uk-card-hover uk-card-secondary uk-card-body">
                                     <h3 class="uk-card-title">Windows</h3>
-                                    <p>Version: 2.2.7</p>
+                                    <p>Version: 2.2.8</p>
                                     <a href="https://zelcore.io/downloads/zelcore.exe"><button class="uk-button uk-button-primary rounded">Download (Install)</button></a>
                                     <a href="https://zelcore.io/downloads/zelcore-portable.exe"><button class="uk-button uk-button-primary uk-margin-small-top rounded">Download (Portable)</button></a>
                                 </div>
@@ -177,7 +177,7 @@
                             <div>
                                 <div class="uk-card uk-card-hover uk-card-secondary uk-card-body">
                                     <h3 class="uk-card-title">Linux</h3>
-                                    <p>Version: 2.2.7</p>
+                                    <p>Version: 2.2.8</p>
                                     <a href="#linuxbuilds" uk-toggle><button class="uk-button uk-button-primary rounded">Linux Builds</button></a>
                                 </div>
                             </div>
@@ -220,24 +220,24 @@
     <div id="security" class="uk-flex-top uk-modal-container" uk-modal>
         <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical uk-text-center">
             <button class="uk-modal-close-default" type="button" uk-close></button>
-            <h3>ZelCore v2.2.7 has following SHA256 hashes</h3>
+            <h3>ZelCore v2.2.8 has following SHA256 hashes</h3>
             <p>All ZelCore releases are signed by Zel Technologies GmbH. Furthermore we provide calculated SHA256 hashes of our releases</p>
             <hr class="uk-divider-icon">
             <dl class="uk-description-list uk-description-list-divider">
                 <dt>zelcore.dmg</dt>
-                <dd>9d7c22c42cdaebb70942c8ab81bcfa71c79ab6672093e30965460fdb03930fd6</dd>
+                <dd>4e64488ac3178926ce051a6a41cafaf97be4458f820a9e9a5a66efa1c5a54540</dd>
                 <dt>zelcore.exe</dt>
-                <dd>db33969076792c18b6d7402489e4ee1b707ba4c2f29dcf80d06e6eb1ff750289</dd>
+                <dd>ca86c26499e99899c27dd6735564760771b022fa72af4527799a1e5510192c2b</dd>
                 <dt>zelcore-portable.exe</dt>
-                <dd>c0ca63785bec0cfc94a5cecce66908728d59fecb455921ee084b4eb6a3bd3bcc</dd>
+                <dd>441b05a63bb6611345da5cb2c3233a2a7ac2db7cc9acf39523c211b3e655a246</dd>
                 <dt>zelcore.AppImage & zelcore4x.AppImage</dt>
-                <dd>a4b8e12fa6e87e09d51354cd9d3d4cf114db3d3c872bd872ec202849df9a7265</dd>
+                <dd>8f9d588a449e26a78260cf738c78ce4aeaefeb1c5ac91680d284b4586108ca86</dd>
                 <dt>zelcore.deb & zelcore4x.deb</dt>
-                <dd>9feaf83518d784ed619da3159bee70caf3ab0cfa05e5f20ff9f63459051cfde0</dd>
+                <dd>88c089b198ea403345528af56f02ea5fef04b23e34150356bbb6f6a9567783ca</dd>
                 <dt>zelcore3x.AppImage</dt>
-                <dd>3b3c2a5e5814be2b8f35ae6a73efc8bc19160850b4f046db8b18e95fe6f8632c</dd>
+                <dd>3f104c56a478b17e00ae1e8789a36b2e6ffc8151390f9bf0f9d7946798eb8705</dd>
                 <dt>zelcore3x.deb</dt>
-                <dd>ae6ddd94c00d7d266c5918d871e8f34ee1ed4bf98dd38044cf70aa602ace5a4f</dd>
+                <dd>4a701630369de2a63677c32f3d3f3daf8c8d2d4c51c514ad6a048388e7cc87b7</dd>
                 <dt>zelcore-210-derived.apk</dt>
                 <dd>c964893778d4067a547da513eb31f079c5354ef95ce39cee417e7cda090a8080</dd>
             </dl>
@@ -251,6 +251,22 @@
     <div id="changes" class="uk-flex-top uk-modal-container" uk-modal>
         <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical uk-text-center">
             <button class="uk-modal-close-default" type="button" uk-close></button>
+            <div>
+                <h3>ZelCore v2.2.8 changes</h3>
+                <h4>Features</h4>
+                <ul class="uk-list">
+                    <li>Adds support for daemon encryption for all daemon encrypted wallet.dat's imported into your ZelCore Full Node</li>
+                    <li>Adds the possibility to encrypt your daemon and change your daemon encryption password in your ZelCore Full Node. (For Zel, Zcash and other UTXO based Bitcoin forks)</li>
+                    <li>Following ERC20 Tokens added: HPT, HBT, ZB, MX, BF, OKB, HT, BUSD</li>
+                    <li>Following Full Node binaries updated: ZelCash, Anon</li>
+                </ul>
+                <h4>Bugs fixes</h4>
+                <ul class="uk-list">
+                    <li>Fix to customizable shielding in Full Node</li>
+                    <li>Bitcoin Cash ABC chain split issues resolved</li>
+                    <li>Dai renamed to Sai to correctly reflect change</li>
+                </ul>
+            </div>
             <div>
                 <h3>ZelCore v2.2.7 changes</h3>
                 <h4>Features</h4>
