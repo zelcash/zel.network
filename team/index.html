@@ -1,614 +1,1030 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <title>Zel - We are Zel</title>
     <meta name="description" content="Zel Technologies GmbH" />
-    <meta name="keywords"
-        content="zelcash, zel, bitcoin, zeltrez, zelcore, crypto, cryptocurrency, ethereum, multi-asset, platform" />
+    <meta
+      name="keywords"
+      content="zelcash, zel, bitcoin, zeltrez, zelcore, crypto, cryptocurrency, ethereum, multi-asset, platform"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <base href="../">
+    <base href="../" />
 
     <!-- Favicon -->
     <link href="./img/favicon.ico" rel="shortcut icon" />
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Heebo:100,400,500" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Heebo:100,400,500"
+      rel="stylesheet"
+    />
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/css/uikit.min.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
-        integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.3/css/uikit.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+      integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./css/style.css" />
-    <style>
-        body {
-            display: none;
-        }
-    </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- NAV -->
     <nav class="uk-position-relative uk-navbar-container">
-        <div class="uk-container">
-            <div uk-navbar class="uk-visible@s">
-                <a class="uk-navbar-item uk-light" href="./"><img src="./img/Zel-Txt-White.svg"
-                        width="100"></a>
-                <ul class="uk-navbar-nav">
-                    <li><a href="./zel/">Currency</a></li>
-                    <li><a href="./project/zelcore/">Zel<span>Core</span></a></li>
-                    <li><a href="./project/">Our&nbsp;<span>Projects</span></a></li>
-                    <li><a href="./team/">Our&nbsp;<span>Team</span></a></li>
-                    <li><a href="./partners/">Partners</span></a></li>
-                </ul>
-            </div>
-            <div uk-navbar="boundary-align: true; align: left; dropbar: true" class="uk-hidden@s">
-                <div class="uk-navbar-left">
-                    <a class="uk-navbar-item uk-light" href="./"><img src="./img/Zel-Txt-White.svg"
-                            width="100"></a>
-                </div>
-                <div class="uk-navbar-right">
-                    <ul class="uk-navbar-nav">
-                        <li>
-                            <a class="uk-navbar-toggle" uk-navbar-toggle-icon href="#"></a>
-                            <div class="uk-navbar-dropdown">
-                                <ul class="uk-nav uk-navbar-dropdown-nav">
-                                    <li><a href="./zel/">Currency</a></li>
-                                    <li><a href="./project/zelcore/">Zel<span>Core</span></a></li>
-                                    <li><a href="./project/">Our&nbsp;<span>Projects</span></a></li>
-                                    <li><a href="./team/">Our&nbsp;<span>Team</span></a></li>
-                                    <li><a href="./partners/">Partners</span></a></li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+      <div class="uk-container">
+        <div uk-navbar class="uk-visible@s">
+          <a class="uk-navbar-item uk-light" href="./"
+            ><img src="./img/Zel-Txt-White.svg" width="100"
+          /></a>
+          <ul class="uk-navbar-nav">
+            <li><a href="./zel/">Currency</a></li>
+            <li>
+              <a href="./project/zelcore/">Zel<span>Core</span></a>
+            </li>
+            <li>
+              <a href="./project/">Our&nbsp;<span>Projects</span></a>
+            </li>
+            <li>
+              <a href="./team/">Our&nbsp;<span>Team</span></a>
+            </li>
+            <li><a href="./partners/">Partners</a></li>
+          </ul>
         </div>
+        <div
+          uk-navbar="boundary-align: true; align: left; dropbar: true"
+          class="uk-hidden@s"
+        >
+          <div class="uk-navbar-left">
+            <a class="uk-navbar-item uk-light" href="./"
+              ><img src="./img/Zel-Txt-White.svg" width="100"
+            /></a>
+          </div>
+          <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav">
+              <li>
+                <a class="uk-navbar-toggle" uk-navbar-toggle-icon href="#"></a>
+                <div class="uk-navbar-dropdown">
+                  <ul class="uk-nav uk-navbar-dropdown-nav">
+                    <li><a href="./zel/">Currency</a></li>
+                    <li>
+                      <a href="./project/zelcore/">Zel<span>Core</span></a>
+                    </li>
+                    <li>
+                      <a href="./project/">Our&nbsp;<span>Projects</span></a>
+                    </li>
+                    <li>
+                      <a href="./team/">Our&nbsp;<span>Team</span></a>
+                    </li>
+                    <li><a href="./partners/">Partners</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </nav>
 
     <!-- TEAM -->
-    <section class="uk-background-norepeat uk-background-cover uk-background-center-center uk-section uk-section-large">
-        <div class="uk-container uk-margin">
-            <h1 class="uk-heading-primary"><span class="zel">Core</span> Team</h1>
-            <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin uk-card-hover" uk-grid>
-                <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
-                    <img src="./img/team/Miles.jpg" alt="" uk-cover>
-                    <canvas width="600" height="500"></canvas>
-                </div>
-                <div>
-                    <div class="uk-card-body">
-                        <h1><span class="zel">Miles</span> Manley</h1>
-                        <h1 class="uk-h3 uk-margin-remove-top">Founder & Chief Executive Officer, Developer and Designer</h1>
-                        <p>At age 15, Miles founded Zel with the ambition to create a fast, scalable decentralized blockchain based development infrastructure. To enable fellow developers to create blockchain-based applications and dApps with ease. Miles, now 17, spends most of his time on Zel and looks forward to the future that lays ahead, not only in the development of Zel, but the opportunities it can offer people in the future, from all walks of life.</p>
-                        <div class="social">
-                            <a href="https://twitter.com/mcamanley" target="_blank" class="uk-button rounded twitter"><i class="fab fa-twitter"></i></a>
-                            <a href="https://github.com/milesmanley" target="_blank" class="uk-button rounded github"><i class="fab fa-github"></i></a>
-                            <a href="https://www.linkedin.com/in/miles-manley-a2749816b/" target="_blank" class="uk-button rounded linkedin"><i class="fab fa-linkedin"></i></a>
-                            <a href="mailto:miles.manley@zel.cash" class="uk-button uk-button-primary rounded"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
-                </div>
+    <section
+      class="uk-background-norepeat uk-background-cover uk-background-center-center uk-section uk-section-large"
+    >
+      <div class="uk-container uk-margin">
+        <h1 class="uk-heading-medium"><span class="zel">Core</span> Team</h1>
+        <div
+          class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin uk-card-hover"
+          uk-grid
+        >
+          <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
+            <img src="./img/team/Miles.jpg" alt="" uk-cover />
+            <canvas width="600" height="500"></canvas>
+          </div>
+          <div>
+            <div class="uk-card-body">
+              <h1><span class="zel">Miles</span> Manley</h1>
+              <h1 class="uk-h3 uk-margin-remove-top">
+                Founder & Chief Executive Officer, Developer and Designer
+              </h1>
+              <p>
+                At age 15, Miles founded Zel with the ambition to create a fast,
+                scalable decentralized blockchain based development
+                infrastructure. To enable fellow developers to create
+                blockchain-based applications and dApps with ease. Miles, now
+                17, spends most of his time on Zel and looks forward to the
+                future that lays ahead, not only in the development of Zel, but
+                the opportunities it can offer people in the future, from all
+                walks of life.
+              </p>
+              <div class="social">
+                <a
+                  href="https://twitter.com/mcamanley"
+                  target="_blank"
+                  class="uk-button rounded twitter"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a
+                  href="https://github.com/milesmanley"
+                  target="_blank"
+                  class="uk-button rounded github"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a
+                  href="https://www.linkedin.com/in/miles-manley-a2749816b/"
+                  target="_blank"
+                  class="uk-button rounded linkedin"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+                <a
+                  href="mailto:miles.manley@zel.cash"
+                  class="uk-button uk-button-primary rounded"
+                  ><i class="fas fa-envelope"></i
+                ></a>
+              </div>
             </div>
-
-            <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin uk-card-hover" uk-grid>
-                <div class="uk-card-media-left uk-cover-container">
-                    <img src="./img/team/Lumi.jpg" alt="" uk-cover>
-                    <canvas width="600" height="500"></canvas>
-                </div>
-                <div>
-                    <div class="uk-card-body">
-                        <h1><span class="zel">Lumi</span> Ibishi</h1>
-                        <h1 class="uk-h3 uk-margin-remove-top">Chief Design Officer, Developer & Designer</h1>
-                        <p>With over 15 years of experience working in graphic design, Lumi heads the design team at Zel Technologies. He also brings vast amount of knowledge and expertise in UI and UX development. In May 2018, Lumi, Miles, Patrick and Tade&aacute;&scaron; formed Zel Technologies GmbH. our business arm that brings everything Zel Together.</p>
-                        <div class="social">
-                            <a href="https://twitter.com/fatlumibishi" target="_blanl" class="uk-button rounded twitter"><i class="fab fa-twitter"></i></a>
-                            <a href="https://github.com/Lumiboy" target="_blank" class="uk-button rounded github"><i class="fab fa-github"></i></a>
-                            <a href="https://www.linkedin.com/in/fatlumibishi/" target="_blank" class="uk-button rounded linkedin"><i class="fab fa-linkedin"></i></a>
-                            <a href="mailto:lumi.ibishi@zel.cash" class="uk-button uk-button-primary rounded"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin uk-card-hover" uk-grid>
-                <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
-                    <img src="./img/team/Tadeas.jpg" alt="" uk-cover>
-                    <canvas width="600" height="500"></canvas>
-                </div>
-                <div>
-                    <div class="uk-card-body">
-                        <h1><span class="zel">Tade&aacute;&scaron;</span> Kmenta</h1>
-                        <h1 class="uk-h3 uk-margin-remove-top">Chief Technical Officer & Lead Developer</h1>
-                        <p>Tade&aacute;&scaron; hails from the Czech Republic and heads our development team. He is an experienced Javascript developer and looks forward to the enablement of people through blockchain.</p>
-                        <div class="social">
-                            <a href="https://twitter.com/tj_trunk" target="_blank" class="uk-button rounded twitter"><i class="fab fa-twitter"></i></a>
-                            <a href="https://github.com/TheTrunk" target="_blank" class="uk-button rounded github"><i class="fab fa-github"></i></a>
-                            <a href="https://www.linkedin.com/in/tadeas-kmenta-636b9516a/" target="_blank" class="uk-button rounded linkedin"><i class="fab fa-linkedin"></i></a>
-                            <a href="mailto:tadeas.kmenta@zel.cash" class="uk-button uk-button-primary rounded"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin uk-card-hover" uk-grid>
-                <div class="uk-card-media-left uk-cover-container">
-                    <img src="./img/team/Parker.jpg" alt="" uk-cover>
-                    <canvas width="600" height="500"></canvas>
-                </div>
-                <div>
-                    <div class="uk-card-body">
-                        <h1><span class="zel">Parker</span> Honeyman</h1>
-                        <h1 class="uk-h3 uk-margin-remove-top">Chief Operations Officer, Community Management & Business Development</h1>
-                        <p>Parker is a mechanical engineer from the South Bay Area, CA and works in the medical device field consulting for product development. Parker helps keep things rolling behind the scenes at Zel Technologies and within the Zel Community. Wearing many hats throughout the day from content development to researching hardware and new technologies.</p>
-                        <div class="social">
-                            <a href="https://www.linkedin.com/in/parker-honeyman-51785342/" target="_blank" class="uk-button rounded linkedin"><i class="fab fa-linkedin"></i></a>
-                            <a href="mailto:parker.honeyman@zel.cash" class="uk-button uk-button-primary rounded"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin uk-card-hover" uk-grid>
-                <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
-                    <img src="./img/team/Daniel.jpg" alt="" uk-cover>
-                    <canvas width="600" height="500"></canvas>
-                </div>
-                <div>
-                    <div class="uk-card-body">
-                        <h1><span class="zel">Daniel</span> Keller</h1>
-                        <h1 class="uk-h3 uk-margin-remove-top">Chief Strategy Officer & Business Development</h1>
-                        <p>Daniel bring over 20 years IT experience in healthcare and nonprofit- charity works. An entrepreneur, investor and disruptive technology advocate, Daniel has a ethos that resinates with many on the Zel Team, focusing on projects that are uplifting to humanity. Daniel focuses on business development but also charity initiatives at Zel Technologies.</p>
-                        <div class="social">
-                            <a href="https://twitter.com/crypto_dan_1" target="_blank" class="uk-button rounded twitter"><i class="fab fa-twitter"></i></a>
-                            <a href="https://www.linkedin.com/in/kellerdaniel/" target="_blank" class="uk-button rounded linkedin"><i class="fab fa-linkedin"></i></a>
-                            <a href="mailto:daniel.keller@zel.cash" class="uk-button uk-button-primary rounded"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <h1 class="uk-heading-primary"><span class="zel">Dev</span>elopers</h1>
-
-            <div class="uk-child-width-1-2@s uk-child-width-1-3@m" uk-grid uk-height-match="target: > div > .uk-card">
-                <div>
-                    <div class="uk-card uk-card-default uk-card-hover">
-                        <div class="uk-card-media-top">
-                        </div>
-                        <div class="uk-card-body">
-                            <h1>Maxine</h1>
-                            <h1 class="uk-h3 uk-margin-remove-top">Developer, Infra Team & Community Moderator</h1>
-                            <p>Maxine is a Senior Cybersecurity Specialist from Singapore. His interest currently lay in the exploration of machine learning as well as technologies related to Cryptocurrencies. Apart than that, he is also a miner.</p>
-                            <div class="social">
-                                <a href="https://twitter.com/max1n_e" target="_blank" class="uk-button rounded twitter"><i class="fab fa-twitter"></i></a>
-                                <a href="https://github.com/max1ne" target="_blank" class="uk-button rounded github"><i class="fab fa-github"></i></a>
-                                <a href="https://t.me/max1n_e" target="_blank" class="uk-button rounded telegram"><i class="fab fa-telegram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="uk-card uk-card-default uk-card-hover">
-                        <div class="uk-card-media-top">
-                            <img src="./img/team/Valter.jpg" alt="">
-                        </div>
-                        <div class="uk-card-body">
-                            <h1><span class="zel">Valter</span> Silva</h1>
-                            <h1 class="uk-h3 uk-margin-remove-top">Developer</h1>
-                            <p>Valter is a senior developer in JAVA and C# from Portugal. Interested in learning about new technologies, Valter entered the crypto space in late 2017. He has been part of the Zel Team since summer 2018 and overhauled the outdates ZelMate and ZecMate wallets (swing.) He now focuses on various development projects within the team.</p>
-                            <div class="social">
-                                <a href="https://github.com/Cabecinha84" target="_blank" class="uk-button rounded github"><i class="fab fa-github"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="uk-card uk-card-default uk-card-hover">
-                        <div class="uk-card-media-top">
-                        </div>
-                        <div class="uk-card-body">
-                            <h1><span class="zel">Michal</span> Falat</h1>
-                            <h1 class="uk-h3 uk-margin-remove-top">Developer</h1>
-                            <p>Michal is frontend developer from Slovakia. He is still a university student of information technologies in the Czech Republic. Michal joined the team in February 2019. He is interested in the cryptocurrency world and enjoys the larger challenges and problems he can face and solve.</p>
-                            <div class="social">
-                                <a href="https://github.com/michalfalat" target="_blank" class="uk-button rounded github"><i class="fab fa-github"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="uk-card uk-card-default uk-card-hover">
-                        <div class="uk-card-media-top">
-                        </div>
-                        <div class="uk-card-body">
-                            <h1><span class="zel">Davy</span> (Jefke)</h1>
-                            <h1 class="uk-h3 uk-margin-remove-top">Developer</h1>
-                            <p> Currently residing in Manitoba, Canada, Davy is an Information Analyst in the healthcare field, covering all of North America.  Holding a Bachelor in Information Technology & Management, he has 15+ years experience in IT.  Starting off with a small mining rig in January 2018, he quickly moved on to create his own mining pool, together with Pascal (tarballqc).  He is an avid crypto enthusiast, and is deeply invested in the Zel project, and joined the team as a developer in April 2019.</p>
-                            <div class="social">
-                                <a href="https://github.com/Jefkeh" target="_blank" class="uk-button rounded github"><i class="fab fa-github"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="uk-card uk-card-default uk-card-hover">
-                        <div class="uk-card-media-top">
-                        </div>
-                        <div class="uk-card-body">
-                            <h1><span class="zel">Matthew</span> Reichardt</h1>
-                            <h1 class="uk-h3 uk-margin-remove-top">Developer</h1>
-                            <p>Matthew is the creator of the authentication protocol authparty. For over a year now he has, when time makes itself available to him, he has focused on the development of Zel ID.</p>
-                            <div class="social">
-                                <a href="https://twitter.com/matthewjamesr" target="_blank" class="uk-button rounded twitter"><i class="fab fa-twitter"></i></a>
-                                <a href="https://github.com/matthewjamesr" target="_blank" class="uk-button rounded github"><i class="fab fa-github"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="uk-card uk-card-default uk-card-hover">
-                        <div class="uk-card-media-top">
-                        </div>
-                        <div class="uk-card-body">
-                            <h1><span class="zel">Wilke Trei</span> (Lolliedieb) </h1>
-                            <h1 class="uk-h3 uk-margin-remove-top">Developer</h1>
-                            <p>Wilke Trei is a mathematician who specialises in computational discrete mathematics. Wilke works on Zel network updates and POW algorithms at Zel. He continues to develop the popular mining software Lolminer and focuses on the development of memory heavy algorithms on Graphic cards. Wilke also advises Beam and Grin among other projects in the cryptocurrency space.</p>
-                            <div class="social">
-                                <a href="https://github.com/Lolliedieb" target="_blank" class="uk-button rounded github"><i class="fab fa-github"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="uk-card uk-card-default uk-card-hover">
-                        <div class="uk-card-media-top">
-                        </div>
-                        <div class="uk-card-body">
-                            <h1><span class="zel">Jeremy Anderson</span> (Blondfrogs)</h1>
-                            <h1 class="uk-h3 uk-margin-remove-top">Developer</h1>
-                            <p>Jeremy Anderson is an expert software engineer who has made contributions to PIVX, Ravencoin, Veil and Zel. He focuses on ZelNodes and Zel source.</p>
-                            <div class="social">
-                                <a href="https://github.com/blondfrogs" target="_blank" class="uk-button rounded github"><i class="fab fa-github"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <h1 class="uk-heading-primary"><span class="zel"></span>Legal</h1>
-
-            <div class="uk-child-width-1-2@s uk-child-width-1-3@m" uk-grid uk-height-match="target: > div > .uk-card">
-                <div>
-                    <div class="uk-card uk-card-default uk-card-hover">
-                        <div class="uk-card-media-top">
-                            <img src="./img/team/Patrick.jpg" alt="">
-                        </div>
-                        <div class="uk-card-body">
-                            <h1><span class="zel">Patrick</span> Storchenegger</h1>
-                            <h1 class="uk-h3 uk-margin-remove-top">Legal Advisor</h1>
-                            <p>Patrick is the CEO of PST Legal & Consulting in Zug which was set up in 1992. His main practice areas are national and international tax law, corporate law, notarial services etc. He is also a member of a self-regulatory organization for anti-money laundering purposes. Patrick holds a seat on the Ethereum Foundation board.</p>
-                            <div class="social">
-                                <a href="http://www.pst-legalconsulting.ch/" target="_blank" class="uk-button uk-button-primary rounded"><i class="fas fa-globe"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="uk-card uk-card-default uk-card-hover">
-                        <div class="uk-card-media-top">
-                            <img src="./img/team/Alexandra.jpg" alt="">
-                        </div>
-                        <div class="uk-card-body">
-                            <h1><span class="zel">Nadezhda Alexandra</span> Manley</h1>
-                            <h1 class="uk-h3 uk-margin-remove-top">Legal Advisor</h1>
-                            <p>Alexandra is a Private client lawyer with 15 years of experience, specialising in general estate planning, taxation, trust creation and management and advising charitable trusts. She joined the Zel Team as a legal advisor to the team and personal attorney to Miles.</p>
-                            <div class="social">
-                                <a href="mailto:alexandra@zel.cash" class="uk-button uk-button-primary rounded"><i class="fas fa-envelope"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <h1 class="uk-heading-primary"><span class="zel">Marketing</span> & Community Team</h1>
-
-            <div class="uk-child-width-1-2@s uk-child-width-1-3@m" uk-grid uk-height-match="target: > div > .uk-card">
-                <div>
-                    <div class="uk-card uk-card-default uk-card-hover">
-                        <div class="uk-card-media-top">
-                            <img src="./img/team/Tuukka.jpg" alt="">
-                        </div>
-                        <div class="uk-card-body">
-                            <h1><span class="zel">Tuukka</span> Tinkala</h1>
-                            <h1 class="uk-h3 uk-margin-remove-top">Media Contributor & Community Moderator</h1>
-                            <p>Tuukka lives in Finland. He studied computer sciences and telecommunication technologies in his youth. Tuukka entered the crypto space in late 2017 with a small mining rig. He joined the Zel Community months later. Tuukka aids the community as a Discord moderator and beta tester.</p>
-                            <div class="social">
-                                <a href="https://twitter.com/rigduud" target="_blank" class="uk-button rounded twitter"><i class="fab fa-twitter"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="uk-card uk-card-default uk-card-hover">
-                        <div class="uk-card-media-top">
-                            <img src="./img/team/Ivan Malakhov.jpg" alt="">
-                        </div>
-                        <div class="uk-card-body">
-                            <h1><span class="zel">Ivan</span> Malakhov</h1>
-                            <h1 class="uk-h3 uk-margin-remove-top">Community Moderator</h1>
-                            <p>Ivan is from Moscow, Russia. He has a masters in applied physics and mathematics in the field of information systems and networks. He has 13 years of experience in software development and project management. He has been working in the cybersecurity area for the last 5 years. Ivan came into the crypto space at the beginning of 2017, with a focus on mining and studying blockchain technology including security aspects.</p>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="uk-card uk-card-default uk-card-hover">
-                        <div class="uk-card-media-top">
-                            <img src="./img/team/Explosiveproton.jpg" alt="">
-                        </div>
-                        <div class="uk-card-body">
-                            <h1><span class="zel">Lou</span> (Explosiveproton)</h1>
-                            <h1 class="uk-h3 uk-margin-remove-top">Community Moderator & Dashboard Team</h1>
-                            <p>Lou is a registered US Patent Agent who holds his Ph.D. in Chemistry. He leverages his diverse background to further understand the subtleties and nuances in various sectors of technology. Lou first learned about blockchain technologies back in 2015 and has since been an avid "crypto-enthusiast" and has been a part of the Zel Team since the summer of 2018.</p>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="uk-card uk-card-default uk-card-hover">
-                        <div class="uk-card-media-top">
-                            <img src="./img/team/Barrett Anderson.jpg" alt="">
-                        </div>
-                        <div class="uk-card-body">
-                            <h1><span class="zel">Barrett</span> Anderson</h1>
-                            <h1 class="uk-h3 uk-margin-remove-top">Scripter & Community Liason</h1>
-                            <p>Barrett is an Orthopedic Consultant with over 15 years of experience in highly demanding surgery settings. He discovered blockchain technology in late 2017. He gained experience by assisting developing projects with network testing and providing community guidance. Barret is very excited about what the future holds for Zel, the possibilites are limitless and he hopes they will have a positive impact around the world.</p>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="uk-card uk-card-default uk-card-hover">
-                        <div class="uk-card-media-top">
-                            <img src="./img/team/Jay.jpg" alt="">
-                        </div>
-                        <div class="uk-card-body">
-                            <h1><span class="zel">Jay</span> Naves</h1>
-                            <h1 class="uk-h3 uk-margin-remove-top">Dashboard and Infrastructure Team</h1>
-                            <p>Currently working with an ISP as a Systems Engineering Manager, Jay leads a group of IT professionals in the Linux, Windows, Supercomputing, and IT Security fields. Beginning with a Bachelor's and a Master's degree in Computer Sciences, Jay has over 15 years experience as a Linux and Windows Server Administrator in the supercomputing and ISP arenas. Jay does a superb job of improving our infrastructure monitoring as well as creating and maintaining some of the various Zel Dashboards.</p>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="uk-card uk-card-default uk-card-hover">
-                        <div class="uk-card-media-top">
-                            <img src="./img/team/David Robinson.jpg" alt="">
-                        </div>
-                        <div class="uk-card-body">
-                            <h1><span class="zel">David</span> Robinson</h1>
-                            <h1 class="uk-h3 uk-margin-remove-top">Marketing Team & Community Moderator</h1>
-                            <p>David discovered Zel in early 2018, becoming a community moderator later that year. He is now part of the Marketing team creating graphics for Social media marketing.</p>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="uk-card uk-card-default uk-card-hover">
-                        <div class="uk-card-media-top">
-                            <img src="./img/team/Stijn Laurent.jpg" alt="">
-                        </div>
-                        <div class="uk-card-body">
-                            <h1><span class="zel">Stijn</span> Laurent</h1>
-                            <h1 class="uk-h3 uk-margin-remove-top">Community Moderator</h1>
-                            <p>Stijn lives in Belgium. He studied computer science and is currently working for a medical IT company as Technical Services Teamlead. He started investing in Crypto in early 2017 and became an icon in the Zel community months later. He aids in technical support and moderation.</p>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="uk-card uk-card-default uk-card-hover">
-                        <div class="uk-card-media-top">
-                            <img src="./img/team/Mario Prince.jpg" alt="">
-                        </div>
-                        <div class="uk-card-body">
-                            <h1><span class="zel">Mario</span> Price</h1>
-                            <h1 class="uk-h3 uk-margin-remove-top">Marketing Development</h1>
-                            <p>Mario joined the crypto space in 2016 as a miner. He quickly created a podcast to document what he had learned and used his social media platform to assist others. Mario is part of the marketing team at Zel with a focus on social media and is also a co-host of The Core Podcast.</p>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="uk-card uk-card-default uk-card-hover">
-                        <div class="uk-card-media-top">
-                            <img src="./img/team/James Smith.jpg" alt="">
-                        </div>
-                        <div class="uk-card-body">
-                            <h1><span class="zel">James Smith</span> (Goose-Tech)</h1>
-                            <h1 class="uk-h3 uk-margin-remove-top">Scripter & Marketing Director</h1>
-                            <p>James is a native of the Tri-State area and YouTube personality with a diverse background in retail management, marketing/communication, music, entertainment and ministry. He got his start mining crypto in October 2017 and has produced numerous videos on the subject. James' involvement with Zel began with his contribution of the Zel Community Pool along with PickAxe. He now continues as a Marketing Director.</p>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="uk-card uk-card-default uk-card-hover">
-                        <div class="uk-card-media-top">
-                            <img src="./img/team/Dibi.jpg" alt="">
-                        </div>
-                        <div class="uk-card-body">
-                            <h1><span class="zel">Dibi</span></h1>
-                            <h1 class="uk-h3 uk-margin-remove-top"></h1>
-                            <p>Dibi (aka the Crypto Dog) provides a wealth of knowledge and input to the Zel team. He is also a good boy and makes sure the guys stay on track.</p>
-                            <div class="social">
-                                <a href="https://dibicoin.org/" target="_blank" class="uk-button uk-button-primary rounded"><i class="fas fa-globe"></i></a>
-                                <a href="https://twitter.com/DibiCoin" target="_blank" class="uk-button rounded twitter"><i class="fab fa-twitter"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="uk-card uk-card-default uk-card-hover">
-                        <div class="uk-card-media-top">
-                            <img src="./img/team/Aptem.jpg" alt="">
-                        </div>
-                        <div class="uk-card-body">
-                            <h1><span class="zel"></span> Apt&euml;m</h1>
-                            <h1 class="uk-h3 uk-margin-remove-top">Community Moderator</h1>
-                            <p>Apt&euml;m is a student with a passion for computer science. He discovered blockchain technology in early 2017 and joined the Zel team at the start of 2019. He helps with technical support and moderation in the Russian community. </p>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="uk-card uk-card-default uk-card-hover">
-                        <div class="uk-card-media-top">
-                        </div>
-                        <div class="uk-card-body">
-                            <h1><span class="zel">Marrios</span> Charmidis</h1>
-                            <h1 class="uk-h3 uk-margin-remove-top">Zel Foundation, Community Moderator</h1>
-                            <p>Marrios Charmidis, the greek geek, is a passionate Mathematician and Blockchain Enthusiast. He joined the crypto space in 2015. He began as a technical support and moderator for the Zel community in late 2018 and is a ZelCore fan, he looks forward to the wider adoption of various cryptocurrencies.</p>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="uk-card uk-card-default uk-card-hover">
-                        <div class="uk-card-media-top">
-                        </div>
-                        <div class="uk-card-body">
-                            <h1><span class="zel"></span> Farva</h1>
-                            <h1 class="uk-h3 uk-margin-remove-top">Media Contributor</h1>
-                            <p></p>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="uk-card uk-card-default uk-card-hover">
-                        <div class="uk-card-media-top">
-                        </div>
-                        <div class="uk-card-body">
-                            <h1><span class="zel"></span> Skyslayer</h1>
-                            <h1 class="uk-h3 uk-margin-remove-top">Scripter, Infra Team & Community Moderator</h1>
-                            <p></p>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="uk-card uk-card-default uk-card-hover">
-                        <div class="uk-card-media-top">
-                        </div>
-                        <div class="uk-card-body">
-                            <h1><span class="zel"></span> BrentG</h1>
-                            <h1 class="uk-h3 uk-margin-remove-top">Marketing Team</h1>
-                            <p></p>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="uk-card uk-card-default uk-card-hover">
-                        <div class="uk-card-media-top">
-                        </div>
-                        <div class="uk-card-body">
-                            <h1><span class="zel">Daniel</span> Kim</h1>
-                            <h1 class="uk-h3 uk-margin-remove-top">Scripter & Community Moderator</h1>
-                            <p></p>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="uk-card uk-card-default uk-card-hover">
-                        <div class="uk-card-media-top">
-                        </div>
-                        <div class="uk-card-body">
-                            <h1><span class="zel"></span> CryptoWrench</h1>
-                            <h1 class="uk-h3 uk-margin-remove-top">Infrastructure Team</h1>
-                            <p></p>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="uk-card uk-card-default uk-card-hover">
-                        <div class="uk-card-media-top">
-                        </div>
-                        <div class="uk-card-body">
-                            <h1><span class="zel"></span> Turbojeet</h1>
-                            <h1 class="uk-h3 uk-margin-remove-top">Dashboard Team</h1>
-                            <p></p>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="uk-card uk-card-default uk-card-hover">
-                        <div class="uk-card-media-top">
-                        </div>
-                        <div class="uk-card-body">
-                            <h1><span class="zel"></span> Sem</h1>
-                            <h1 class="uk-h3 uk-margin-remove-top">International Manager (China) & Community Moderator</h1>
-                            <p></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+
+        <div
+          class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin uk-card-hover"
+          uk-grid
+        >
+          <div class="uk-card-media-left uk-cover-container">
+            <img src="./img/team/Lumi.jpg" alt="" uk-cover />
+            <canvas width="600" height="500"></canvas>
+          </div>
+          <div>
+            <div class="uk-card-body">
+              <h1><span class="zel">Lumi</span> Ibishi</h1>
+              <h1 class="uk-h3 uk-margin-remove-top">
+                Chief Design Officer, Developer & Designer
+              </h1>
+              <p>
+                With over 15 years of experience working in graphic design, Lumi
+                heads the design team at Zel Technologies. He also brings vast
+                amount of knowledge and expertise in UI and UX development. In
+                May 2018, Lumi, Miles, Patrick and Tade&aacute;&scaron; formed
+                Zel Technologies GmbH. our business arm that brings everything
+                Zel Together.
+              </p>
+              <div class="social">
+                <a
+                  href="https://twitter.com/fatlumibishi"
+                  target="_blanl"
+                  class="uk-button rounded twitter"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a
+                  href="https://github.com/Lumiboy"
+                  target="_blank"
+                  class="uk-button rounded github"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a
+                  href="https://www.linkedin.com/in/fatlumibishi/"
+                  target="_blank"
+                  class="uk-button rounded linkedin"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+                <a
+                  href="mailto:lumi.ibishi@zel.cash"
+                  class="uk-button uk-button-primary rounded"
+                  ><i class="fas fa-envelope"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin uk-card-hover"
+          uk-grid
+        >
+          <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
+            <img src="./img/team/Tadeas.jpg" alt="" uk-cover />
+            <canvas width="600" height="500"></canvas>
+          </div>
+          <div>
+            <div class="uk-card-body">
+              <h1><span class="zel">Tade&aacute;&scaron;</span> Kmenta</h1>
+              <h1 class="uk-h3 uk-margin-remove-top">
+                Chief Technical Officer & Lead Developer
+              </h1>
+              <p>
+                Tade&aacute;&scaron; hails from the Czech Republic and heads our
+                development team. He is an experienced Javascript developer and
+                looks forward to the enablement of people through blockchain.
+              </p>
+              <div class="social">
+                <a
+                  href="https://twitter.com/tj_trunk"
+                  target="_blank"
+                  class="uk-button rounded twitter"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a
+                  href="https://github.com/TheTrunk"
+                  target="_blank"
+                  class="uk-button rounded github"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a
+                  href="https://www.linkedin.com/in/tadeas-kmenta-636b9516a/"
+                  target="_blank"
+                  class="uk-button rounded linkedin"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+                <a
+                  href="mailto:tadeas.kmenta@zel.cash"
+                  class="uk-button uk-button-primary rounded"
+                  ><i class="fas fa-envelope"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin uk-card-hover"
+          uk-grid
+        >
+          <div class="uk-card-media-left uk-cover-container">
+            <img src="./img/team/Parker.jpg" alt="" uk-cover />
+            <canvas width="600" height="500"></canvas>
+          </div>
+          <div>
+            <div class="uk-card-body">
+              <h1><span class="zel">Parker</span> Honeyman</h1>
+              <h1 class="uk-h3 uk-margin-remove-top">
+                Chief Operations Officer, Community Management & Business
+                Development
+              </h1>
+              <p>
+                Parker is a mechanical engineer from the South Bay Area, CA and
+                works in the medical device field consulting for product
+                development. Parker helps keep things rolling behind the scenes
+                at Zel Technologies and within the Zel Community. Wearing many
+                hats throughout the day from content development to researching
+                hardware and new technologies.
+              </p>
+              <div class="social">
+                <a
+                  href="https://www.linkedin.com/in/parker-honeyman-51785342/"
+                  target="_blank"
+                  class="uk-button rounded linkedin"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+                <a
+                  href="mailto:parker.honeyman@zel.cash"
+                  class="uk-button uk-button-primary rounded"
+                  ><i class="fas fa-envelope"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin uk-card-hover"
+          uk-grid
+        >
+          <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
+            <img src="./img/team/Daniel.jpg" alt="" uk-cover />
+            <canvas width="600" height="500"></canvas>
+          </div>
+          <div>
+            <div class="uk-card-body">
+              <h1><span class="zel">Daniel</span> Keller</h1>
+              <h1 class="uk-h3 uk-margin-remove-top">
+                Chief Strategy Officer & Business Development
+              </h1>
+              <p>
+                Daniel bring over 20 years IT experience in healthcare and
+                nonprofit- charity works. An entrepreneur, investor and
+                disruptive technology advocate, Daniel has a ethos that
+                resinates with many on the Zel Team, focusing on projects that
+                are uplifting to humanity. Daniel focuses on business
+                development but also charity initiatives at Zel Technologies.
+              </p>
+              <div class="social">
+                <a
+                  href="https://twitter.com/crypto_dan_1"
+                  target="_blank"
+                  class="uk-button rounded twitter"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a
+                  href="https://www.linkedin.com/in/kellerdaniel/"
+                  target="_blank"
+                  class="uk-button rounded linkedin"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+                <a
+                  href="mailto:daniel.keller@zel.cash"
+                  class="uk-button uk-button-primary rounded"
+                  ><i class="fas fa-envelope"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h1 class="uk-heading-medium"><span class="zel">Dev</span>elopers</h1>
+
+        <div
+          class="uk-child-width-1-2@s uk-child-width-1-3@m"
+          uk-grid
+          uk-height-match="target: > div > .uk-card"
+        >
+          <div>
+            <div class="uk-card uk-card-default uk-card-hover">
+              <div class="uk-card-media-top"></div>
+              <div class="uk-card-body">
+                <h1>Maxine</h1>
+                <h1 class="uk-h3 uk-margin-remove-top">
+                  Developer, Infra Team & Community Moderator
+                </h1>
+                <p>
+                  Maxine is a Senior Cybersecurity Specialist from Singapore.
+                  His interest currently lay in the exploration of machine
+                  learning as well as technologies related to Cryptocurrencies.
+                  Apart than that, he is also a miner.
+                </p>
+                <div class="social">
+                  <a
+                    href="https://twitter.com/max1n_e"
+                    target="_blank"
+                    class="uk-button rounded twitter"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                  <a
+                    href="https://github.com/max1ne"
+                    target="_blank"
+                    class="uk-button rounded github"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                  <a
+                    href="https://t.me/max1n_e"
+                    target="_blank"
+                    class="uk-button rounded telegram"
+                    ><i class="fab fa-telegram"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="uk-card uk-card-default uk-card-hover">
+              <div class="uk-card-media-top">
+                <img src="./img/team/Valter.jpg" alt="" />
+              </div>
+              <div class="uk-card-body">
+                <h1><span class="zel">Valter</span> Silva</h1>
+                <h1 class="uk-h3 uk-margin-remove-top">Developer</h1>
+                <p>
+                  Valter is a senior developer in JAVA and C# from Portugal.
+                  Interested in learning about new technologies, Valter entered
+                  the crypto space in late 2017. He has been part of the Zel
+                  Team since summer 2018 and overhauled the outdates ZelMate and
+                  ZecMate wallets (swing.) He now focuses on various development
+                  projects within the team.
+                </p>
+                <div class="social">
+                  <a
+                    href="https://github.com/Cabecinha84"
+                    target="_blank"
+                    class="uk-button rounded github"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="uk-card uk-card-default uk-card-hover">
+              <div class="uk-card-media-top"></div>
+              <div class="uk-card-body">
+                <h1><span class="zel">Michal</span> Falat</h1>
+                <h1 class="uk-h3 uk-margin-remove-top">Developer</h1>
+                <p>
+                  Michal is frontend developer from Slovakia. He is still a
+                  university student of information technologies in the Czech
+                  Republic. Michal joined the team in February 2019. He is
+                  interested in the cryptocurrency world and enjoys the larger
+                  challenges and problems he can face and solve.
+                </p>
+                <div class="social">
+                  <a
+                    href="https://github.com/michalfalat"
+                    target="_blank"
+                    class="uk-button rounded github"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="uk-card uk-card-default uk-card-hover">
+              <div class="uk-card-media-top"></div>
+              <div class="uk-card-body">
+                <h1><span class="zel">Davy</span> (Jefke)</h1>
+                <h1 class="uk-h3 uk-margin-remove-top">Developer</h1>
+                <p>
+                  Currently residing in Manitoba, Canada, Davy is an Information
+                  Analyst in the healthcare field, covering all of North
+                  America. Holding a Bachelor in Information Technology &
+                  Management, he has 15+ years experience in IT. Starting off
+                  with a small mining rig in January 2018, he quickly moved on
+                  to create his own mining pool, together with Pascal
+                  (tarballqc). He is an avid crypto enthusiast, and is deeply
+                  invested in the Zel project, and joined the team as a
+                  developer in April 2019.
+                </p>
+                <div class="social">
+                  <a
+                    href="https://github.com/Jefkeh"
+                    target="_blank"
+                    class="uk-button rounded github"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="uk-card uk-card-default uk-card-hover">
+              <div class="uk-card-media-top"></div>
+              <div class="uk-card-body">
+                <h1><span class="zel">Matthew</span> Reichardt</h1>
+                <h1 class="uk-h3 uk-margin-remove-top">Developer</h1>
+                <p>
+                  Matthew is the creator of the authentication protocol
+                  authparty. For over a year now he has, when time makes itself
+                  available to him, he has focused on the development of Zel ID.
+                </p>
+                <div class="social">
+                  <a
+                    href="https://twitter.com/matthewjamesr"
+                    target="_blank"
+                    class="uk-button rounded twitter"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                  <a
+                    href="https://github.com/matthewjamesr"
+                    target="_blank"
+                    class="uk-button rounded github"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="uk-card uk-card-default uk-card-hover">
+              <div class="uk-card-media-top"></div>
+              <div class="uk-card-body">
+                <h1><span class="zel">Wilke Trei</span> (Lolliedieb)</h1>
+                <h1 class="uk-h3 uk-margin-remove-top">Developer</h1>
+                <p>
+                  Wilke Trei is a mathematician who specialises in computational
+                  discrete mathematics. Wilke works on Zel network updates and
+                  POW algorithms at Zel. He continues to develop the popular
+                  mining software Lolminer and focuses on the development of
+                  memory heavy algorithms on Graphic cards. Wilke also advises
+                  Beam and Grin among other projects in the cryptocurrency
+                  space.
+                </p>
+                <div class="social">
+                  <a
+                    href="https://github.com/Lolliedieb"
+                    target="_blank"
+                    class="uk-button rounded github"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="uk-card uk-card-default uk-card-hover">
+              <div class="uk-card-media-top"></div>
+              <div class="uk-card-body">
+                <h1><span class="zel">Jeremy Anderson</span> (Blondfrogs)</h1>
+                <h1 class="uk-h3 uk-margin-remove-top">Developer</h1>
+                <p>
+                  Jeremy Anderson is an expert software engineer who has made
+                  contributions to PIVX, Ravencoin, Veil and Zel. He focuses on
+                  ZelNodes and Zel source.
+                </p>
+                <div class="social">
+                  <a
+                    href="https://github.com/blondfrogs"
+                    target="_blank"
+                    class="uk-button rounded github"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h1 class="uk-heading-medium"><span class="zel"></span>Legal</h1>
+
+        <div
+          class="uk-child-width-1-2@s uk-child-width-1-3@m"
+          uk-grid
+          uk-height-match="target: > div > .uk-card"
+        >
+          <div>
+            <div class="uk-card uk-card-default uk-card-hover">
+              <div class="uk-card-media-top">
+                <img src="./img/team/Patrick.jpg" alt="" />
+              </div>
+              <div class="uk-card-body">
+                <h1><span class="zel">Patrick</span> Storchenegger</h1>
+                <h1 class="uk-h3 uk-margin-remove-top">Legal Advisor</h1>
+                <p>
+                  Patrick is the CEO of PST Legal & Consulting in Zug which was
+                  set up in 1992. His main practice areas are national and
+                  international tax law, corporate law, notarial services etc.
+                  He is also a member of a self-regulatory organization for
+                  anti-money laundering purposes. Patrick holds a seat on the
+                  Ethereum Foundation board.
+                </p>
+                <div class="social">
+                  <a
+                    href="http://www.pst-legalconsulting.ch/"
+                    target="_blank"
+                    class="uk-button uk-button-primary rounded"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="uk-card uk-card-default uk-card-hover">
+              <div class="uk-card-media-top">
+                <img src="./img/team/Alexandra.jpg" alt="" />
+              </div>
+              <div class="uk-card-body">
+                <h1><span class="zel">Nadezhda Alexandra</span> Manley</h1>
+                <h1 class="uk-h3 uk-margin-remove-top">Legal Advisor</h1>
+                <p>
+                  Alexandra is a Private client lawyer with 15 years of
+                  experience, specialising in general estate planning, taxation,
+                  trust creation and management and advising charitable trusts.
+                  She joined the Zel Team as a legal advisor to the team and
+                  personal attorney to Miles.
+                </p>
+                <div class="social">
+                  <a
+                    href="mailto:alexandra@zel.cash"
+                    class="uk-button uk-button-primary rounded"
+                    ><i class="fas fa-envelope"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h1 class="uk-heading-medium">
+          <span class="zel">Marketing</span> & Community Team
+        </h1>
+
+        <div
+          class="uk-child-width-1-2@s uk-child-width-1-3@m"
+          uk-grid
+          uk-height-match="target: > div > .uk-card"
+        >
+          <div>
+            <div class="uk-card uk-card-default uk-card-hover">
+              <div class="uk-card-media-top">
+                <img src="./img/team/Tuukka.jpg" alt="" />
+              </div>
+              <div class="uk-card-body">
+                <h1><span class="zel">Tuukka</span> Tinkala</h1>
+                <h1 class="uk-h3 uk-margin-remove-top">
+                  Media Contributor & Community Moderator
+                </h1>
+                <p>
+                  Tuukka lives in Finland. He studied computer sciences and
+                  telecommunication technologies in his youth. Tuukka entered
+                  the crypto space in late 2017 with a small mining rig. He
+                  joined the Zel Community months later. Tuukka aids the
+                  community as a Discord moderator and beta tester.
+                </p>
+                <div class="social">
+                  <a
+                    href="https://twitter.com/rigduud"
+                    target="_blank"
+                    class="uk-button rounded twitter"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="uk-card uk-card-default uk-card-hover">
+              <div class="uk-card-media-top">
+                <img src="./img/team/Ivan Malakhov.jpg" alt="" />
+              </div>
+              <div class="uk-card-body">
+                <h1><span class="zel">Ivan</span> Malakhov</h1>
+                <h1 class="uk-h3 uk-margin-remove-top">Community Moderator</h1>
+                <p>
+                  Ivan is from Moscow, Russia. He has a masters in applied
+                  physics and mathematics in the field of information systems
+                  and networks. He has 13 years of experience in software
+                  development and project management. He has been working in the
+                  cybersecurity area for the last 5 years. Ivan came into the
+                  crypto space at the beginning of 2017, with a focus on mining
+                  and studying blockchain technology including security aspects.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="uk-card uk-card-default uk-card-hover">
+              <div class="uk-card-media-top">
+                <img src="./img/team/Explosiveproton.jpg" alt="" />
+              </div>
+              <div class="uk-card-body">
+                <h1><span class="zel">Lou</span> (Explosiveproton)</h1>
+                <h1 class="uk-h3 uk-margin-remove-top">
+                  Community Moderator & Dashboard Team
+                </h1>
+                <p>
+                  Lou is a registered US Patent Agent who holds his Ph.D. in
+                  Chemistry. He leverages his diverse background to further
+                  understand the subtleties and nuances in various sectors of
+                  technology. Lou first learned about blockchain technologies
+                  back in 2015 and has since been an avid "crypto-enthusiast"
+                  and has been a part of the Zel Team since the summer of 2018.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="uk-card uk-card-default uk-card-hover">
+              <div class="uk-card-media-top">
+                <img src="./img/team/Barrett Anderson.jpg" alt="" />
+              </div>
+              <div class="uk-card-body">
+                <h1><span class="zel">Barrett</span> Anderson</h1>
+                <h1 class="uk-h3 uk-margin-remove-top">
+                  Scripter & Community Liason
+                </h1>
+                <p>
+                  Barrett is an Orthopedic Consultant with over 15 years of
+                  experience in highly demanding surgery settings. He discovered
+                  blockchain technology in late 2017. He gained experience by
+                  assisting developing projects with network testing and
+                  providing community guidance. Barret is very excited about
+                  what the future holds for Zel, the possibilites are limitless
+                  and he hopes they will have a positive impact around the
+                  world.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="uk-card uk-card-default uk-card-hover">
+              <div class="uk-card-media-top">
+                <img src="./img/team/Jay.jpg" alt="" />
+              </div>
+              <div class="uk-card-body">
+                <h1><span class="zel">Jay</span> Naves</h1>
+                <h1 class="uk-h3 uk-margin-remove-top">
+                  Dashboard and Infrastructure Team
+                </h1>
+                <p>
+                  Currently working with an ISP as a Systems Engineering
+                  Manager, Jay leads a group of IT professionals in the Linux,
+                  Windows, Supercomputing, and IT Security fields. Beginning
+                  with a Bachelor's and a Master's degree in Computer Sciences,
+                  Jay has over 15 years experience as a Linux and Windows Server
+                  Administrator in the supercomputing and ISP arenas. Jay does a
+                  superb job of improving our infrastructure monitoring as well
+                  as creating and maintaining some of the various Zel
+                  Dashboards.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="uk-card uk-card-default uk-card-hover">
+              <div class="uk-card-media-top">
+                <img src="./img/team/David Robinson.jpg" alt="" />
+              </div>
+              <div class="uk-card-body">
+                <h1><span class="zel">David</span> Robinson</h1>
+                <h1 class="uk-h3 uk-margin-remove-top">
+                  Marketing Team & Community Moderator
+                </h1>
+                <p>
+                  David discovered Zel in early 2018, becoming a community
+                  moderator later that year. He is now part of the Marketing
+                  team creating graphics for Social media marketing.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="uk-card uk-card-default uk-card-hover">
+              <div class="uk-card-media-top">
+                <img src="./img/team/Stijn Laurent.jpg" alt="" />
+              </div>
+              <div class="uk-card-body">
+                <h1><span class="zel">Stijn</span> Laurent</h1>
+                <h1 class="uk-h3 uk-margin-remove-top">Community Moderator</h1>
+                <p>
+                  Stijn lives in Belgium. He studied computer science and is
+                  currently working for a medical IT company as Technical
+                  Services Teamlead. He started investing in Crypto in early
+                  2017 and became an icon in the Zel community months later. He
+                  aids in technical support and moderation.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="uk-card uk-card-default uk-card-hover">
+              <div class="uk-card-media-top">
+                <img src="./img/team/Mario Prince.jpg" alt="" />
+              </div>
+              <div class="uk-card-body">
+                <h1><span class="zel">Mario</span> Price</h1>
+                <h1 class="uk-h3 uk-margin-remove-top">
+                  Marketing Development
+                </h1>
+                <p>
+                  Mario joined the crypto space in 2016 as a miner. He quickly
+                  created a podcast to document what he had learned and used his
+                  social media platform to assist others. Mario is part of the
+                  marketing team at Zel with a focus on social media and is also
+                  a co-host of The Core Podcast.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="uk-card uk-card-default uk-card-hover">
+              <div class="uk-card-media-top">
+                <img src="./img/team/James Smith.jpg" alt="" />
+              </div>
+              <div class="uk-card-body">
+                <h1><span class="zel">James Smith</span> (Goose-Tech)</h1>
+                <h1 class="uk-h3 uk-margin-remove-top">
+                  Scripter & Marketing Director
+                </h1>
+                <p>
+                  James is a native of the Tri-State area and YouTube
+                  personality with a diverse background in retail management,
+                  marketing/communication, music, entertainment and ministry. He
+                  got his start mining crypto in October 2017 and has produced
+                  numerous videos on the subject. James' involvement with Zel
+                  began with his contribution of the Zel Community Pool along
+                  with PickAxe. He now continues as a Marketing Director.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="uk-card uk-card-default uk-card-hover">
+              <div class="uk-card-media-top">
+                <img src="./img/team/Dibi.jpg" alt="" />
+              </div>
+              <div class="uk-card-body">
+                <h1><span class="zel">Dibi</span></h1>
+                <h1 class="uk-h3 uk-margin-remove-top"></h1>
+                <p>
+                  Dibi (aka the Crypto Dog) provides a wealth of knowledge and
+                  input to the Zel team. He is also a good boy and makes sure
+                  the guys stay on track.
+                </p>
+                <div class="social">
+                  <a
+                    href="https://dibicoin.org/"
+                    target="_blank"
+                    class="uk-button uk-button-primary rounded"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                  <a
+                    href="https://twitter.com/DibiCoin"
+                    target="_blank"
+                    class="uk-button rounded twitter"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="uk-card uk-card-default uk-card-hover">
+              <div class="uk-card-media-top">
+                <img src="./img/team/Aptem.jpg" alt="" />
+              </div>
+              <div class="uk-card-body">
+                <h1><span class="zel"></span> Apt&euml;m</h1>
+                <h1 class="uk-h3 uk-margin-remove-top">Community Moderator</h1>
+                <p>
+                  Apt&euml;m is a student with a passion for computer science.
+                  He discovered blockchain technology in early 2017 and joined
+                  the Zel team at the start of 2019. He helps with technical
+                  support and moderation in the Russian community.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="uk-card uk-card-default uk-card-hover">
+              <div class="uk-card-media-top"></div>
+              <div class="uk-card-body">
+                <h1><span class="zel">Marrios</span> Charmidis</h1>
+                <h1 class="uk-h3 uk-margin-remove-top">
+                  Zel Foundation, Community Moderator
+                </h1>
+                <p>
+                  Marrios Charmidis, the greek geek, is a passionate
+                  Mathematician and Blockchain Enthusiast. He joined the crypto
+                  space in 2015. He began as a technical support and moderator
+                  for the Zel community in late 2018 and is a ZelCore fan, he
+                  looks forward to the wider adoption of various
+                  cryptocurrencies.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="uk-card uk-card-default uk-card-hover">
+              <div class="uk-card-media-top"></div>
+              <div class="uk-card-body">
+                <h1><span class="zel"></span> Farva</h1>
+                <h1 class="uk-h3 uk-margin-remove-top">Media Contributor</h1>
+                <p></p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="uk-card uk-card-default uk-card-hover">
+              <div class="uk-card-media-top"></div>
+              <div class="uk-card-body">
+                <h1><span class="zel"></span> Skyslayer</h1>
+                <h1 class="uk-h3 uk-margin-remove-top">
+                  Scripter, Infra Team & Community Moderator
+                </h1>
+                <p></p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="uk-card uk-card-default uk-card-hover">
+              <div class="uk-card-media-top"></div>
+              <div class="uk-card-body">
+                <h1><span class="zel"></span> BrentG</h1>
+                <h1 class="uk-h3 uk-margin-remove-top">Marketing Team</h1>
+                <p></p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="uk-card uk-card-default uk-card-hover">
+              <div class="uk-card-media-top"></div>
+              <div class="uk-card-body">
+                <h1><span class="zel">Daniel</span> Kim</h1>
+                <h1 class="uk-h3 uk-margin-remove-top">
+                  Scripter & Community Moderator
+                </h1>
+                <p></p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="uk-card uk-card-default uk-card-hover">
+              <div class="uk-card-media-top"></div>
+              <div class="uk-card-body">
+                <h1><span class="zel"></span> CryptoWrench</h1>
+                <h1 class="uk-h3 uk-margin-remove-top">Infrastructure Team</h1>
+                <p></p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="uk-card uk-card-default uk-card-hover">
+              <div class="uk-card-media-top"></div>
+              <div class="uk-card-body">
+                <h1><span class="zel"></span> Turbojeet</h1>
+                <h1 class="uk-h3 uk-margin-remove-top">Dashboard Team</h1>
+                <p></p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="uk-card uk-card-default uk-card-hover">
+              <div class="uk-card-media-top"></div>
+              <div class="uk-card-body">
+                <h1><span class="zel"></span> Sem</h1>
+                <h1 class="uk-h3 uk-margin-remove-top">
+                  International Manager (China) & Community Moderator
+                </h1>
+                <p></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- FOOTER -->
     <footer class="uk-background-muted uk-padding">
-        <div class="uk-container">
-            <div class="uk-grid-divider uk-child-width-expand@s" uk-grid>
-                <div>
-                    <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
-                        <li class="uk-nav-header">Projects</li>
-                        <li><a href="./zel/">Zel</a></li>
-                        <li><a href="./project/zelcore/">ZelCore</a></li>
-                        <li><a href="./project/zelid/">ZelID</a></li>
-                        <li><a href="./project/zelnodes/">ZelNodes</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
-                        <li class="uk-nav-header">About us</li>
-                        <li><a href="./team/">Team</a></li>
-                        <li><a href="./news/">News</a></li>
-                        <li><a href="./press/">Presskit</a></li>
-                        <li><a href="./donate/">Donate</a></li>
-                        <li class="uk-nav-divider"></li>
-                        <li><a href="mailto:info@zel.cash">Contact Us</a></li>
-                    </ul>
-                </div>
-                <div class="social">
-                    <a href="https://twitter.com/zelcash" target="_blank" class="uk-button rounded twitter"><i
-                            class="fab fa-twitter"></i></a>
-                    <a href="https://discord.io/zel" target="_blank" class="uk-button rounded discord"><i
-                            class="fab fa-discord"></i></a>
-                    <a href="https://t.me/zelhub" target="_blank" class="uk-button rounded telegram"><i
-                            class="fab fa-telegram"></i></a>
-                    <a href="https://join.slack.com/t/zelcash/shared_invite/enQtMzkyMjY0MDU3NjA3LWM4NWNkMzQwMDJmNWM4NDJhZTY3YmQ3MDA0MzVhZDE3ZWQxNWU0ODUxMGE4ODk3MTQyOWYyYmZiZTFmY2FiMTM"
-                        target="_blank" class="uk-button rounded slack"><i class="fab fa-slack"></i></a>
-                    <a href="https://www.reddit.com/r/ZelCash/" target="_blank" class="uk-button rounded reddit"><i
-                            class="fab fa-reddit"></i></a>
-                    <a href="https://bitcointalk.org/index.php?topic=2853688.0" target="_blank"
-                        class="uk-button rounded bitcointalk"><i class="fab fa-btc"></i></a>
-                </div>
-            </div>
-            <div class="uk-child-width-expand@s" uk-grid>
-                <div class="uk-grid-item-match">
-                    <p>Copyright &copy; 2019 Zel Technologies GmbH. All rights reserved.</p>
-                </div>
-                <div class="uk-text-right">
-                    <a href="./terms/">Terms and Conditions</a>
-                    <span class="uk-padding-small">|</span>
-                    <a href="./privacy/">Privacy Policy</a>
-                </div>
-            </div>
+      <div class="uk-container">
+        <div class="uk-grid-divider uk-child-width-expand@s" uk-grid>
+          <div>
+            <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
+              <li class="uk-nav-header">Projects</li>
+              <li><a href="./zel/">Zel</a></li>
+              <li><a href="./project/zelcore/">ZelCore</a></li>
+              <li><a href="./project/zelid/">ZelID</a></li>
+              <li><a href="./project/zelnodes/">ZelNodes</a></li>
+            </ul>
+          </div>
+          <div>
+            <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
+              <li class="uk-nav-header">About us</li>
+              <li><a href="./team/">Team</a></li>
+              <li><a href="./news/">News</a></li>
+              <li><a href="./press/">Presskit</a></li>
+              <li><a href="./donate/">Donate</a></li>
+              <li class="uk-nav-divider"></li>
+              <li><a href="mailto:info@zel.cash">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="social">
+            <a
+              href="https://twitter.com/zelcash"
+              target="_blank"
+              class="uk-button rounded twitter"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a
+              href="https://discord.io/zel"
+              target="_blank"
+              class="uk-button rounded discord"
+              ><i class="fab fa-discord"></i
+            ></a>
+            <a
+              href="https://t.me/zelhub"
+              target="_blank"
+              class="uk-button rounded telegram"
+              ><i class="fab fa-telegram"></i
+            ></a>
+            <a
+              href="https://join.slack.com/t/zelcash/shared_invite/enQtMzkyMjY0MDU3NjA3LWM4NWNkMzQwMDJmNWM4NDJhZTY3YmQ3MDA0MzVhZDE3ZWQxNWU0ODUxMGE4ODk3MTQyOWYyYmZiZTFmY2FiMTM"
+              target="_blank"
+              class="uk-button rounded slack"
+              ><i class="fab fa-slack"></i
+            ></a>
+            <a
+              href="https://www.reddit.com/r/ZelCash/"
+              target="_blank"
+              class="uk-button rounded reddit"
+              ><i class="fab fa-reddit"></i
+            ></a>
+            <a
+              href="https://bitcointalk.org/index.php?topic=2853688.0"
+              target="_blank"
+              class="uk-button rounded bitcointalk"
+              ><i class="fab fa-btc"></i
+            ></a>
+          </div>
         </div>
+        <div class="uk-child-width-expand@s" uk-grid>
+          <div class="uk-grid-item-match">
+            <p>
+              Copyright &copy; 2019 Zel Technologies GmbH. All rights reserved.
+            </p>
+          </div>
+          <div class="uk-text-right">
+            <a href="./terms/">Terms and Conditions</a>
+            <span class="uk-padding-small">|</span>
+            <a href="./privacy/">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
     </footer>
 
     <!-- UIkit JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit-icons.min.js"></script>
-    <script>
-        /* PREVENT CLICKJACKING */
-        if (self == top) {
-            var theBody = document.getElementsByTagName('body')[0];
-            theBody.style.display = "block";
-        } else {
-            top.location = self.location;
-        }
-    </script>
-
-</body>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.3/js/uikit.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.3/js/uikit-icons.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
 </html>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Cube" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 2001.2 2001.2" style="enable-background:new 0 0 2001.2 2001.2;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;stroke:#232220;stroke-width:50;}
+	.st1{fill:#232220;}
+	.st2{fill:#FFFFFF;}
+</style>
+<circle class="st0" cx="1000.6" cy="1000.6" r="975.6"/>
+<g id="Box_Left">
+	<path id="Box_Left-2" class="st1" d="M268.6,972.6l297-172l296,172v344l-296,172l-297-172V972.6z"/>
+</g>
+<g id="Box_Right">
+	<path id="Box_Left-3" class="st1" d="M1140.6,972.6l297-172l296,172v344l-296,172l-297-172V972.6z"/>
+</g>
+<g id="Box_Main">
+	<path id="Box_Main-2" class="st1" d="M625.6,671.6l375-219l376,219v123l-269,156v315l-107,62l-106-62v-315l-269-156V671.6z"/>
+</g>
+<path id="_svg" class="st2" d="M1602,1109.6v69.8h-129.9v129.9h-69.8v-129.9h-129.9v-69.8h129.9V979.7h69.8v129.9H1602z"/>
+</svg>

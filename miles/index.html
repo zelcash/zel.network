@@ -1,212 +1,316 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <title>Zel - Miles Manley</title>
     <meta name="description" content="Zel Technologies GmbH" />
-    <meta name="keywords"
-        content="zelcash, zel, bitcoin, zeltrez, zelcore, crypto, cryptocurrency, ethereum, multi-asset, platform, zellabs, labs" />
+    <meta
+      name="keywords"
+      content="zelcash, zel, bitcoin, zeltrez, zelcore, crypto, cryptocurrency, ethereum, multi-asset, platform, zellabs, labs"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <base href="../">
+    <base href="../" />
 
     <!-- Favicon -->
     <link href="./img/favicon.ico" rel="shortcut icon" />
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Heebo:100,400,500" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Heebo:100,400,500"
+      rel="stylesheet"
+    />
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/css/uikit.min.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.3/css/uikit.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./css/style.css" />
-    <style>
-        body {
-            display: none;
-        }
-    </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- NAV -->
     <nav class="uk-position-relative uk-navbar-container">
-        <div class="uk-container">
-            <div uk-navbar class="uk-visible@s">
-                <a class="uk-navbar-item uk-light" href="./"><img src="./img/Zel-Txt-White.svg"
-                        width="100"></a>
-                <ul class="uk-navbar-nav">
-                    <li><a href="./zel/">Currency</a></li>
-                    <li><a href="./project/zelcore/">Zel<span>Core</span></a></li>
-                    <li><a href="./project/">Our&nbsp;<span>Projects</span></a></li>
-                    <li><a href="./team/">Our&nbsp;<span>Team</span></a></li>
-                    <li><a href="./partners/">Partners</span></a></li>
-                </ul>
-            </div>
-            <div uk-navbar="boundary-align: true; align: left; dropbar: true" class="uk-hidden@s">
-                <div class="uk-navbar-left">
-                    <a class="uk-navbar-item uk-light" href="./"><img src="./img/Zel-Txt-White.svg"
-                            width="100"></a>
-                </div>
-                <div class="uk-navbar-right">
-                    <ul class="uk-navbar-nav">
-                        <li>
-                            <a class="uk-navbar-toggle" uk-navbar-toggle-icon href="#"></a>
-                            <div class="uk-navbar-dropdown">
-                                <ul class="uk-nav uk-navbar-dropdown-nav">
-                                    <li><a href="./zel/">Currency</a></li>
-                                    <li><a href="./project/zelcore/">Zel<span>Core</span></a></li>
-                                    <li><a href="./project/">Our&nbsp;<span>Projects</span></a></li>
-                                    <li><a href="./team/">Our&nbsp;<span>Team</span></a></li>
-                                    <li><a href="./partners/">Partners</span></a></li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+      <div class="uk-container">
+        <div uk-navbar class="uk-visible@s">
+          <a class="uk-navbar-item uk-light" href="./"
+            ><img src="./img/Zel-Txt-White.svg" width="100"
+          /></a>
+          <ul class="uk-navbar-nav">
+            <li><a href="./zel/">Currency</a></li>
+            <li>
+              <a href="./project/zelcore/">Zel<span>Core</span></a>
+            </li>
+            <li>
+              <a href="./project/">Our&nbsp;<span>Projects</span></a>
+            </li>
+            <li>
+              <a href="./team/">Our&nbsp;<span>Team</span></a>
+            </li>
+            <li><a href="./partners/">Partners</a></li>
+          </ul>
         </div>
+        <div
+          uk-navbar="boundary-align: true; align: left; dropbar: true"
+          class="uk-hidden@s"
+        >
+          <div class="uk-navbar-left">
+            <a class="uk-navbar-item uk-light" href="./"
+              ><img src="./img/Zel-Txt-White.svg" width="100"
+            /></a>
+          </div>
+          <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav">
+              <li>
+                <a class="uk-navbar-toggle" uk-navbar-toggle-icon href="#"></a>
+                <div class="uk-navbar-dropdown">
+                  <ul class="uk-nav uk-navbar-dropdown-nav">
+                    <li><a href="./zel/">Currency</a></li>
+                    <li>
+                      <a href="./project/zelcore/">Zel<span>Core</span></a>
+                    </li>
+                    <li>
+                      <a href="./project/">Our&nbsp;<span>Projects</span></a>
+                    </li>
+                    <li>
+                      <a href="./team/">Our&nbsp;<span>Team</span></a>
+                    </li>
+                    <li><a href="./partners/">Partners</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </nav>
-    
+
     <!-- HERO -->
     <div class="uk-position-relative">
-        <div class="uk-visible-toggle" tabindex="-1" uk-slideshow="min-height: 200; max-height: 500"
-            uk-slideshow="animation: push">
-            <ul class="profilePic uk-slideshow-items">
-                <li class="uk-container">
-                    <img src="./img/team/Miles.jpg" class="lightPicture" alt="" uk-cover>
-                    <div class="uk-position-center-left uk-padding uk-position-small uk-margin-medium-top uk-visible@s">
-                        <h1 class="uk-margin-remove"><span class="zel">Miles</span> Manley</h1>
-                        <h1 class="uk-h2 uk-margin-remove">Chief Executive Officer</h1>
-                    </div>
-                </li>
-            </ul>
-            <div class="uk-light">
-                <a class="uk-position-center-left uk-position-small uk-hidden-hover uk-margin-medium-top" href="#"
-                    uk-slidenav-previous uk-slideshow-item="previous"></a>
-                <a class="uk-position-center-right uk-position-small uk-hidden-hover uk-margin-medium-top" href="#"
-                    uk-slidenav-next uk-slideshow-item="next"></a>
+      <div
+        class="uk-visible-toggle"
+        tabindex="-1"
+        uk-slideshow="min-height: 200; max-height: 500"
+        uk-slideshow="animation: push"
+      >
+        <ul class="profilePic uk-slideshow-items">
+          <li class="uk-container">
+            <img
+              src="./img/team/Miles.jpg"
+              class="lightPicture"
+              alt=""
+              uk-cover
+            />
+            <div
+              class="uk-position-center-left uk-padding uk-position-small uk-margin-medium-top uk-visible@s"
+            >
+              <h1 class="uk-margin-remove">
+                <span class="zel">Miles</span> Manley
+              </h1>
+              <h1 class="uk-h2 uk-margin-remove">Chief Executive Officer</h1>
             </div>
+          </li>
+        </ul>
+        <div class="uk-light">
+          <a
+            class="uk-position-center-left uk-position-small uk-hidden-hover uk-margin-medium-top"
+            href="#"
+            uk-slidenav-previous
+            uk-slideshow-item="previous"
+          ></a>
+          <a
+            class="uk-position-center-right uk-position-small uk-hidden-hover uk-margin-medium-top"
+            href="#"
+            uk-slidenav-next
+            uk-slideshow-item="next"
+          ></a>
         </div>
+      </div>
 
-        <!-- SUBNAV -->
-        <div class="uk-position-top">
-            <div class="subnav" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; top: 80px;">
-                <nav class="uk-navbar-container">
-                    <div class="uk-container uk-padding-remove" uk-navbar="boundary-align: true; align: left; dropbar: true">
-                        <div class="uk-navbar-left pl-15">
-                            <ul class="uk-navbar-nav">
-                                <li><a href="./team/">Zel Team</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
+      <!-- SUBNAV -->
+      <div class="uk-position-top">
+        <div
+          class="subnav"
+          uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; top: 80px;"
+        >
+          <nav class="uk-navbar-container">
+            <div
+              class="uk-container uk-padding-remove"
+              uk-navbar="boundary-align: true; align: left; dropbar: true"
+            >
+              <div class="uk-navbar-left pl-15">
+                <ul class="uk-navbar-nav">
+                  <li><a href="./team/">Zel Team</a></li>
+                </ul>
+              </div>
             </div>
+          </nav>
         </div>
+      </div>
     </div>
 
     <!-- MILES -->
-    <section id="zel" class="uk-background-norepeat uk-background-cover uk-background-center-center uk-section uk-section-large">
-        <div class="uk-container">
-            <div class="uk-grid-collapse uk-grid" uk-grid>
-                <div class="uk-hidden@s uk-margin-large">
-                    <h1 class="uk-margin-remove"><span class="zel">Miles</span> Manley</h1>
-                    <h1 class="uk-h2 uk-margin-remove">Chief Executive Officer</h1>
-                </div>
-                <div class="uk-child-width-expand@s uk-grid-divider" uk-grid>
-                    <div>
-                        <h1>Bio</h1>
-                        <p>Miles founded Zel at age 15, with the goal of creating a fast, scalable, and decentralized blockchain infrastructure for developers to utilize and develop upon. </p>
-                        <p>Miles, now 17, is still leading and developing various projects within Zel; alongside the support of 37 team members and thousands of community members. Zel it self, is a POW cryptocurrency utilizing the unique ZelHash Algorithm. </p>
-                        <p>Miles spends most of his time on Zel working on various facets of the project. He looks forward to the future that lays ahead, not only in the development of Zel and it's projects, but also in the opportunities it can offer people in the future, from all walks of life.</p>
-                    </div>
-                    <div class="socialProfile">
-                        <h1>Links</h1>
-                        <a href="https://discord.io/zel" target="_blank">
-                            <div class="uk-button rounded discord"><i class="fab fa-discord"></i></div><span> @milesmanley#9309</span>
-                        </a>
-                        <a href="https://twitter.com/mcamanley" target="_blank">
-                            <div class="uk-button rounded twitter"><i class="fab fa-twitter"></i></div><span> @mcamanley</span>
-                        </a>
-                        <a href="https://github.com/milesmanley" target="_blank">
-                            <div class="uk-button rounded github"><i class="fab fa-github"></i></div><span> milesmanley</span>
-                        </a>
-                        <a href="https://www.linkedin.com/in/miles-manley-a2749816b/" target="_blank">
-                            <div class="uk-button rounded linkedin"><i class="fab fa-linkedin"></i></div><span> Miles Manley</span>
-                        </a>
-                        <a href="mailto:miles.manley@zel.cash">
-                            <div class="uk-button uk-button-primary rounded"><i class="fas fa-envelope"></i></div><span> miles@zel.network</span>
-                        </a>
-                    </div>
-                </div>
+    <section
+      id="zel"
+      class="uk-background-norepeat uk-background-cover uk-background-center-center uk-section uk-section-large"
+    >
+      <div class="uk-container">
+        <div class="uk-grid-collapse uk-grid" uk-grid>
+          <div class="uk-hidden@s uk-margin-large">
+            <h1 class="uk-margin-remove">
+              <span class="zel">Miles</span> Manley
+            </h1>
+            <h1 class="uk-h2 uk-margin-remove">Chief Executive Officer</h1>
+          </div>
+          <div class="uk-child-width-expand@s uk-grid-divider" uk-grid>
+            <div>
+              <h1>Bio</h1>
+              <p>
+                Miles founded Zel at age 15, with the goal of creating a fast,
+                scalable, and decentralized blockchain infrastructure for
+                developers to utilize and develop upon.
+              </p>
+              <p>
+                Miles, now 17, is still leading and developing various projects
+                within Zel; alongside the support of 37 team members and
+                thousands of community members. Zel it self, is a POW
+                cryptocurrency utilizing the unique ZelHash Algorithm.
+              </p>
+              <p>
+                Miles spends most of his time on Zel working on various facets
+                of the project. He looks forward to the future that lays ahead,
+                not only in the development of Zel and it's projects, but also
+                in the opportunities it can offer people in the future, from all
+                walks of life.
+              </p>
             </div>
+            <div class="socialProfile">
+              <h1>Links</h1>
+              <a href="https://discord.io/zel" target="_blank">
+                <div class="uk-button rounded discord">
+                  <i class="fab fa-discord"></i>
+                </div>
+                <span> @milesmanley#9309</span>
+              </a>
+              <a href="https://twitter.com/mcamanley" target="_blank">
+                <div class="uk-button rounded twitter">
+                  <i class="fab fa-twitter"></i>
+                </div>
+                <span> @mcamanley</span>
+              </a>
+              <a href="https://github.com/milesmanley" target="_blank">
+                <div class="uk-button rounded github">
+                  <i class="fab fa-github"></i>
+                </div>
+                <span> milesmanley</span>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/miles-manley-a2749816b/"
+                target="_blank"
+              >
+                <div class="uk-button rounded linkedin">
+                  <i class="fab fa-linkedin"></i>
+                </div>
+                <span> Miles Manley</span>
+              </a>
+              <a href="mailto:miles.manley@zel.cash">
+                <div class="uk-button uk-button-primary rounded">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <span> miles@zel.network</span>
+              </a>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- FOOTER -->
     <footer class="uk-background-muted uk-padding">
-        <div class="uk-container">
-            <div class="uk-grid-divider uk-child-width-expand@s" uk-grid>
-                <div>
-                    <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
-                        <li class="uk-nav-header">Projects</li>
-                        <li><a href="./zel/">Zel</a></li>
-                        <li><a href="./project/zelcore/">ZelCore</a></li>
-                        <li><a href="./project/zelid/">ZelID</a></li>
-                        <li><a href="./project/zelnodes/">ZelNodes</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
-                        <li class="uk-nav-header">About us</li>
-                        <li><a href="./team/">Team</a></li>
-                        <li><a href="./news/">News</a></li>
-                        <li><a href="./press/">Presskit</a></li>
-                        <li><a href="./donate/">Donate</a></li>
-                        <li class="uk-nav-divider"></li>
-                        <li><a href="mailto:info@zel.cash">Contact Us</a></li>
-                    </ul>
-                </div>
-                <div class="social">
-                    <a href="https://twitter.com/zelcash" target="_blank" class="uk-button rounded twitter"><i
-                            class="fab fa-twitter"></i></a>
-                    <a href="https://discord.io/zel" target="_blank" class="uk-button rounded discord"><i
-                            class="fab fa-discord"></i></a>
-                    <a href="https://t.me/zelhub" target="_blank" class="uk-button rounded telegram"><i
-                            class="fab fa-telegram"></i></a>
-                    <a href="https://join.slack.com/t/zelcash/shared_invite/enQtMzkyMjY0MDU3NjA3LWM4NWNkMzQwMDJmNWM4NDJhZTY3YmQ3MDA0MzVhZDE3ZWQxNWU0ODUxMGE4ODk3MTQyOWYyYmZiZTFmY2FiMTM"
-                        target="_blank" class="uk-button rounded slack"><i class="fab fa-slack"></i></a>
-                    <a href="https://www.reddit.com/r/ZelCash/" target="_blank" class="uk-button rounded reddit"><i
-                            class="fab fa-reddit"></i></a>
-                    <a href="https://bitcointalk.org/index.php?topic=2853688.0" target="_blank"
-                        class="uk-button rounded bitcointalk"><i class="fab fa-btc"></i></a>
-                </div>
-            </div>
-            <div class="uk-child-width-expand@s" uk-grid>
-                <div class="uk-grid-item-match">
-                    <p>Copyright &copy; 2019 Zel Technologies GmbH. All rights reserved.</p>
-                </div>
-                <div class="uk-text-right">
-                    <a href="./terms/">Terms and Conditions</a>
-                    <span class="uk-padding-small">|</span>
-                    <a href="./privacy/">Privacy Policy</a>
-                </div>
-            </div>
+      <div class="uk-container">
+        <div class="uk-grid-divider uk-child-width-expand@s" uk-grid>
+          <div>
+            <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
+              <li class="uk-nav-header">Projects</li>
+              <li><a href="./zel/">Zel</a></li>
+              <li><a href="./project/zelcore/">ZelCore</a></li>
+              <li><a href="./project/zelid/">ZelID</a></li>
+              <li><a href="./project/zelnodes/">ZelNodes</a></li>
+            </ul>
+          </div>
+          <div>
+            <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
+              <li class="uk-nav-header">About us</li>
+              <li><a href="./team/">Team</a></li>
+              <li><a href="./news/">News</a></li>
+              <li><a href="./press/">Presskit</a></li>
+              <li><a href="./donate/">Donate</a></li>
+              <li class="uk-nav-divider"></li>
+              <li><a href="mailto:info@zel.cash">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="social">
+            <a
+              href="https://twitter.com/zelcash"
+              target="_blank"
+              class="uk-button rounded twitter"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a
+              href="https://discord.io/zel"
+              target="_blank"
+              class="uk-button rounded discord"
+              ><i class="fab fa-discord"></i
+            ></a>
+            <a
+              href="https://t.me/zelhub"
+              target="_blank"
+              class="uk-button rounded telegram"
+              ><i class="fab fa-telegram"></i
+            ></a>
+            <a
+              href="https://join.slack.com/t/zelcash/shared_invite/enQtMzkyMjY0MDU3NjA3LWM4NWNkMzQwMDJmNWM4NDJhZTY3YmQ3MDA0MzVhZDE3ZWQxNWU0ODUxMGE4ODk3MTQyOWYyYmZiZTFmY2FiMTM"
+              target="_blank"
+              class="uk-button rounded slack"
+              ><i class="fab fa-slack"></i
+            ></a>
+            <a
+              href="https://www.reddit.com/r/ZelCash/"
+              target="_blank"
+              class="uk-button rounded reddit"
+              ><i class="fab fa-reddit"></i
+            ></a>
+            <a
+              href="https://bitcointalk.org/index.php?topic=2853688.0"
+              target="_blank"
+              class="uk-button rounded bitcointalk"
+              ><i class="fab fa-btc"></i
+            ></a>
+          </div>
         </div>
+        <div class="uk-child-width-expand@s" uk-grid>
+          <div class="uk-grid-item-match">
+            <p>
+              Copyright &copy; 2019 Zel Technologies GmbH. All rights reserved.
+            </p>
+          </div>
+          <div class="uk-text-right">
+            <a href="./terms/">Terms and Conditions</a>
+            <span class="uk-padding-small">|</span>
+            <a href="./privacy/">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
     </footer>
 
     <!-- UIkit JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit-icons.min.js"></script>
-    <script>
-        /* PREVENT CLICKJACKING */
-        if (self == top) {
-            var theBody = document.getElementsByTagName('body')[0];
-            theBody.style.display = "block";
-        } else {
-            top.location = self.location;
-        }
-    </script>
-
-</body>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.3/js/uikit.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.3/js/uikit-icons.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
 </html>

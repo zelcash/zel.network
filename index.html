@@ -1,197 +1,538 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<meta charset="utf-8">
-
-<head>
+  <head>
     <title>Zel - Everything in one place</title>
-    <base href="./">
+    <base href="./" />
     <!-- meta -->
     <meta name="description" content="Zel - Simple, Powerful and Secure" />
-    <meta name="keywords"content="zel, zelnodes, zelcore, zelcash, zeltrez, crypto, cryptocurrency,  btc, bitcoin, multi-asset, platform" />
+    <meta
+      name="keywords"
+      content="zel, zelnodes, zelcore, zelcash, zeltrez, crypto, cryptocurrency,  btc, bitcoin, multi-asset, platform"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+
     <!-- meta -->
-    <link rel="canonical" href="https://zel.network">
-    <meta property="og:locale" content="en_US">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Zel - Simple, Powerful and Secure">
-    <meta property="og:description" content="Zel builds cutting edge products and services, focusing on simplicity, privacy and security. The Zel ecosystem includes, Zel, ZelCore, Zel ID, ZelFlux, ZelLabs, d2FA and much more.">
-    <meta property="og:url" content="https://zel.network">
-    <meta property="og:site_name" content="Zel">
-    <meta property="og:image" content="https://zel.network/img/screenshots/img/screen-index.jpg">
-    <meta property="og:image:secure_url" content="https://zel.network/img/screenshots/screen-index.jpg">
-    <meta property="og:image:width" content="1435">
-    <meta property="og:image:height" content="807">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:description" content="Zel builds cutting edge products and services, focusing on simplicity, privacy and security. The Zel ecosystem includes, Zel, ZelCore, Zel ID, ZelFlux, ZelLabs, d2FA and much more.">
-    <meta name="twitter:title" content="Zel">
-    <meta name="twitter:site" content="@zelcash">
-    <meta name="twitter:image" content="https://zel.network/img/screenshots/screen-index.jpg">
-    <meta name="twitter:creator" content="@zelcash">
-    <meta name="theme-color" content="#183c87">
-    
+    <link rel="canonical" href="https://zel.network" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Zel - Simple, Powerful and Secure" />
+    <meta
+      property="og:description"
+      content="Zel builds cutting edge products and services, focusing on simplicity, privacy and security. The Zel ecosystem includes, Zel, ZelCore, Zel ID, ZelFlux, ZelLabs, d2FA and much more."
+    />
+    <meta property="og:url" content="https://zel.network" />
+    <meta property="og:site_name" content="Zel" />
+    <meta
+      property="og:image"
+      content="https://zel.network/img/screenshots/img/screen-index.jpg"
+    />
+    <meta
+      property="og:image:secure_url"
+      content="https://zel.network/img/screenshots/screen-index.jpg"
+    />
+    <meta property="og:image:width" content="1435" />
+    <meta property="og:image:height" content="807" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:description"
+      content="Zel builds cutting edge products and services, focusing on simplicity, privacy and security. The Zel ecosystem includes, Zel, ZelCore, Zel ID, ZelFlux, ZelLabs, d2FA and much more."
+    />
+    <meta name="twitter:title" content="Zel" />
+    <meta name="twitter:site" content="@zelcash" />
+    <meta
+      name="twitter:image"
+      content="https://zel.network/img/screenshots/screen-index.jpg"
+    />
+    <meta name="twitter:creator" content="@zelcash" />
+    <meta name="theme-color" content="#183c87" />
 
     <!-- Favicon -->
     <link href="./img/favicon.ico" rel="shortcut icon" />
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Heebo:100,400,500" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Heebo:100,400,500"
+      rel="stylesheet"
+    />
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/css/uikit.min.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.3/css/uikit.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./css/style.css" />
-    <style>
-        body {
-            display: none;
-        }
-    </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- NAV -->
     <div class="uk-position-top">
-        <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
-            <nav class="uk-navbar-container">
-                <div class="uk-container">
-                    <div uk-navbar class="uk-visible@s">
-                        <a class="uk-navbar-item uk-light" href="./"><img src="./img/Zel-Txt-White.svg"
-                                width="100"></a>
-                        <ul class="uk-navbar-nav">
-                            <li><a href="./zel/">Currency</a></li>
-                            <li><a href="./project/zelcore/">Zel<span>Core</span></a></li>
-                            <li><a href="./project/">Our&nbsp;<span>Projects</span></a></li>
-                            <li><a href="./team/">Our&nbsp;<span>Team</span></a></li>
-                            <li><a href="./partners/">Partners</span></a></li>
-                        </ul>
+      <div
+        uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky"
+      >
+        <nav class="uk-navbar-container">
+          <div class="uk-container">
+            <div uk-navbar class="uk-visible@s">
+              <a class="uk-navbar-item uk-light" href="./"
+                ><img src="./img/Zel-Txt-White.svg" width="100"
+              /></a>
+              <ul class="uk-navbar-nav">
+                <li><a href="./zel/">Currency</a></li>
+                <li>
+                  <a href="./project/zelcore/">Zel<span>Core</span></a>
+                </li>
+                <li>
+                  <a href="./project/">Our&nbsp;<span>Projects</span></a>
+                </li>
+                <li>
+                  <a href="./team/">Our&nbsp;<span>Team</span></a>
+                </li>
+                <li><a href="./partners/">Partners</a></li>
+              </ul>
+            </div>
+            <div
+              uk-navbar="boundary-align: true; align: left; dropbar: true"
+              class="uk-hidden@s"
+            >
+              <div class="uk-navbar-left">
+                <a class="uk-navbar-item uk-light" href="./"
+                  ><img src="./img/Zel-Txt-White.svg" width="100"
+                /></a>
+              </div>
+              <div class="uk-navbar-right">
+                <ul class="uk-navbar-nav">
+                  <li>
+                    <a
+                      class="uk-navbar-toggle"
+                      uk-navbar-toggle-icon
+                      href="#"
+                    ></a>
+                    <div class="uk-navbar-dropdown">
+                      <ul class="uk-nav uk-navbar-dropdown-nav">
+                        <li><a href="./zel/">Currency</a></li>
+                        <li>
+                          <a href="./project/zelcore/">Zel<span>Core</span></a>
+                        </li>
+                        <li>
+                          <a href="./project/"
+                            >Our&nbsp;<span>Projects</span></a
+                          >
+                        </li>
+                        <li>
+                          <a href="./team/">Our&nbsp;<span>Team</span></a>
+                        </li>
+                        <li><a href="./partners/">Partners</a></li>
+                      </ul>
                     </div>
-                    <div uk-navbar="boundary-align: true; align: left; dropbar: true" class="uk-hidden@s">
-                        <div class="uk-navbar-left">
-                            <a class="uk-navbar-item uk-light" href="./"><img src="./img/Zel-Txt-White.svg"
-                                    width="100"></a>
-                        </div>
-                        <div class="uk-navbar-right">
-                            <ul class="uk-navbar-nav">
-                                <li>
-                                    <a class="uk-navbar-toggle" uk-navbar-toggle-icon href="#"></a>
-                                    <div class="uk-navbar-dropdown">
-                                        <ul class="uk-nav uk-navbar-dropdown-nav">
-                                            <li><a href="./zel/">Currency</a></li>
-                                            <li><a href="./project/zelcore/">Zel<span>Core</span></a></li>
-                                            <li><a href="./project/">Our&nbsp;<span>Projects</span></a></li>
-                                            <li><a href="./team/">Our&nbsp;<span>Team</span></a></li>
-                                            <li><a href="./partners/">Partners</span></a></li>
-                                        </ul>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
     </div>
 
     <!-- HERO -->
-    <div class="uk-position-relative uk-visible-toggle" tabindex="-1" uk-slideshow="min-height: 700; autoplay: true; autoplay-interval: 15000">
-        <ul class="uk-slideshow-items">
-            <li>
-                <video class="colorVideo" src="https://player.vimeo.com/external/324597323.hd.mp4?s=9c97c38a073b5e15e4a9d99e5469fe53e1164857&amp;profile_id=174&amp;oauth2_token_id=57447761" autoplay loop muted playsinline uk-cover></video>
-                <div class="uk-position-center uk-position-small uk-text-center uk-margin-large-top uk-light">
-                    <h1 class="uk-heading-primary uk-margin-remove"><span class="zel">zel</span>, we dropped the cash.</h1>
-                    <h1 class="uk-margin-remove">A world powered by <span class="zel">zel</span></h1>
-                    <a href="./zel/"><button class="uk-button uk-button-primary rounded uk-margin-top">Currency</button></a>
-                </div>
-            </li>
-            <li>
-                <img src="img/zelcore/bb1.jpg" alt="" uk-cover>
-                <div class="uk-position-bottom uk-position-medium uk-text-center uk-light">
-                    <h3 class="uk-margin-remove">ZelCore</h3>
-                    <p class="uk-margin-remove">Multi-Asset Encrypted Wallet</p>
-                    <a href="./project/zelcore/"><button class="uk-button uk-button-primary rounded uk-margin-top">Read more</button></a>
-                </div>
-            </li>
+    <div
+      class="uk-position-relative uk-visible-toggle"
+      tabindex="-1"
+      uk-slideshow="min-height: 500; autoplay: true; autoplay-interval: 15000"
+    >
+      <ul class="uk-slideshow-items">
+        <li>
+          <img
+            src="https://images.pexels.com/photos/3354675/pexels-photo-3354675.jpeg?cs=srgb&dl=human-hands-illustrations-3354675.jpg&fm=jpg"
+            alt=""
+            uk-cover
+          />
+          <div
+            class="uk-position-center uk-position-small uk-text-center uk-margin-large-top uk-light"
+            style="mix-blend-mode: difference;"
+          >
+            <h1 class="uk-heading-medium uk-margin-remove uk-visible@s">
+              <span class="zel">zel</span>core, looks
+              <span> &nbsp; </span> better than ever
+            </h1>
+            <h2 class="uk-margin-remove uk-hidden@s">
+              <span class="zel">zel</span>core, looks
+              <span> &nbsp; </span> better than ever
+            </h2>
+          </div>
+          <div
+            class="uk-position-bottom uk-position-small uk-text-center uk-margin-large-bottom uk-light"
+          >
+            <a href="./project/zelcore/"
+              ><button
+                class="uk-button uk-button-primary rounded uk-margin-top"
+              >
+                Try it now!
+              </button></a
+            >
+          </div>
+        </li>
+      </ul>
+      <div class="uk-position-bottom-center uk-position-small uk-light">
+        <ul class="uk-dotnav">
+          <li uk-slideshow-item="0"><a href="#"></a></li>
         </ul>
-        <div class="uk-position-bottom-center uk-position-small uk-light">
-            <ul class="uk-dotnav">
-                <li uk-slideshow-item="0"><a href="#"></a></li>
-                <li uk-slideshow-item="1"><a href="#"></a></li>
-            </ul>
-        </div>
-        <div class="uk-light uk-visible@s">
-            <a class="uk-position-center-left uk-position-small uk-hidden-hover uk-margin-medium-top" href="#"
-                uk-slidenav-previous uk-slideshow-item="previous"></a>
-            <a class="uk-position-center-right uk-position-small uk-hidden-hover uk-margin-medium-top" href="#"
-                uk-slidenav-next uk-slideshow-item="next"></a>
-        </div>
+      </div>
+      <div class="uk-light uk-visible@s">
+        <a
+          class="uk-position-center-left uk-position-small uk-hidden-hover uk-margin-medium-top"
+          href="#"
+          uk-slidenav-previous
+          uk-slideshow-item="previous"
+        ></a>
+        <a
+          class="uk-position-center-right uk-position-small uk-hidden-hover uk-margin-medium-top"
+          href="#"
+          uk-slidenav-next
+          uk-slideshow-item="next"
+        ></a>
+      </div>
     </div>
+
+    <!-- PROJECTS -->
+    <section
+      class="uk-background-norepeat uk-background-cover uk-background-center-center"
+    >
+      <div class="uk-container uk-margin uk-flex uk-flex-middle landingPage">
+        <div
+          class="uk-grid-collapse uk-child-width-1-2@s uk-margin-auto"
+          uk-grid
+        >
+          <a
+            href="./zel/"
+            class="uk-flex-last@s uk-card-media-right uk-cover-container"
+          >
+            <img src="./img/projects/Zel-t.svg" alt="" uk-cover />
+            <canvas width="600" height="400"></canvas>
+          </a>
+          <div class="uk-flex uk-flex-middle">
+            <div class="uk-card-body">
+              <img src="./img/Zel-Txt.svg" />
+              <p>
+                Zel is a cryptocurrency that holds a central role in the Zel
+                Ecosystem. It gives incentive for ZelNode ownership to enable
+                the creation of ZelEx and the ZelDev Platform, enabling us to
+                create a truly decentralized development platform.
+              </p>
+              <a href="./zel/"
+                ><button
+                  class="uk-button uk-button-primary rounded uk-margin-top"
+                >
+                  Read more
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="uk-background-norepeat uk-background-cover uk-background-center-center uk-section-muted"
+    >
+      <div class="uk-container uk-margin uk-flex uk-flex-middle landingPage">
+        <div class="uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+          <a
+            href="./project/zelcore/"
+            class="uk-card-media-left uk-cover-container"
+          >
+            <img src="./img/projects/ZelCore-t.svg" alt="" uk-cover />
+            <canvas width="600" height="400"></canvas>
+          </a>
+          <div class="uk-flex uk-flex-middle">
+            <div class="uk-card-body">
+              <img src="./img/ZelCore-Txt.svg" />
+              <p>
+                A complete platform for crypto custody management, exchanging,
+                news & research, charting, and more. ZelCore gives users total
+                ownership over their assets.
+              </p>
+              <a href="./project/zelcore/"
+                ><button class="uk-button zelcoreblack rounded uk-margin-top">
+                  Read more
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="uk-background-norepeat uk-background-cover uk-background-center-center"
+    >
+      <div class="uk-container uk-margin uk-flex uk-flex-middle landingPage">
+        <div class="uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+          <a
+            href="./project/zelnodes/"
+            class="uk-flex-last@s uk-card-media-right uk-cover-container"
+          >
+            <img src="./img/projects/ZelNodes-t.svg" alt="" uk-cover />
+            <canvas width="600" height="400"></canvas>
+          </a>
+          <div class="uk-flex uk-flex-middle">
+            <div class="uk-card-body">
+              <img src="./img/ZelNodes-Txt.svg" />
+              <p>
+                The highly-available computational network that currently has
+                over 1,000 community-operated ZelNodes.
+              </p>
+              <p>
+                ZelNodes running ZelFlux operating system power dockerized JS
+                apps, web servers, ElectrumX servers, and more.
+              </p>
+              <a href="./project/zelnodes/"
+                ><button class="uk-button zelnodescolor rounded uk-margin-top">
+                  ZelNodes
+                </button></a
+              >
+              <a href="./project/zelflux/"
+                ><button class="uk-button zelnodescolor rounded uk-margin-top">
+                  ZelFlux
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="uk-background-norepeat uk-background-cover uk-background-center-center uk-section-muted"
+    >
+      <div class="uk-container uk-margin uk-flex uk-flex-middle landingPage">
+        <div class="uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+          <a
+            href="./project/zelid/"
+            class="uk-card-media-left uk-cover-container"
+          >
+            <img src="./img/projects/ZelID-t.svg" alt="" uk-cover />
+            <canvas width="600" height="400"></canvas>
+          </a>
+          <div class="uk-flex uk-flex-middle">
+            <div class="uk-card-body">
+              <img src="./img/ZelID-Txt.svg" />
+              <p>
+                A decentralized authentication protocol that is truly seamless,
+                secure, and private. A digital identity you control for
+                cross-platform authentication.
+              </p>
+              <a href="./project/zelid/"
+                ><button class="uk-button zelidcolor rounded uk-margin-top">
+                  Read more
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ECOSYSTEM -->
+    <section id="wallets" class="uk-section uk-section-large">
+      <div class="uk-container">
+        <h1 class="uk-heading-medium uk-text-center">
+          <span class="zel">zel</span>s Ecosystem
+        </h1>
+        <h4 class="uk-text-center">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </h4>
+        <div
+          class="uk-child-width-1-3@s uk-child-width-1-3@m uk-text-center"
+          uk-grid
+          uk-height-match="target: > div > .uk-card"
+        >
+          <!-- ITEM -->
+          <div>
+            <div class="uk-card uk-card-default uk-card-hover uk-card-body">
+              <div class="uk-card-header uk-padding-remove">
+                <div class="uk-grid-small uk-flex uk-padding-small" uk-grid>
+                  <div class="uk-width-auto">
+                    <img class="uk-border-circle" src="./img/Zel-Round.svg" />
+                  </div>
+                  <div class="uk-width-expand">
+                    <h2 class="uk-margin-remove-bottom"><span>zel</span></h2>
+                    <h3 class="uk-card-title uk-margin-remove">the Currency</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="uk-card-body">
+                <p>Info</p>
+                <p>Info</p>
+                <p>Info</p>
+              </div>
+              <div class="uk-card-footer">
+                <a href="./zel/">
+                  <button
+                    class="uk-button uk-button-primary rounded uk-margin-top"
+                  >
+                    Learn more
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- ITEM -->
+          <div>
+            <div class="uk-card uk-card-default uk-card-hover uk-card-body">
+              <div class="uk-card-header uk-padding-remove">
+                <div class="uk-grid-small uk-flex uk-padding-small" uk-grid>
+                  <div class="uk-width-auto">
+                    <img
+                      class="uk-border-circle"
+                      src="./img/ZelCore-Round.svg"
+                    />
+                  </div>
+                  <div class="uk-width-expand">
+                    <h2 class="uk-margin-remove-bottom">
+                      <span>zel</span>core
+                    </h2>
+                    <h3 class="uk-card-title uk-margin-remove">the Wallet</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="uk-card-body">
+                <p>Multi-asset platform & wallet</p>
+                <p>200+ assets</p>
+                <p>Lite & Full Node modes</p>
+                <p>Available for Windows, macOS, Linux, Android & iOS</p>
+              </div>
+              <div class="uk-card-footer">
+                <a href="./project/zelcore/download.html">
+                  <button
+                    class="uk-button uk-button-primary rounded uk-margin-top"
+                  >
+                    Download
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- ITEM -->
+          <div>
+            <div class="uk-card uk-card-default uk-card-hover uk-card-body">
+              <div class="uk-card-header uk-padding-remove">
+                <div class="uk-grid-small uk-flex uk-padding-small" uk-grid>
+                  <div class="uk-width-auto">
+                    <img
+                      class="uk-border-circle"
+                      src="./img/ZelNodes-Round.svg"
+                    />
+                  </div>
+                  <div class="uk-width-expand">
+                    <h2 class="uk-margin-remove-bottom">
+                      <span>zel</span>Nodes
+                    </h2>
+                    <h3 class="uk-card-title uk-margin-remove">the Network</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="uk-card-body">
+                <p>Info</p>
+                <p>Info</p>
+              </div>
+              <div class="uk-card-footer">
+                <a href="./project/zelnodes/">
+                  <button
+                    class="uk-button uk-button-primary rounded uk-margin-top"
+                  >
+                    Learn more
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- FOOTER -->
     <footer class="uk-background-muted uk-padding">
-        <div class="uk-container">
-            <div class="uk-grid-divider uk-child-width-expand@s" uk-grid>
-                <div>
-                    <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
-                        <li class="uk-nav-header">Projects</li>
-                        <li><a href="./zel/">Zel</a></li>
-                        <li><a href="./project/zelcore/">ZelCore</a></li>
-                        <li><a href="./project/zelid/">ZelID</a></li>
-                        <li><a href="./project/zelnodes/">ZelNodes</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
-                        <li class="uk-nav-header">About us</li>
-                        <li><a href="./team/">Team</a></li>
-                        <li><a href="./news/">News</a></li>
-                        <li><a href="./press/">Presskit</a></li>
-                        <li><a href="./donate/">Donate</a></li>
-                        <li class="uk-nav-divider"></li>
-                        <li><a href="mailto:info@zel.cash">Contact Us</a></li>
-                    </ul>
-                </div>
-                <div class="social">
-                    <a href="https://twitter.com/zelcash" target="_blank" class="uk-button rounded twitter"><i
-                            class="fab fa-twitter"></i></a>
-                    <a href="https://discord.io/zel" target="_blank" class="uk-button rounded discord"><i
-                            class="fab fa-discord"></i></a>
-                    <a href="https://t.me/zelhub" target="_blank" class="uk-button rounded telegram"><i
-                            class="fab fa-telegram"></i></a>
-                    <a href="https://join.slack.com/t/zelcash/shared_invite/enQtMzkyMjY0MDU3NjA3LWM4NWNkMzQwMDJmNWM4NDJhZTY3YmQ3MDA0MzVhZDE3ZWQxNWU0ODUxMGE4ODk3MTQyOWYyYmZiZTFmY2FiMTM"
-                        target="_blank" class="uk-button rounded slack"><i class="fab fa-slack"></i></a>
-                    <a href="https://www.reddit.com/r/ZelCash/" target="_blank" class="uk-button rounded reddit"><i
-                            class="fab fa-reddit"></i></a>
-                    <a href="https://bitcointalk.org/index.php?topic=2853688.0" target="_blank"
-                        class="uk-button rounded bitcointalk"><i class="fab fa-btc"></i></a>
-                </div>
-            </div>
-            <div class="uk-child-width-expand@s" uk-grid>
-                <div class="uk-grid-item-match">
-                    <p>Copyright &copy; 2019 Zel Technologies GmbH. All rights reserved.</p>
-                </div>
-                <div class="uk-text-right">
-                    <a href="./terms/">Terms and Conditions</a>
-                    <span class="uk-padding-small">|</span>
-                    <a href="./privacy/">Privacy Policy</a>
-                </div>
-            </div>
+      <div class="uk-container">
+        <div class="uk-grid-divider uk-child-width-expand@s" uk-grid>
+          <div>
+            <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
+              <li class="uk-nav-header">Projects</li>
+              <li><a href="./zel/">Zel</a></li>
+              <li><a href="./project/zelcore/">ZelCore</a></li>
+              <li><a href="./project/zelid/">ZelID</a></li>
+              <li><a href="./project/zelnodes/">ZelNodes</a></li>
+            </ul>
+          </div>
+          <div>
+            <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
+              <li class="uk-nav-header">About us</li>
+              <li><a href="./team/">Team</a></li>
+              <li><a href="./news/">News</a></li>
+              <li><a href="./press/">Presskit</a></li>
+              <li><a href="./donate/">Donate</a></li>
+              <li class="uk-nav-divider"></li>
+              <li><a href="mailto:info@zel.cash">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="social">
+            <a
+              href="https://twitter.com/zelcash"
+              target="_blank"
+              class="uk-button rounded twitter"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a
+              href="https://discord.io/zel"
+              target="_blank"
+              class="uk-button rounded discord"
+              ><i class="fab fa-discord"></i
+            ></a>
+            <a
+              href="https://t.me/zelhub"
+              target="_blank"
+              class="uk-button rounded telegram"
+              ><i class="fab fa-telegram"></i
+            ></a>
+            <a
+              href="https://join.slack.com/t/zelcash/shared_invite/enQtMzkyMjY0MDU3NjA3LWM4NWNkMzQwMDJmNWM4NDJhZTY3YmQ3MDA0MzVhZDE3ZWQxNWU0ODUxMGE4ODk3MTQyOWYyYmZiZTFmY2FiMTM"
+              target="_blank"
+              class="uk-button rounded slack"
+              ><i class="fab fa-slack"></i
+            ></a>
+            <a
+              href="https://www.reddit.com/r/ZelCash/"
+              target="_blank"
+              class="uk-button rounded reddit"
+              ><i class="fab fa-reddit"></i
+            ></a>
+            <a
+              href="https://bitcointalk.org/index.php?topic=2853688.0"
+              target="_blank"
+              class="uk-button rounded bitcointalk"
+              ><i class="fab fa-btc"></i
+            ></a>
+          </div>
         </div>
+        <div class="uk-child-width-expand@s" uk-grid>
+          <div class="uk-grid-item-match">
+            <p>
+              Copyright &copy; 2019 Zel Technologies GmbH. All rights reserved.
+            </p>
+          </div>
+          <div class="uk-text-right">
+            <a href="./terms/">Terms and Conditions</a>
+            <span class="uk-padding-small">|</span>
+            <a href="./privacy/">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
     </footer>
 
     <!-- UIkit JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit-icons.min.js"></script>
-    <script>
-        /* PREVENT CLICKJACKING */
-        if (self == top) {
-            var theBody = document.getElementsByTagName('body')[0];
-            theBody.style.display = "block";
-        } else {
-            top.location = self.location;
-        }
-    </script>
-
-</body>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.3/js/uikit.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.3/js/uikit-icons.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
 </html>

@@ -1,7 +1,8 @@
 const coins = {
   zelcash: {
-    coin: "zel",
-    name: "Zel",
+    coin: "zelcash",
+    name: "ZelCash",
+    uri: ["zelcash", "zel"],
     pubKeyHash: "1cb8",
     scriptHash: "1cbd",
     wif: "80",
@@ -11,24 +12,30 @@ const coins = {
     scriptAddressB: "t3",
     slip: 19167,
     addresses: [],
-    fiatRates: [],
-    fiatRate: 0,
     api: [
       "https://explorer.zel.zelcore.io/api/",
+      "https://explorer.zel.cash/api/",
+      "https://explorer2.zel.cash/api/",
+      "https://explorer.zelcash.online/api/",
+      "https://explorer-asia.zel.cash/api/",
     ],
-    pathunix: "zel",
-    path: "Zel",
+    pathunix: "zelcash",
+    path: "Zelcash",
     unit: "ZEL",
-    config: "zel",
+    config: "zelcash",
     rpcport: 16124,
     testnetrpcport: 26124,
     type: "zcash",
     explorer: [
-      "https://explorer.zel.zelcore.io",
+      "https://explorer.zel.zelcore.io/tx/",
+      "https://explorer2.zel.cash/tx/",
     ],
     logolink: "./img/assets/ZEL.svg",
     node: [
       "explorer.zel.zelcore.io",
+      "explorer.zel.cash",
+      "explorer2.zel.cash",
+      "explorer.zelcash.online",
     ],
     fee: 0.00001,
     feepolicy: {
@@ -38,9 +45,48 @@ const coins = {
     },
     color: "#183c87",
   },
+  testnet: {
+    coin: "testnet",
+    name: "Test Coin",
+    uri: ["testnet", "testzel"],
+    pubKeyHash: "1d25",
+    scriptHash: "1cba",
+    wif: "ef",
+    normalAddress: "tm",
+    normalAddressB: "tm",
+    scriptAddress: "t2",
+    scriptAddressB: "t2",
+    slip: 1,
+    addresses: [],
+    api: [
+      "https://testnet.zel.cash/api/",
+    ],
+    pathunix: "zelcash",
+    path: "Zelcash",
+    unit: "TESTZEL",
+    config: "zelcash",
+    rpcport: 26124,
+    testnetrpcport: 26124,
+    type: "zcash",
+    explorer: [
+      "https://testnetnodes.zel.cash/tx/",
+    ],
+    logolink: "./img/assets/TESTZEL.svg",
+    node: [
+      "testnet.zel.cash",
+    ],
+    fee: 0.00001,
+    feepolicy: {
+      economy: 1,
+      normal: 5,
+      fast: 10,
+    },
+    color: "#abcabc",
+  },
   bitcoin: {
     coin: "bitcoin",
     name: "Bitcoin",
+    uri: ["bitcoin", "btc"],
     pubKeyHash: "00",
     scriptHash: "05",
     normalAddress: "1",
@@ -50,8 +96,6 @@ const coins = {
     wif: "80",
     slip: 0,
     addresses: [],
-    fiatRates: [],
-    fiatRate: 0,
     api: [
       "https://explorer.btc.zelcore.io/api/",
     ],
@@ -63,7 +107,7 @@ const coins = {
     testnetrpcport: 18332,
     type: "btc",
     explorer: [
-      "https://explorer.btc.zelcore.io",
+      "https://explorer.btc.zelcore.io/tx/",
     ],
     logolink: "./img/assets/BTC.svg",
     node: [
@@ -71,26 +115,25 @@ const coins = {
     ],
     fee: 0.0000226,
     feepolicy: {
-      economy: 7,
-      normal: 15,
-      fast: 30,
+      economy: 20,
+      normal: 100,
+      fast: 180,
     },
     color: "#f7931a",
   },
   ethereum: {
     coin: "ethereum",
     name: "Ethereum",
+    uri: ["ethereum", "eth"],
     slip: 60,
     addresses: [],
-    fiatRates: [],
-    fiatRate: 0,
     api: [
       "https://api.etherscan.io/api?module=account&action=txlist&address=",
     ],
     unit: "ETH",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/ETH.svg",
     node: [
@@ -110,6 +153,7 @@ const coins = {
   litecoin: {
     coin: "litecoin",
     name: "Litecoin",
+    uri: ["litecoin", "ltc"],
     pubKeyHash: "30",
     scriptHash: "32",
     normalAddress: "L",
@@ -119,8 +163,6 @@ const coins = {
     wif: "b0",
     slip: 2,
     addresses: [],
-    fiatRates: [],
-    fiatRate: 0,
     api: [
       "https://explorer.ltc.zelcore.io/api/",
     ],
@@ -132,7 +174,7 @@ const coins = {
     testnetrpcport: 19332,
     type: "btc",
     explorer: [
-      "https://explorer.ltc.zelcore.io",
+      "https://explorer.ltc.zelcore.io/tx/",
     ],
     logolink: "./img/assets/LTC.svg",
     node: [
@@ -149,6 +191,7 @@ const coins = {
   zcash: {
     coin: "zcash",
     name: "Zcash",
+    uri: ["zcash", "zec"],
     pubKeyHash: "1cb8",
     scriptHash: "1cbd",
     normalAddress: "t1",
@@ -158,8 +201,6 @@ const coins = {
     wif: "80",
     slip: 133,
     addresses: [],
-    fiatRates: [],
-    fiatRate: 0,
     api: [
       "https://explorer2.zec.zelcore.io/api/",
     ],
@@ -171,7 +212,7 @@ const coins = {
     testnetrpcport: 18232,
     type: "zcash",
     explorer: [
-      "https://explorer2.zec.zelcore.io",
+      "https://explorer2.zec.zelcore.io/tx/",
     ],
     logolink: "./img/assets/ZEC.svg",
     node: [
@@ -188,6 +229,7 @@ const coins = {
   bitcoinz: {
     coin: "bitcoinz",
     name: "BitcoinZ",
+    uri: ["bitcoinz", "btcz"],
     pubKeyHash: "1cb8",
     scriptHash: "1cbd",
     normalAddress: "t1",
@@ -197,10 +239,8 @@ const coins = {
     wif: "80",
     slip: 177,
     addresses: [],
-    fiatRates: [],
-    fiatRate: 0,
     api: [
-      "https://explorer.btcz.zelcore.io/api/",
+      "https://explorer2.btcz.zelcore.io/api/",
     ],
     pathunix: "bitcoinz",
     path: "BitcoinZ",
@@ -210,11 +250,11 @@ const coins = {
     testnetrpcport: 11979,
     type: "zcash",
     explorer: [
-      "https://explorer.btcz.zelcore.io",
+      "https://explorer2.btcz.zelcore.io/tx/",
     ],
     logolink: "./img/assets/BTCZ.svg",
     node: [
-      "explorer.btcz.zelcore.io",
+      "explorer2.btcz.zelcore.io",
     ],
     fee: 0.00001,
     feepolicy: {
@@ -227,6 +267,7 @@ const coins = {
   ravencoin: {
     coin: "ravencoin",
     name: "Ravencoin",
+    uri: ["ravencoin", "rvn"],
     pubKeyHash: "3c",
     scriptHash: "7a",
     normalAddress: "R",
@@ -236,10 +277,8 @@ const coins = {
     wif: "80",
     slip: 175,
     addresses: [],
-    fiatRates: [],
-    fiatRate: 0,
     api: [
-      "https://explorer.rvn.zelcore.io/api/",
+      "https://api.ravencoin.org/api/",
     ],
     pathunix: "raven",
     path: "Raven",
@@ -249,7 +288,7 @@ const coins = {
     testnetrpcport: 18766,
     type: "btc",
     explorer: [
-      "https://explorer.rvn.zelcore.io",
+      "https://explorer.rvn.zelcore.io/tx/",
     ],
     logolink: "./img/assets/RVN.svg",
     node: [
@@ -257,15 +296,16 @@ const coins = {
     ],
     fee: 0.00001,
     feepolicy: {
-      economy: 1,
-      normal: 5,
-      fast: 10,
+      economy: 4,
+      normal: 8,
+      fast: 16,
     },
     color: "#f05239",
   },
   bitcore: {
     coin: "bitcore",
     name: "Bitcore",
+    uri: ["bitcore", "btx"],
     pubKeyHash: "03",
     scriptHash: "7d",
     normalAddress: "2",
@@ -275,8 +315,6 @@ const coins = {
     wif: "80",
     slip: 160,
     addresses: [],
-    fiatRates: [],
-    fiatRate: 0,
     api: [
       "https://explorer.btx.zelcore.io/api/",
     ],
@@ -288,7 +326,7 @@ const coins = {
     testnetrpcport: 50332,
     type: "btc",
     explorer: [
-      "https://explorer.btx.zelcore.io",
+      "https://explorer.btx.zelcore.io/tx/",
     ],
     logolink: "./img/assets/BTX.svg",
     node: [
@@ -305,6 +343,7 @@ const coins = {
   hush: {
     coin: "hush",
     name: "Hush",
+    uri: ["hush"],
     pubKeyHash: "1cb8",
     scriptHash: "1cbd",
     normalAddress: "t1",
@@ -314,8 +353,6 @@ const coins = {
     wif: "80",
     slip: 197,
     addresses: [],
-    fiatRates: [],
-    fiatRate: 0,
     api: [
       "https://explorer.hush.zelcore.io/api/",
     ],
@@ -327,7 +364,7 @@ const coins = {
     testnetrpcport: 18822,
     type: "zcash",
     explorer: [
-      "https://explorer.hush.zelcore.io",
+      "https://explorer.hush.zelcore.io/tx/",
     ],
     logolink: "./img/assets/HUSH.svg",
     node: [
@@ -344,16 +381,15 @@ const coins = {
   binance: {
     coin: "binance",
     name: "Binance",
+    uri: ["binance", "bnb"],
     addresses: [],
-    fiatRates: [],
-    fiatRate: 0,
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0xb8c77482e45f1f44de1745f52c74426c631bdd52&address=",
     ],
     unit: "BNB",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/BNB.svg",
     node: [
@@ -372,16 +408,15 @@ const coins = {
   sonm: {
     coin: "sonm",
     name: "Sonm",
+    uri: ["sonm"],
     addresses: [],
-    fiatRates: [],
-    fiatRate: 0,
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0x983f6d60db79ea8ca4eb9968c6aff8cfa04b3c63&address=",
     ],
     unit: "SONM",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/SONM.svg",
     node: [
@@ -400,16 +435,15 @@ const coins = {
   omisego: {
     coin: "omisego",
     name: "OmiseGO",
+    uri: ["omisego", "omg"],
     addresses: [],
-    fiatRates: [],
-    fiatRate: 0,
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0xd26114cd6EE289AccF82350c8d8487fedB8A0C07&address=",
     ],
     unit: "OMG",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/OMG.svg",
     node: [
@@ -428,16 +462,15 @@ const coins = {
   zilliqa: {
     coin: "zilliqa",
     name: "Zilliqa",
+    uri: ["zilliqa", "zil"],
     addresses: [],
-    fiatRates: [],
-    fiatRate: 0,
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0x05f4a42e251f2d52b8ed15e9fedaacfcef1fad27&address=",
     ],
     unit: "ZIL",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/ZIL.svg",
     node: [
@@ -456,16 +489,15 @@ const coins = {
   zrx: {
     coin: "zrx",
     name: "0x",
+    uri: ["0x", "zrx"],
     addresses: [],
-    fiatRates: [],
-    fiatRate: 0,
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0xe41d2489571d322189246dafa5ebde1f4699f498&address=",
     ],
     unit: "ZRX",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/ZRX.svg",
     node: [
@@ -484,16 +516,15 @@ const coins = {
   golem: {
     coin: "golem",
     name: "Golem",
+    uri: ["golem", "gnt"],
     addresses: [],
-    fiatRates: [],
-    fiatRate: 0,
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0xa74476443119A942dE498590Fe1f2454d7D4aC0d&address=",
     ],
     unit: "GNT",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/GNT.svg",
     node: [
@@ -512,16 +543,15 @@ const coins = {
   kucoin: {
     coin: "kucoin",
     name: "KuCoin",
+    uri: ["kucoin", "kcs"],
     addresses: [],
-    fiatRates: [],
-    fiatRate: 0,
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0x039b5649a59967e3e936d7471f9c3700100ee1ab&address=",
     ],
     unit: "KCS",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/KCS.svg",
     node: [
@@ -540,16 +570,15 @@ const coins = {
   bat: {
     coin: "bat",
     name: "BAT",
+    uri: ["basicattentiontoken", "bat"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0x0d8775f648430679a709e98d2b0cb6250d2887ef&address=",
     ],
     unit: "BAT",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/BAT.svg",
     node: [
@@ -568,16 +597,15 @@ const coins = {
   maker: {
     coin: "maker",
     name: "Maker",
+    uri: ["maker", "mkr"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0x9f8f72aa9304c8b593d555f12ef6589cc3a579a2&address=",
     ],
     unit: "MKR",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/MKR.svg",
     node: [
@@ -596,16 +624,15 @@ const coins = {
   kyber: {
     coin: "kyber",
     name: "Kyber",
+    uri: ["kyber", "knc"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0xdd974d5c2e2928dea5f71b9825b8b646686bd200&address=",
     ],
     unit: "KNC",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/KNC.svg",
     node: [
@@ -624,16 +651,15 @@ const coins = {
   enigma: {
     coin: "enigma",
     name: "Enigma",
+    uri: ["enigma", "eng"],
     addresses: [],
-    fiatRates: [],
-    fiatRate: 0,
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0xf0ee6b27b759c9893ce4f094b49ad28fd15a23e4&address=",
     ],
     unit: "ENG",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/ENG.svg",
     node: [
@@ -652,16 +678,15 @@ const coins = {
   tenx: {
     coin: "tenx",
     name: "TenX",
+    uri: ["tenx", "pay"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0xB97048628DB6B661D4C2aA833e95Dbe1A905B280&address=",
     ],
     unit: "PAY",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/PAY.svg",
     node: [
@@ -680,16 +705,15 @@ const coins = {
   substratum: {
     coin: "substratum",
     name: "Substratum",
+    uri: ["substratum", "sub"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0x8d75959f1e61ec2571aa72798237101f084de63a&address=",
     ],
     unit: "SUB",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/SUB.svg",
     node: [
@@ -708,16 +732,15 @@ const coins = {
   civic: {
     coin: "civic",
     name: "Civic",
+    uri: ["civic", "cvc"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0x41e5560054824ea6b0732e656e3ad64e20e94e45&address=",
     ],
     unit: "CVC",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/CVC.svg",
     node: [
@@ -736,16 +759,15 @@ const coins = {
   stox: {
     coin: "stox",
     name: "Stox",
+    uri: ["stox", "stx"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0x006BeA43Baa3f7A6f765F14f10A1a1b08334EF45&address=",
     ],
     unit: "STX",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/STX.svg",
     node: [
@@ -764,6 +786,7 @@ const coins = {
   bitcoingold: {
     coin: "bitcoingold",
     name: "Bitcoin Gold",
+    uri: ["bitcoingold", "btg"],
     pubKeyHash: "26",
     scriptHash: "17",
     normalAddress: "G",
@@ -773,8 +796,6 @@ const coins = {
     wif: "80",
     slip: 156,
     addresses: [],
-    fiatRates: [],
-    fiatRate: 0,
     api: [
       "https://explorer.bitcoingold.org/insight-api/",
     ],
@@ -786,7 +807,7 @@ const coins = {
     testnetrpcport: 18332,
     type: "btc",
     explorer: [
-      "https://explorer.bitcoingold.org/insight",
+      "https://explorer.bitcoingold.org/insight/tx/",
     ],
     logolink: "./img/assets/BTG.svg",
     node: [
@@ -803,6 +824,7 @@ const coins = {
   snowgem: {
     coin: "snowgem",
     name: "Snowgem",
+    uri: ["snowgem", "xsg"],
     pubKeyHash: "1c28",
     scriptHash: "1c2d",
     normalAddress: "s1",
@@ -812,8 +834,6 @@ const coins = {
     wif: "80",
     slip: 19171,
     addresses: [],
-    fiatRates: [],
-    fiatRate: 0,
     api: [
       "https://explorer.xsg.zelcore.io/api/",
     ],
@@ -825,7 +845,7 @@ const coins = {
     testnetrpcport: 26112,
     type: "zcash",
     explorer: [
-      "https://explorer.xsg.zelcore.io",
+      "https://explorer.xsg.zelcore.io/tx/",
     ],
     logolink: "./img/assets/XSG.svg",
     node: [
@@ -842,6 +862,7 @@ const coins = {
   btcp: {
     coin: "btcp",
     name: "Bitcoin Private",
+    uri: ["bitcoinprivate", "btcp"],
     pubKeyHash: "1325",
     scriptHash: "13af",
     normalAddress: "b1",
@@ -851,8 +872,6 @@ const coins = {
     wif: "80",
     slip: 183,
     addresses: [],
-    fiatRates: [],
-    fiatRate: 0,
     api: [
       "https://explorer.btcprivate.org/api/",
     ],
@@ -864,7 +883,7 @@ const coins = {
     testnetrpcport: 17932,
     type: "zcash",
     explorer: [
-      "https://explorer.btcprivate.org",
+      "https://explorer.btcprivate.org/tx/",
     ],
     logolink: "./img/assets/BTCP.svg",
     node: [
@@ -881,6 +900,7 @@ const coins = {
   anon: {
     coin: "anon",
     name: "Anon",
+    uri: ["anon"],
     pubKeyHash: "0582",
     scriptHash: "5389",
     normalAddress: "An",
@@ -890,8 +910,6 @@ const coins = {
     wif: "80",
     slip: 220,
     addresses: [],
-    fiatRates: [],
-    fiatRate: 0,
     api: [
       "https://explorer.anon.zelcore.io/api/",
     ],
@@ -903,7 +921,7 @@ const coins = {
     testnetrpcport: 3127,
     type: "zcash",
     explorer: [
-      "https://explorer.anon.zelcore.io",
+      "https://explorer.anon.zelcore.io/tx/",
     ],
     logolink: "./img/assets/ANON.svg",
     node: [
@@ -920,6 +938,7 @@ const coins = {
   zen: {
     coin: "zen",
     name: "Horizen",
+    uri: ["horizen", "zen"],
     pubKeyHash: "2089",
     scriptHash: "2096",
     normalAddress: "zn",
@@ -929,8 +948,6 @@ const coins = {
     wif: "80",
     slip: 121,
     addresses: [],
-    fiatRates: [],
-    fiatRate: 0,
     api: [
       "https://explorer.zensystem.io/api/",
     ],
@@ -942,7 +959,7 @@ const coins = {
     testnetrpcport: 18231,
     type: "zcash",
     explorer: [
-      "https://explorer.zensystem.io",
+      "https://explorer.zensystem.io/tx/",
     ],
     logolink: "./img/assets/ZEN.svg",
     node: [
@@ -959,6 +976,7 @@ const coins = {
   safecoin: {
     coin: "safecoin",
     name: "Safecoin",
+    uri: ["safecoin", "safe"],
     pubKeyHash: "3d",
     scriptHash: "56",
     normalAddress: "R",
@@ -968,8 +986,6 @@ const coins = {
     wif: "bd",
     slip: 19165,
     addresses: [],
-    fiatRates: [],
-    fiatRate: 0,
     api: [
       "https://explorer.safe.zelcore.io/api/",
     ],
@@ -981,7 +997,7 @@ const coins = {
     testnetrpcport: 18771,
     type: "zcash",
     explorer: [
-      "https://explorer.safe.zelcore.io",
+      "https://explorer.safe.zelcore.io/tx/",
     ],
     logolink: "./img/assets/SAFE.svg",
     node: [
@@ -998,6 +1014,7 @@ const coins = {
   komodo: {
     coin: "komodo",
     name: "Komodo",
+    uri: ["komodo", "kmd"],
     pubKeyHash: "3c",
     scriptHash: "55",
     normalAddress: "R",
@@ -1007,8 +1024,6 @@ const coins = {
     wif: "bc",
     slip: 141,
     addresses: [],
-    fiatRates: [],
-    fiatRate: 0,
     api: [
       "https://explorer.kmd.zelcore.io/api/",
     ],
@@ -1020,7 +1035,7 @@ const coins = {
     testnetrpcport: 17771,
     type: "zcash",
     explorer: [
-      "https://explorer.kmd.zelcore.io",
+      "https://explorer.kmd.zelcore.io/tx/",
     ],
     logolink: "./img/assets/KMD.svg",
     node: [
@@ -1032,11 +1047,12 @@ const coins = {
       normal: 5,
       fast: 10,
     },
-    color: "#316565",
+    color: "#00edd3",
   },
   zcoin: {
     coin: "zcoin",
     name: "Zcoin",
+    uri: ["zcoin", "xzc"],
     pubKeyHash: "52",
     scriptHash: "07",
     normalAddress: "a",
@@ -1046,8 +1062,6 @@ const coins = {
     wif: "d2",
     slip: 136,
     addresses: [],
-    fiatRates: [],
-    fiatRate: 0,
     api: [
       "https://explorer.zcoin.zelcore.io/api/",
     ],
@@ -1059,7 +1073,7 @@ const coins = {
     testnetrpcport: 18888,
     type: "btc",
     explorer: [
-      "https://explorer.zcoin.zelcore.io",
+      "https://explorer.zcoin.zelcore.io/tx/",
     ],
     logolink: "./img/assets/XZC.svg",
     node: [
@@ -1076,6 +1090,7 @@ const coins = {
   usdt: {
     coin: "usdt",
     name: "Tether",
+    uri: ["tether", "usdt"],
     pubKeyHash: "00",
     scriptHash: "05",
     normalAddress: "1",
@@ -1085,8 +1100,6 @@ const coins = {
     wif: "80",
     slip: 0,
     addresses: [],
-    fiatRates: [],
-    fiatRate: 0,
     api: [
       "https://api.omniexplorer.info",
     ],
@@ -1097,7 +1110,7 @@ const coins = {
     rpcport: 8332,
     type: "omni",
     explorer: [
-      "https://omniexplorer.info",
+      "https://omniexplorer.info/tx/",
     ],
     logolink: "./img/assets/USDT.svg",
     node: [
@@ -1111,9 +1124,37 @@ const coins = {
     },
     color: "#26a17a",
   },
+  // usdtERC: {
+  //   coin: "usdtERC",
+  //   name: "Tether ERC20",
+  //   uri: ["tether", "usdt"],
+  //   addresses: [],
+  //   api: [
+  //     "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0xdac17f958d2ee523a2206206994597c13d831ec7&address=",
+  //   ],
+  //   unit: "USDT",
+  //   type: "eth",
+  //   explorer: [
+  //     "https://etherscan.io/tx/",
+  //   ],
+  //   logolink: "./img/assets/USDT.svg",
+  //   node: [
+  //     "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
+  //   ],
+  //   fee: 63000,
+  //   feepolicy: {
+  //     economy: 10,
+  //     normal: 15,
+  //     fast: 20,
+  //   },
+  //   contractAddress: "0xdac17f958d2ee523a2206206994597c13d831ec7",
+  //   color: "#26a17a",
+  //   decimals: 6,
+  // },
   zero: {
     coin: "zero",
     name: "Zero",
+    uri: ["zero"],
     pubKeyHash: "1cb8",
     scriptHash: "1cbd",
     normalAddress: "t1",
@@ -1123,8 +1164,6 @@ const coins = {
     wif: "80",
     slip: 19173,
     addresses: [],
-    fiatRates: [],
-    fiatRate: 0,
     api: [
       "https://explorer.zer.zelcore.io/api/",
     ],
@@ -1136,7 +1175,7 @@ const coins = {
     testnetrpcport: 23812,
     type: "zcash",
     explorer: [
-      "https://explorer.zer.zelcore.io",
+      "https://explorer.zer.zelcore.io/tx/",
     ],
     logolink: "./img/assets/ZER.svg",
     node: [
@@ -1153,6 +1192,7 @@ const coins = {
   bitcoincash: {
     coin: "bitcoincash",
     name: "Bitcoin Cash",
+    uri: ["bitcoincash", "bch"],
     pubKeyHash: "00",
     scriptHash: "05",
     normalAddress: "1",
@@ -1162,8 +1202,6 @@ const coins = {
     wif: "80",
     slip: 145,
     addresses: [],
-    fiatRates: [],
-    fiatRate: 0,
     api: [
       "https://blockdozer.com/api/",
     ],
@@ -1175,7 +1213,7 @@ const coins = {
     testnetrpcport: 18332,
     type: "btc",
     explorer: [
-      "https://blockdozer.com",
+      "https://blockdozer.com/tx/",
     ],
     logolink: "./img/assets/BCH.svg",
     node: [
@@ -1192,16 +1230,15 @@ const coins = {
   arcblock: {
     coin: "arcblock",
     name: "ArcBlock",
+    uri: ["arcblock", "abt"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0xb98d4c97425d9908e66e53a6fdf673acca0be986&address=",
     ],
     unit: "ABT",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/ABT.svg",
     node: [
@@ -1220,16 +1257,15 @@ const coins = {
   adex: {
     coin: "adex",
     name: "AdEx",
+    uri: ["adex", "adx"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0x4470bb87d77b963a013db939be332f927f2b992e&address=",
     ],
     unit: "ADX",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/ADX.svg",
     node: [
@@ -1248,16 +1284,15 @@ const coins = {
   aeternity: {
     coin: "aeternity",
     name: "Aeternity",
+    uri: ["aeternity", "ae"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0x5ca9a71b1d01849c0a95490cc00559717fcf0d1d&address=",
     ],
     unit: "AE",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/AE.svg",
     node: [
@@ -1276,16 +1311,15 @@ const coins = {
   airswap: {
     coin: "airswap",
     name: "AirSwap",
+    uri: ["airswap", "ast"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0x27054b13b1b798b345b591a4d22e6562d47ea75a&address=",
     ],
     unit: "AST",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/AST.svg",
     node: [
@@ -1304,16 +1338,15 @@ const coins = {
   bigbom: {
     coin: "bigbom",
     name: "Bigbom",
+    uri: ["bigbom", "bbo"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0x84f7c44b6fed1080f647e354d552595be2cc602f&address=",
     ],
     unit: "BBO",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/BBO.svg",
     node: [
@@ -1332,16 +1365,15 @@ const coins = {
   appcoins: {
     coin: "appcoins",
     name: "AppCoins",
+    uri: ["appcoins", "appc"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0x1a7a8bd9106f2b8d977e08582dc7d24c723ab0db&address=",
     ],
     unit: "APPC",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/APPC.svg",
     node: [
@@ -1360,16 +1392,15 @@ const coins = {
   bluzelle: {
     coin: "bluzelle",
     name: "Bluzelle",
+    uri: ["bluzelle", "blz"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0x5732046a883704404f284ce41ffadd5b007fd668&address=",
     ],
     unit: "BLZ",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/BLZ.svg",
     node: [
@@ -1388,16 +1419,15 @@ const coins = {
   bancor: {
     coin: "bancor",
     name: "Bancor",
+    uri: ["bancor", "bnt"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0x1f573d6fb3f13d689ff844b4ce37794d79a7ff1c&address=",
     ],
     unit: "BNT",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/BNT.svg",
     node: [
@@ -1416,16 +1446,15 @@ const coins = {
   coinfi: {
     coin: "coinfi",
     name: "CoinFi",
+    uri: ["coinfi", "cofi"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0x3136ef851592acf49ca4c825131e364170fa32b3&address=",
     ],
     unit: "COFI",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/COFI.svg",
     node: [
@@ -1444,16 +1473,15 @@ const coins = {
   dai: {
     coin: "dai",
     name: "Dai",
+    uri: ["dai"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359&address=",
     ],
     unit: "DAI",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/DAI.svg",
     node: [
@@ -1472,16 +1500,15 @@ const coins = {
   digixgoldtoken: {
     coin: "digixgoldtoken",
     name: "Digix Gold",
+    uri: ["digixgoldtoken", "dgx"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0x4f3afec4e5a3f2a6a1a411def7d7dfe50ee057bf&address=",
     ],
     unit: "DGX",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/DGX.svg",
     node: [
@@ -1500,16 +1527,15 @@ const coins = {
   electrify: {
     coin: "electrify",
     name: "Electrify",
+    uri: ["electrify.asia", "electrify", "elec"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0xd49ff13661451313ca1553fd6954bd1d9b6e02b9&address=",
     ],
     unit: "ELEC",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/ELEC.svg",
     node: [
@@ -1528,16 +1554,15 @@ const coins = {
   aelf: {
     coin: "aelf",
     name: "Aelf",
+    uri: ["aelf", "elf"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0xbf2179859fc6D5BEE9Bf9158632Dc51678a4100e&address=",
     ],
     unit: "ELF",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/ELF.svg",
     node: [
@@ -1556,16 +1581,15 @@ const coins = {
   enjincoin: {
     coin: "enjincoin",
     name: "EnjinCoin",
+    uri: ["enjincoin", "enj"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0xf629cbd94d3791c9250152bd8dfbdf380e2a3b9c&address=",
     ],
     unit: "ENJ",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/ENJ.svg",
     node: [
@@ -1584,16 +1608,15 @@ const coins = {
   storj: {
     coin: "storj",
     name: "Storj",
+    uri: ["storj"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0xb64ef51c888972c908cfacf59b47c1afbc0ab8ac&address=",
     ],
     unit: "STORJ",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/STORJ.svg",
     node: [
@@ -1612,16 +1635,15 @@ const coins = {
   iost: {
     coin: "iost",
     name: "IOST",
+    uri: ["iost"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0xfa1a856cfa3409cfa145fa4e20eb270df3eb21ab&address=",
     ],
     unit: "IOST",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/IOST.svg",
     node: [
@@ -1640,16 +1662,15 @@ const coins = {
   dent: {
     coin: "dent",
     name: "DENT",
+    uri: ["dent"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0x3597bfd533a99c9aa083587b074434e61eb0a258&address=",
     ],
     unit: "DENT",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/DENT.svg",
     node: [
@@ -1668,16 +1689,15 @@ const coins = {
   ethlend: {
     coin: "ethlend",
     name: "ETHLend",
+    uri: ["ethlend", "lend"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0x80fB784B7eD66730e8b1DBd9820aFD29931aab03&address=",
     ],
     unit: "LEND",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/LEND.svg",
     node: [
@@ -1696,16 +1716,15 @@ const coins = {
   chainlink: {
     coin: "chainlink",
     name: "ChainLink",
+    uri: ["chainlink", "link"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0x514910771af9ca656af840dff83e8264ecf986ca&address=",
     ],
     unit: "LINK",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/LINK.svg",
     node: [
@@ -1724,16 +1743,15 @@ const coins = {
   decentraland: {
     coin: "decentraland",
     name: "Decentraland",
+    uri: ["decentraland", "mana"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0x0f5d2fb29fb7d3cfee444a200298f468908cc942&address=",
     ],
     unit: "MANA",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/MANA.svg",
     node: [
@@ -1752,16 +1770,15 @@ const coins = {
   loopring: {
     coin: "loopring",
     name: "Loopring",
+    uri: ["loopring", "lrc"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0xEF68e7C694F40c8202821eDF525dE3782458639f&address=",
     ],
     unit: "LRC",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/LRC.svg",
     node: [
@@ -1780,16 +1797,15 @@ const coins = {
   qash: {
     coin: "qash",
     name: "QASH",
+    uri: ["qash"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0x618e75ac90b12c6049ba3b27f5d5f8651b0037f6&address=",
     ],
     unit: "QASH",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/QASH.svg",
     node: [
@@ -1808,16 +1824,15 @@ const coins = {
   iconomi: {
     coin: "iconomi",
     name: "Iconomi",
+    uri: ["iconomi", "icn"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0x888666CA69E0f178DED6D75b5726Cee99A87D698&address=",
     ],
     unit: "ICN",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/ICN.svg",
     node: [
@@ -1836,16 +1851,15 @@ const coins = {
   mco: {
     coin: "mco",
     name: "MCO",
+    uri: ["monaco", "mco"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0xb63b606ac810a52cca15e44bb630fd42d8d1d83d&address=",
     ],
     unit: "MCO",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/MCO.svg",
     node: [
@@ -1864,16 +1878,15 @@ const coins = {
   poet: {
     coin: "poet",
     name: "po.et",
+    uri: ["po.et", "poet", "poe"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0x0e0989b1f9b8a38983c2ba8053269ca62ec9b195&address=",
     ],
     unit: "POE",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/POE.svg",
     node: [
@@ -1892,16 +1905,15 @@ const coins = {
   polymath: {
     coin: "polymath",
     name: "Polymath",
+    uri: ["polymath", "poly"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0x9992ec3cf6a55b00978cddf2b27bc6882d88d1ec&address=",
     ],
     unit: "POLY",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/POLY.svg",
     node: [
@@ -1920,16 +1932,15 @@ const coins = {
   powerledger: {
     coin: "powerledger",
     name: "Power Ledger",
+    uri: ["powerledger", "powr"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0x595832f8fc6bf59c85c527fec3740a1b7a361269&address=",
     ],
     unit: "POWR",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/POWR.svg",
     node: [
@@ -1948,16 +1959,15 @@ const coins = {
   ripiocredit: {
     coin: "ripiocredit",
     name: "Ripio Credit",
+    uri: ["ripiocreditnetwork", "ripiocredit", "rcn"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0xf970b8e36e23f7fc3fd752eea86f8be8d83375a6&address=",
     ],
     unit: "RCN",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/RCN.svg",
     node: [
@@ -1976,16 +1986,15 @@ const coins = {
   raidentoken: {
     coin: "raidentoken",
     name: "Raiden Token",
+    uri: ["raidentoken", "rdn"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0x255aa6df07540cb5d3d297f0d0d4d84cb52bc8e6&address=",
     ],
     unit: "RDN",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/RDN.svg",
     node: [
@@ -2004,16 +2013,15 @@ const coins = {
   requestnetwork: {
     coin: "requestnetwork",
     name: "Request Network",
+    uri: ["requestnetwork", "req"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0x8f8221afbb33998d8584a2b05749ba73c37a938a&address=",
     ],
     unit: "REQ",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/REQ.svg",
     node: [
@@ -2032,16 +2040,15 @@ const coins = {
   status: {
     coin: "status",
     name: "Status",
+    uri: ["status", "snt"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0x744d70fdbe2ba4cf95131626614a1763df805b9e&address=",
     ],
     unit: "SNT",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/SNT.svg",
     node: [
@@ -2060,16 +2067,15 @@ const coins = {
   salt: {
     coin: "salt",
     name: "SALT",
+    uri: ["salt"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0x4156D3342D5c385a87D264F90653733592000581&address=",
     ],
     unit: "SALT",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/SALT.svg",
     node: [
@@ -2088,16 +2094,15 @@ const coins = {
   storm: {
     coin: "storm",
     name: "STORM",
+    uri: ["storm"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0xd0a4b8946cb52f0661273bfbc6fd0e0c75fc6433&address=",
     ],
     unit: "STORM",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/STORM.svg",
     node: [
@@ -2116,16 +2121,15 @@ const coins = {
   eidoo: {
     coin: "eidoo",
     name: "Eidoo",
+    uri: ["eidoo", "edo"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0xced4e93198734ddaff8492d525bd258d49eb388e&address=",
     ],
     unit: "EDO",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/EDO.svg",
     node: [
@@ -2144,16 +2148,15 @@ const coins = {
   trueusd: {
     coin: "trueusd",
     name: "TrueUSD",
+    uri: ["trueusd", "tusd"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
-      "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0x0000000000085d4780B73119b644AE5ecd22b376&address=",
+      "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0x0000000000085d4780b73119b644ae5ecd22b376&address=",
     ],
     unit: "TUSD",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/TUSD.svg",
     node: [
@@ -2165,29 +2168,28 @@ const coins = {
       normal: 15,
       fast: 20,
     },
-    contractAddress: "0x0000000000085d4780B73119b644AE5ecd22b376",
+    contractAddress: "0x0000000000085d4780b73119b644ae5ecd22b376",
     color: "#56cabd",
     decimals: 18,
   },
   dentacoin: {
     coin: "dentacoin",
     name: "Dentacoin",
+    uri: ["dentacoin", "dcn"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0x08d32b0da63e2C3bcF8019c9c5d849d7a9d791e6&address=",
     ],
     unit: "DCN",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/DCN.svg",
     node: [
       "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
     ],
-    fee: 63000,
+    fee: 150000,
     feepolicy: {
       economy: 10,
       normal: 15,
@@ -2200,16 +2202,15 @@ const coins = {
   wax: {
     coin: "wax",
     name: "WAX",
+    uri: ["wax"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0x39Bb259F66E1C59d5ABEF88375979b4D20D98022&address=",
     ],
     unit: "WAX",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/WAX.svg",
     node: [
@@ -2228,16 +2229,15 @@ const coins = {
   wings: {
     coin: "wings",
     name: "Wings",
+    uri: ["wings"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0x667088b212ce3d06a1b553a7221E1fD19000d9aF&address=",
     ],
     unit: "WINGS",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/WINGS.svg",
     node: [
@@ -2256,16 +2256,15 @@ const coins = {
   data: {
     coin: "data",
     name: "Data",
+    uri: ["data"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0x69b148395ce0015c13e36bffbad63f49ef874e03&address=",
     ],
     unit: "DTA",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/DTA.svg",
     node: [
@@ -2284,16 +2283,15 @@ const coins = {
   funfair: {
     coin: "funfair",
     name: "FunFair",
+    uri: ["funfair", "fun"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0x419d0d8bdd9af5e606ae2232ed285aff190e711b&address=",
     ],
     unit: "FUN",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/FUN.svg",
     node: [
@@ -2312,16 +2310,15 @@ const coins = {
   kin: {
     coin: "kin",
     name: "KIN",
+    uri: ["kin"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0x818fc6c2ec5986bc6e2cbf00939d90556ab12ce5&address=",
     ],
     unit: "KIN",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/KIN.svg",
     node: [
@@ -2340,6 +2337,7 @@ const coins = {
   zclassic: {
     coin: "zclassic",
     name: "Zclassic",
+    uri: ["zclassic", "zcl"],
     pubKeyHash: "1cb8",
     scriptHash: "1cbd",
     normalAddress: "t1",
@@ -2349,8 +2347,6 @@ const coins = {
     wif: "80",
     slip: 147,
     addresses: [],
-    fiatRates: [],
-    fiatRate: 0,
     api: [
       "https://explorer.zcl.zelcore.io/api/",
     ],
@@ -2362,7 +2358,7 @@ const coins = {
     testnetrpcport: 18023,
     type: "zcash",
     explorer: [
-      "https://explorer.zcl.zelcore.io",
+      "https://explorer.zcl.zelcore.io/tx/",
     ],
     logolink: "./img/assets/ZCL.svg",
     node: [
@@ -2379,16 +2375,15 @@ const coins = {
   sirin: {
     coin: "sirin",
     name: "Sirin",
+    uri: ["sirinlabstoken", "sirin", "srn"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0x68d57c9a1c35f63e2c83ee8e49a64e9d70528d25&address=",
     ],
     unit: "SRN",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/SRN.svg",
     node: [
@@ -2407,16 +2402,15 @@ const coins = {
   aurora: {
     coin: "aurora",
     name: "Aurora",
+    uri: ["aurora", "aoa"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0x9ab165d795019b6d8b3e971dda91071421305e5a&address=",
     ],
     unit: "AOA",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/AOA.svg",
     node: [
@@ -2435,16 +2429,15 @@ const coins = {
   theta: {
     coin: "theta",
     name: "Theta",
+    uri: ["theta"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0x3883f5e181fccaF8410FA61e12b59BAd963fb645&address=",
     ],
     unit: "THETA",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/THETA.svg",
     node: [
@@ -2463,6 +2456,7 @@ const coins = {
   dash: {
     coin: "dash",
     name: "Dash",
+    uri: ["dash"],
     pubKeyHash: "4C",
     scriptHash: "10",
     wif: "CC",
@@ -2472,8 +2466,6 @@ const coins = {
     scriptAddressB: "7",
     slip: 5,
     addresses: [],
-    fiatRates: [],
-    fiatRate: 0,
     api: [
       "https://explorer.dash.zelcore.io/api/",
     ],
@@ -2485,7 +2477,7 @@ const coins = {
     testnetrpcport: 19998,
     type: "btc",
     explorer: [
-      "https://explorer.dash.zelcore.io",
+      "https://explorer.dash.zelcore.io/tx/",
     ],
     logolink: "./img/assets/DASH.svg",
     node: [
@@ -2502,26 +2494,23 @@ const coins = {
   monero: {
     coin: "monero",
     name: "Monero",
+    uri: ["monero", "xmr"],
+    openAlias: "xmr",
     pubKeyHash: "4C",
     wif: "CC",
     normalAddress: "4",
     normalAddressB: "X",
     scriptAddress: "7",
     scriptAddressB: "7",
-    moneroConfig: {
-      coinUnitPlaces: 12,
-      coinSymbol: "XMR",
-      coinName: "Monero",
-      coinUriPrefix: "monero:",
-      addressPrefix: 18,
-    },
+    nettype: 0,
+    coinUnitPlaces: 12,
+    addressPrefix: 18,
     slip: 128,
     addresses: [],
-    fiatRates: [],
-    fiatRate: 0,
-    start_height: 0,
     api: [
       "https://backend.xmr.zelcore.io",
+      "https://backend2.xmr.zelcore.io",
+      "https://backend3.xmr.zelcore.io",
     ],
     pathunix: "monero",
     path: "Monero",
@@ -2531,7 +2520,7 @@ const coins = {
     testnetrpcport: 19998,
     type: "cryptonight",
     explorer: [
-      "https://explorer.xmr.zelcore.io",
+      "https://explorer.xmr.zelcore.io/tx/",
     ],
     logolink: "./img/assets/XMR.svg",
     node: [
@@ -2548,16 +2537,15 @@ const coins = {
   usdc: {
     coin: "usdc",
     name: "USD Coin",
+    uri: ["usdcoin", "usdc"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48&address=",
     ],
     unit: "USDC",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/USDC.svg",
     node: [
@@ -2576,16 +2564,15 @@ const coins = {
   gusd: {
     coin: "gusd",
     name: "Gemini Dollar",
+    uri: ["geminidollar", "gusd"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0x056Fd409E1d7A124BD7017459dFEa2F387b6d5Cd&address=",
     ],
     unit: "GUSD",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/GUSD.svg",
     node: [
@@ -2604,16 +2591,15 @@ const coins = {
   pax: {
     coin: "pax",
     name: "Paxos Standard",
+    uri: ["paxosstandard", "pax"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0x8e870d67f660d95d5be530380d0ec0bd388289e1&address=",
     ],
     unit: "PAX",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/PAX.svg",
     node: [
@@ -2632,21 +2618,24 @@ const coins = {
   etc: {
     coin: "etc",
     name: "Ethereum Classic",
+    uri: ["ethereumclassic", "etc"],
     slip: 61,
     addresses: [],
-    fiatRates: [],
-    fiatRate: 0,
     api: [
       "https://blockscout.com/etc/mainnet/api/?module=account&action=",
     ],
     unit: "ETC",
     type: "etc",
     explorer: [
-      "https://etherhub.io",
+      "https://blockscout.com/etc/mainnet/tx/",
     ],
     logolink: "./img/assets/ETC.svg",
     node: [
+      "https://etc-geth.0xinfra.com",
+      "https://etc-parity.0xinfra.com",
       "https://etc.guarda.co",
+      "https://ethereumclassic.network",
+      "https://web3.gastracker.io",
     ],
     fee: 35000,
     feepolicy: {
@@ -2661,16 +2650,15 @@ const coins = {
   coni: {
     coin: "coni",
     name: "Coni",
+    uri: ["coni"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0x2c949199cff14aeaf1b33d64db01f48fb57f592f&address=",
     ],
     unit: "CONI",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/CONI.svg",
     node: [
@@ -2689,16 +2677,15 @@ const coins = {
   tok: {
     coin: "tok",
     name: "Tokok",
+    uri: ["tokok", "tok"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0x9a49f02e128a8e989b443a8f94843c0918bf45e7&address=",
     ],
     unit: "TOK",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/TOK.svg",
     node: [
@@ -2717,6 +2704,7 @@ const coins = {
   genesis: {
     coin: "genesis",
     name: "Genesis",
+    uri: ["genesisnetwork", "genesis", "genx"],
     pubKeyHash: "1c",
     scriptHash: "3f",
     wif: "30",
@@ -2727,13 +2715,12 @@ const coins = {
     scriptAddressB: "S",
     slip: 19181,
     addresses: [],
-    fiatRates: [],
-    fiatRate: 0,
     api: [
       "explorer.genx.zelcore.io",
     ],
     proxy: [
-      "https://proxy.genx.zelcore.io/?server=127.0.0.1?call=",
+      "https://proxy.genx.zelcore.io/?server=127.0.0.1&port=50002&contype=tls&coin=genesis&call=",
+      "https://proxy.grs.zelcore.io/?server=explorer.genx.zelcore.io&port=50002&contype=tls&coin=genesis&call=",
     ],
     pathunix: "genesis",
     path: "Genesis",
@@ -2743,7 +2730,7 @@ const coins = {
     testnetrpcport: 17234,
     type: "electrum",
     explorer: [
-      "https://explorer.genx.zelcore.io",
+      "https://explorer.genx.zelcore.io/tx/",
     ],
     logolink: "./img/assets/GENX.svg",
     node: [
@@ -2760,16 +2747,15 @@ const coins = {
   por: {
     coin: "por",
     name: "Proof Of Review",
+    uri: ["proofofreview", "por"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0x08c507046e12cd1538741d067d28411f2b922062&address=",
     ],
     unit: "POR",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/POR.svg",
     node: [
@@ -2788,6 +2774,7 @@ const coins = {
   bzedge: {
     coin: "bzedge",
     name: "BZEdge",
+    uri: ["bzedge", "bze"],
     pubKeyHash: "1cb8",
     scriptHash: "1cbd",
     normalAddress: "t1",
@@ -2797,8 +2784,6 @@ const coins = {
     wif: "80",
     slip: 19175,
     addresses: [],
-    fiatRates: [],
-    fiatRate: 0,
     api: [
       "https://explorer.bze.zelcore.io/api/",
     ],
@@ -2810,7 +2795,7 @@ const coins = {
     testnetrpcport: 11980,
     type: "zcash",
     explorer: [
-      "https://explorer.bze.zelcore.io",
+      "https://explorer.bze.zelcore.io/tx/",
     ],
     logolink: "./img/assets/BZE.svg",
     node: [
@@ -2827,6 +2812,7 @@ const coins = {
   bithereum: {
     coin: "bithereum",
     name: "Bithereum",
+    uri: ["bithereum", "bth"],
     pubKeyHash: "19",
     scriptHash: "28",
     wif: "80",
@@ -2837,15 +2823,14 @@ const coins = {
     scriptAddressB: "H",
     slip: 19183,
     addresses: [],
-    fiatRates: [],
-    fiatRate: 0,
     port: 50002,
     contype: "tls",
     api: [
       "explorer.bth.zelcore.io",
     ],
     proxy: [
-      "https://proxy.bth.zelcore.io/?server=127.0.0.1?call=",
+      "https://proxy.bth.zelcore.io/?server=127.0.0.1&port=50002&contype=tls&coin=bithereum&call=",
+      "https://proxy.genx.zelcore.io/?server=explorer.bth.zelcore.io&port=50002&contype=tls&coin=bithereum&call=",
     ],
     pathunix: "bithereum",
     path: "Bithereum",
@@ -2855,7 +2840,7 @@ const coins = {
     testnetrpcport: 19554,
     type: "electrum",
     explorer: [
-      "https://explorer.bth.zelcore.io",
+      "https://explorer.bth.zelcore.io/tx/",
     ],
     logolink: "./img/assets/BTH.svg",
     node: [
@@ -2872,16 +2857,15 @@ const coins = {
   adt: {
     coin: "adt",
     name: "AdToken",
+    uri: ["adtoken", "adt"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0xd0d6d6c5fe4a677d343cc433536bb717bae167dd&address=",
     ],
     unit: "ADT",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/ADT.svg",
     node: [
@@ -2900,16 +2884,15 @@ const coins = {
   mft: {
     coin: "mft",
     name: "Mainframe Token",
+    uri: ["mainframe", "mainframetoken", "mft"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0xdf2c7238198ad8b389666574f2d8bc411a4b7428&address=",
     ],
     unit: "MFT",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/MFT.svg",
     node: [
@@ -2928,16 +2911,15 @@ const coins = {
   atl: {
     coin: "atl",
     name: "ATLANT",
+    uri: ["atlant", "atl"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0x78b7fada55a64dd895d8c8c35779dd8b67fa8a05&address=",
     ],
     unit: "ATL",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/ATL.svg",
     node: [
@@ -2956,16 +2938,15 @@ const coins = {
   ant: {
     coin: "ant",
     name: "Aragon",
+    uri: ["aragon", "ant"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0x960b236A07cf122663c4303350609A66A7B288C0&address=",
     ],
     unit: "ANT",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/ANT.svg",
     node: [
@@ -2984,16 +2965,15 @@ const coins = {
   arn: {
     coin: "arn",
     name: "Aeron",
+    uri: ["aeron", "arn"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0xBA5F11b16B155792Cf3B2E6880E8706859A8AEB6&address=",
     ],
     unit: "ARN",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/ARN.svg",
     node: [
@@ -3012,16 +2992,15 @@ const coins = {
   brd: {
     coin: "brd",
     name: "Bread",
+    uri: ["bread", "breadtoken", "brd"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0x558ec3152e2eb2174905cd19aea4e34a23de9ad6&address=",
     ],
     unit: "BRD",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/BRD.svg",
     node: [
@@ -3040,16 +3019,15 @@ const coins = {
   rep: {
     coin: "rep",
     name: "Augur",
+    uri: ["augur", "rep"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0x1985365e9f78359a9B6AD760e32412f4a445E862&address=",
     ],
     unit: "REP",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/REP.svg",
     node: [
@@ -3068,16 +3046,15 @@ const coins = {
   qkc: {
     coin: "qkc",
     name: "QuarkChain Token",
+    uri: ["quarkchaintoken", "quarkchain", "qkc", "quark"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0xea26c4ac16d4a5a106820bc8aee85fd0b7b2b664&address=",
     ],
     unit: "QKC",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/QKC.svg",
     node: [
@@ -3096,16 +3073,15 @@ const coins = {
   loom: {
     coin: "loom",
     name: "LOOM",
+    uri: ["loomnetwork", "loom"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0xa4e8c3ec456107ea67d3075bf9e3df3a75823db0&address=",
     ],
     unit: "LOOM",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/LOOM.svg",
     node: [
@@ -3124,16 +3100,15 @@ const coins = {
   eurs: {
     coin: "eurs",
     name: "STASIS EURS",
+    uri: ["stasiseurs", "eurs", "stasis"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0xdb25f211ab05b1c97d595516f45794528a807ad8&address=",
     ],
     unit: "EURS",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/EURS.svg",
     node: [
@@ -3152,6 +3127,7 @@ const coins = {
   commercium: {
     coin: "commercium",
     name: "Commercium",
+    uri: ["commercium", "cmm"],
     pubKeyHash: "1c",
     scriptHash: "33",
     normalAddress: "C",
@@ -3161,8 +3137,6 @@ const coins = {
     wif: "8c",
     slip: 19177,
     addresses: [],
-    fiatRates: [],
-    fiatRate: 0,
     api: [
       "https://explorer.cmm.zelcore.io/api/",
     ],
@@ -3174,7 +3148,7 @@ const coins = {
     testnetrpcport: 22020,
     type: "zcash",
     explorer: [
-      "https://explorer.cmm.zelcore.io",
+      "https://explorer.cmm.zelcore.io/tx/",
     ],
     logolink: "./img/assets/CMM.svg",
     node: [
@@ -3191,6 +3165,7 @@ const coins = {
   groestlcoin: {
     coin: "groestlcoin",
     name: "Groestlcoin",
+    uri: ["groestlcoin", "grs"],
     pubKeyHash: "24",
     scriptHash: "05",
     wif: "80",
@@ -3201,13 +3176,12 @@ const coins = {
     scriptAddressB: "3",
     slip: 17,
     addresses: [],
-    fiatRates: [],
-    fiatRate: 0,
     api: [
       "explorer.grs.zelcore.io",
     ],
     proxy: [
-      "https://proxy.grs.zelcore.io/?server=127.0.0.1?call=",
+      "https://proxy.grs.zelcore.io/?server=127.0.0.1&port=56002&contype=tls&coin=groestlcoin&call=",
+      "https://proxy.bth.zelcore.io/?server=explorer.grs.zelcore.io&port=56002&contype=tls&coin=groestlcoin&call=",
     ],
     pathunix: "groestlcoin",
     path: "Groestlcoin",
@@ -3217,7 +3191,7 @@ const coins = {
     testnetrpcport: 17766,
     type: "electrum",
     explorer: [
-      "https://explorer.grs.zelcore.io",
+      "https://explorer.grs.zelcore.io/tx/",
     ],
     logolink: "./img/assets/GRS.svg",
     node: [
@@ -3234,16 +3208,15 @@ const coins = {
   gunthy: {
     coin: "gunthy",
     name: "GUNTHY",
+    uri: ["gunthy"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0x3684b581db1f94b721ee0022624329feb16ab653&address=",
     ],
     unit: "GUNTHY",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/GUNTHY.svg",
     node: [
@@ -3262,16 +3235,15 @@ const coins = {
   metal: {
     coin: "metal",
     name: "Metal",
+    uri: ["metal", "mtl"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0xF433089366899D83a9f26A773D59ec7eCF30355e&address=",
     ],
     unit: "MTL",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/MTL.svg",
     node: [
@@ -3290,16 +3262,15 @@ const coins = {
   ethos: {
     coin: "ethos",
     name: "EthOS",
+    uri: ["ethos"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0x5af2be193a6abca9c8817001f45744777db30756&address=",
     ],
     unit: "ETHOS",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/ETHOS.svg",
     node: [
@@ -3318,16 +3289,15 @@ const coins = {
   singularitynet: {
     coin: "singularitynet",
     name: "SingularityNET",
+    uri: ["singularitynet", "agi"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0x8eb24319393716668d768dcec29356ae9cffe285&address=",
     ],
     unit: "AGI",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/AGI.svg",
     node: [
@@ -3346,16 +3316,15 @@ const coins = {
   ambrosus: {
     coin: "ambrosus",
     name: "Ambrosus",
+    uri: ["ambrosus", "amb"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0x4dc3643dbc642b72c158e7f3d2ff232df61cb6ce&address=",
     ],
     unit: "AMB",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/AMB.svg",
     node: [
@@ -3374,16 +3343,15 @@ const coins = {
   blockmasoncreditprotocol: {
     coin: "blockmasoncreditprotocol",
     name: "BlockMason Credit Protocol",
+    uri: ["blockmasoncreditprotocol", "bcpt"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0x1c4481750daa5ff521a2a7490d9981ed46465dbd&address=",
     ],
     unit: "BCPT",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/BCPT.svg",
     node: [
@@ -3402,16 +3370,15 @@ const coins = {
   blox: {
     coin: "blox",
     name: "Blox",
+    uri: ["blox", "cdt"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0x177d39ac676ed1c67a2b268ad7f1e58826e5b0af&address=",
     ],
     unit: "CDT",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/CDT.svg",
     node: [
@@ -3430,16 +3397,15 @@ const coins = {
   celertoken: {
     coin: "celertoken",
     name: "CelerToken",
+    uri: ["celertoken", "celer", "celr"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0x4f9254c83eb525f9fcf346490bbb3ed28a81c667&address=",
     ],
     unit: "CELR",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/CELR.svg",
     node: [
@@ -3458,16 +3424,15 @@ const coins = {
   cindicator: {
     coin: "cindicator",
     name: "Cindicator",
+    uri: ["cindicator", "cnd"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0xd4c435f5b09f855c3317c8524cb1f586e42795fa&address=",
     ],
     unit: "CND",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/CND.svg",
     node: [
@@ -3486,16 +3451,15 @@ const coins = {
   streamrdatacoin: {
     coin: "streamrdatacoin",
     name: "Streamr DATAcoin",
+    uri: ["streamrdatacoin", "streamr", "datacoin"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0x0cf0ee63788a0849fe5297f3407f701e122cc023&address=",
     ],
     unit: "DATA",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/DATA.svg",
     node: [
@@ -3514,16 +3478,15 @@ const coins = {
   agrello: {
     coin: "agrello",
     name: "Agrello",
+    uri: ["agrello", "dlt"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0x07e3c70653548B04f0A75970C1F81B4CBbFB606f&address=",
     ],
     unit: "DLT",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/DLT.svg",
     node: [
@@ -3542,16 +3505,15 @@ const coins = {
   dock: {
     coin: "dock",
     name: "Dock",
+    uri: ["dock"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0xe5dada80aa6477e85d09747f2842f7993d0df71c&address=",
     ],
     unit: "DOCK",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/DOCK.svg",
     node: [
@@ -3570,16 +3532,15 @@ const coins = {
   everex: {
     coin: "everex",
     name: "Everex",
+    uri: ["everex", "evx"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0xf3db5fa2c66b7af3eb0c0b782510816cbe4813b8&address=",
     ],
     unit: "EVX",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/EVX.svg",
     node: [
@@ -3598,16 +3559,15 @@ const coins = {
   gifto: {
     coin: "gifto",
     name: "Gifto",
+    uri: ["gifto", "gto"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0xc5bbae50781be1669306b9e001eff57a2957b09d&address=",
     ],
     unit: "GTO",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/GTO.svg",
     node: [
@@ -3626,16 +3586,15 @@ const coins = {
   genesisvision: {
     coin: "genesisvision",
     name: "Genesis Vision",
+    uri: ["genesisvision", "gvt"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0x103c3a209da59d3e7c4a89307e66521e081cfdf0&address=",
     ],
     unit: "GVT",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/GVT.svg",
     node: [
@@ -3654,16 +3613,15 @@ const coins = {
   holotoken: {
     coin: "holotoken",
     name: "HoloToken",
+    uri: ["holo", "holotoken", "hot"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0x6c6ee5e31d828de241282b9606c8e98ea48526e2&address=",
     ],
     unit: "HOT",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/HOT.svg",
     node: [
@@ -3682,16 +3640,15 @@ const coins = {
   insolar: {
     coin: "insolar",
     name: "Insolar",
+    uri: ["insolar", "ins"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0x5b2e4a700dfbc560061e957edec8f6eeeb74a320&address=",
     ],
     unit: "INS",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/INS.svg",
     node: [
@@ -3710,16 +3667,15 @@ const coins = {
   iotex: {
     coin: "iotex",
     name: "IoTeX",
+    uri: ["iotex", "iotx"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0x6fb3e0a217407efff7ca062d46c26e5d60a14d69&address=",
     ],
     unit: "IOTX",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/IOTX.svg",
     node: [
@@ -3738,16 +3694,15 @@ const coins = {
   selfkey: {
     coin: "selfkey",
     name: "SelfKey",
+    uri: ["selfkey", "key"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0x4cc19356f2d37338b9802aa8e8fc58b0373296e7&address=",
     ],
     unit: "KEY",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/KEY.svg",
     node: [
@@ -3766,16 +3721,15 @@ const coins = {
   lunyr: {
     coin: "lunyr",
     name: "Lunyr",
+    uri: ["lunyr", "lun"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0xfa05A73FfE78ef8f1a739473e462c54bae6567D9&address=",
     ],
     unit: "LUN",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/LUN.svg",
     node: [
@@ -3794,16 +3748,15 @@ const coins = {
   monetha: {
     coin: "monetha",
     name: "Monetha",
+    uri: ["monetha", "mth"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0xaf4dce16da2877f8c9e00544c93b62ac40631f16&address=",
     ],
     unit: "MTH",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/MTH.svg",
     node: [
@@ -3822,16 +3775,15 @@ const coins = {
   oax: {
     coin: "oax",
     name: "oax",
+    uri: ["oax"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0x701c244b988a513c945973defa05de933b23fe1d&address=",
     ],
     unit: "OAX",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/OAX.svg",
     node: [
@@ -3850,16 +3802,15 @@ const coins = {
   ost: {
     coin: "ost",
     name: "OST",
+    uri: ["ost"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0x8eb24319393716668d768dcec29356ae9cffe285&address=",
     ],
     unit: "OST",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/OST.svg",
     node: [
@@ -3878,16 +3829,15 @@ const coins = {
   populous: {
     coin: "populous",
     name: "Populous",
+    uri: ["populous", "ppt"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0xd4fa1460f537bb9085d22c7bccb5dd450ef28e3a&address=",
     ],
     unit: "PPT",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/PPT.svg",
     node: [
@@ -3906,16 +3856,15 @@ const coins = {
   quantstamp: {
     coin: "quantstamp",
     name: "Quantstamp",
+    uri: ["quantstamp", "qsp"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0x99ea4db9ee77acd40b119bd1dc4e33e1c070b80d&address=",
     ],
     unit: "QSP",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/QSP.svg",
     node: [
@@ -3934,16 +3883,15 @@ const coins = {
   ren: {
     coin: "ren",
     name: "Ren",
+    uri: ["ren"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0x408e41876cccdc0f92210600ef50372656052a38&address=",
     ],
     unit: "REN",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/REN.svg",
     node: [
@@ -3962,16 +3910,15 @@ const coins = {
   iexecrlc: {
     coin: "iexecrlc",
     name: "iExec RLC",
+    uri: ["iexecrlc", "rlc"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0x607F4C5BB672230e8672085532f7e901544a7375&address=",
     ],
     unit: "RLC",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/RLC.svg",
     node: [
@@ -3990,16 +3937,15 @@ const coins = {
   singulardtv: {
     coin: "singulardtv",
     name: "SingularDTV",
+    uri: ["singulardtv", "sngls"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0xaec2e87e0a235266d9c5adc9deb4b2e29b54d009&address=",
     ],
     unit: "SNGLS",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/SNGLS.svg",
     node: [
@@ -4018,16 +3964,15 @@ const coins = {
   tierion: {
     coin: "tierion",
     name: "Tierion",
+    uri: ["tierion", "tnt"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0x08f5a9235b08173b7569f83645d2c7fb55e8ccd8&address=",
     ],
     unit: "TNT",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/TNT.svg",
     node: [
@@ -4046,16 +3991,15 @@ const coins = {
   viberate: {
     coin: "viberate",
     name: "Viberate",
+    uri: ["viberate", "vib"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0x2c974b2d0ba1716e644c1fc59982a89ddd2ff724&address=",
     ],
     unit: "VIB",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/VIB.svg",
     node: [
@@ -4074,16 +4018,15 @@ const coins = {
   vibe: {
     coin: "vibe",
     name: "VIBE",
+    uri: ["vibe"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0xe8ff5c9c75deb346acac493c463c8950be03dfba&address=",
     ],
     unit: "VIBE",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/VIBE.svg",
     node: [
@@ -4102,16 +4045,15 @@ const coins = {
   tael: {
     coin: "tael",
     name: "Tael",
+    uri: ["tael", "wabi"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0x286bda1413a2df81731d4930ce2f862a35a609fe&address=",
     ],
     unit: "WABI",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/WABI.svg",
     node: [
@@ -4130,16 +4072,15 @@ const coins = {
   wepower: {
     coin: "wepower",
     name: "WePower",
+    uri: ["wepower", "wpr"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0x4CF488387F035FF08c371515562CBa712f9015d4&address=",
     ],
     unit: "WPR",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/WPR.svg",
     node: [
@@ -4158,16 +4099,15 @@ const coins = {
   dibicoin: {
     coin: "dibicoin",
     name: "Dibicoin",
+    uri: ["dibicoin", "dibi"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0xf39e4b22050334aaf04259d30d73e78bfee8ab58&address=",
     ],
     unit: "DIBI",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/DIBI.svg",
     node: [
@@ -4180,12 +4120,13 @@ const coins = {
       fast: 20,
     },
     contractAddress: "0xf39e4b22050334aaf04259d30d73e78bfee8ab58",
-    color: "#e67e22",
+    color: "#183c87",
     decimals: 3,
   },
   bitcoinzero: {
     coin: "bitcoinzero",
     name: "Bitcoin Zero",
+    uri: ["bitcoinzero", "bzx"],
     pubKeyHash: "4b",
     scriptHash: "22",
     wif: "d2",
@@ -4196,13 +4137,14 @@ const coins = {
     scriptAddressB: "F",
     slip: 284,
     addresses: [],
-    fiatRates: [],
-    fiatRate: 0,
     api: [
       "explorer.bzx.zelcore.io",
     ],
     proxy: [
-      "https://proxy.bzx.zelcore.io/?server=127.0.0.1?call=",
+      "https://proxy.bzx.zelcore.io/?server=127.0.0.1&port=55002&contype=tls&coin=bitcoinzero&call=",
+      "https://proxy.grs.zelcore.io/?server=explorer.bzx.zelcore.io&port=55002&contype=tls&coin=bitcoinzero&call=",
+      "https://proxy.genx.zelcore.io/?server=explorer.bzx.zelcore.io&port=55002&contype=tls&coin=bitcoinzero&call=",
+      "https://proxy.bth.zelcore.io/?server=explorer.bzx.zelcore.io&port=55002&contype=tls&coin=bitcoinzero&call=",
     ],
     pathunix: "bitcoinzero",
     path: "Bitcoinzero",
@@ -4212,7 +4154,7 @@ const coins = {
     testnetrpcport: 29201,
     type: "electrum",
     explorer: [
-      "https://explorer.bzx.zelcore.io",
+      "https://explorer.bzx.zelcore.io/tx/",
     ],
     logolink: "./img/assets/BZX.svg",
     node: [
@@ -4228,17 +4170,16 @@ const coins = {
   },
   etherparty: {
     coin: "etherparty",
-    name: "Fuel Token",
+    name: "Etherparty",
+    uri: ["etherparty", "fueltoken", "fuel"],
     addresses: [],
-    fiatRate: 0,
-    fiatRates: [],
     api: [
       "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0xea38eaa3c86c8f9b751533ba2e562deb9acded40&address=",
     ],
     unit: "FUEL",
     type: "eth",
     explorer: [
-      "https://etherscan.io",
+      "https://etherscan.io/tx/",
     ],
     logolink: "./img/assets/FUEL.svg",
     node: [
@@ -4251,16 +4192,15 @@ const coins = {
       fast: 20,
     },
     contractAddress: "0xea38eaa3c86c8f9b751533ba2e562deb9acded40",
-    color: "#e67e22",
+    color: "#3d4c7c",
     decimals: 18,
   },
-  bnbBinance: {
-    coin: "bnbBinance",
-    name: "Binance Chain",
+  bnbbinance: {
+    coin: "bnbbinance",
+    name: "BNB",
+    uri: ["binancecoin", "binancechain", "binance", "bnbbinance", "binancebnb", "bnb"],
     slip: 714,
     addresses: [],
-    fiatRates: [],
-    fiatRate: 0,
     api: [
       "https://dex.binance.org/",
       "https://dex-european.binance.org/",
@@ -4270,7 +4210,7 @@ const coins = {
     unit: "BNB",
     type: "bnb",
     explorer: [
-      "https://explorer.binance.org",
+      "https://explorer.binance.org/tx/",
     ],
     logolink: "./img/assets/BNB.svg",
     node: [
@@ -4282,37 +4222,878 @@ const coins = {
       normal: 1,
       fast: 2,
     },
-    color: "#b0b0b0",
+    color: "#f3ba2f",
     decimals: 8,
   },
-  /* bnbBitcoin: {
-    coin: "bnbBitcoin",
-    name: "Bitcoin BNB",
+  ripple: {
+    coin: "ripple",
+    name: "XRP",
+    uri: [
+      "ripple",
+      "xrp",
+    ],
+    // pubKeyHash: "3c",
+    // scriptHash: "7a",
+    // normalAddress: "R",
+    // normalAddressB: "R",
+    // scriptAddress: "r",
+    // scriptAddressB: "r",
+    // wif: "80",
+    slip: 144,
     addresses: [],
-    fiatRates: [],
+    api: [
+      "https://data.ripple.com/v2/accounts/",
+    ],
+    pathunix: "ripple",
+    path: "Ripple",
+    unit: "XRP",
+    config: "ripple",
+    rpcport: 5005,
+    type: "ripple",
+    explorer: [
+      "https://xrpscan.com/tx/",
+    ],
+    logolink: "./img/assets/XRP.svg",
+    node: [
+      "wss://s1.ripple.com",
+    ],
+    fee: 0.00002,
+    feepolicy: {
+      economy: 1,
+      normal: 5,
+      fast: 10,
+    },
+    color: "#0a93eb",
+  },
+  // xcash: {
+  //   coin: "xcash",
+  //   name: "X-CASH",
+  //   uri: [
+  //     "xcash",
+  //     "x-cash",
+  //   ],
+  //   openAlias: "xca",
+  //   pubKeyHash: "4C",
+  //   wif: "CC",
+  //   normalAddress: "4",
+  //   normalAddressB: "X",
+  //   scriptAddress: "7",
+  //   scriptAddressB: "7",
+  //   nettype: 10,
+  //   coinUnitPlaces: 6,
+  //   addressPrefix: 0x5c134,
+  //   slip: 128,
+  //   addresses: [],
+  //   api: [
+  //     "https://backend.xcash.zelcore.io",
+  //   ],
+  //   pathunix: "xcash",
+  //   path: "Xcash",
+  //   unit: "XCASH",
+  //   config: "xcash",
+  //   rpcport: 9998,
+  //   testnetrpcport: 19998,
+  //   type: "cryptonight",
+  //   explorer: [
+  //     "https://explorer.xcash.zelcore.io/tx/",
+  //   ],
+  //   logolink: "./img/assets/XCASH.svg",
+  //   node: [
+  //     "explorer.xcash.zelcore.io",
+  //   ],
+  //   fee: 0.00001,
+  //   feepolicy: {
+  //     economy: 1,
+  //     normal: 2,
+  //     fast: 3,
+  //   },
+  //   color: "#ff6600",
+  // },
+  axe: {
+    coin: "axe",
+    name: "Axe",
+    uri: [
+      "axe",
+      "axerunners",
+      "axecore",
+    ],
+    pubKeyHash: "37",
+    scriptHash: "10",
+    normalAddress: "P",
+    scriptAddress: "7",
+    normalAddressB: "P",
+    scriptAddressB: "7",
+    wif: "cc",
+    slip: 4242,
+    addresses: [],
+    api: [
+      "https://explorer.axe.zelcore.io/api/",
+      "https://insight.axecore.net/api/",
+    ],
+    pathunix: "axecore",
+    path: "AxeCore",
+    unit: "AXE",
+    config: "axe",
+    rpcport: 9337,
+    testnetrpcport: 19337,
+    type: "btc",
+    explorer: [
+      "https://explorer.axe.zelcore.io/tx/",
+      "https://insight.axecore.net/tx/",
+    ],
+    logolink: "./img/assets/AXE.svg",
+    node: [
+      "explorer.axe.zelcore.io",
+      "insight.axecore.net",
+    ],
+    fee: 0.0000226,
+    feepolicy: {
+      economy: 3,
+      normal: 5,
+      fast: 10,
+    },
+    color: "#00a0ea",
+  },
+  unussedleo: {
+    coin: "unussedleo",
+    name: "Unus Sed Leo",
+    uri: ["unussedleo", "leo"],
+    addresses: [],
+    api: [
+      "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0x2af5d2ad76741191d15dfe7bf6ac92d4bd912ca3&address=",
+    ],
+    unit: "LEO",
+    type: "eth",
+    explorer: [
+      "https://etherscan.io/tx/",
+    ],
+    logolink: "./img/assets/LEO.svg",
+    node: [
+      "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
+    ],
+    fee: 150000,
+    feepolicy: {
+      economy: 10,
+      normal: 15,
+      fast: 20,
+    },
+    contractAddress: "0x2af5d2ad76741191d15dfe7bf6ac92d4bd912ca3",
+    color: "#F5DB24",
+    decimals: 18,
+  },
+  beaxy: {
+    coin: "beaxy",
+    name: "Beaxy",
+    uri: ["beaxy", "beaxyexchangetoken", "beaxytoken", "beaxyexchange", "bxy"],
+    addresses: [],
+    api: [
+      "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0x827d53c8170af52625f414bde00326fc8a085e86&address=",
+    ],
+    unit: "BXY",
+    type: "eth",
+    explorer: [
+      "https://etherscan.io/tx/",
+    ],
+    logolink: "./img/assets/BXY.svg",
+    node: [
+      "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
+    ],
+    fee: 63000,
+    feepolicy: {
+      economy: 10,
+      normal: 15,
+      fast: 20,
+    },
+    contractAddress: "0x827d53c8170af52625f414bde00326fc8a085e86",
+    color: "#00acac",
+    decimals: 18,
+  },
+  stableusd: {
+    coin: "stableusd",
+    name: "StableUSD",
+    uri: ["stableusd", "stably", "usds"],
+    addresses: [],
+    api: [
+      "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0xa4bdb11dc0a2bec88d24a3aa1e6bb17201112ebe&address=",
+    ],
+    unit: "USDS",
+    type: "eth",
+    explorer: [
+      "https://etherscan.io/tx/",
+    ],
+    logolink: "./img/assets/USDS.svg",
+    node: [
+      "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
+    ],
+    fee: 150000,
+    feepolicy: {
+      economy: 10,
+      normal: 15,
+      fast: 20,
+    },
+    contractAddress: "0xa4bdb11dc0a2bec88d24a3aa1e6bb17201112ebe",
+    color: "#5c90e8",
+    decimals: 6,
+  },
+  nuke: {
+    coin: "nuke",
+    name: "Half Life",
+    uri: ["halflife", "nuke", "nuketoken"],
+    addresses: [],
+    api: [
+      "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0xc58c0Fca06908E66540102356f2E91edCaEB8D81&address=",
+    ],
+    unit: "NUKE",
+    type: "eth",
+    explorer: [
+      "https://etherscan.io/tx/",
+    ],
+    logolink: "./img/assets/NUKE.svg",
+    node: [
+      "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
+    ],
+    fee: 63000,
+    feepolicy: {
+      economy: 10,
+      normal: 15,
+      fast: 20,
+    },
+    contractAddress: "0xc58c0Fca06908E66540102356f2E91edCaEB8D81",
+    color: "#fb351f",
+    decimals: 18,
+  },
+  eos: {
+    coin: "eos",
+    name: "EOS",
+    uri: [
+      "eos",
+    ],
+    wif: "80",
+    slip: 194,
+    addresses: [],
+    chainID: "aca376f206b8fc25a6ed44dbdc66547c36c6c33e3a119ffbeaef943642f0e906",
+    api: [
+      "https://eos.greymass.com:443",
+    ],
+    pathunix: "eos",
+    path: "Eos",
+    unit: "EOS",
+    config: "eos",
+    rpcport: 8080,
+    type: "eos",
+    explorer: [
+      "https://eosflare.io/tx/",
+    ],
+    logolink: "./img/assets/EOS.svg",
+    node: [
+      "https://www.eosx.io/",
+      "https://eosflare.io/",
+    ],
+    fee: 0,
+    feepolicy: {
+      economy: 1,
+      normal: 2,
+      fast: 3,
+    },
+    color: "#443f54",
+  },
+  dogecoin: {
+    coin: "dogecoin",
+    name: "Dogecoin",
+    uri: ["dogecoin", "doge"],
+    pubKeyHash: "1e",
+    scriptHash: "16",
+    wif: "9e",
+    electrum: "dogecoin",
+    normalAddress: "D",
+    normalAddressB: "D",
+    scriptAddress: "9",
+    scriptAddressB: "A",
+    slip: 3,
+    addresses: [],
+    api: [
+      "explorer.doge.zelcore.io",
+    ],
+    proxy: [
+      "https://proxy.doge.zelcore.io/?server=127.0.0.1&port=55002&contype=tls&coin=dogecoin&call=",
+      "https://proxy.zel.network/?server=127.0.0.1&port=55002&contype=tls&coin=dogecoin&call=",
+    ],
+    pathunix: "dogecoin",
+    path: "Dogecoin",
+    unit: "DOGE",
+    config: "dogecoin",
+    rpcport: 22555,
+    testnetrpcport: 44555,
+    type: "electrum",
+    explorer: [
+      "https://explorer.doge.zelcore.io/tx/",
+    ],
+    logolink: "./img/assets/DOGE.svg",
+    node: [
+      "explorer.doge.zelcore.io",
+    ],
+    fee: 0,
+    feepolicy: {
+      economy: 5,
+      normal: 10,
+      fast: 20,
+    },
+    color: "#ba9f33",
+  },
+  digibyte: {
+    coin: "digibyte",
+    name: "DigiByte",
+    uri: ["digibyte", "dgb"],
+    pubKeyHash: "1e",
+    scriptHash: "3f",
+    wif: "80",
+    electrum: "digibyte",
+    normalAddress: "D",
+    normalAddressB: "D",
+    scriptAddress: "S",
+    scriptAddressB: "S",
+    slip: 20,
+    addresses: [],
+    api: [
+      "explorer.dgb.zelcore.io",
+    ],
+    proxy: [
+      "https://proxy.dgb.zelcore.io/?server=127.0.0.1&port=50002&contype=tls&coin=digibyte&call=",
+    ],
+    pathunix: "digibyte",
+    path: "DigiByte",
+    unit: "DGB",
+    config: "digibyte",
+    rpcport: 14022,
+    testnetrpcport: 14023,
+    type: "electrum",
+    explorer: [
+      "https://explorer.dgb.zelcore.io/tx/",
+    ],
+    logolink: "./img/assets/DGB.svg",
+    node: [
+      "explorer.dgb.zelcore.io",
+    ],
+    fee: 0.00001,
+    feepolicy: {
+      economy: 5,
+      normal: 10,
+      fast: 20,
+    },
+    color: "#002352",
+  },
+  sinovate: {
+    coin: "sinovate",
+    name: "SINOVATE",
+    uri: ["sinovate", "sin"],
+    pubKeyHash: "3f",
+    scriptHash: "05",
+    wif: "bf",
+    electrum: "sinovate",
+    normalAddress: "S",
+    normalAddressB: "S",
+    scriptAddress: "3",
+    scriptAddressB: "3",
+    slip: 20,
+    addresses: [],
+    api: [
+      "explorer.sin.zelcore.io",
+    ],
+    proxy: [
+      "https://proxy.sin.zelcore.io/?server=127.0.0.1&port=50002&contype=tls&coin=sinovate&call=",
+    ],
+    pathunix: "sin",
+    path: "SIN",
+    unit: "SIN",
+    config: "sin",
+    rpcport: 20971,
+    testnetrpcport: 20981,
+    type: "electrum",
+    explorer: [
+      "https://explorer.sin.zelcore.io/tx/",
+    ],
+    logolink: "./img/assets/SIN.svg",
+    node: [
+      "explorer.sin.zelcore.io",
+    ],
+    fee: 0.00001,
+    feepolicy: {
+      economy: 5,
+      normal: 10,
+      fast: 20,
+    },
+    color: "#ffffff",
+  },
+  neo: {
+    coin: "neo",
+    name: "NEO",
+    uri: ["neo"],
+    addresses: [],
+    api: [
+      "https://api.neoscan.io",
+    ],
+    unit: "NEO",
+    type: "neo",
+    contractScriptHash: "c56f33fc6ecfcd0c225c4ab356fee59390af8560be0e930faebe74a6daff7c9b",
+    explorer: [
+      "https://neoscan.io/transaction/",
+    ],
+    logolink: "./img/assets/NEO.svg",
+    node: [
+      "http://seed9.ngd.network:10332",
+      "https://seed0.cityofzion.io:443",
+      "http://rpc1.go.nspcc.ru:10332",
+      "http://seed1.red4sec.com:10332",
+      "http://seed1.aphelion-neo.com:10332",
+      "http://seed5.neo.org:10332",
+    ],
+    fee: 0,
+    feepolicy: {
+      economy: 0,
+      normal: 0,
+      fast: 0,
+    },
+    color: "#58bf00",
+    decimals: 18,
+  },
+  gas: {
+    coin: "gas",
+    name: "GAS",
+    uri: ["gas"],
+    addresses: [],
+    api: [
+      "https://api.neoscan.io",
+    ],
+    unit: "GAS",
+    type: "neo",
+    contractScriptHash: "602c79718b16e442de58778e148d0b1084e3b2dffd5de6b7b16cee7969282de7",
+    explorer: [
+      "https://neoscan.io/transaction/",
+    ],
+    logolink: "./img/assets/NEO.svg",
+    node: [
+      "http://seed9.ngd.network:10332",
+      "https://seed0.cityofzion.io:443",
+      "http://rpc1.go.nspcc.ru:10332",
+      "http://seed1.red4sec.com:10332",
+      "http://seed1.aphelion-neo.com:10332",
+      "http://seed5.neo.org:10332",
+    ],
+    fee: 0,
+    feepolicy: {
+      economy: 0,
+      normal: 0,
+      fast: 0,
+    },
+    color: "#58bf00",
+    decimals: 18,
+  },
+  neofish: {
+    coin: "neofish",
+    name: "NEOFISH",
+    uri: ["neoFish", "fish"],
+    addresses: [],
+    api: [
+      "https://api.neoscan.io",
+    ],
+    unit: "FISH",
+    type: "neo",
+    contractScriptHash: "833ff069a6f04488192bbfd9334699719c8c9c63",
+    explorer: [
+      "https://neoscan.io/transaction/",
+    ],
+    logolink: "./img/assets/NEO.svg",
+    node: [
+      "http://seed9.ngd.network:10332",
+      "https://seed0.cityofzion.io:443",
+      "http://rpc1.go.nspcc.ru:10332",
+      "http://seed1.red4sec.com:10332",
+      "http://seed1.aphelion-neo.com:10332",
+      "http://seed5.neo.org:10332",
+    ],
+    fee: 0,
+    feepolicy: {
+      economy: 0,
+      normal: 0,
+      fast: 0,
+    },
+    color: "#32a4be",
+    decimals: 4,
+  },
+  stellar: {
+    coin: "stellar",
+    name: "Stellar Lumens",
+    uri: [
+      "stellar",
+      "xlm",
+    ],
+    slip: 148,
+    wif: "80",
+    addresses: [],
+    api: [
+      "https://horizon.stellar.org",
+    ],
+    pathunix: "stellar",
+    path: "Stellar",
+    unit: "XLM",
+    config: "stellar",
+    type: "stellar",
+    explorer: [
+      "https://stellarscan.io/transaction/",
+    ],
+    logolink: "./img/assets/XLM.svg",
+    node: [
+      "https://stellarscan.io/",
+    ],
+    fee: 0.00001,
+    feepolicy: {
+      economy: 0.00001,
+      normal: 0.00005,
+      fast: 0.00010,
+    },
+    color: "#08b5e5",
+  },
+  tron: {
+    coin: "tron",
+    name: "TRON",
+    uri: ["tron"],
+    pubKeyHash: "1e",
+    scriptHash: "16",
+    wif: "9e",
+    normalAddress: "T",
+    normalAddressB: "T",
+    slip: 195,
+    addresses: [],
+    api: [
+      "https://api.trongrid.io/",
+    ],
+    pathunix: "tron",
+    path: "Tron",
+    unit: "TRX",
+    config: "tron",
+    rpcport: 50051,
+    type: "tron",
+    explorer: [
+      "https://www.trxplorer.io/tx/",
+      "https://tronscan.org/#/transaction/",
+    ],
+    logolink: "./img/assets/TRX.svg",
+    node: [
+      "https://api.trongrid.io/",
+    ],
+    fee: 0,
+    feepolicy: {
+      economy: 5,
+      normal: 10,
+      fast: 20,
+    },
+    color: "#eb0029",
+  },
+  bittorrent: {
+    coin: "bittorrent",
+    name: "BitTorrent",
+    uri: ["bittorrent"],
+    pubKeyHash: "1e",
+    scriptHash: "16",
+    wif: "9e",
+    normalAddress: "T",
+    normalAddressB: "T",
+    coinNumber: "1002000",
+    addresses: [],
+    api: [
+      "https://api.trongrid.io/",
+    ],
+    pathunix: "bittorrent",
+    path: "BitTorrent",
+    unit: "BTT",
+    config: "tron",
+    rpcport: 50051,
+    type: "tron",
+    explorer: [
+      "https://www.trxplorer.io/tx/",
+      "https://tronscan.org/#/transaction/",
+    ],
+    logolink: "./img/assets/BTT.svg",
+    node: [
+      "https://api.trongrid.io/",
+    ],
+    fee: 0,
+    feepolicy: {
+      economy: 5,
+      normal: 10,
+      fast: 20,
+    },
+    color: "#e81a4c",
+  },
+  gcstar: {
+    coin: "gcstar",
+    name: "GCSTAR",
+    uri: ["starbucks", "GCSTAR"],
+    addresses: [],
+    api: [
+      "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0xb2d25d27f3f8f2265bedc400f00dac8b7521106a&address=",
+    ],
+    unit: "GCSTAR",
+    type: "eth",
+    explorer: [
+      "https://etherscan.io/tx/",
+    ],
+    logolink: "./img/assets/GCSTAR.svg",
+    node: [
+      "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
+    ],
+    fee: 150000,
+    feepolicy: {
+      economy: 10,
+      normal: 15,
+      fast: 20,
+    },
+    contractAddress: "0xb2d25d27f3f8f2265bedc400f00dac8b7521106a",
+    color: "#05714b",
+    decimals: 18,
+  },
+  gctgt: {
+    coin: "gctgt",
+    name: "GCTGT",
+    uri: ["target", "GCTGT"],
+    addresses: [],
+    api: [
+      "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0xed1a361830628c87ca3e283450101b833ae26114&address=",
+    ],
+    unit: "GCTGT",
+    type: "eth",
+    explorer: [
+      "https://etherscan.io/tx/",
+    ],
+    logolink: "./img/assets/GCTGT.svg",
+    node: [
+      "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
+    ],
+    fee: 150000,
+    feepolicy: {
+      economy: 10,
+      normal: 15,
+      fast: 20,
+    },
+    contractAddress: "0xed1a361830628c87ca3e283450101b833ae26114",
+    color: "#c00",
+    decimals: 18,
+  },
+  gcwal: {
+    coin: "gcwal",
+    name: "GCWAL",
+    uri: ["walmart", "GCWAL"],
+    addresses: [],
+    api: [
+      "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0x0bd0e8e9ce51945e3295f12a344ccaf6893f43f9&address=",
+    ],
+    unit: "GCWAL",
+    type: "eth",
+    explorer: [
+      "https://etherscan.io/tx/",
+    ],
+    logolink: "./img/assets/GCWAL.svg",
+    node: [
+      "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
+    ],
+    fee: 150000,
+    feepolicy: {
+      economy: 10,
+      normal: 15,
+      fast: 20,
+    },
+    contractAddress: "0x0bd0e8e9ce51945e3295f12a344ccaf6893f43f9",
+    color: "#007dc6",
+    decimals: 18,
+  },
+  gcbest: {
+    coin: "gcbest",
+    name: "GCBEST",
+    uri: ["bestbuy", "GCBEST"],
+    addresses: [],
+    api: [
+      "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0x1388f1635aed7fc09526bd66f317e88aea888dd5&address=",
+    ],
+    unit: "GCBEST",
+    type: "eth",
+    explorer: [
+      "https://etherscan.io/tx/",
+    ],
+    logolink: "./img/assets/GCBEST.svg",
+    node: [
+      "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
+    ],
+    fee: 150000,
+    feepolicy: {
+      economy: 10,
+      normal: 15,
+      fast: 20,
+    },
+    contractAddress: "0x1388f1635aed7fc09526bd66f317e88aea888dd5",
+    color: "#0046be",
+    decimals: 18,
+  },
+  gchd: {
+    coin: "gchd",
+    name: "GCHD",
+    uri: ["homedepot", "GCHD"],
+    addresses: [],
+    api: [
+      "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0xa33d3b1bc1bf9fd9987c9e3f5e81722e12767a72&address=",
+    ],
+    unit: "GCHD",
+    type: "eth",
+    explorer: [
+      "https://etherscan.io/tx/",
+    ],
+    logolink: "./img/assets/GCHD.svg",
+    node: [
+      "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
+    ],
+    fee: 150000,
+    feepolicy: {
+      economy: 10,
+      normal: 15,
+      fast: 20,
+    },
+    contractAddress: "0xa33d3b1bc1bf9fd9987c9e3f5e81722e12767a72",
+    color: "#f96302",
+    decimals: 18,
+  },
+  gclowe: {
+    coin: "gclowe",
+    name: "GCLOWE",
+    uri: ["lowes", "GCLOWE"],
+    addresses: [],
+    api: [
+      "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0x1675c092306d147d65ee81976d5d3bec99a3bb91&address=",
+    ],
+    unit: "GCLOWE",
+    type: "eth",
+    explorer: [
+      "https://etherscan.io/tx/",
+    ],
+    logolink: "./img/assets/GCLOWE.svg",
+    node: [
+      "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
+    ],
+    fee: 150000,
+    feepolicy: {
+      economy: 10,
+      normal: 15,
+      fast: 20,
+    },
+    contractAddress: "0x1675c092306d147d65ee81976d5d3bec99a3bb91",
+    color: "#004990",
+    decimals: 18,
+  },
+  ontology: {
+    coin: "ontology",
+    name: "Ontology",
+    uri: ["ontology", "ONT"],
+    wif: "80",
+    slip: 1024,
+    addresses: [],
     fiatRate: 0,
     api: [
-      "https://dex.binance.org/",
-      "https://dex-european.binance.org/",
-      "https://dex-asiapacific.binance.org/",
-      "https://dex-atlantic.binance.org/",
+      "https://explorer.ont.io",
     ],
-    unit: "BTC.B",
-    type: "bnb",
+    pathunix: "ontology",
+    path: "ontology",
+    unit: "ONT",
+    config: "ontology",
+    type: "ontology",
     explorer: [
-      "https://explorer.binance.org",
+      "https://explorer.ont.io/transaction/",
     ],
-    logolink: "./img/assets/BTC.svg",
-    node: [
-      "https://explorer.binance.org/",
-    ],
-    fee: 0.00125,
+    logolink: "./img/assets/ONT.svg",
+    node: ["http://dappnode1.ont.io:20334/"],
+    fee: 0.01,
     feepolicy: {
-      economy: 0.5,
-      normal: 1,
-      fast: 2,
+      economy: 5,
+      normal: 10,
+      fast: 20,
     },
-    color: "#abcdef",
-    decimals: 8,
-  }, */
+    color: "#489ED7",
+  },
+  ontologygas: {
+    coin: "ontologygas",
+    name: "Ontology Gas",
+    uri: ["ontologygas", "ONG"],
+    addresses: [],
+    fiatRate: 0,
+    api: [
+      "https://explorer.ont.io",
+    ],
+    pathunix: "ontologygas",
+    path: "ontologygas",
+    unit: "ONG",
+    config: "ontology",
+    type: "ontology",
+    explorer: [
+      "https://explorer.ont.io/transaction/",
+    ],
+    logolink: "./img/assets/ONG.svg",
+    node: ["http://dappnode1.ont.io:20334/"],
+    fee: 0.01,
+    feepolicy: {
+      economy: 5,
+      normal: 10,
+      fast: 20,
+    },
+    color: "#489ED7",
+  },
+  dmme: {
+    coin: "dmme",
+    name: "DMme",
+    uri: ["dmme"],
+    addresses: [],
+    api: [
+      "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0x9556f8ee795d991ff371f547162d5efb2769425f&address=",
+    ],
+    unit: "DMME",
+    type: "eth",
+    explorer: [
+      "https://etherscan.io/tx/",
+    ],
+    logolink: "./img/assets/DMME.svg",
+    node: [
+      "https://mainnet.infura.io/v3/97c8bf358b9942a9853fab1ba93dc5b3",
+    ],
+    fee: 63000,
+    feepolicy: {
+      economy: 10,
+      normal: 15,
+      fast: 20,
+    },
+    contractAddress: "0x9556f8ee795d991ff371f547162d5efb2769425f",
+    color: "#7BC619",
+    decimals: 18,
+  },
+  veriblock: {
+    coin: "veriblock",
+    name: "VeriBlock",
+    uri: ["veriblock", "vbk"],
+    addresses: [],
+    api: [
+      "https://explore.veriblock.org/api/address/",
+    ],
+    unit: "VBK",
+    type: "veriblock",
+    explorer: [
+      "https://explorer.vbk.zelcore.io/api/address/",
+      "https://explore.veriblock.org/api/address/",
+    ],
+    logolink: "./img/assets/VBK.svg",
+    node: [
+      "https://proxy.vbk.zelcore.io/",
+    ],
+    fee: 0.00045,
+    feepolicy: {
+      economy: 1.5,
+      normal: 2,
+      fast: 5,
+    },
+    color: "#12284B",
+  },
 };
