@@ -3,10 +3,9 @@
 <svg version="1.1" id="GAS" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 490 490" style="enable-background:new 0 0 490 490;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#58BF00;}
-	.st1{fill:#FFFFFF;}
+	.st0{fill:#00E599;}
+	.st1{fill:none;stroke:#FFFFFF;stroke-width:10;}
 </style>
 <path id="Full" class="st0" d="M0,245c0,135.1,109.9,245,245,245s245-109.9,245-245S380.1,0,245,0S0,109.9,0,245z"/>
-<path id="GAS-2" class="st1" d="M376,142.2v206.1l-108.1-51.1V181.1L376,142.2z M113,352.1L218.6,402V196.8L113,146.9V352.1z
-	 M371.7,138.2l1.7-0.6l1-0.3L270.3,88l-1,0.3l-2.7,1l-1.3,0.5l-148.1,53.3l104.1,49.2l44-15.8l2.6-0.9L371.7,138.2z"/>
+<path id="GAS-2" class="st1" d="M376.2,143.1L245,192v199.2L113.8,344v-194l138.4-50.8l123.3,44.2l0.7,200.2l-131.3-48.8"/>
 </svg>
