@@ -1,237 +1,401 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <title>Zel - Press</title>
     <meta name="description" content="Zel Technologies GmbH" />
-    <meta name="keywords"
-        content="zelcash, zel, bitcoin, zeltrez, zelcore, crypto, cryptocurrency, ethereum, multi-asset, platform" />
+    <meta
+      name="keywords"
+      content="zelcash, zel, bitcoin, zeltrez, zelcore, crypto, cryptocurrency, ethereum, multi-asset, platform"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <base href="../">
+    <base href="../" />
 
     <!-- Favicon -->
     <link href="./img/favicon.ico" rel="shortcut icon" />
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Heebo:100,400,500" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Heebo:100,400,500"
+      rel="stylesheet"
+    />
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/css/uikit.min.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
-        integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.3/css/uikit.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+      integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./css/style.css" />
-    <style>
-        body {
-            display: none;
-        }
-    </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- NAV -->
     <nav class="uk-position-relative uk-navbar-container">
-        <div class="uk-container">
-            <div uk-navbar class="uk-visible@s">
-                <a class="uk-navbar-item uk-light" href="./"><img src="./img/Zel-Txt-White.svg"
-                        width="100"></a>
-                <ul class="uk-navbar-nav">
-                    <li><a href="./zel/">Currency</a></li>
-                    <li><a href="./project/zelcore/">Zel<span>Core</span></a></li>
-                    <li><a href="./project/">Our&nbsp;<span>Projects</span></a></li>
-                    <li><a href="./team/">Our&nbsp;<span>Team</span></a></li>
-                    <li><a href="./partners/">Partners</span></a></li>
-                </ul>
-            </div>
-            <div uk-navbar="boundary-align: true; align: left; dropbar: true" class="uk-hidden@s">
-                <div class="uk-navbar-left">
-                    <a class="uk-navbar-item uk-light" href="./"><img src="./img/Zel-Txt-White.svg"
-                            width="100"></a>
-                </div>
-                <div class="uk-navbar-right">
-                    <ul class="uk-navbar-nav">
-                        <li>
-                            <a class="uk-navbar-toggle" uk-navbar-toggle-icon href="#"></a>
-                            <div class="uk-navbar-dropdown">
-                                <ul class="uk-nav uk-navbar-dropdown-nav">
-                                    <li><a href="./zel/">Currency</a></li>
-                                    <li><a href="./project/zelcore/">Zel<span>Core</span></a></li>
-                                    <li><a href="./project/">Our&nbsp;<span>Projects</span></a></li>
-                                    <li><a href="./team/">Our&nbsp;<span>Team</span></a></li>
-                                    <li><a href="./partners/">Partners</span></a></li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+      <div class="uk-container">
+        <div uk-navbar class="uk-visible@s">
+          <a class="uk-navbar-item uk-light" href="./"
+            ><img src="./img/Zel-Txt-White.svg" width="100"
+          /></a>
+          <ul class="uk-navbar-nav">
+            <li><a href="./zel/">Currency</a></li>
+            <li>
+              <a href="./project/zelcore/">Zel<span>Core</span></a>
+            </li>
+            <li>
+              <a href="./project/">Our&nbsp;<span>Projects</span></a>
+            </li>
+            <li>
+              <a href="./team/">Our&nbsp;<span>Team</span></a>
+            </li>
+            <li><a href="./partners/">Partners</a></li>
+          </ul>
         </div>
+        <div
+          uk-navbar="boundary-align: true; align: left; dropbar: true"
+          class="uk-hidden@s"
+        >
+          <div class="uk-navbar-left">
+            <a class="uk-navbar-item uk-light" href="./"
+              ><img src="./img/Zel-Txt-White.svg" width="100"
+            /></a>
+          </div>
+          <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav">
+              <li>
+                <a class="uk-navbar-toggle" uk-navbar-toggle-icon href="#"></a>
+                <div class="uk-navbar-dropdown">
+                  <ul class="uk-nav uk-navbar-dropdown-nav">
+                    <li><a href="./zel/">Currency</a></li>
+                    <li>
+                      <a href="./project/zelcore/">Zel<span>Core</span></a>
+                    </li>
+                    <li>
+                      <a href="./project/">Our&nbsp;<span>Projects</span></a>
+                    </li>
+                    <li>
+                      <a href="./team/">Our&nbsp;<span>Team</span></a>
+                    </li>
+                    <li><a href="./partners/">Partners</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </nav>
 
     <!-- PRESS -->
-    <section class="uk-background-norepeat uk-background-cover uk-background-center-center uk-section uk-section-large">
-        <div class="uk-container uk-margin">
-            <h1 class="uk-heading-primary"><span class="zel">Press</span>kit</h1>
-            <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin uk-card-hover" uk-grid>
-                <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
-                    <img src="./img/Zel-Round.svg" alt="" uk-cover>
-                    <canvas width="600" height="400"></canvas>
-                </div>
-                <div>
-                    <div class="uk-card-body">
-                        <img src="./img/Zel-Txt.svg" class="uk-margin-bottom" />
-                        <div class="colorPalette zelblue copyMe" onclick="myFunction(this, '#183c87')" onmouseout="functionOut(this)">Dark Cerulean<br>#183c87</div>
-                        <div class="colorPalette whitetxt copyMe" onclick="myFunction(this, '#ffffff')" onmouseout="functionOut(this)">White<br>#ffffff</div>
-                        <a href="./press/Zel-png.zip"><button class="uk-button uk-button-primary rounded uk-margin-top">.png Kit</button></a>
-                        <a href="./press/Zel-svg.zip"><button class="uk-button uk-button-primary rounded uk-margin-top">.svg Kit</button></a>
-                    </div>
-                </div>
+    <section
+      class="uk-background-norepeat uk-background-cover uk-background-center-center uk-section uk-section-large"
+    >
+      <div class="uk-container uk-margin">
+        <h1 class="uk-heading-medium"><span class="zel">Press</span>kit</h1>
+        <div
+          class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin uk-card-hover"
+          uk-grid
+        >
+          <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
+            <img src="./img/Zel-Round.svg" alt="" uk-cover />
+            <canvas width="600" height="400"></canvas>
+          </div>
+          <div>
+            <div class="uk-card-body">
+              <img src="./img/Zel-Txt.svg" class="uk-margin-bottom" />
+              <div
+                class="colorPalette zelblue copyMe"
+                onclick="myFunction(this, '#183c87')"
+                onmouseout="functionOut(this)"
+              >
+                Dark Cerulean<br />#183c87
+              </div>
+              <div
+                class="colorPalette whitetxt copyMe"
+                onclick="myFunction(this, '#ffffff')"
+                onmouseout="functionOut(this)"
+              >
+                White<br />#ffffff
+              </div>
+              <a href="./press/Zel-png.zip"
+                ><button
+                  class="uk-button uk-button-primary rounded uk-margin-top"
+                >
+                  .png Kit
+                </button></a
+              >
+              <a href="./press/Zel-svg.zip"
+                ><button
+                  class="uk-button uk-button-primary rounded uk-margin-top"
+                >
+                  .svg Kit
+                </button></a
+              >
             </div>
-
-            <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin uk-card-hover" uk-grid>
-                <div class="uk-card-media-left uk-cover-container">
-                    <img src="./img/ZelCore-Round.svg" alt="" uk-cover>
-                    <canvas width="600" height="400"></canvas>
-                </div>
-                <div>
-                    <div class="uk-card-body">
-                        <img src="./img/ZelCore-Txt.svg" class="uk-margin-bottom" />
-                        <div class="colorPalette zelcoreblack copyMe" onclick="myFunction(this, '#232220')" onmouseout="functionOut(this)">Black Magic<br>#232220</div>
-                        <div class="colorPalette whitetxt copyMe" onclick="myFunction(this, '#ffffff')" onmouseout="functionOut(this)">White<br>#ffffff</div>
-                        <a href="./press/ZelCore-png.zip"><button class="uk-button zelcoreblack rounded uk-margin-top">.png Kit</button></a>
-                        <a href="./press/ZelCore-svg.zip"><button class="uk-button zelcoreblack rounded uk-margin-top">.svg Kit</button></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin uk-card-hover" uk-grid>
-                <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
-                    <img src="./img/ZelID-Round.svg" alt="" uk-cover>
-                    <canvas width="600" height="400"></canvas>
-                </div>
-                <div>
-                    <div class="uk-card-body">
-                        <img src="./img/ZelID-Txt.svg" class="uk-margin-bottom" />
-                        <div class="colorPalette zelidcolor">Gradient Color<br>#d83f87 to #44318d</div>
-                        <div class="colorPalette whiteBack">Gradient Background<br>#ffffff to #e5e5e5</div>
-                        <div class="colorPalette pink copyMe" onclick="myFunction(this, '#bb3c88')" onmouseout="functionOut(this)">Medium Red Violet<br>#bb3c88</div>
-                        <a href="./press/ZelID-png.zip"><button class="uk-button zelidcolor rounded uk-margin-top">.png Kit</button></a>
-                        <a href="./press/ZelID-svg.zip"><button class="uk-button zelidcolor rounded uk-margin-top">.svg Kit</button></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin uk-card-hover" uk-grid>
-                <div class="uk-card-media-left uk-cover-container">
-                    <img src="./img/ZelNodes-Round.svg" alt="" uk-cover>
-                    <canvas width="600" height="400"></canvas>
-                </div>
-                <div>
-                    <div class="uk-card-body">
-                        <img src="./img/ZelNodes-Txt.svg" class="uk-margin-bottom" />
-                        <div class="colorPalette zelnodescolor copyMe" onclick="myFunction(this, '#36c9a5')" onmouseout="functionOut(this)">Shamrock<br>#36c9a5</div>
-                        <div class="colorPalette whiteBack">Gradient Background<br>#ffffff to #e5e5e5</div>
-                        <div class="colorPalette zelcoreblack copyMe" onclick="myFunction(this, '#232220')" onmouseout="functionOut(this)">Black Magic<br>#232220</div>
-                        <a href="./press/ZelNodes-png.zip"><button class="uk-button zelnodescolor rounded uk-margin-top">.png Kit</button></a>
-                        <a href="./press/ZelNodes-svg.zip"><button class="uk-button zelnodescolor rounded uk-margin-top">.svg Kit</button></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin uk-card-hover" uk-grid>
-                <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
-                    <img src="./img/ZelLabs-Round.svg" alt="" uk-cover>
-                    <canvas width="600" height="400"></canvas>
-                </div>
-                <div>
-                    <div class="uk-card-body">
-                        <img src="./img/ZelLabs-Txt.svg" class="uk-margin-bottom" />
-                        <div class="colorPalette zellabscolor copyMe" onclick="myFunction(this, '#ff7952')" onmouseout="functionOut(this)">Araishu<br>#ff7952</div>
-                        <div class="colorPalette whitetxt copyMe" onclick="myFunction(this, '#ffffff')" onmouseout="functionOut(this)">White<br>#ffffff</div>
-                        <a href="./press/ZelLabs-png.zip"><button class="uk-button zellabscolor rounded uk-margin-top">.png Kit</button></a>
-                        <a href="./press/ZelLabs-svg.zip"><button class="uk-button zellabscolor rounded uk-margin-top">.svg Kit</button></a>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+
+        <div
+          class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin uk-card-hover"
+          uk-grid
+        >
+          <div class="uk-card-media-left uk-cover-container">
+            <img src="./img/ZelCore-Round.svg" alt="" uk-cover />
+            <canvas width="600" height="400"></canvas>
+          </div>
+          <div>
+            <div class="uk-card-body">
+              <img src="./img/ZelCore-Txt.svg" class="uk-margin-bottom" />
+              <div
+                class="colorPalette zelcoreblack copyMe"
+                onclick="myFunction(this, '#232220')"
+                onmouseout="functionOut(this)"
+              >
+                Black Magic<br />#232220
+              </div>
+              <div
+                class="colorPalette whitetxt copyMe"
+                onclick="myFunction(this, '#ffffff')"
+                onmouseout="functionOut(this)"
+              >
+                White<br />#ffffff
+              </div>
+              <a href="./press/ZelCore-png.zip"
+                ><button class="uk-button zelcoreblack rounded uk-margin-top">
+                  .png Kit
+                </button></a
+              >
+              <a href="./press/ZelCore-svg.zip"
+                ><button class="uk-button zelcoreblack rounded uk-margin-top">
+                  .svg Kit
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin uk-card-hover"
+          uk-grid
+        >
+          <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
+            <img src="./img/ZelID-Round.svg" alt="" uk-cover />
+            <canvas width="600" height="400"></canvas>
+          </div>
+          <div>
+            <div class="uk-card-body">
+              <img src="./img/ZelID-Txt.svg" class="uk-margin-bottom" />
+              <div class="colorPalette zelidcolor">
+                Gradient Color<br />#d83f87 to #44318d
+              </div>
+              <div class="colorPalette whiteBack">
+                Gradient Background<br />#ffffff to #e5e5e5
+              </div>
+              <div
+                class="colorPalette pink copyMe"
+                onclick="myFunction(this, '#bb3c88')"
+                onmouseout="functionOut(this)"
+              >
+                Medium Red Violet<br />#bb3c88
+              </div>
+              <a href="./press/ZelID-png.zip"
+                ><button class="uk-button zelidcolor rounded uk-margin-top">
+                  .png Kit
+                </button></a
+              >
+              <a href="./press/ZelID-svg.zip"
+                ><button class="uk-button zelidcolor rounded uk-margin-top">
+                  .svg Kit
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin uk-card-hover"
+          uk-grid
+        >
+          <div class="uk-card-media-left uk-cover-container">
+            <img src="./img/ZelNodes-Round.svg" alt="" uk-cover />
+            <canvas width="600" height="400"></canvas>
+          </div>
+          <div>
+            <div class="uk-card-body">
+              <img src="./img/ZelNodes-Txt.svg" class="uk-margin-bottom" />
+              <div
+                class="colorPalette zelnodescolor copyMe"
+                onclick="myFunction(this, '#36c9a5')"
+                onmouseout="functionOut(this)"
+              >
+                Shamrock<br />#36c9a5
+              </div>
+              <div class="colorPalette whiteBack">
+                Gradient Background<br />#ffffff to #e5e5e5
+              </div>
+              <div
+                class="colorPalette zelcoreblack copyMe"
+                onclick="myFunction(this, '#232220')"
+                onmouseout="functionOut(this)"
+              >
+                Black Magic<br />#232220
+              </div>
+              <a href="./press/ZelNodes-png.zip"
+                ><button class="uk-button zelnodescolor rounded uk-margin-top">
+                  .png Kit
+                </button></a
+              >
+              <a href="./press/ZelNodes-svg.zip"
+                ><button class="uk-button zelnodescolor rounded uk-margin-top">
+                  .svg Kit
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin uk-card-hover"
+          uk-grid
+        >
+          <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
+            <img src="./img/ZelLabs-Round.svg" alt="" uk-cover />
+            <canvas width="600" height="400"></canvas>
+          </div>
+          <div>
+            <div class="uk-card-body">
+              <img src="./img/ZelLabs-Txt.svg" class="uk-margin-bottom" />
+              <div
+                class="colorPalette zellabscolor copyMe"
+                onclick="myFunction(this, '#ff7952')"
+                onmouseout="functionOut(this)"
+              >
+                Araishu<br />#ff7952
+              </div>
+              <div
+                class="colorPalette whitetxt copyMe"
+                onclick="myFunction(this, '#ffffff')"
+                onmouseout="functionOut(this)"
+              >
+                White<br />#ffffff
+              </div>
+              <a href="./press/ZelLabs-png.zip"
+                ><button class="uk-button zellabscolor rounded uk-margin-top">
+                  .png Kit
+                </button></a
+              >
+              <a href="./press/ZelLabs-svg.zip"
+                ><button class="uk-button zellabscolor rounded uk-margin-top">
+                  .svg Kit
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- FOOTER -->
     <footer class="uk-background-muted uk-padding">
-        <div class="uk-container">
-            <div class="uk-grid-divider uk-child-width-expand@s" uk-grid>
-                <div>
-                    <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
-                        <li class="uk-nav-header">Projects</li>
-                        <li><a href="./zel/">Zel</a></li>
-                        <li><a href="./project/zelcore/">ZelCore</a></li>
-                        <li><a href="./project/zelid/">ZelID</a></li>
-                        <li><a href="./project/zelnodes/">ZelNodes</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
-                        <li class="uk-nav-header">About us</li>
-                        <li><a href="./team/">Team</a></li>
-                        <li><a href="./news/">News</a></li>
-                        <li><a href="./press/">Presskit</a></li>
-                        <li><a href="./donate/">Donate</a></li>
-                        <li class="uk-nav-divider"></li>
-                        <li><a href="mailto:info@zel.cash">Contact Us</a></li>
-                    </ul>
-                </div>
-                <div class="social">
-                    <a href="https://twitter.com/zelcash" target="_blank" class="uk-button rounded twitter"><i
-                            class="fab fa-twitter"></i></a>
-                    <a href="https://discord.io/zel" target="_blank" class="uk-button rounded discord"><i
-                            class="fab fa-discord"></i></a>
-                    <a href="https://t.me/zelhub" target="_blank" class="uk-button rounded telegram"><i
-                            class="fab fa-telegram"></i></a>
-                    <a href="https://join.slack.com/t/zelcash/shared_invite/enQtMzkyMjY0MDU3NjA3LWM4NWNkMzQwMDJmNWM4NDJhZTY3YmQ3MDA0MzVhZDE3ZWQxNWU0ODUxMGE4ODk3MTQyOWYyYmZiZTFmY2FiMTM"
-                        target="_blank" class="uk-button rounded slack"><i class="fab fa-slack"></i></a>
-                    <a href="https://www.reddit.com/r/ZelCash/" target="_blank" class="uk-button rounded reddit"><i
-                            class="fab fa-reddit"></i></a>
-                    <a href="https://bitcointalk.org/index.php?topic=2853688.0" target="_blank"
-                        class="uk-button rounded bitcointalk"><i class="fab fa-btc"></i></a>
-                </div>
-            </div>
-            <div class="uk-child-width-expand@s" uk-grid>
-                <div class="uk-grid-item-match">
-                    <p>Copyright &copy; 2019 Zel Technologies GmbH. All rights reserved.</p>
-                </div>
-                <div class="uk-text-right">
-                    <a href="./terms/">Terms and Conditions</a>
-                    <span class="uk-padding-small">|</span>
-                    <a href="./privacy/">Privacy Policy</a>
-                </div>
-            </div>
+      <div class="uk-container">
+        <div class="uk-grid-divider uk-child-width-expand@s" uk-grid>
+          <div>
+            <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
+              <li class="uk-nav-header">Projects</li>
+              <li><a href="./zel/">Zel</a></li>
+              <li><a href="./project/zelcore/">ZelCore</a></li>
+              <li><a href="./project/zelid/">ZelID</a></li>
+              <li><a href="./project/zelnodes/">ZelNodes</a></li>
+            </ul>
+          </div>
+          <div>
+            <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
+              <li class="uk-nav-header">About us</li>
+              <li><a href="./team/">Team</a></li>
+              <li><a href="./news/">News</a></li>
+              <li><a href="./press/">Presskit</a></li>
+              <li><a href="./donate/">Donate</a></li>
+              <li class="uk-nav-divider"></li>
+              <li><a href="mailto:info@zel.cash">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="social">
+            <a
+              href="https://twitter.com/zelcash"
+              target="_blank"
+              class="uk-button rounded twitter"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a
+              href="https://discord.io/zel"
+              target="_blank"
+              class="uk-button rounded discord"
+              ><i class="fab fa-discord"></i
+            ></a>
+            <a
+              href="https://t.me/zelhub"
+              target="_blank"
+              class="uk-button rounded telegram"
+              ><i class="fab fa-telegram"></i
+            ></a>
+            <a
+              href="https://join.slack.com/t/zelcash/shared_invite/enQtMzkyMjY0MDU3NjA3LWM4NWNkMzQwMDJmNWM4NDJhZTY3YmQ3MDA0MzVhZDE3ZWQxNWU0ODUxMGE4ODk3MTQyOWYyYmZiZTFmY2FiMTM"
+              target="_blank"
+              class="uk-button rounded slack"
+              ><i class="fab fa-slack"></i
+            ></a>
+            <a
+              href="https://www.reddit.com/r/ZelCash/"
+              target="_blank"
+              class="uk-button rounded reddit"
+              ><i class="fab fa-reddit"></i
+            ></a>
+            <a
+              href="https://bitcointalk.org/index.php?topic=2853688.0"
+              target="_blank"
+              class="uk-button rounded bitcointalk"
+              ><i class="fab fa-btc"></i
+            ></a>
+          </div>
         </div>
+        <div class="uk-child-width-expand@s" uk-grid>
+          <div class="uk-grid-item-match">
+            <p>
+              Copyright &copy; 2019 Zel Technologies GmbH. All rights reserved.
+            </p>
+          </div>
+          <div class="uk-text-right">
+            <a href="./terms/">Terms and Conditions</a>
+            <span class="uk-padding-small">|</span>
+            <a href="./privacy/">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
     </footer>
 
     <!-- UIkit JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit-icons.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.3/js/uikit.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.3/js/uikit-icons.min.js"></script>
+    <script src="./js/main.js"></script>
     <script>
-        /* PREVENT CLICKJACKING */
-        if (self == top) {
-            var theBody = document.getElementsByTagName('body')[0];
-            theBody.style.display = "block";
-        } else {
-            top.location = self.location;
-        }
-    </script>
-    <script>
-        function myFunction(div, hex) {
-            var dummy = $('<input>').val(hex).appendTo('body').select()
-            $(div).toggleClass('copied');
-            document.execCommand("copy");
-            dummy.remove();
-        }
-        function functionOut(div) {
-            $(div).removeClass('copied');
-        }
-    </script>
+      function myFunction(div, hex) {
+        var dummy = $("<input>")
+          .val(hex)
+          .appendTo("body")
+          .select();
+        $(div).toggleClass("copied");
+        document.execCommand("copy");
+        dummy.remove();
+      }
 
-</body>
-
+      function functionOut(div) {
+        $(div).removeClass("copied");
+      }
+    </script>
+  </body>
 </html>
