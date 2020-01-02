@@ -150,8 +150,17 @@ a:hover .zellabscolor {
     opacity: .7;
 }
 
-.landingPage {
-    height: 65vh;
+@media screen and (min-height: 900px) {
+    .landingPage {
+        height: 65vh;
+    }
+}
+
+@media screen and (max-height: 900px) {
+    .landingPage {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
 }
 
 /* BACKGROUNDS */
