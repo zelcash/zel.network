@@ -723,14 +723,17 @@
       function displayAssets() {
         var output = [];
         for (var i in coins) {
-          output +=
-            "<tr><td><img src='" +
-            coins[i].logolink +
-            "' class='smallImg'></td><td>" +
-            coins[i].name +
-            "</td><td class='uk-visible@s'><a href='" +
-            coins[i].explorer +
-            "' class='uk-button uk-button-primary rounded' target='_blank'>Explorer</a></td></tr>";
+          output += "<tr><td><img src='" + coins[i].logolink + "' class='smallImg'></td><td>" + coins[i].name;
+          if (coins[i].type === "eth") {
+            output += "</td><td class='uk-visible@s'>" + "<a href='https://etherscan.io/"
+          } else if (coins[i].type === "ontology" || coins[i].type === "tron" || coins[i].type === "ripple" || coins[i].type === "neo" || coins[i].type === "veriblock") {
+            output += "</td><td class='uk-visible@s'>" + "<a href='" + coins[i].explorer[0];
+          } else if (coins[i].type === "stellar") {
+            output += "</td><td class='uk-visible@s'>" + "<a href='" + coins[i].node[0];
+          } else {
+            output += "</td><td class='uk-visible@s'>" + "<a href='https://" + coins[i].node[0];
+          }
+          output += "' class='uk-button uk-button-primary rounded' target='_blank'>Explorer</a></td></tr>";
         }
         document.getElementById("allAssets").innerHTML = output;
       }
