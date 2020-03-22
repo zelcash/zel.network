@@ -96,6 +96,22 @@ a:hover {
     background-color: #183c87;
 }
 
+.zelbluetxt {
+    color: #183c87;
+}
+
+.bamftxt {
+    color: #36c9a5;
+}
+
+.supertxt {
+    color: #20725D;
+}
+
+.basictxt {
+    color: #43EFC2;
+}
+
 .zelcoreblack {
     color: #fff;
     background-color: #232220 !important;
