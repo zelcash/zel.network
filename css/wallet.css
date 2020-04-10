@@ -1,0 +1,143 @@
+h3,
+h4 {
+    font-family: 'ZelFontThin' !important;
+}
+
+.zelcoregray {
+    color: #fff;
+    background-color: grey !important;
+    position: relative;
+}
+
+.fixedZelCoreTxt{
+    padding-bottom: 0;
+}
+#coin-logo {
+    float: none;
+    height: 90px;
+  }
+
+#coin-list ul {
+    columns: 4;
+    list-style-type:none;
+    margin-left:10px;
+}
+
+#coin-list ul li {
+    font-size: 12px;
+}
+#coin-list ul li img{
+    width: 40px;
+}
+
+@media (max-width: 768px) {
+    #coin-list ul { columns: 3; }
+}
+@media (max-width: 640px) {
+    #coin-list ul { columns: 2; }
+}
+
+@media (max-width: 375px) {
+    #coin-list ul { columns: 1; }
+}
+#coin-list li {
+    padding-bottom: 5px;
+}
+#coin-list li img{
+    padding-right: 10px;
+}
+
+a { cursor: hand;}
+
+#features-logo{
+    margin-left: 0;
+    margin-right: 20px;
+    height: 90px;
+}
+.zelcoreWalletFeatures{
+    
+}
+
+.zelcoreWalletFeatures img {
+    max-width: 600px;
+    opacity: unset;
+    margin-left: 10%;
+}
+
+
+.desktopImg {
+    border-radius: 6px;
+    box-shadow: unset;
+}
+
+
+/* ZELCORE WALLET PAGE */
+
+@media (max-width: 1150px) {
+ 
+ 
+
+    .zelcoreWalletFeatures img {
+        max-width: 500px;
+        margin-left: unset;
+    }
+}
+
+@media (max-width: 1024px) {
+ 
+    .zelcoreWalletFeatures {
+        text-align: center;
+    }
+
+    .zelcoreWalletFeatures img {
+        max-width: 400px;
+        margin-left: unset;
+    }
+}
+
+@media (max-width: 960px) {
+    .zelcoreWalletFeatures img {
+        
+        width: 40%;
+        margin-left: unset;
+    }
+}
+@media (max-width: 768px) {
+    .zelcoreWalletFeatures img {
+        
+        width: 40%;
+        margin-left: unset;
+    }
+}
+
+@media (max-width: 639px) {
+
+    .zelcoreWalletFeatures {
+        text-align: center;
+    }
+
+    .zelcoreWalletFeatures img {
+        width: 40%;
+        margin-left: unset;
+
+    }
+
+    .onTop {
+        z-index: 1;
+    }
+}
+
+
+.zelcore-top {
+    color: #fff;
+    background-color: #232220 !important;
+    background-image: url('/img/zelcore/zel-bg-medium-small.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+
+.support-section {
+ 
+}
