@@ -34,7 +34,7 @@ function displayCoinInfo(coinname){
         document.getElementById("coin-text-sendandreceive").innerHTML=`<img src="${coins[coinname].logolink}" id="features-logo" style="float: left;"/>Send and receive ${coins[coinname].name} fast and easy with a ${coins[coinname].name} address or scannable QR code. Each Zelcore account comes standard with 3 ${coins[coinname].name} addresses, of which you and only you have the private keys.
             The Zelcore wallet supports 100+ other coins and ERC-20 tokens, and is available for desktop and mobile devices.`;
 
-        document.getElementById("coin-header-buyandsell").innerHTML=`Buy and sell ${coins[coinname].name} via Built-in Exchanges`;
+        document.getElementById("coin-header-buyandsell").innerHTML=`Buy and sell ${coins[coinname].name} via Built-in Exchanges*`;
 
 
         document.getElementById("coin-header-zelid").innerHTML=`Securly store your  ${coins[coinname].name} in Zelcore with ZelID`;
@@ -50,14 +50,29 @@ function displayCoinInfo(coinname){
     displayCoinGrid();
 }
 
+function sortByKey(jsObj){
+    var sortedArray = [];
 
+    // Push each JSON Object entry in array by [key, value]
+    for(let i in jsObj)
+    {
+        sortedArray.push([i, jsObj[i]]);
+    }
+
+    // Run native sort function and returns sorted array.
+    return sortedArray.sort();
+}
 
 function displayCoinGrid(){
     var output = [];
-    for (var i in coins) {
+    let list = [];
+    Object.keys(coins).sort().forEach(function(key) {
+        list[key] = coins[key];
+      });
+    for (let i in list) {
       if (isrewrite)  
-          output += `<li><a href="/project/zelcore/${coins[i].coin}-wallet.html"><img src="${coins[i].logolink}" class='smallImg'>${coins[i].name}</a></li>`;
-      else output += `<li><a href="/project/zelcore/wallet.html?coin=${coins[i].coin}"><img src="${coins[i].logolink}" class='smallImg'>${coins[i].name}</a></li>`;
+          output += `<li><a href="/project/zelcore/${list[i].coin}-wallet.html"><img src="${list[i].logolink}" class='smallImg'>${list[i].name}</a></li>`;
+      else output += `<li><a href="/project/zelcore/wallet.html?coin=${list[i].coin}"><img src="${list[i].logolink}" class='smallImg'>${list[i].name}</a></li>`;
     }
     document.getElementById("coin-list").innerHTML = `<ul>${output}</ul>`;
 }
