@@ -295,7 +295,7 @@
                     class="uk-card uk-card-hover uk-card-secondary uk-card-body"
                   >
                     <h3 class="uk-card-title">macOS</h3>
-                    <p>Version: 3.1.0</p>
+                    <p>Version: 3.1.1</p>
                     <a href="https://zelcore.io/downloads/zelcore.dmg"
                       ><button class="uk-button uk-button-primary rounded">
                         Download
@@ -308,7 +308,7 @@
                     class="uk-card uk-card-hover uk-card-secondary uk-card-body"
                   >
                     <h3 class="uk-card-title">Windows</h3>
-                    <p>Version: 3.1.0</p>
+                    <p>Version: 3.1.1</p>
                     <a href="https://zelcore.io/downloads/zelcore.exe"
                       ><button class="uk-button uk-button-primary rounded">
                         Download (Install)
@@ -328,7 +328,7 @@
                     class="uk-card uk-card-hover uk-card-secondary uk-card-body"
                   >
                     <h3 class="uk-card-title">Linux</h3>
-                    <p>Version: 3.1.0</p>
+                    <p>Version: 3.1.1</p>
                     <a href="#linuxbuilds" uk-toggle
                       ><button class="uk-button uk-button-primary rounded">
                         Linux Builds
@@ -434,24 +434,24 @@
     <div id="security" class="uk-flex-top uk-modal-container" uk-modal>
         <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical uk-text-center">
             <button class="uk-modal-close-default" type="button" uk-close></button>
-            <h3>ZelCore v3.1.0 has following SHA256 hashes</h3>
+            <h3>ZelCore v3.1.1 has following SHA256 hashes</h3>
             <p>All ZelCore releases are signed by Zel Technologies GmbH. Furthermore we provide calculated SHA256 hashes of our releases</p>
             <hr class="uk-divider-icon">
             <dl class="uk-description-list uk-description-list-divider">
                 <dt>zelcore.dmg</dt>
-                <dd>037866c804f3af5857de8562f57cb06143659361ca13a8d0e4f7652e1ef445c8</dd>
+                <dd>50e296284e4c2be4260abeae9cab2bb684af50e800ae1a5afff793e4c4b3a664</dd>
                 <dt>zelcore.exe</dt>
-                <dd>35750b96f158e3b07e81e6d2676e2903fe55fc226e815a4efc18f8493ec7939b</dd>
+                <dd>76ac20d5ad98837d7f1f2a4b046a7162a080a955912fd2fc0922b06dc2ce4f66</dd>
                 <dt>zelcore-portable.exe</dt>
-                <dd>e5ea70d165bcdaf487631aa395baa36fa0acf860fab58048b5dc836116d35371</dd>
+                <dd>28145ddad6828d9e32d7f9df2b996400ce85eb4509cd757e0d3651e29dda9414</dd>
                 <dt>zelcore.AppImage & zelcore4x.AppImage</dt>
-                <dd>803015f8be554fbb8a2b213ad6a9369ce3a4cfcef6d12a77ff203cc13efa4e17</dd>
+                <dd>e9e6f973b71ecb86d549d0e7ff0d094c96847fa82be3df4e65559a0eabcfdaeb</dd>
                 <dt>zelcore.deb & zelcore4x.deb</dt>
-                <dd>16616c43f3ec6c3509245b41ac21e85e5f5e1293b7b12b8a39c40edbd76ac12c</dd>
+                <dd>327229b3e874106ddfe4bb6c15105c1d1c94a295c0f095b006d77004d92e0222</dd>
                 <dt>zelcore3x.AppImage</dt>
-                <dd>377bdcf95ea3c53dafa80d2f401a74da0969bf66f423a2c1658636c4bc1add31</dd>
+                <dd>90c633cd98b10f6375b66f9de2974d1b1c269420c811f36cca20f4ce34c31ed5</dd>
                 <dt>zelcore3x.deb</dt>
-                <dd>acd82036b609306d7155acf104c76eb7f9059e1cdabf390058ae78d104d7a407</dd>
+                <dd>f56ebccc9d77e4e57dfc24dbb05b613e1391250d9d092a06a17c2d19aba2da6a</dd>
                 <dt>zelcore300.apk</dt>
                 <dd>3601c39e84076bf2a44c481594e1dac4ddd541a949cb06b22627d3a9462f960e</dd>
             </dl>
@@ -466,13 +466,29 @@
         <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical uk-text-center">
             <button class="uk-modal-close-default" type="button" uk-close></button>
             <div>
+              <h3>ZelCore v3.1.1 changes</h3>
+              <h4>Features</h4>
+              <ul class="uk-list">
+                  <li>Following ERC20 tokens added: Netkoin, Gamma Coin, Bazooka Token, Coinsto, UniBright</li>
+                  <li>Full Node binaries updated for: RVN, ZER, BTG, BTX, BTC, ZEC, ZCL</li>
+                  <li>Ravencoin asset list updated</li>
+                  <li>Adds posibility to sign a message to Full Node</li>
+              </ul>
+              <h4>Bugs fixes</h4>
+              <ul class="uk-list">
+                  <li>Fix EOS tokens showing as EOS transactions</li>
+                  <li>Fixes signing with wallet addresses</li>
+                  <li>Fixes Zel news feed showing incorrect info</li>
+              </ul>
+          </div>
+            <div>
                 <h3>ZelCore v3.1.0 changes</h3>
                 <h4>Features</h4>
                 <ul class="uk-list">
                     <li>Lunchmoney Token was added</li>
                     <li>Tooltip on FN to show private and public balance</li>
                     <li>Zelcore+ user get zelnodes notifications alerts status without need to run Full Node</li>
-                    <li>ZelFlux hyperlink on My Zelnodes tabl</li>
+                    <li>ZelFlux hyperlink on My Zelnodes table</li>
                     <li>Update Loopring contract address</li>
                 </ul>
                 <h4>Bugs fixes</h4>
