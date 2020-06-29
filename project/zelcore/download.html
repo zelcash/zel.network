@@ -295,7 +295,7 @@
                     class="uk-card uk-card-hover uk-card-secondary uk-card-body"
                   >
                     <h3 class="uk-card-title">macOS</h3>
-                    <p>Version: 3.5.0</p>
+                    <p>Version: 3.6.0</p>
                     <a href="https://zelcore.io/downloads/zelcore.dmg"
                       ><button class="uk-button uk-button-primary rounded">
                         Download
@@ -308,7 +308,7 @@
                     class="uk-card uk-card-hover uk-card-secondary uk-card-body"
                   >
                     <h3 class="uk-card-title">Windows</h3>
-                    <p>Version: 3.5.0</p>
+                    <p>Version: 3.6.0</p>
                     <a href="https://zelcore.io/downloads/zelcore.exe"
                       ><button class="uk-button uk-button-primary rounded">
                         Download (Install)
@@ -328,7 +328,7 @@
                     class="uk-card uk-card-hover uk-card-secondary uk-card-body"
                   >
                     <h3 class="uk-card-title">Linux</h3>
-                    <p>Version: 3.5.0</p>
+                    <p>Version: 3.6.0</p>
                     <a href="#linuxbuilds" uk-toggle
                       ><button class="uk-button uk-button-primary rounded">
                         Linux Builds
@@ -434,24 +434,24 @@
     <div id="security" class="uk-flex-top uk-modal-container" uk-modal>
         <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical uk-text-center">
             <button class="uk-modal-close-default" type="button" uk-close></button>
-            <h3>ZelCore v3.5.0 has following SHA256 hashes</h3>
+            <h3>ZelCore v3.6.0 has following SHA256 hashes</h3>
             <p>All ZelCore releases are signed by Zel Technologies GmbH. Furthermore we provide calculated SHA256 hashes of our releases</p>
             <hr class="uk-divider-icon">
             <dl class="uk-description-list uk-description-list-divider">
                 <dt>zelcore.dmg</dt>
-                <dd>d39a53f795301a9b958ba1304eefdef03664ff6c096b8f86dc8924cb58c3261b</dd>
+                <dd>d59cdc83804a8fc701fd8ad949e79b075993fa132756cfe1200aa62fe4656906</dd>
                 <dt>zelcore.exe</dt>
-                <dd>90d35cb952d874b0afb2e3111cf00e187e9503908e9b3eb8f7d06f5263b424d1</dd>
+                <dd>3ff3de5107bd710280a512e760932a5e111bfdf152aad602dc36cc32d5f9173f</dd>
                 <dt>zelcore-portable.exe</dt>
-                <dd>f2b8ac2d8f3a2f2296249e28f4e8880882e3797f978959bf76704fc3c7b88018</dd>
+                <dd>2fc2df9096c6a0bce5f3359996fc41005916b6a18bcc804f345f5103df54cd2e</dd>
                 <dt>zelcore.AppImage & zelcore4x.AppImage</dt>
-                <dd>9ee1055584165507870f970a06b01b2a44ef72e387093bc75aa81b9fc15397da</dd>
+                <dd>fa5ac121efbb8f26042d23b3dfc0f278e39fa20acff300bdf77ad59b3c499de6</dd>
                 <dt>zelcore.deb & zelcore4x.deb</dt>
-                <dd>ad0fec00b3e838653060caa43f58ca9ebaf4919f717b7c62042b210cb32b3a9b</dd>
+                <dd>a78c2de5f4bfe09e3fa4637250462f43409cab656aa5d38dbcf7107a413d09e5</dd>
                 <dt>zelcore3x.AppImage</dt>
-                <dd>fb6ce507bf88cea1967a8747bb1ca971e98f0b477c18463ffd91ef8bbf58964b</dd>
+                <dd>1e5e18318b8b99919280e9c3e9ca650149055384bb92d4a91cb432d149ab6c71</dd>
                 <dt>zelcore3x.deb</dt>
-                <dd>9a75e3b31d052b16e3e15b3003368481e315d3629e4c0ff4d36095516ed7ef4c</dd>
+                <dd>030f5269297273621c93deec8f7545e40c6e0c4104ca9d382ae5c306b8fd2008</dd>
                 <dt>zelcore330.apk</dt>
                 <dd>0058110238e2c5538991b091b83396f5e4b671be012fd30ee9bd6d93e6edfb21</dd>
             </dl>
@@ -465,6 +465,30 @@
     <div id="changes" class="uk-flex-top uk-modal-container" uk-modal>
         <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical uk-text-center">
             <button class="uk-modal-close-default" type="button" uk-close></button>
+            <div>
+              <h3>ZelCore v3.6.0 changes</h3>
+              <h4>Features</h4>
+              <ul class="uk-list">
+                  <li>Gemini exchange is now available</li>
+                  <li>Compound (COMP) is now available</li>
+                  <li>Improved load times on exchanges</li>
+                  <li>Improved possible hit of rate limit on exchanges</li>
+                  <li>Faster market switching on exchanges</li>
+                  <li>Following Full Node daemons were updated: ZEC, BTC, LTC, BTCZ, BTX, ZCOIN, ZER, GRS, SIN</li>
+                  <li>Russian translation updated</li>
+                  <li>It is now possible to set a fee on neo network</li>
+              </ul>
+              <h4>Bugs fixes</h4>
+              <ul class="uk-list">
+                  <li>Fixed possible issues with unability to sign to an exchange</li>
+                  <li>Fixes possibility of visualy displaying wrong ontology network fee</li>
+                  <li>Fixes 31d ZelNode rewards calculation on ZelNode App</li>
+                  <li>Fixes badly displaying spinners and closing dialog in ZelNode App</li>
+                  <li>Twitter news corrections</li>
+                  <li>Fixes possibility of wrongly flooring values</li>
+                  <li>Fixes exchanges buy orders of maximum which may have failed as of incorrectly counting fee</li>
+              </ul>
+            </div>
             <div>
               <h3>ZelCore v3.5.0 changes</h3>
               <h4>Features</h4>
