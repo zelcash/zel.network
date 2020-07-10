@@ -228,7 +228,7 @@
       </div>
     </div>
 
-    <div class="uk-position-relative" style="z-index:998">
+    <div class="uk-position-relative" style="z-index: 998;">
       <div
         class="uk-position-absolute uk-position-center zelcorePosition uk-visible@s"
       >
@@ -525,7 +525,12 @@
               <li><a href="./donate/">Donate</a></li>
               <li class="uk-nav-divider"></li>
               <li><a href="mailto:info@zel.cash">Contact Us</a></li>
-              <li><a href="https://visitor.constantcontact.com/manage/optin/ea?v=001oorxkg-LVCJkFTulCqTeeRLycPxT-3c479IT6Wbd0Tk4Lx4Qli_WP7PaR8kL_BGox7UspWZVMC2UEfhlPbvIzfii9iK-3b12IxcVaTwNDIMUR2750oF-bMVU_wmNuQSciqdKB-rCJcuhPDb5UmYKstcsb3HwUJHyOSUP8jRKPxj9hHAYX3jwk8XEXOA7CymqqLYuyL94CFk%3D">Subscribe</a></li>
+              <li>
+                <a
+                  href="https://visitor.constantcontact.com/manage/optin/ea?v=001oorxkg-LVCJkFTulCqTeeRLycPxT-3c479IT6Wbd0Tk4Lx4Qli_WP7PaR8kL_BGox7UspWZVMC2UEfhlPbvIzfii9iK-3b12IxcVaTwNDIMUR2750oF-bMVU_wmNuQSciqdKB-rCJcuhPDb5UmYKstcsb3HwUJHyOSUP8jRKPxj9hHAYX3jwk8XEXOA7CymqqLYuyL94CFk%3D"
+                  >Subscribe</a
+                >
+              </li>
             </ul>
           </div>
           <div class="social">
@@ -583,6 +588,14 @@
             <a href="./terms/">Terms and Conditions</a>
             <span class="uk-padding-small">|</span>
             <a href="./privacy/">Privacy Policy</a>
+            <span class="uk-padding-small">|</span>
+            <a
+              href="./docs/ZelCommunityBugBountyProgram.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Bug Bounty program
+            </a>
           </div>
         </div>
       </div>
@@ -598,37 +611,37 @@
 
       // build scenes
       new ScrollMagic.Scene({
-        triggerElement: "#feature2"
+        triggerElement: "#feature2",
       })
         .setClassToggle("#featureImage1", "hidden")
         .duration("100%")
         .addTo(controller);
       new ScrollMagic.Scene({
-        triggerElement: "#feature3"
+        triggerElement: "#feature3",
       })
         .setClassToggle("#featureImage1", "hidden")
         .duration("100%")
         .addTo(controller);
       new ScrollMagic.Scene({
-        triggerElement: "#feature4"
+        triggerElement: "#feature4",
       })
         .setClassToggle("#featureImage1", "hidden")
         .duration("100%")
         .addTo(controller);
       new ScrollMagic.Scene({
-        triggerElement: "#feature2"
+        triggerElement: "#feature2",
       })
         .setClassToggle("#featureImage2", "show")
         .duration("100%")
         .addTo(controller);
       new ScrollMagic.Scene({
-        triggerElement: "#feature3"
+        triggerElement: "#feature3",
       })
         .setClassToggle("#featureImage3", "show")
         .duration("100%")
         .addTo(controller);
       new ScrollMagic.Scene({
-        triggerElement: "#feature4"
+        triggerElement: "#feature4",
       })
         .setClassToggle("#featureImage4", "show")
         .duration("200%")
@@ -637,7 +650,7 @@
     <script>
       const windowHeight = window.innerHeight;
       let sticky = UIkit.sticky("#stickyImgs", {
-        offset: windowHeight / 2 - 233
+        offset: windowHeight / 2 - 233,
       });
     </script>
   </body>
