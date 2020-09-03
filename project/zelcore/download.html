@@ -246,7 +246,7 @@
                     ><img src="./img/zelcore/badge-googleplay.svg"
                   /></a>
                   <a
-                    href="https://zelcore.io/downloads/zelcore330.apk"
+                    href="https://zelcore.io/downloads/zelcore341.apk"
                     target="_blank" rel="noopener noreferrer"
                     class="android"
                     ><img src="./img/zelcore/badge-directdownload.svg"
@@ -295,7 +295,7 @@
                     class="uk-card uk-card-hover uk-card-secondary uk-card-body"
                   >
                     <h3 class="uk-card-title">macOS</h3>
-                    <p>Version: 3.5.0</p>
+                    <p>Version: 3.8.0</p>
                     <a href="https://zelcore.io/downloads/zelcore.dmg"
                       ><button class="uk-button uk-button-primary rounded">
                         Download
@@ -308,7 +308,7 @@
                     class="uk-card uk-card-hover uk-card-secondary uk-card-body"
                   >
                     <h3 class="uk-card-title">Windows</h3>
-                    <p>Version: 3.5.0</p>
+                    <p>Version: 3.8.0</p>
                     <a href="https://zelcore.io/downloads/zelcore.exe"
                       ><button class="uk-button uk-button-primary rounded">
                         Download (Install)
@@ -328,7 +328,7 @@
                     class="uk-card uk-card-hover uk-card-secondary uk-card-body"
                   >
                     <h3 class="uk-card-title">Linux</h3>
-                    <p>Version: 3.5.0</p>
+                    <p>Version: 3.8.0</p>
                     <a href="#linuxbuilds" uk-toggle
                       ><button class="uk-button uk-button-primary rounded">
                         Linux Builds
@@ -434,26 +434,26 @@
     <div id="security" class="uk-flex-top uk-modal-container" uk-modal>
         <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical uk-text-center">
             <button class="uk-modal-close-default" type="button" uk-close></button>
-            <h3>ZelCore v3.5.0 has following SHA256 hashes</h3>
+            <h3>ZelCore v3.8.0 has following SHA256 hashes</h3>
             <p>All ZelCore releases are signed by Zel Technologies GmbH. Furthermore we provide calculated SHA256 hashes of our releases</p>
             <hr class="uk-divider-icon">
             <dl class="uk-description-list uk-description-list-divider">
                 <dt>zelcore.dmg</dt>
-                <dd>d39a53f795301a9b958ba1304eefdef03664ff6c096b8f86dc8924cb58c3261b</dd>
+                <dd>2cdf72e27ba59ce6f67032e9e836e751a19986569b422f2180a6bde4a785aba7</dd>
                 <dt>zelcore.exe</dt>
-                <dd>90d35cb952d874b0afb2e3111cf00e187e9503908e9b3eb8f7d06f5263b424d1</dd>
+                <dd>9ff6fdd4259c2584771207b6c1db6e0c11401d79024d517361dac2479911537d</dd>
                 <dt>zelcore-portable.exe</dt>
-                <dd>f2b8ac2d8f3a2f2296249e28f4e8880882e3797f978959bf76704fc3c7b88018</dd>
+                <dd>34f97fe1faf68b589458250c22670f813384446cae134e985d1b6b8a71af9ae8</dd>
                 <dt>zelcore.AppImage & zelcore4x.AppImage</dt>
-                <dd>9ee1055584165507870f970a06b01b2a44ef72e387093bc75aa81b9fc15397da</dd>
+                <dd>cc4f73da685a61fd373c68c3b4bbb0e92720891c02629fa73af9fa182c6390b6</dd>
                 <dt>zelcore.deb & zelcore4x.deb</dt>
-                <dd>ad0fec00b3e838653060caa43f58ca9ebaf4919f717b7c62042b210cb32b3a9b</dd>
+                <dd>b02ea54080c01769318b3c892f88cf170ff2fc29c055340dc407e4dc3f8271bd</dd>
                 <dt>zelcore3x.AppImage</dt>
-                <dd>fb6ce507bf88cea1967a8747bb1ca971e98f0b477c18463ffd91ef8bbf58964b</dd>
+                <dd>b28ebb89176b9cc044ad203171fd99e68fd2ebbd47bf19fe7417c54103ba5c7e</dd>
                 <dt>zelcore3x.deb</dt>
-                <dd>9a75e3b31d052b16e3e15b3003368481e315d3629e4c0ff4d36095516ed7ef4c</dd>
-                <dt>zelcore330.apk</dt>
-                <dd>0058110238e2c5538991b091b83396f5e4b671be012fd30ee9bd6d93e6edfb21</dd>
+                <dd>a180eee4a80ba178afe0aeed6acf147962d684fc47438d7ed3b4fedf391a1b66</dd>
+                <dt>zelcore342.apk</dt>
+                <dd>53c0ef3ca48458e9e4d6ceec52858e4e7b6ce29b456123b01446c7e49a1fbfe1</dd>
             </dl>
             <hr class="uk-divider-icon">
             <p>GPG Fingerprint: 4F7F EBBF 1BDD D239 7DAB  E2CF 4B69 CA27 A986 265D</p>
@@ -465,6 +465,114 @@
     <div id="changes" class="uk-flex-top uk-modal-container" uk-modal>
         <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical uk-text-center">
             <button class="uk-modal-close-default" type="button" uk-close></button>
+            <div>
+              <h3>ZelCore v3.8.0 changes</h3>
+              <h4>Features</h4>
+              <ul class="uk-list">
+                  <li>Service for Staking: Automatically activate ZelCore+ for users holding at least 5000 ZEL in light accounts</li>
+                  <li>It is now possible to attach custom InvoiceID on Ripple network</li>
+                  <li>Bitpay Json Payment Protocol scheme has been integrated. This allows smooth payment for invoices in many currencies such as BTC, ETH, XRP or BCH. Simply click on invoice link and proceed with payments in ZelCore</li>
+                  <li>Further notification of d2FA not enabled</li>
+                  <li>Shows sum of ZelNode rewards on over in ZelNode App</li>
+                  <li>It is now possible to force a custom Nonce on Ethereum network. Use with caution</li>
+                  <li>Following Full Node binaries updated: ZEL, ZEC, BTC, RVN, BTX, BTG, XSG, KMD, ZCOIN, BZE</li>
+                  <li>ZelCore now has more automated fallbacks to other backend solutions in case a preselected one is not responding properly</li>
+                  <li>Following Ethereum Tokens are now natively available: WHALE, WBTC</li>
+                  <li>More clear text descriptions on account creation</li>
+                  <li>Kadena now supports 20 chains</li>
+              </ul>
+              <h4>Bug fixes</h4>
+              <ul class="uk-list">
+                  <li>UTXO fee calculation slightly corrected</li>
+                  <li>Temporarily disables hiding ZelCore to Windows Tray due to bug investigation</li>
+              </ul>
+            </div>
+            <div>
+              <h3>ZelCore v3.7.1 changes</h3>
+              <h4>Bug fixes</h4>
+              <ul class="uk-list">
+                  <li>Fix issue with obtaining balance on Binance Chain</li>
+              </ul>
+            </div>
+            <div>
+              <h3>ZelCore v3.7.0 changes</h3>
+              <h4>Features</h4>
+              <ul class="uk-list">
+                  <li>ZelCore+ users now have the possibility to import any Ethereum Token</li>
+                  <li>Received transactions are now shown as notification too</li>
+                  <li>It is possible to allow transaction notification after logout in settings menu</li>
+                  <li>Minimizing ZelCore on Windows platform now hides it into tray</li>
+                  <li>Better handling of Rates and Markets</li>
+                  <li>Receiving address dialog now better distinguishes between address and encoded data in QR code. Clicking on QR code now copis default address or account instead of encoded data</li>
+                  <li>ZelCore protocols have been updated to support all integrated coins</li>
+                  <li>Both parameters gas price and gas limit are now possible to have custom user values on Ethereum and Kadena networks</li>
+                  <li>Zclassic (ZCL) daemon updated</li>
+                  <li>RVN asset list updated</li>
+              </ul>
+            </div>
+            <div>
+              <h3>ZelCore v3.6.4 changes</h3>
+              <h4>Bug fixes</h4>
+              <ul class="uk-list">
+                  <li>Fix too low fee on Ontology network</li>
+              </ul>
+            </div>
+            <div>
+              <h3>ZelCore v3.6.3 changes</h3>
+              <h4>Features</h4>
+              <ul class="uk-list">
+                  <li>Supports Zcash fork</li>
+              </ul>
+            </div>
+            <div>
+              <h3>ZelCore v3.6.2 changes</h3>
+              <h4>Features</h4>
+              <ul class="uk-list">
+                  <li>Ravencoin Full Node binaries updated</li>
+              </ul>
+              <h4>Bug fixes</h4>
+              <ul class="uk-list">
+                  <li>Fixes loading spectator mode</li>
+              </ul>
+            </div>
+            <div>
+              <h3>ZelCore v3.6.1 changes</h3>
+              <h4>Features</h4>
+              <ul class="uk-list">
+                  <li>V-ID is now available</li>
+                  <li>Dragon is now available</li>
+              </ul>
+              <h4>Bug fixes</h4>
+              <ul class="uk-list">
+                  <li>Fixes macOS signature warning</li>
+                  <li>Fixes bad config file generation of Full Node on Linux and macOS</li>
+                  <li>Fixes possibility of continous fetching of transactions</li>
+              </ul>
+            </div>
+            <div>
+              <h3>ZelCore v3.6.0 changes</h3>
+              <h4>Features</h4>
+              <ul class="uk-list">
+                  <li>Gemini exchange is now available</li>
+                  <li>Compound (COMP) is now available</li>
+                  <li>Improved load times on exchanges</li>
+                  <li>Improved possible hit of rate limit on exchanges</li>
+                  <li>Faster market switching on exchanges</li>
+                  <li>Following Full Node daemons were updated: ZEC, BTC, LTC, BTCZ, BTX, ZCOIN, ZER, GRS, SIN</li>
+                  <li>Russian translation updated</li>
+                  <li>It is now possible to set a fee on neo network</li>
+              </ul>
+              <h4>Bug fixes</h4>
+              <ul class="uk-list">
+                  <li>Fixed possible issues with unability to sign to an exchange</li>
+                  <li>Fixes possibility of visualy displaying wrong ontology network fee</li>
+                  <li>Fixes 31d ZelNode rewards calculation on ZelNode App</li>
+                  <li>Fixes badly displaying spinners and closing dialog in ZelNode App</li>
+                  <li>Twitter news corrections</li>
+                  <li>Fixes possibility of wrongly flooring values</li>
+                  <li>Fixes exchanges buy orders of maximum which may have failed as of incorrectly counting fee</li>
+              </ul>
+            </div>
             <div>
               <h3>ZelCore v3.5.0 changes</h3>
               <h4>Features</h4>
@@ -479,7 +587,7 @@
                   <li>Logo distinguishing for USDT on different chains</li>
                   <li>Other minor features and corrections</li>
               </ul>
-              <h4>Bugs fixes</h4>
+              <h4>Bug fixes</h4>
               <ul class="uk-list">
                   <li>Fixes d2FA password visibility dialog while removing a wallet</li>
                   <li>Fixes not properly assigning tier in ZelNode app if ZelNode is offline</li>
@@ -491,7 +599,7 @@
               <ul class="uk-list">
                   <li>Performance improvements</li>
               </ul>
-              <h4>Bugs fixes</h4>
+              <h4>Bug fixes</h4>
               <ul class="uk-list">
                   <li>Correct flashing of orderbook on update</li>
               </ul>
@@ -508,7 +616,7 @@
                   <li>ILCoin is now available</li>
                   <li>Minor exchanges tweaks and adjustments</li>
               </ul>
-              <h4>Bugs fixes</h4>
+              <h4>Bug fixes</h4>
               <ul class="uk-list">
                   <li>Fix duplicate news</li>
                   <li>Fix d2FA not showing properly in some cases</li>
@@ -524,7 +632,7 @@
                   <li>Ravencoin asset list was updated</li>
                   <li>Following Full Node binaries updated: KMD, ZEN, SAFE</li>
               </ul>
-              <h4>Bugs fixes</h4>
+              <h4>Bug fixes</h4>
               <ul class="uk-list">
                   <li>Fix not showing correct ZelNode information when ZelNode is offline</li>
                   <li>Correct possibility of duplicated news</li>
@@ -542,14 +650,14 @@
             </div>
             <div>
               <h3>ZelCore v3.1.3 changes</h3>
-              <h4>Bugs fixes</h4>
+              <h4>Bug fixes</h4>
               <ul class="uk-list">
                   <li>Fixes a rare issue in Full Node refreshment</li>
               </ul>
             </div>
             <div>
               <h3>ZelCore v3.1.2 changes</h3>
-              <h4>Bugs fixes</h4>
+              <h4>Bug fixes</h4>
               <ul class="uk-list">
                   <li>Fixes a possibility of ZelNodes panel not loading properly</li>
                   <li>Fixes Zel testnet folder</li>
@@ -564,7 +672,7 @@
                   <li>Ravencoin asset list updated</li>
                   <li>Adds posibility to sign a message to Full Node</li>
               </ul>
-              <h4>Bugs fixes</h4>
+              <h4>Bug fixes</h4>
               <ul class="uk-list">
                   <li>Fix EOS tokens showing as EOS transactions</li>
                   <li>Fixes signing with wallet addresses</li>
@@ -581,7 +689,7 @@
                     <li>ZelFlux hyperlink on My Zelnodes table</li>
                     <li>Update Loopring contract address</li>
                 </ul>
-                <h4>Bugs fixes</h4>
+                <h4>Bug fixes</h4>
                 <ul class="uk-list">
                     <li>Fix fullnode freezing when killed when rescanning</li>
                     <li>Don't show ZelNode management if node is deleted</li>
@@ -615,14 +723,14 @@
               <h3>ZelCore v3.0.6 changes</h3>
               <h4>Features</h4>
               <ul class="uk-list">
-                  <li>Version 3.0.6 resolves some bugs and brings improvements to various aspects: Full Node and sending functionality for Tron.</li>
+                  <li>Version 3.0.6 resolves some Bug and brings improvements to various aspects: Full Node and sending functionality for Tron.</li>
               </ul>
           </div>
             <div>
               <h3>ZelCore v3.0.5 changes</h3>
               <h4>Features</h4>
               <ul class="uk-list">
-                  <li>Version 3.0.5 resolves some bugs and brings some improvements to various aspects: Full Node, Exchange APIs, and address refresh. Also Italian is now supported.</li>
+                  <li>Version 3.0.5 resolves some Bug and brings some improvements to various aspects: Full Node, Exchange APIs, and address refresh. Also Italian is now supported.</li>
               </ul>
           </div>
             <div>
@@ -650,7 +758,7 @@
               <h3>ZelCore v3.0.1 changes</h3>
               <h4>Features</h4>
               <ul class="uk-list">
-                  <li>Version 3.0.1 is a bit of house keeping, squashing some bugs, with a healthy dash of cleaning up and optimisation of code.</li>
+                  <li>Version 3.0.1 is a bit of house keeping, squashing some Bug, with a healthy dash of cleaning up and optimisation of code.</li>
               </ul>
           </div>
             <div>
@@ -686,7 +794,7 @@
                     <li>Following ERC20 Tokens added: HPT, HBT, ZB, MX, BF, OKB, HT, BUSD</li>
                     <li>Following Full Node binaries updated: ZelCash, Anon</li>
                 </ul>
-                <h4>Bugs fixes</h4>
+                <h4>Bug fixes</h4>
                 <ul class="uk-list">
                     <li>Fix to customizable shielding in Full Node</li>
                     <li>Bitcoin Cash ABC chain split issues resolved</li>
@@ -717,7 +825,7 @@
                     <li>Full Node now shows block date</li>
                     <li>Following Full Node binaries updated: ZelCash, Bitcoin Private, Horizen, Sinovate</li>
                 </ul>
-                <h4>Bugs fixes</h4>
+                <h4>Bug fixes</h4>
                 <ul class="uk-list">
                     <li>Fixes bug sending large amounts on some ERC20 tokens</li>
                     <li>Fixes backup of all addresses on ZelNodes setup guide</li>
@@ -751,7 +859,7 @@
                     <li>Zel protocol now support getaddress request</li>
                     <li>Minor tweaks</li>
                 </ul>
-                <h4>Bugs fixes</h4>
+                <h4>Bug fixes</h4>
                 <ul class="uk-list">
                     <li>Fixes maximum button on erc20 not working correctly in some rare scenarios</li>
                     <li>Fixes rare scenarios of displaying wierd payment note in transaction history on ethereum network</li>
@@ -772,14 +880,14 @@
                     <li>Full node binaries updated for BTC, RVN, DASH, GENX, XZC, ZEC, ZEL, ZCL</li>
                     <li>Minor tweaks</li>
                 </ul>
-                <h4>Bugs fixes</h4>
+                <h4>Bug fixes</h4>
                 <ul class="uk-list">
                     <li>Fixes invalid dates and showing on explorer for CryptoWolf exchange history</li>
                 </ul>        
             </div>
             <div>
                 <h3>ZelCore v2.2.2 changes</h3>
-                <h4>Bugs fixes</h4>
+                <h4>Bug fixes</h4>
                 <ul class="uk-list">
                     <li>Fixes sending of following coins: Sinovate (SIN), Digibyte (DGB) and Dogecoin (DOGE)</li>
                 </ul>        
@@ -791,7 +899,7 @@
                     <li>Merchcoins: Best Buy (GCBEST), Home Depot (GCHD), Lowes (GCLOWE), Starbucks (GCSTAR), Target (GCTGT), Walmart (GCWAL)</li>
                     <li>Support for Snowgem (XSG) fork</li>
                 </ul>
-                <h4>Bugs fixes</h4>
+                <h4>Bug fixes</h4>
                 <ul class="uk-list">
                     <li>Fixes Zcoin fiat rate</li>
                     <li>Fixes Horizen (ZEN) occasionally not being able to be sent</li>
@@ -808,7 +916,7 @@
                     <li>Optimised fiat handling</li>
                     <li>Minor tweaks</li>
                 </ul>
-                <h4>Bugs fixes</h4>
+                <h4>Bug fixes</h4>
                 <ul class="uk-list">
                     <li>Horizen sending fixed</li>
                     <li>Minor fixes</li>
@@ -823,7 +931,7 @@
                     <li>Zel is now supported in Coinswitch, for purchase currently</li>
                     <li>Minor tweaks</li>
                 </ul>
-                <h4>Bugs fixes</h4>
+                <h4>Bug fixes</h4>
                 <ul class="uk-list">
                     <li>Minor fixes</li>
                 </ul>        
@@ -839,7 +947,7 @@
                     <li>It is now possible to select a wallet in shielding option</li>
                     <li>Other minor features and full node binaries updated for multiple coins</li>
                 </ul>
-                <h4>Bugs fixes</h4>
+                <h4>Bug fixes</h4>
                 <ul class="uk-list">
                     <li>Minor fixes</li>
                 </ul>        
@@ -851,7 +959,7 @@
                     <li>It is now possible to claim Komodo rewards (interest)</li>
                     <li>Implemented coins via ElectrumX received an update and now performs better</li>
                 </ul>
-                <h4>Bugs fixes</h4>
+                <h4>Bug fixes</h4>
                 <ul class="uk-list">
                     <li>Fixes ZelCash full node binaries to current release v3.3.0</li>
                 </ul>        
@@ -882,6 +990,7 @@
               <li><a href="./donate/">Donate</a></li>
               <li class="uk-nav-divider"></li>
               <li><a href="mailto:info@zel.cash">Contact Us</a></li>
+              <li><a href="https://visitor.constantcontact.com/manage/optin/ea?v=001oorxkg-LVCJkFTulCqTeeRLycPxT-3c479IT6Wbd0Tk4Lx4Qli_WP7PaR8kL_BGox7UspWZVMC2UEfhlPbvIzfii9iK-3b12IxcVaTwNDIMUR2750oF-bMVU_wmNuQSciqdKB-rCJcuhPDb5UmYKstcsb3HwUJHyOSUP8jRKPxj9hHAYX3jwk8XEXOA7CymqqLYuyL94CFk%3D">Subscribe</a></li>
             </ul>
           </div>
           <div class="social">
@@ -933,6 +1042,14 @@
             <a href="./terms/">Terms and Conditions</a>
             <span class="uk-padding-small">|</span>
             <a href="./privacy/">Privacy Policy</a>
+            <span class="uk-padding-small">|</span>
+            <a
+              href="./docs/ZelCommunityBugBountyProgram.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Bug Bounty program
+            </a>
           </div>
         </div>
       </div>

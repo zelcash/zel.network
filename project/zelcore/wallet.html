@@ -34,13 +34,18 @@
     <link rel="stylesheet" href="./css/wallet.css" />
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163087110-1"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-163087110-1"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag() { dataLayer.push(arguments); }
-      gtag('js', new Date());
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-      gtag('config', 'UA-163087110-1');
+      gtag("config", "UA-163087110-1");
     </script>
   </head>
 
@@ -180,27 +185,34 @@
     </div>
 
     <!-- HERO -->
-    <div class="uk-position-relative" style="z-index: 0">
+    <div class="uk-position-relative" style="z-index: 0;">
       <div
         class="zelcore-top uk-section uk-flex uk-flex-middle uk-light"
-        uk-height-viewport="offset-top: true; min-height: 720" 
+        uk-height-viewport="offset-top: true; min-height: 720"
       >
         <div class="uk-width-1-1 uk-position">
-          <div class="uk-container" >
+          <div class="uk-container">
             <div class="uk-grid-margin uk-grid uk-grid-stack" uk-grid>
               <div
                 class="uk-width-1-1@m uk-first-column uk-text-center fixedZelCoreTxt"
               >
                 <div>
                   <img
-                    class="uk-width-medium" id="coin-logo"
+                    class="uk-width-medium"
+                    id="coin-logo"
                     src="./img/ZelCore-Txt-White.svg"
                   />
                 </div>
-                <h1 class="uk-heading-medium uk-text-center uk-visible@s" id="coin-headerL">
+                <h1
+                  class="uk-heading-medium uk-text-center uk-visible@s"
+                  id="coin-headerL"
+                >
                   Download Zelcore, a free multi-coin wallet
                 </h1>
-                <h1 class="uk-h3 uk-text-center uk-visible@s" id="coin-header2L">
+                <h1
+                  class="uk-h3 uk-text-center uk-visible@s"
+                  id="coin-header2L"
+                >
                   Send, Receive, and Exchange Coins With Zelcore Wallet
                 </h1>
                 <h1 class="uk-h4 uk-text-center uk-hidden@s" id="coin-headerS">
@@ -210,8 +222,11 @@
                   Send, Receive, and Exchange Coins With Zelcore Wallet
                 </h1>
                 <a href="/project/zelcore/download.html">
-                  <button class="uk-button uk-button-primary rounded" id="coin-download-button">
-                          Download Zelcore Wallet
+                  <button
+                    class="uk-button uk-button-primary rounded"
+                    id="coin-download-button"
+                  >
+                    Download Zelcore Wallet
                   </button>
                 </a>
               </div>
@@ -221,8 +236,6 @@
       </div>
     </div>
 
-
- 
     <!-- WALLET FEATURE SECTIONS -->
 
     <section
@@ -234,31 +247,47 @@
         <div class="uk-container">
           <div class="uk-grid-margin uk-grid uk-grid-stack" uk-grid>
             <div class="uk-width-1-1@m uk-first-column zelcoreWalletFeatures">
-              <img class="uk-hidden@m" src="./img/zelcore/V3_Portfolio-min.png" />
-                <div style="float: right;">
-                <img  id="featureImage" class="desktopImg uk-visible@m" src="./img/zelcore/Laptop_Portfolio-min.png" style="float: right;"/>
-                </div>
-                
-                  <h1 class="uk-heading-medium uk-margin uk-width-large@m" id="coin-header-sendandreceive">
-                    Send and Receive Any Listed Coin
-                  </h1>
-                  <h1 class="uk-h3 uk-margin-medium uk-width-large@m" id="coin-text-sendandreceive">
-                    Send and receive any listed coin or asset easily with an address or scannable QR code.
-                    Each Zelcore account comes standard with 3 addresses per asset, of which you and only you have the private keys. The Zelcore wallet supports 100+ other coins and ERC-20 tokens, and is available for desktop and mobile devices.
-                  </h1>
-                
-            </div>
-              <div style="float: none; text-align: center; width:100%;">
-                <a href="./project/zelcore/download.html">
-                  <button class="uk-button uk-button-primary rounded" id="coin-download-button">
-                          Download Zelcore Wallet
-                  </button>
-                </a>
+              <img
+                class="uk-hidden@m"
+                src="./img/zelcore/V3_Portfolio-min.png"
+              />
+              <div style="float: right;">
+                <img
+                  id="featureImage"
+                  class="desktopImg uk-visible@m"
+                  src="./img/zelcore/Laptop_Portfolio-min.png"
+                  style="float: right;"
+                />
               </div>
 
+              <h1
+                class="uk-heading-medium uk-margin uk-width-large@m"
+                id="coin-header-sendandreceive"
+              >
+                Send and Receive Any Listed Coin
+              </h1>
+              <h1
+                class="uk-h3 uk-margin-medium uk-width-large@m"
+                id="coin-text-sendandreceive"
+              >
+                Send and receive any listed coin or asset easily with an address
+                or scannable QR code. Each Zelcore account comes standard with 3
+                addresses per asset, of which you and only you have the private
+                keys. The Zelcore wallet supports 100+ other coins and ERC-20
+                tokens, and is available for desktop and mobile devices.
+              </h1>
+            </div>
+            <div style="float: none; text-align: center; width: 100%;">
+              <a href="./project/zelcore/download.html">
+                <button
+                  class="uk-button uk-button-primary rounded"
+                  id="coin-download-button"
+                >
+                  Download Zelcore Wallet
+                </button>
+              </a>
+            </div>
           </div>
-              
-
         </div>
       </div>
     </section>
@@ -268,7 +297,7 @@
       class="zelcoreblack uk-section uk-flex uk-flex-middle"
       uk-height-viewport="offset-top: true;"
     >
-      <div class="uk-width-1-1 uk-light"  style="z-index:199;">
+      <div class="uk-width-1-1 uk-light" style="z-index: 199;">
         <div class="uk-container">
           <div class="uk-grid-margin uk-grid uk-grid-stack" uk-grid>
             <div class="uk-width-1-1@s uk-first-column zelcoreWalletFeatures">
@@ -284,25 +313,35 @@
                   src="./img/zelcore/Exchanges-Desktop-min.png"
                   style="float: right;"
                 />
-                </div>
-              <h1 class="uk-heading-medium uk-margin uk-width-large@m" id="coin-header-buyandsell">
+              </div>
+              <h1
+                class="uk-heading-medium uk-margin uk-width-large@m"
+                id="coin-header-buyandsell"
+              >
                 Buy and sell assets via Built-in Exchanges*
               </h1>
               <h1 class="uk-h3 uk-width-large@m">
                 Zelcore integrates built-in quickswap exchanges directly inside
-                of Zelcore Desktop &amp; Mobile. For more advanced traders, checkout
-                <a href="/project/zelcore/zelcore+.html">Zelcore+</a> which offers a full API integration of some of your
-                favourite exchanges such as Binance, Bittrex and Kraken.<br><small style="font-weight: normal;">(*) if coin is available on exchange</small>
+                of Zelcore Desktop &amp; Mobile. For more advanced traders,
+                checkout
+                <a href="/project/zelcore/zelcore+.html">Zelcore+</a> which
+                offers a full API integration of some of your favourite
+                exchanges such as Binance, Bittrex and Kraken.<br /><small
+                  style="font-weight: normal;"
+                  >(*) if coin is available on exchange</small
+                >
               </h1>
             </div>
-            <div style="float: none; text-align: center; width:100%;">
-                <a href="./project/zelcore/download.html">
-                  <button class="uk-button uk-button-primary rounded" id="coin-download-button">
-                          Download Zelcore Wallet
-                  </button>
-                </a>
+            <div style="float: none; text-align: center; width: 100%;">
+              <a href="./project/zelcore/download.html">
+                <button
+                  class="uk-button uk-button-primary rounded"
+                  id="coin-download-button"
+                >
+                  Download Zelcore Wallet
+                </button>
+              </a>
             </div>
-
           </div>
         </div>
       </div>
@@ -317,53 +356,62 @@
         <div class="uk-container">
           <div class="uk-grid-margin uk-grid uk-grid-stack" uk-grid>
             <div class="uk-width-1-1@m uk-first-column zelcoreWalletFeatures">
-                <img class="uk-hidden@m" src="./img/zelcore/zelid-mobile.svg" />
-                <div style="float: right;">
-                  <img id="featureImage" class="desktopImg uk-visible@m" src="./img/zelcore/zelid-large.png" style="float: right;"/>
-                </div>
-                
-                <h1 class="uk-heading-medium uk-margin uk-width-large@m" id="coin-header-zelid">
-                  Securly store your coins in Zelcore with ZelID
-                </h1>
-                <h1 class="uk-h3 uk-margin-medium uk-width-large@m" id="coin-text-zelid">
-                   Store your coins 100% Secure with <a href="/project/zelid/">ZelID</a>,
-                   a decentralized authentication protocol that is truly seamless, secure, and private. A digital identity you control for cross-platform authentication.
-                </h1>
-                  </div>
+              <img class="uk-hidden@m" src="./img/zelcore/zelid-mobile.svg" />
+              <div style="float: right;">
+                <img
+                  id="featureImage"
+                  class="desktopImg uk-visible@m"
+                  src="./img/zelcore/zelid-large.png"
+                  style="float: right;"
+                />
+              </div>
 
-                <div style="float: none; text-align: center; width:100%;">
-                  <a href="./project/zelcore/download.html">
-                    <button class="uk-button uk-button-primary rounded" id="coin-download-button">
-                          Download Zelcore Wallet
-                    </button>
-                  </a>
-                </div>
-
+              <h1
+                class="uk-heading-medium uk-margin uk-width-large@m"
+                id="coin-header-zelid"
+              >
+                Securly store your coins in Zelcore with ZelID
+              </h1>
+              <h1
+                class="uk-h3 uk-margin-medium uk-width-large@m"
+                id="coin-text-zelid"
+              >
+                Store your coins 100% Secure with
+                <a href="/project/zelid/">ZelID</a>, a decentralized
+                authentication protocol that is truly seamless, secure, and
+                private. A digital identity you control for cross-platform
+                authentication.
+              </h1>
             </div>
-   
 
+            <div style="float: none; text-align: center; width: 100%;">
+              <a href="./project/zelcore/download.html">
+                <button
+                  class="uk-button uk-button-primary rounded"
+                  id="coin-download-button"
+                >
+                  Download Zelcore Wallet
+                </button>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-
 
     <!-- COINLIST -->
     <section
       id="coinlist"
       class="uk-section whiteBackground uk-section-large uk-flex uk-flex-middle"
     >
-
       <div class="uk-width-1-1">
         <div class="uk-container">
           <div class="uk-grid-margin uk-grid uk-grid-stack" uk-grid>
-
             <div class="uk-width-1-1@m uk-first-column">
               <a name="supported-coins"></a>
               <h2 class="uk-text-center">Supported coins</h2>
-            <div id="coin-list">
+              <div id="coin-list"></div>
             </div>
-            </div>
-
           </div>
         </div>
       </div>
@@ -379,7 +427,7 @@
     </div>
     <section
       id="support"
-      class="uk-section zelcoreblack uk-section-large uk-flex uk-flex-middle  support-section"
+      class="uk-section zelcoreblack uk-section-large uk-flex uk-flex-middle support-section"
       uk-height-viewport="offset-top: true;"
     >
       <div class="uk-width-1-1 uk-light">
@@ -391,18 +439,21 @@
               <h3 class="uk-h3 uk-text-center">Need help?</h3>
               <div class="uk-text-large uk-margin uk-text-center">
                 Head over to
-                <a href="https://discord.io/zel" target="_blank" rel="noopener noreferrer">Discord</a> and
-                we'll help you out
+                <a
+                  href="https://discord.io/zel"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Discord</a
+                >
+                and we'll help you out
               </div>
               <!-- <div class="uk-margin uk-text-center">Or email us at <a href="mailto:support@zelcore.io">support@zelcore.io</a></div> -->
             </div>
-
           </div>
         </div>
       </div>
     </section>
 
- 
     <!-- FOOTER -->
     <footer class="uk-background-muted uk-padding">
       <div class="uk-container">
@@ -425,42 +476,54 @@
               <li><a href="./donate/">Donate</a></li>
               <li class="uk-nav-divider"></li>
               <li><a href="mailto:info@zel.cash">Contact Us</a></li>
+              <li>
+                <a
+                  href="https://visitor.constantcontact.com/manage/optin/ea?v=001oorxkg-LVCJkFTulCqTeeRLycPxT-3c479IT6Wbd0Tk4Lx4Qli_WP7PaR8kL_BGox7UspWZVMC2UEfhlPbvIzfii9iK-3b12IxcVaTwNDIMUR2750oF-bMVU_wmNuQSciqdKB-rCJcuhPDb5UmYKstcsb3HwUJHyOSUP8jRKPxj9hHAYX3jwk8XEXOA7CymqqLYuyL94CFk%3D"
+                  >Subscribe</a
+                >
+              </li>
             </ul>
           </div>
           <div class="social">
             <a
               href="https://twitter.com/zelcash"
-              target="_blank" rel="noopener noreferrer"
+              target="_blank"
+              rel="noopener noreferrer"
               class="uk-button rounded twitter"
               ><i class="fab fa-twitter"></i
             ></a>
             <a
               href="https://discord.io/zel"
-              target="_blank" rel="noopener noreferrer"
+              target="_blank"
+              rel="noopener noreferrer"
               class="uk-button rounded discord"
               ><i class="fab fa-discord"></i
             ></a>
             <a
               href="https://t.me/zelhub"
-              target="_blank" rel="noopener noreferrer"
+              target="_blank"
+              rel="noopener noreferrer"
               class="uk-button rounded telegram"
               ><i class="fab fa-telegram"></i
             ></a>
             <a
               href="https://join.slack.com/t/zelcash/shared_invite/enQtMzkyMjY0MDU3NjA3LWM4NWNkMzQwMDJmNWM4NDJhZTY3YmQ3MDA0MzVhZDE3ZWQxNWU0ODUxMGE4ODk3MTQyOWYyYmZiZTFmY2FiMTM"
-              target="_blank" rel="noopener noreferrer"
+              target="_blank"
+              rel="noopener noreferrer"
               class="uk-button rounded slack"
               ><i class="fab fa-slack"></i
             ></a>
             <a
               href="https://www.reddit.com/r/ZelCash/"
-              target="_blank" rel="noopener noreferrer"
+              target="_blank"
+              rel="noopener noreferrer"
               class="uk-button rounded reddit"
               ><i class="fab fa-reddit"></i
             ></a>
             <a
               href="https://bitcointalk.org/index.php?topic=2853688.0"
-              target="_blank" rel="noopener noreferrer"
+              target="_blank"
+              rel="noopener noreferrer"
               class="uk-button rounded bitcointalk"
               ><i class="fab fa-btc"></i
             ></a>
@@ -476,6 +539,14 @@
             <a href="./terms/">Terms and Conditions</a>
             <span class="uk-padding-small">|</span>
             <a href="./privacy/">Privacy Policy</a>
+            <span class="uk-padding-small">|</span>
+            <a
+              href="./docs/ZelCommunityBugBountyProgram.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Bug Bounty program
+            </a>
           </div>
         </div>
       </div>
@@ -489,6 +560,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
     <script src="./project/zelcore/coinsSimple.js"></script>
     <script src="./project/zelcore/wallet.js"></script>
-
   </body>
 </html>
