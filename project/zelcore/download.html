@@ -295,7 +295,7 @@
                     class="uk-card uk-card-hover uk-card-secondary uk-card-body"
                   >
                     <h3 class="uk-card-title">macOS</h3>
-                    <p>Version: 3.9.0</p>
+                    <p>Version: 3.10.0</p>
                     <a href="https://zelcore.io/downloads/zelcore.dmg"
                       ><button class="uk-button uk-button-primary rounded">
                         Download
@@ -308,7 +308,7 @@
                     class="uk-card uk-card-hover uk-card-secondary uk-card-body"
                   >
                     <h3 class="uk-card-title">Windows</h3>
-                    <p>Version: 3.9.0</p>
+                    <p>Version: 3.10.0</p>
                     <a href="https://zelcore.io/downloads/zelcore.exe"
                       ><button class="uk-button uk-button-primary rounded">
                         Download (Install)
@@ -328,7 +328,7 @@
                     class="uk-card uk-card-hover uk-card-secondary uk-card-body"
                   >
                     <h3 class="uk-card-title">Linux</h3>
-                    <p>Version: 3.9.0</p>
+                    <p>Version: 3.10.0</p>
                     <a href="#linuxbuilds" uk-toggle
                       ><button class="uk-button uk-button-primary rounded">
                         Linux Builds
@@ -434,24 +434,24 @@
     <div id="security" class="uk-flex-top uk-modal-container" uk-modal>
         <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical uk-text-center">
             <button class="uk-modal-close-default" type="button" uk-close></button>
-            <h3>ZelCore v3.9.0 has following SHA256 hashes</h3>
+            <h3>ZelCore v3.10.0 has following SHA256 hashes</h3>
             <p>All ZelCore releases are signed by Zel Technologies GmbH. Furthermore we provide calculated SHA256 hashes of our releases</p>
             <hr class="uk-divider-icon">
             <dl class="uk-description-list uk-description-list-divider">
                 <dt>zelcore.dmg</dt>
-                <dd>6b4a6914e5382b3e6b554d5b7c568631a4764a4118dcd79c57c2fc335baf6075</dd>
+                <dd>dc6513508f02523e45bf1270df32c7a25effd148002d5b5911d94b077887c8be</dd>
                 <dt>zelcore.exe</dt>
-                <dd>3fe4bc3a8ea9d0d6c7e861396f3263453fb8217f1c72dd3419b82f3c717011f2</dd>
+                <dd>8940a5fa41771a50401386cd9767bac98b31bd9780ee43a1d6a05dcc5f7f7a14</dd>
                 <dt>zelcore-portable.exe</dt>
-                <dd>066f47fca2d3b2a7eeb1305c5c8ef67cf9ba3a880cbd28657fe7573bfe19716a</dd>
+                <dd>b5828aba78bb2c67b450b8d9875c7029e198605f9b92efd91c431bba84f78f5c</dd>
                 <dt>zelcore.AppImage & zelcore4x.AppImage</dt>
-                <dd>e685fdd2b662c60d63a05d1054efb937e1ff8da742c9b13cf553d384f32c5f85</dd>
+                <dd>dd4a7c76272df26f924ff3c3371c2555d91a42948afd6add13a00fade95961d5</dd>
                 <dt>zelcore.deb & zelcore4x.deb</dt>
-                <dd>63a47fc9531bb3c980e71db1ef1b2d0c44a483270800f4bcd9f535e748a05a6e</dd>
+                <dd>8b84bb649aafabcb2bb82d3331b698322ae683bd2b5b93411ccf90a22096f3a1</dd>
                 <dt>zelcore3x.AppImage</dt>
-                <dd>ff14496f4310fa91eb66dfb9507887d68252ec4ac724317e8a0edafc412bba75</dd>
+                <dd>e5fba5fb80430223b4663d7bf12e604179f79ffc4013b0aa1158864b2dd2a652</dd>
                 <dt>zelcore3x.deb</dt>
-                <dd>0be4f45f2f99978a3171ce7e87504bf98784017576d1e4ba9c7582c229bb35de</dd>
+                <dd>b7f3d290da0cd95ba66c81ac707fca9bb0c11aebb600063d478691d358e69d85</dd>
                 <dt>zelcore350.apk</dt>
                 <dd>e1d6f036a5f03a93149e19fc8d63597a86a4163abc7b2dd40dfe6eeb09cb81fd</dd>
             </dl>
@@ -466,10 +466,30 @@
         <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical uk-text-center">
             <button class="uk-modal-close-default" type="button" uk-close></button>
             <div>
+              <h3>ZelCore v3.10.0 changes</h3>
+              <h4>Features</h4>
+              <ul class="uk-list">
+                  <li>Wallet Connect protocol has been integrated. Paste your Wallet Connect uri to browser and launch ZelCore directly!</li>
+                  <li>ZelCore now supports universal links on https://link.zel.network. dApps can use this new infrastructure to communicate with ZelCore wallet on all platforms</li>
+                  <li>TRC20 tokens are now natively supported with ZelCore. This expands Tron Network from TRX itself and present TRC10 solution</li>
+                  <li>Genesis (GENX) is now available as TRC20 token</li>
+                  <li>Background is now blured if dialog is shown</li>
+                  <li>If ZelCore+ is active, panel now reflect that with ZelCore+ logo</li>
+                  <li>Following Full Nodes were updated: ZEL, XZC, BTX</li>
+                  <li>RVN asset list updated</li>
+                  <li>Follwing ERC20 Token is now available: MANTRA DAO (OM)</li>
+                  <li>Bitcore is now integrated as ElectrumX solution rather than Insight</li>
+              </ul>
+              <h4>Bug fixes</h4>
+              <ul class="uk-list">
+                  <li>Minor fixes</li>
+              </ul>
+            </div>
+            <div>
               <h3>ZelCore v3.9.0 changes</h3>
               <h4>Features</h4>
               <ul class="uk-list">
-                  <li></li>Brings recovery password mechanism. New accounts can set this feature up upon account creation, already existing accounts will find this feature in settings.</li>
+                  <li>Brings recovery password mechanism. New accounts can set this feature up upon account creation, already existing accounts will find this feature in settings.</li>
                   <li>Optimization of Omni Network fees</li>
                   <li>Various minor improvements</li>
               </ul>
