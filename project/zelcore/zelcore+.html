@@ -349,6 +349,12 @@
                 class="desktopImg hidden"
                 src="./img/zelcore/Wallets.jpg"
               />
+            <div class="uk-position-absolute">
+              <img
+                id="featureImage5"
+                 class="desktopImg hidden"
+                  src="./img/zelcore/Nelnodemonitoring.jpg"
+              />
             </div>
           </div>
         </div>
@@ -439,9 +445,11 @@
         <div class="uk-container">
           <div class="uk-grid-margin uk-grid uk-grid-stack" uk-grid>
             <div class="uk-width-1-1@m uk-first-column zelcoreFeatures">
-              <img class="uk-hidden@m" src="./img/zelcore/Wallets.jpg" />
+              <img 
+                class="uk-hidden@m" 
+                src="./img/zelcore/Wallets.jpg" />
               <h1
-                id="featurestop"
+
                 class="uk-heading-medium uk-margin uk-width-large@m"
               >
                 More Lite Addresses
@@ -450,16 +458,40 @@
                 for All Assets + PK Import
               </h2>
               <h1 class="uk-h3 uk-margin-medium uk-width-large@m">
-                ZelCore+ generates a total of 6 lite addresses per asset and
-                allows you to import your private keys for easy access to your
-                assets held on prior addresses.
+                Zelcore+ generates an additional of 3 Addresses for each asset, making it a toal of 6. 
+                You also can import any additional addresses that you have outside of Zelcore via its private key, 
+                making the list of possible Wallets up to a maximum of 12 addresses
               </h1>
             </div>
           </div>
         </div>
       </div>
     </section>
-
+    <section
+      id="feature5"
+      class="zelcoreblack uk-section uk-flex uk-flex-middle"
+      uk-height-viewport="offset-top: true;"
+    >
+      <div class="uk-width-1-1 uk-light">
+        <div class="uk-container">
+          <div class="uk-grid-margin uk-grid uk-grid-stack" uk-grid>
+            <div class="uk-width-1-1@m uk-first-column zelcoreFeatures">
+              <img class="uk-hidden@m" src="./img/zelcore/Wallets.jpg" />
+              <h1 
+                id="featurestop"
+                class="uk-heading-medium uk-margin uk-width-large@m"
+              >
+                Zelnode Monitoring App
+              </h1>
+              <h1
+              class="uk-h3 uk-margin-medium uk-width-large@m">
+              Monitor your Zelnode status with Desktop Tray Notifications and mobile notifications, check out the stats on your sweet rewards!
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- OTHER FEATURES -->
     <!-- <section
       id="other"
@@ -548,6 +580,13 @@
               ><i class="fab fa-twitter"></i
             ></a>
             <a
+            href="https://twitter.com/Zel_Core"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="uk-button rounded twitter"
+            ><i class="fab fa-twitter"></i
+          ></a>
+            <a
               href="https://discord.io/zel"
               target="_blank"
               rel="noopener noreferrer"
@@ -562,19 +601,33 @@
               ><i class="fab fa-telegram"></i
             ></a>
             <a
-              href="https://join.slack.com/t/zelcash/shared_invite/enQtMzkyMjY0MDU3NjA3LWM4NWNkMzQwMDJmNWM4NDJhZTY3YmQ3MDA0MzVhZDE3ZWQxNWU0ODUxMGE4ODk3MTQyOWYyYmZiZTFmY2FiMTM"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="uk-button rounded slack"
-              ><i class="fab fa-slack"></i
-            ></a>
+            href="https://t.me/zelcash"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="uk-button rounded telegram"
+            ><i class="fab fa-telegram"></i
+          ></a>
             <a
-              href="https://www.reddit.com/r/ZelCash/"
+              href="https://www.reddit.com/r/ZelOfficial/"
               target="_blank"
               rel="noopener noreferrer"
               class="uk-button rounded reddit"
               ><i class="fab fa-reddit"></i
             ></a>
+            <a
+            href="https://www.youtube.com/channel/UCphbdfb1MXYgUPsdhQPcnGw"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="uk-button rounded reddit"
+            ><i class="fab fa-youtube"></i
+          ></a>
+            <a
+           href="https://github.com/zelcash"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="uk-button rounded reddit"
+           ><i class="fab fa-github"></i
+          ></a>
             <a
               href="https://bitcointalk.org/index.php?topic=2853688.0"
               target="_blank"
@@ -635,6 +688,12 @@
         .duration("100%")
         .addTo(controller);
       new ScrollMagic.Scene({
+        triggerElement: "#feature5",
+      })
+        .setClassToggle("#featureImage1", "hidden")
+        .duration("100%")
+        .addTo(controller);
+      new ScrollMagic.Scene({
         triggerElement: "#feature2",
       })
         .setClassToggle("#featureImage2", "show")
@@ -650,8 +709,14 @@
         triggerElement: "#feature4",
       })
         .setClassToggle("#featureImage4", "show")
-        .duration("200%")
+        .duration("100%")
         .addTo(controller);
+      new ScrollMagic.Scene({
+        triggerElement: "#feature5",
+      })
+        .setClassToggle("#featureImage5", "show")
+        .duration("100%")
+        .addTo(controller);  
     </script>
     <script>
       const windowHeight = window.innerHeight;
