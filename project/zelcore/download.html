@@ -298,7 +298,7 @@
                     class="uk-card uk-card-hover uk-card-secondary uk-card-body"
                   >
                     <h3 class="uk-card-title">macOS</h3>
-                    <p>Version: 3.10.0</p>
+                    <p>Version: 3.11.0</p>
                     <a href="https://zelcore.io/downloads/zelcore.dmg"
                       ><button class="uk-button uk-button-primary rounded">
                         Download
@@ -311,7 +311,7 @@
                     class="uk-card uk-card-hover uk-card-secondary uk-card-body"
                   >
                     <h3 class="uk-card-title">Windows</h3>
-                    <p>Version: 3.10.0</p>
+                    <p>Version: 3.11.0</p>
                     <a href="https://zelcore.io/downloads/zelcore.exe"
                       ><button class="uk-button uk-button-primary rounded">
                         Download (Install)
@@ -331,7 +331,7 @@
                     class="uk-card uk-card-hover uk-card-secondary uk-card-body"
                   >
                     <h3 class="uk-card-title">Linux</h3>
-                    <p>Version: 3.10.0</p>
+                    <p>Version: 3.11.0</p>
                     <a href="#linuxbuilds" uk-toggle
                       ><button class="uk-button uk-button-primary rounded">
                         Linux Builds
@@ -442,19 +442,19 @@
             <hr class="uk-divider-icon">
             <dl class="uk-description-list uk-description-list-divider">
                 <dt>zelcore.dmg</dt>
-                <dd>dc6513508f02523e45bf1270df32c7a25effd148002d5b5911d94b077887c8be</dd>
+                <dd>6af6cd0da08f3e0f0493e2a8057a882b5bdde4f6959231ed28ab44a44ace0ec7</dd>
                 <dt>zelcore.exe</dt>
-                <dd>8940a5fa41771a50401386cd9767bac98b31bd9780ee43a1d6a05dcc5f7f7a14</dd>
+                <dd>3755947fa0ab039bf802847cf0a4b90e5cb50869a1b15507c4f0cae8bacb1738</dd>
                 <dt>zelcore-portable.exe</dt>
-                <dd>b5828aba78bb2c67b450b8d9875c7029e198605f9b92efd91c431bba84f78f5c</dd>
+                <dd>2d577609267e95a884bf216705e4d66532cc0c49f9ea439e276155b691920ba8</dd>
                 <dt>zelcore.AppImage & zelcore4x.AppImage</dt>
-                <dd>dd4a7c76272df26f924ff3c3371c2555d91a42948afd6add13a00fade95961d5</dd>
+                <dd>ec8769cd69fef5885dbc3c4babd7b362b7ebd9d7bc4fb76310f30c6f8ae420e9</dd>
                 <dt>zelcore.deb & zelcore4x.deb</dt>
-                <dd>8b84bb649aafabcb2bb82d3331b698322ae683bd2b5b93411ccf90a22096f3a1</dd>
+                <dd>96a22060f446e50558afde0f6b41c49cad3b60c724540eafced2e1d9ba6608a0</dd>
                 <dt>zelcore3x.AppImage</dt>
-                <dd>e5fba5fb80430223b4663d7bf12e604179f79ffc4013b0aa1158864b2dd2a652</dd>
+                <dd>405d5782447f36670279fb2358863835adaa2cd834ede11fa0cdd1825ea6925b</dd>
                 <dt>zelcore3x.deb</dt>
-                <dd>b7f3d290da0cd95ba66c81ac707fca9bb0c11aebb600063d478691d358e69d85</dd>
+                <dd>fe24860223d94782287528980755e89caa275f9df11e6886c547a44c9c076d89</dd>
                 <dt>zelcore350.apk</dt>
                 <dd>e1d6f036a5f03a93149e19fc8d63597a86a4163abc7b2dd40dfe6eeb09cb81fd</dd>
             </dl>
@@ -468,6 +468,35 @@
     <div id="changes" class="uk-flex-top uk-modal-container" uk-modal>
         <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical uk-text-center">
             <button class="uk-modal-close-default" type="button" uk-close></button>
+            <div>
+              <h3>ZelCore v3.11.0 changes</h3>
+              <h4>Features</h4>
+              <ul class="uk-list">
+                  <li>Bitcoin Testnet is now available</li>
+                  <li>Ethereum Ropsten Testnet is now available</li>
+                  <li>Economy mode is now called Simple mode</li>
+                  <li>Following ERC20 Tokens are available: Uniswap (UNI), Coin Artist Token (COIN)</li>
+                  <li>Following TRC20 Token is now available: JUST (JST)</li>
+                  <li>It is now possible to send to bech32 address on Bitcoin and Litecoin</li>
+                  <li>It is now possible to send zero value transactions on Ethereum, Ethereum Classic and Ethereum Ropsten</li>
+                  <li>RVN asset list updated</li>
+                  <li>Offline storing of encrypted transactions - allows for faster loading and viwien entire wallet without internet connectivity</li>
+                  <li>Added notifications for tokens that already migrated to custom blockchains</li>
+                  <li>Coins based on UTXO are now showing sats/Byte in fee section when constructing transaction</li>
+                  <li>Any ZelCore user can now import an ERC20 Ethereum Token (previously only ZelCore+ feature)</li>
+                  <li>It is now possible to buy an asset on quick swap exchanges that is not activated in your active exchange wallet portfolio</li>
+                  <li>Ontology network fees can now have custom Gas Limit and custom Gas Price</li>
+                  <li>Check how many Zelnodes are running specific zelApp on Zelnodes App</li>
+              </ul>
+              <h4>Bug fixes</h4>
+              <ul class="uk-list">
+                  <li>Fixes possible Tron NaN balances and wrongly showing fee on some transactions</li>
+                  <li>There was an edge case of showing different WIF of private key other than a selected coin and wallet</li>
+                  <li>Corrects UI positioning of Wallet Connect</li>
+                  <li>Fixes deeplinking on Linux and macOS</li>
+                  <li>Minor fixes</li>
+              </ul>
+            </div>
             <div>
               <h3>ZelCore v3.10.0 changes</h3>
               <h4>Features</h4>
